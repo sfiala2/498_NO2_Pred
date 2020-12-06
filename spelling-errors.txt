@@ -10,9 +10,9 @@ Briguglio
 BRNN
 Clarizio
 CNNs
-colinearity
+collinearity
 convolutes
-Convolutional
+convolutional
 covariates
 datapoints
 dataset

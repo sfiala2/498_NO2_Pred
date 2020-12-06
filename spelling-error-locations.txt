@@ -142,7 +142,7 @@ content/02.Report_Body.md:86:WRF
 content/02.Report_Body.md:94:MLR
 content/02.Report_Body.md:94:MLR
 content/02.Report_Body.md:107:oberseved
-content/02.Report_Body.md:109:colinearity
+content/02.Report_Body.md:109:collinearity
 content/02.Report_Body.md:111:MLR
 content/02.Report_Body.md:118:WRF
 content/02.Report_Body.md:130:heteroscedacity
