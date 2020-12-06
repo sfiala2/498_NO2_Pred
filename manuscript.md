@@ -4,8 +4,8 @@ author-meta:
 - Marcel Briguglio
 - Sudheer Salana
 - Xiaokai Yang
-- Jane Roe
-- Jane Roe
+- Grace Fiala
+- Hope Hunter
 bibliography:
 - content/manual-references.json
 date-meta: '2020-12-06'
@@ -51,9 +51,9 @@ header-includes: '<!--
 
   <meta name="citation_author" content="Xiaokai Yang" />
 
-  <meta name="citation_author" content="Jane Roe" />
+  <meta name="citation_author" content="Grace Fiala" />
 
-  <meta name="citation_author" content="Jane Roe" />
+  <meta name="citation_author" content="Hope Hunter" />
 
   <link rel="canonical" href="https://tessac2.github.io/498_NO2_pred/" />
 
@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/61fd5775a6dfd00dabf00875c55713fb12f377b9/" />
+  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/577f69b4dba10f8b87918136667118c8494608c8/" />
 
-  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/61fd5775a6dfd00dabf00875c55713fb12f377b9/" />
+  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/577f69b4dba10f8b87918136667118c8494608c8/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/61fd5775a6dfd00dabf00875c55713fb12f377b9/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/577f69b4dba10f8b87918136667118c8494608c8/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Predicting NO<sub>2</sub> concentrations
 
 <small><em>
 This manuscript
-([permalink](https://tessac2.github.io/498_NO2_pred/v/61fd5775a6dfd00dabf00875c55713fb12f377b9/))
+([permalink](https://tessac2.github.io/498_NO2_pred/v/577f69b4dba10f8b87918136667118c8494608c8/))
 was automatically generated
-from [tessac2/498_NO2_pred@61fd577](https://github.com/tessac2/498_NO2_pred/tree/61fd5775a6dfd00dabf00875c55713fb12f377b9)
+from [tessac2/498_NO2_pred@577f69b](https://github.com/tessac2/498_NO2_pred/tree/577f69b4dba10f8b87918136667118c8494608c8)
 on December 6, 2020.
 </em></small>
 
@@ -137,15 +137,15 @@ on December 6, 2020.
   <small>
   </small>
 
-+ **Jane Roe**<br>
++ **Grace Fiala**<br>
     · ![GitHub icon](images/github.svg){.inline_icon}
-    [janeroe](https://github.com/janeroe)<br>
+    [sfiala2](https://github.com/sfiala2)<br>
   <small>
   </small>
 
-+ **Jane Roe**<br>
++ **Hope Hunter**<br>
     · ![GitHub icon](images/github.svg){.inline_icon}
-    [janeroe](https://github.com/janeroe)<br>
+    [hhunter3](https://github.com/hhunter3)<br>
   <small>
   </small>
 
