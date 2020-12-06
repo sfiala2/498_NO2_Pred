@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/bab808f92a537f1468a4761243c2e462adb4f649/" />
+  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/887b35a4307163baa9e1d69bd68f349b5ada609d/" />
 
-  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/bab808f92a537f1468a4761243c2e462adb4f649/" />
+  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/887b35a4307163baa9e1d69bd68f349b5ada609d/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/bab808f92a537f1468a4761243c2e462adb4f649/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/887b35a4307163baa9e1d69bd68f349b5ada609d/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Predicting NO2 concentrations
 
 <small><em>
 This manuscript
-([permalink](https://tessac2.github.io/498_NO2_pred/v/bab808f92a537f1468a4761243c2e462adb4f649/))
+([permalink](https://tessac2.github.io/498_NO2_pred/v/887b35a4307163baa9e1d69bd68f349b5ada609d/))
 was automatically generated
-from [tessac2/498_NO2_pred@bab808f](https://github.com/tessac2/498_NO2_pred/tree/bab808f92a537f1468a4761243c2e462adb4f649)
+from [tessac2/498_NO2_pred@887b35a](https://github.com/tessac2/498_NO2_pred/tree/887b35a4307163baa9e1d69bd68f349b5ada609d)
 on December 6, 2020.
 </em></small>
 
@@ -287,7 +287,10 @@ Among the neural network models we used a combination of different features and 
 
 A regular neural network consists of an input layer, hidden layers and an output layer. We used a sequential model which consists of few layers stacked upon one another, linearly. Each layer has multiple cells and we could define the number of input cells for these hidden layers. We can also define the type of activation function for each layer.
 
-
+We used a combination of three different activation functions:
+1. Linear Activation - a linear activation uses the weights to multiply the inputs providing an output which is linearly proportional to the input. This function is also termed as no activation function as there is no further transformation being operated on the values
+2. ReLU - Rectified Linear Activation Unit - even though very similar in appearance to a linear, ReLU allows back-propagation of errors. This function always gives an output of 0 for negative values and behaves linearly for values greater than 0.
+3. Sigmoid activation -using this activation the outputs are normalized and bound between 0 and 1 but provides a smooth gradient curve and much clearer predictions
 
 
 
