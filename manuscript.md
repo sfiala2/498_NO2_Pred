@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://sfiala2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/b51317c8bb57178de19913691ac4f62847b49784/" />
+  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/c1e723555b444a8dffeb5dafc0d87aac36de9835/" />
 
-  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/b51317c8bb57178de19913691ac4f62847b49784/" />
+  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/c1e723555b444a8dffeb5dafc0d87aac36de9835/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/b51317c8bb57178de19913691ac4f62847b49784/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/c1e723555b444a8dffeb5dafc0d87aac36de9835/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Predicting NO<sub>2</sub> concentrations
 
 <small><em>
 This manuscript
-([permalink](https://sfiala2.github.io/498_NO2_pred/v/b51317c8bb57178de19913691ac4f62847b49784/))
+([permalink](https://sfiala2.github.io/498_NO2_pred/v/c1e723555b444a8dffeb5dafc0d87aac36de9835/))
 was automatically generated
-from [sfiala2/498_NO2_pred@b51317c](https://github.com/sfiala2/498_NO2_pred/tree/b51317c8bb57178de19913691ac4f62847b49784)
+from [sfiala2/498_NO2_pred@c1e7235](https://github.com/sfiala2/498_NO2_pred/tree/c1e723555b444a8dffeb5dafc0d87aac36de9835)
 on December 6, 2020.
 </em></small>
 
@@ -232,6 +232,9 @@ Because the objective of this study is to predict a single variable (NO<sub>2</s
 
 
 ## 2.2 Exploratory Data Analysis
+
+The data for this study comes from the National Spatiotemporal Exposure Surface for NO<sub>2</sub>: Monthly Scaling of a Satellite-Derived Land-Use Regression, 2000−2010, authored by Matthew J. Bechle, Dylan B. Millet, and Julian D. Marshall. The dataset has 255 observations of 134 variables: the IDs of the air quality monitors, the states in which they are located, the latitude and longitude of the monitors, the quantity of NO<sub>2</sub> observed in parts per billion, an approximation of DOMINO satellite data using the WRF-Chem model, the distance from a monitor to the coast in kilometers, the elevation of a monitor in kilometers, and several covariates about the land in the area regarding impervious surface, population, and major, residential, and total road length. 
+
 The target variable in this predictive case is NO<sub>2</sub> concentration in the continental United States. The observations from the data have a mean NO<sub>2</sub> concentration of 11.831 ppb with a standard deviation of 6.290 ppb. The NO<sub>2</sub> concentration data has a range from 0.309 to 31.016 ppb. The five highest values are considered outliers. The distribution of NO<sub>2</sub> concentration values is unimodal with a slight right skew.
 
 
@@ -242,10 +245,12 @@ The potential explanatory variables of air quality monitor IDs, states, latitude
 
 The spatially-related data of latitude, longitude, and state of air quality monitors can be best interpreted by viewing this data plotted on a map. Each observation corresponds to a unique monitoring station at a distinct longitude and latitude, so there are 255 points. Monitors in this dataset come from 43 of the 50 states in the USA, excluding Alabama, Alaska, Hawaii, Mississippi, Montana, Oregon, Nebraska, and West Virginia. Many states have just one or two monitors, while nearly half of all of the monitors are in the three states California, Texas, and Pennsylvania. Observing Figure 2.2, there are many spatial gaps in the data and little discernible correlation between position and NO<sub>2</sub> quantity.
 
+**Figure 2.2** 
 ![Figure 2.2 Map of Concentrations](images/NO2_conc_map.png)
 
 Figure 2.3 is a correlation matrix for the variables in this data set. The five land-use variables are aggregated such that each of the series of related covariates differentiated by radius are instead one column. As seen in the plot, each of the land-use variables has a moderately strong positive correlation with NO<sub>2</sub>, as well as the variable WRF+DOMINO. The impervious surfaces, major road length, residential road length, and total road length variables each have a heteroskedastic relationship with NO<sub>2</sub> with higher variability occurring when paired with larger NO<sub>2</sub> values. Each of these relationships show a stronger correlation when measured with a Spearman’s correlation as opposed to the Pearson’s correlation used in the matrix. The three road-related variables are related and highly correlated with each other. The variable of population is highly skewed and has an exponential relationship with NO<sub>2</sub>. This correlation is stronger when a log-transformed population is paired with NO<sub>2</sub>. The variables of distance to coast and truncated elevation have a very weak correlation with NO<sub>2</sub>.
 
+**Figure 2.3** 
 ![Figure 2.3 Correlation plot](images/corr_plot.png) 
 
 The relationship between NO<sub>2</sub> and each of the five land-use variables changes as the radius changes. As seen in Figure 2.3, the overall correlation is moderately strong. However, the correlation between NO<sub>2</sub> and individual columns for each variable category with differing radii generally increases as the radius increases. The impervious surface correlation is highest at a radius of 7,000 meters (&rho; = 0.794) and the four remaining land-use variables have their highest correlation at 10,000 meters: population (r = 0.721),  major road length (&rho; = 0.770), residential road length (&rho; = 0.754), and total road length (&rho; = 0.771).

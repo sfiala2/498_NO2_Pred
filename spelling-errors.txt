@@ -15,7 +15,7 @@ CNNs
 collinearity
 concentartion
 convolutes
-convolutional
+Convolutional
 covariates
 datapoints
 dataset
@@ -68,7 +68,7 @@ preduced
 preprocess
 PSO
 RandomForestRegressor
-ReLU
+ReLu
 resedential
 respirable
 RMSE
@@ -82,6 +82,7 @@ SDT
 sfiala
 Shenzen
 Sigmoid
+Spatiotemporal
 Spearman’s
 Spectroradiometer
 Sudheer
