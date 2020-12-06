@@ -11,7 +11,8 @@ BRNN
 Clarizio
 CNNs
 convolutes
-Convolutional
+convolutional
+covariates
 datapoints
 dataset
 datasets
@@ -23,6 +24,7 @@ Enebish
 fundament
 GridSearchCV
 GRU
+heteroskedastic
 homogenous
 Houly
 HPBL
@@ -53,7 +55,7 @@ ppb
 preprocess
 PSO
 RandomForestRegressor
-ReLu
+ReLU
 resedential
 respirable
 RMSE
@@ -66,6 +68,7 @@ scikit
 SDT
 Shenzen
 Sigmoid
+Spearman’s
 Spectroradiometer
 Sudheer
 sudheersalana

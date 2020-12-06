@@ -131,6 +131,10 @@ content/02.Report_Body.md:75:ppb
 content/02.Report_Body.md:75:unimodal
 content/02.Report_Body.md:79:WRF
 content/02.Report_Body.md:81:dataset
+content/02.Report_Body.md:85:covariates
+content/02.Report_Body.md:85:heteroskedastic
+content/02.Report_Body.md:85:Spearman’s
+content/02.Report_Body.md:85:WRF
 content/02.Report_Body.md:99:Artifical
 content/02.Report_Body.md:101:hyperparameters
 content/02.Report_Body.md:105:Convolutional

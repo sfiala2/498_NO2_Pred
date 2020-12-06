@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/ef0b5e15e6a2fd9c2bb29a5880cedbcb32d1d2ea/" />
+  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/9656bc9e767089ce4cc65776d0e31ec8a55c11c9/" />
 
-  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/ef0b5e15e6a2fd9c2bb29a5880cedbcb32d1d2ea/" />
+  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/9656bc9e767089ce4cc65776d0e31ec8a55c11c9/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/ef0b5e15e6a2fd9c2bb29a5880cedbcb32d1d2ea/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/9656bc9e767089ce4cc65776d0e31ec8a55c11c9/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Predicting NO2 concentrations
 
 <small><em>
 This manuscript
-([permalink](https://tessac2.github.io/498_NO2_pred/v/ef0b5e15e6a2fd9c2bb29a5880cedbcb32d1d2ea/))
+([permalink](https://tessac2.github.io/498_NO2_pred/v/9656bc9e767089ce4cc65776d0e31ec8a55c11c9/))
 was automatically generated
-from [tessac2/498_NO2_pred@ef0b5e1](https://github.com/tessac2/498_NO2_pred/tree/ef0b5e15e6a2fd9c2bb29a5880cedbcb32d1d2ea)
+from [tessac2/498_NO2_pred@9656bc9](https://github.com/tessac2/498_NO2_pred/tree/9656bc9e767089ce4cc65776d0e31ec8a55c11c9)
 on December 6, 2020.
 </em></small>
 
@@ -241,7 +241,7 @@ The spatially-related data of latitude, longitude, and state of air quality moni
 
 ![Figure 2.2 Map of Concentrations](images/NO2_conc_map.png)
 
-
+Figure 2.3 is a correlation matrix for the variables in this data set. The five land-use variables are aggregated such that each of the series of related covariates differentiated by radius are instead one column. As seen in the plot, each of the land-use variables has a moderately strong positive correlation with NO<sub>2</sub>, as well as the variable WRF+DOMINO. The impervious surfaces, major road length, residential road length, and total road length variables each have a heteroskedastic relationship with NO<sub>2</sub> with higher variability occurring when paired with larger NO<sub>2</sub> values. Each of these relationships show a stronger correlation when measured with a Spearman’s correlation as opposed to the Pearson’s correlation used in the matrix. The three road-related variables are related and highly correlated with each other. The variable of population is highly skewed and has an exponential relationship with NO<sub>2</sub>. This correlation is stronger when a log-transformed population is paired with NO<sub>2</sub>. The variables of distance to coast and truncated elevation have a very weak correlation with NO<sub>2</sub>.
 
 ![Figure 2.3 Correlation plot](images/corr_plot.png) 
 
