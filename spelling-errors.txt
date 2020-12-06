@@ -38,7 +38,7 @@ homogenous
 Houly
 HPBL
 hyperparameter
-Hyperparameters
+hyperparameters
 hyperparamters
 incoportating
 interpretability

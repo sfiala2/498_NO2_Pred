@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://sfiala2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/d92250462393b723d34ea13b535fd63e97995d43/" />
+  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/fa9c8e3f57fdbee741c28f9d9658d2988994cb1f/" />
 
-  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/d92250462393b723d34ea13b535fd63e97995d43/" />
+  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/fa9c8e3f57fdbee741c28f9d9658d2988994cb1f/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/d92250462393b723d34ea13b535fd63e97995d43/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/fa9c8e3f57fdbee741c28f9d9658d2988994cb1f/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Predicting NO<sub>2</sub> concentrations
 
 <small><em>
 This manuscript
-([permalink](https://sfiala2.github.io/498_NO2_pred/v/d92250462393b723d34ea13b535fd63e97995d43/))
+([permalink](https://sfiala2.github.io/498_NO2_pred/v/fa9c8e3f57fdbee741c28f9d9658d2988994cb1f/))
 was automatically generated
-from [sfiala2/498_NO2_pred@d922504](https://github.com/sfiala2/498_NO2_pred/tree/d92250462393b723d34ea13b535fd63e97995d43)
+from [sfiala2/498_NO2_pred@fa9c8e3](https://github.com/sfiala2/498_NO2_pred/tree/fa9c8e3f57fdbee741c28f9d9658d2988994cb1f)
 on December 6, 2020.
 </em></small>
 
@@ -323,7 +323,7 @@ In this project, majority of the models used were simple feed forward neural net
 
 2. Neural networks are simpler as compared to random forests but at the same time slightly more complex than linear regression and hence they incorporate some machine learning components
 
-We used keras, which is an opensource library of functions which allows the use of the tensorflow library for machine learning models in python. The building blocks of a neural network model such as layers, objective functions,activation functions and optimizers, are all provided by keras. 
+We used keras, which is an opensource library of functions that allows the use of the tensorflow library for machine learning models in python. The building blocks of a neural network model such as layers, objective functions,activation functions and optimizers, are all provided by keras. 
 
 A regular neural network consists of an input layer, hidden layers and an output layer. We used a sequential model which consists of few layers stacked upon one another, linearly [@https://doi.org/10.1016/S0169-7439(97)00061-0]. Each layer has multiple cells and we could define the number of input cells for these hidden layers. We can also define the type of activation function for each layer. We used an average of 3 to 5 hidden layers in our neural network models.
 
