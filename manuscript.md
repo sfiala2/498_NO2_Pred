@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/d1ef13f89f876cd4e205d7dcecac4618c0260ea6/" />
+  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/433edc3d2e6e583f52c3fd5954aab79906be4226/" />
 
-  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/d1ef13f89f876cd4e205d7dcecac4618c0260ea6/" />
+  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/433edc3d2e6e583f52c3fd5954aab79906be4226/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/d1ef13f89f876cd4e205d7dcecac4618c0260ea6/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/433edc3d2e6e583f52c3fd5954aab79906be4226/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Predicting NO2 concentrations
 
 <small><em>
 This manuscript
-([permalink](https://tessac2.github.io/498_NO2_pred/v/d1ef13f89f876cd4e205d7dcecac4618c0260ea6/))
+([permalink](https://tessac2.github.io/498_NO2_pred/v/433edc3d2e6e583f52c3fd5954aab79906be4226/))
 was automatically generated
-from [tessac2/498_NO2_pred@d1ef13f](https://github.com/tessac2/498_NO2_pred/tree/d1ef13f89f876cd4e205d7dcecac4618c0260ea6)
+from [tessac2/498_NO2_pred@433edc3](https://github.com/tessac2/498_NO2_pred/tree/433edc3d2e6e583f52c3fd5954aab79906be4226)
 on December 6, 2020.
 </em></small>
 
@@ -273,6 +273,40 @@ Random forest model in this project is created with scikit-learn RandomForestReg
 
 In conclusion, random forest is possibly not a very appropriate algorithm to make prediction in regression problems from dataset in a low-scale and a low-dimension.
 # 3. Results
+
+Figure C shows the architecture of the neural network used that achieved the best performance. 
+Many choices made regarding were governed by two main motives; reducing the complexity of the model and ensuring the model captures the entire range of concentrations in the training data. 
+Both of 
+
+
+The final model was further analyzed using two major parameters: squared error and absolute error.
+Squared error penalizes predictions further from the observed concentrations, which is beneficial for detecting outliers and anomalies in the data. 
+The squared error is also related to the root mean squared error, the measured used to determine the best model in the Kaggle competition meaning it can provide insights on the individual monitors in the training data. 
+The problem is that the loss function used was the mean squared error, meaning that only using this metric can may cause us to fail to observe other possible problems while training the data.
+Absolute error as a criterion for analysis fills these gaps in knowledge, such as bias in the training data or the geographic distribution of the error. 
+
+![Figure H. Training Data Absolute Error Histogram](images/Absolute_dis.png)
+
+Figure H  shows the distribution for the absolute error on the training data. 
+The distribution is nearly gaussian, which is expected with a large sample size.
+The distribution is also centered on 0 and has a very small skew, meaning that there is no bias in the when the model was training.
+The major difference between the distribution and a Gaussian distribution is the kurtosis.
+The kurtosis was found to be greater than 3, meaning that the data is more concentrated near the mean with some extreme outliers. 
+This is interesting because since the loss function of the model was mean squared error, these outliers should be minimized.
+
+
+![Figure M. Training Data Absolute Error Geographic Distribution](images/Absolute_map.png)
+ 
+Figure M shows that the absolute error is not spatially homogenous, with most of the outliers being in the West. 
+Further analysis shows 75% of the outliers were in contained in the Western region mostly in suburban areas outside of major cities that were surrounded by nature. 
+Another characteristic of the outliers were that they were mainly found in suburban areas near isolated major urban areas. 
+
+
+All the previous analysis was done on the training data but to ensure our model is robust, the model needs to be run on other data. 
+The model was run on 165 samples and the root mean squared error was found to be 2.925, which is lower than the root mean squared error on the training data (3.05). 
+This means that the final model is robust and can be applicable across the United States.  
+
+
 # 4. Discussion 
 
 
