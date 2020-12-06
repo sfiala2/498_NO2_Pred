@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/ff593b47b8b4180326376c28c13d43c0ca9c1625/" />
+  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/07ff5cf94fd7856b661f5d9c91e0077faa9c1704/" />
 
-  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/ff593b47b8b4180326376c28c13d43c0ca9c1625/" />
+  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/07ff5cf94fd7856b661f5d9c91e0077faa9c1704/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/ff593b47b8b4180326376c28c13d43c0ca9c1625/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/07ff5cf94fd7856b661f5d9c91e0077faa9c1704/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Predicting NO2 concentrations
 
 <small><em>
 This manuscript
-([permalink](https://tessac2.github.io/498_NO2_pred/v/ff593b47b8b4180326376c28c13d43c0ca9c1625/))
+([permalink](https://tessac2.github.io/498_NO2_pred/v/07ff5cf94fd7856b661f5d9c91e0077faa9c1704/))
 was automatically generated
-from [tessac2/498_NO2_pred@ff593b4](https://github.com/tessac2/498_NO2_pred/tree/ff593b47b8b4180326376c28c13d43c0ca9c1625)
+from [tessac2/498_NO2_pred@07ff5cf](https://github.com/tessac2/498_NO2_pred/tree/07ff5cf94fd7856b661f5d9c91e0077faa9c1704)
 on December 6, 2020.
 </em></small>
 
@@ -245,10 +245,7 @@ Figure 2.3 is a correlation matrix for the variables in this data set. The five 
 
 ![Figure 2.3 Correlation plot](images/corr_plot.png) 
 
-
-
-
-
+The relationship between NO<sub>2</sub> and each of the five land-use variables changes as the radius changes. As seen in Figure 2.3, the overall correlation is moderately strong. However, the correlation between NO<sub>2</sub> and individual columns for each variable category with differing radii generally increases as the radius increases. The impervious surface correlation is highest at a radius of 7,000 meters (rho = 0.794) and the four remaining land-use variables have their highest correlation at 10,000 meters: population (r = 0.721),  major road length (\rho = 0.770), residential road length (rho = 0.754), and total road length (rho = 0.771).
 
 ## 2.3 Model
 ### 2.3.1 Multiple Linear Regression
