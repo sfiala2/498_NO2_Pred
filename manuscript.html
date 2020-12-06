@@ -53,9 +53,9 @@
   <meta name="citation_fulltext_html_url" content="https://tessac2.github.io/498_NO2_pred/" />
   <meta name="citation_pdf_url" content="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/c0e02d1f78e1f09d2cb6eb412a299113645bd238/" />
-  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/c0e02d1f78e1f09d2cb6eb412a299113645bd238/" />
-  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/c0e02d1f78e1f09d2cb6eb412a299113645bd238/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/bab808f92a537f1468a4761243c2e462adb4f649/" />
+  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/bab808f92a537f1468a4761243c2e462adb4f649/" />
+  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/bab808f92a537f1468a4761243c2e462adb4f649/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -69,9 +69,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://tessac2.github.io/498_NO2_pred/v/c0e02d1f78e1f09d2cb6eb412a299113645bd238/">permalink</a>)
+(<a href="https://tessac2.github.io/498_NO2_pred/v/bab808f92a537f1468a4761243c2e462adb4f649/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/tessac2/498_NO2_pred/tree/c0e02d1f78e1f09d2cb6eb412a299113645bd238">tessac2/498_NO2_pred@c0e02d1</a>
+from <a href="https://github.com/tessac2/498_NO2_pred/tree/bab808f92a537f1468a4761243c2e462adb4f649">tessac2/498_NO2_pred@bab808f</a>
 on December 6, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -292,6 +292,7 @@ Largely used for classifying image and audio data, the convolutional neural netw
 1. The literature search revealed that neural network models are one of the most widely used models especially in pollution prediction problems and they performed relatively better in a large number of cases
 2. Neural networks are simpler as compared to random forests but at the same time slightly more complex than linear regression and hence they involve machine learning components</p>
 <p>Among the neural network models we used a combination of different features and hyperparameters. We used keras, which is an opensource library of functions which allows the use of the tensorflow library for machine learning models in python. The building blocks of a neural network model such as layers, objective functions,activation functions and optimizers, are all provided by keras.</p>
+<p>A regular neural network consists of an input layer, hidden layers and an output layer. We used a sequential model which consists of few layers stacked upon one another, linearly. Each layer has multiple cells and we could define the number of input cells for these hidden layers. We can also define the type of activation function for each layer.</p>
 <h3 id="random-forest">2.3.3 Random Forest</h3>
 <p>Trees and tree algorithm is among the most widely applied machine learning algorithms. It includes random forest, gradient boosting decision trees, XGBoost, etc. The fundament of trees algorithm is decision tree, which can be divided into classification tree and regression tree. In this project, the label is the observed NO<sub>2</sub> concentration, thus, regression tree algorithm can be applied to make the prediction.</p>
 <p>Random forest is a combination of tree predictors based on model aggregation ideas. It is realized by creating an ensemble of trees by generating random vectors that govern the growth of trees and letting them vote for the most popular label <span class="citation" data-cites="yp5oGc1T">[<a href="#ref-yp5oGc1T" role="doc-biblioref">11</a>]</span>.</p>

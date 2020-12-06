@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/c0e02d1f78e1f09d2cb6eb412a299113645bd238/" />
+  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/bab808f92a537f1468a4761243c2e462adb4f649/" />
 
-  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/c0e02d1f78e1f09d2cb6eb412a299113645bd238/" />
+  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/bab808f92a537f1468a4761243c2e462adb4f649/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/c0e02d1f78e1f09d2cb6eb412a299113645bd238/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/bab808f92a537f1468a4761243c2e462adb4f649/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Predicting NO2 concentrations
 
 <small><em>
 This manuscript
-([permalink](https://tessac2.github.io/498_NO2_pred/v/c0e02d1f78e1f09d2cb6eb412a299113645bd238/))
+([permalink](https://tessac2.github.io/498_NO2_pred/v/bab808f92a537f1468a4761243c2e462adb4f649/))
 was automatically generated
-from [tessac2/498_NO2_pred@c0e02d1](https://github.com/tessac2/498_NO2_pred/tree/c0e02d1f78e1f09d2cb6eb412a299113645bd238)
+from [tessac2/498_NO2_pred@bab808f](https://github.com/tessac2/498_NO2_pred/tree/bab808f92a537f1468a4761243c2e462adb4f649)
 on December 6, 2020.
 </em></small>
 
@@ -284,6 +284,11 @@ In this project, majority of our group members used simple feed forward neural n
 2. Neural networks are simpler as compared to random forests but at the same time slightly more complex than linear regression and hence they involve machine learning components
 
 Among the neural network models we used a combination of different features and hyperparameters. We used keras, which is an opensource library of functions which allows the use of the tensorflow library for machine learning models in python. The building blocks of a neural network model such as layers, objective functions,activation functions and optimizers, are all provided by keras. 
+
+A regular neural network consists of an input layer, hidden layers and an output layer. We used a sequential model which consists of few layers stacked upon one another, linearly. Each layer has multiple cells and we could define the number of input cells for these hidden layers. We can also define the type of activation function for each layer.
+
+
+
 
 
 ### 2.3.3 Random Forest

@@ -11,7 +11,7 @@ BRNN
 Clarizio
 CNNs
 convolutes
-Convolutional
+convolutional
 dataset
 datasets
 Devolpment
