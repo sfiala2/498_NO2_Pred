@@ -53,9 +53,9 @@
   <meta name="citation_fulltext_html_url" content="https://sfiala2.github.io/498_NO2_pred/" />
   <meta name="citation_pdf_url" content="https://sfiala2.github.io/498_NO2_pred/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://sfiala2.github.io/498_NO2_pred/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/7c6fa547912eaae7d197aa74e1a7e9edb205ed56/" />
-  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/7c6fa547912eaae7d197aa74e1a7e9edb205ed56/" />
-  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/7c6fa547912eaae7d197aa74e1a7e9edb205ed56/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/d03cbf94486f6f30b9d5d9266a0994491ec1b005/" />
+  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/d03cbf94486f6f30b9d5d9266a0994491ec1b005/" />
+  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/d03cbf94486f6f30b9d5d9266a0994491ec1b005/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -69,9 +69,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://sfiala2.github.io/498_NO2_pred/v/7c6fa547912eaae7d197aa74e1a7e9edb205ed56/">permalink</a>)
+(<a href="https://sfiala2.github.io/498_NO2_pred/v/d03cbf94486f6f30b9d5d9266a0994491ec1b005/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/sfiala2/498_NO2_pred/tree/7c6fa547912eaae7d197aa74e1a7e9edb205ed56">sfiala2/498_NO2_pred@7c6fa54</a>
+from <a href="https://github.com/sfiala2/498_NO2_pred/tree/d03cbf94486f6f30b9d5d9266a0994491ec1b005">sfiala2/498_NO2_pred@d03cbf9</a>
 on December 6, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -134,8 +134,8 @@ on December 6, 2020.
 <p><strong>Table 2.1 Models used in literature</strong></p>
 <table>
 <colgroup>
-<col style="width: 39%" />
-<col style="width: 60%" />
+<col style="width: 21%" />
+<col style="width: 78%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -178,11 +178,11 @@ on December 6, 2020.
 <p><strong>Table 2.2 Best models in each study</strong></p>
 <table>
 <colgroup>
-<col style="width: 21%" />
-<col style="width: 36%" />
-<col style="width: 23%" />
-<col style="width: 11%" />
-<col style="width: 7%" />
+<col style="width: 14%" />
+<col style="width: 39%" />
+<col style="width: 25%" />
+<col style="width: 12%" />
+<col style="width: 8%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -258,15 +258,15 @@ on December 6, 2020.
 <h2 id="exploratory-data-analysis">2.2 Exploratory Data Analysis</h2>
 <p>The data for this study comes from the National Spatiotemporal Exposure Surface for NO<sub>2</sub>: Monthly Scaling of a Satellite-Derived Land-Use Regression, 2000−2010, authored by Matthew J. Bechle, Dylan B. Millet, and Julian D. Marshall. The dataset has 255 observations of 134 variables: the IDs of the air quality monitors, the states in which they are located, the latitude and longitude of the monitors, the quantity of NO<sub>2</sub> observed in parts per billion, an approximation of DOMINO satellite data using the WRF-Chem model, the distance from a monitor to the coast in kilometers, the elevation of a monitor in kilometers, and several covariates about the land in the area regarding impervious surface, population, and major, residential, and total road length.</p>
 <p>The target variable in this predictive case is NO<sub>2</sub> concentration in the continental United States. The observations from the data have a mean NO<sub>2</sub> concentration of 11.831 ppb with a standard deviation of 6.290 ppb. The NO<sub>2</sub> concentration data has a range from 0.309 to 31.016 ppb. The five highest values are considered outliers. The distribution of NO<sub>2</sub> concentration values is unimodal with a slight right skew.</p>
-<p><img src="images/Histogram_NO2.png" alt="Figure 2.1 Histogram of NO2 concentrations" />
-<strong>Figure 2.1 Distribution of NOsub&gt;2</sub> Concentrations</strong></p>
+<p><strong>Figure 2.1</strong>
+<img src="images/Histogram_NO2.png" alt="Figure 2.1 Histogram of NO2 concentrations" /></p>
 <p>The potential explanatory variables of air quality monitor IDs, states, latitude, longitude, and WRF-Chem+DOMINO each exist as single columns. The variables related to land-use of impervious surfaces, population, major road length, residential road length, and total road length each have several columns quantifying these values based on the radius from the air quality monitor. The impervious surfaces, population, and major road length variables have 22 columns each based on radii ranging from 100 to 10,000 meters. The variables minor road length and total road length have 30 columns each based on radii ranging from 100 to 14,000 meters.</p>
 <p>The spatially-related data of latitude, longitude, and state of air quality monitors can be best interpreted by viewing this data plotted on a map. Each observation corresponds to a unique monitoring station at a distinct longitude and latitude, so there are 255 points. Monitors in this dataset come from 43 of the 50 states in the USA, excluding Alabama, Alaska, Hawaii, Mississippi, Montana, Oregon, Nebraska, and West Virginia. Many states have just one or two monitors, while nearly half of all of the monitors are in the three states California, Texas, and Pennsylvania. Observing Figure 2.2, there are many spatial gaps in the data and little discernible correlation between position and NO<sub>2</sub> quantity.</p>
-<p><img src="images/NO2_conc_map.png" alt="Figure 2.2 Map of Concentrations" />
-<strong>Figure 2.2 NO<sub>2</sub> Concentrations at Monitors</strong></p>
+<p><strong>Figure 2.2</strong>
+<img src="images/NO2_conc_map.png" alt="Figure 2.2 Map of Concentrations" /></p>
 <p>Figure 2.3 is a correlation matrix for the variables in this data set. The five land-use variables are aggregated such that each of the series of related covariates differentiated by radius are instead one column. As seen in the plot, each of the land-use variables has a moderately strong positive correlation with NO<sub>2</sub>, as well as the variable WRF+DOMINO. The impervious surfaces, major road length, residential road length, and total road length variables each have a heteroskedastic relationship with NO<sub>2</sub> with higher variability occurring when paired with larger NO<sub>2</sub> values. Each of these relationships show a stronger correlation when measured with a Spearman’s correlation as opposed to the Pearson’s correlation used in the matrix. The three road-related variables are related and highly correlated with each other. The variable of population is highly skewed and has an exponential relationship with NO<sub>2</sub>. This correlation is stronger when a log-transformed population is paired with NO<sub>2</sub>. The variables of distance to coast and truncated elevation have a very weak correlation with NO<sub>2</sub>.</p>
-<p><img src="images/corr_plot.png" alt="Figure 2.3 Correlation plot" />
-<strong>Figure 2.3 Correlation Matrix of Variables</strong></p>
+<p><strong>Figure 2.3 Correlation Matrix of Variables</strong>
+<img src="images/corr_plot.png" alt="Figure 2.3 Correlation plot" /></p>
 <p>The relationship between NO<sub>2</sub> and each of the five land-use variables changes as the radius changes. As seen in Figure 2.3, the overall correlation is moderately strong. However, the correlation between NO<sub>2</sub> and individual columns for each variable category with differing radii generally increases as the radius increases. The impervious surface correlation is highest at a radius of 7,000 meters (ρ = 0.794) and the four remaining land-use variables have their highest correlation at 10,000 meters: population (r = 0.721), major road length (ρ = 0.770), residential road length (ρ = 0.754), and total road length (ρ = 0.771).</p>
 <h2 id="model">2.3 Model</h2>
 <h3 id="multiple-linear-regression">2.3.1 Multiple Linear Regression</h3>
@@ -494,6 +494,7 @@ The distribution is also centered on 0 and has a very small skew, meaning that t
 The major difference between the distribution and a Gaussian distribution is the kurtosis.</p>
 <p>The kurtosis was found to be greater than 3, meaning that the data is more concentrated near the mean with some extreme outliers.
 This is interesting because since the loss function of the model was mean squared error, these outliers should be minimized.</p>
+<p><strong>Table 3.2 5 Number Summary and mean of Absolute Error</strong></p>
 <table>
 <thead>
 <tr class="header">
@@ -532,22 +533,24 @@ This is interesting because since the loss function of the model was mean square
 </tr>
 </tbody>
 </table>
+<p>Table 3.2 shows that the the majority of monitors predicted value is within 2 ppb of the actual value, with outliers being greater than 5.99 and less than -6.45.</p>
 <figure>
 <img src="images/Absolute_map.png" alt="" /><figcaption>Figure 3.2. Training Data Absolute Error Geographic Distribution</figcaption>
 </figure>
 <p>Figure 3.2 shows that the absolute error is not spatially homogenous, with most of the outliers being in the West.
-As root mean squared error is the major perfromance metric of our model the extreme outliers are of particular note becuase they are weighted heavily in this metric.</p>
-<p>Further analysis shows 75% of the outliers were in contained in the Western region mostly in suburban areas outside of major cities that were surrounded by nature.
-Another characteristic of the outliers were that they were mainly found in suburban areas near isolated major urban areas.</p>
+As root mean squared error is the major perfromance metric of our model the extreme outliers are of particular note becuase they are weighted heavily in this metric. A</p>
 <p>All the previous analysis was done on the training data but to ensure our model is robust, the model needs to be run on other data.
 The model was run on 165 samples and the root mean squared error was found to be 2.925, which is lower than the root mean squared error on the training data (3.05).
 This means that the final model is robust and can be applicable across the United States.</p>
+<figure>
+<img src="images/NO2_test.png" alt="" /><figcaption>Figure 3.3. Testing Data NO<sub>2</sub> Concentrations</figcaption>
+</figure>
 <h1 id="discussion">4. Discussion</h1>
 <h3 id="models-presented">4.1 Models Presented</h3>
 <p>Our team presented six different models for predicting NO<sub>2</sub> concentrations with varying degrees of complexity: one multiple linear regression, four neural networks, and one random forest model. The models were compared based on their test data predictions’ root mean square errors. This found that, while most models preduced comparable results, a neural network model was the best predictor of NO<sub>2</sub> concentrations and was the most applicable model. Multiple linear regression models were tested, but despite having a relatively low root mean square error, the heteroscedacity of the data makes for a non-applicable model. A random forest model is also presented. The model was a good predictor on the validation data, but showed poor performance on testing data, likely due to the continuous dependent variable. The random forest model was found to not be appropriate for predicting NO<sub>2</sub> concentrations.</p>
 <h3 id="model-performance">4.2 Model Performance</h3>
-<p>Every model tested resulted in a relatively high root mean square error when compared to the mean value of the data (11.83 ppb). This may be due to a combination of factors. The model parameters could be better fine-tuned; however, we attribute much of this error to the size of the dataset used for training the model.</p>
-<p>The full dataset contained less than 300 observations across the United States. These observations were not evenly distributed across the US, resulting in some states with no data and a handful of states with many data points. The data used also had very few observations of high NO<sub>2</sub> concentrations available for training the model. The best performing neural network model created using this data was a poor predictor of NO<sub>2</sub> concentrations in western states.</p>
+<p>Every model tested resulted in a relatively high root mean square error when compared to the mean value of the data (11.83 ppb). This may be due to a combination of factors. The model parameters could be better fine-tuned; however, we attribute much of this error to the size of the dataset used for training the model. Analysis on the dataset shows that the outliers accounted for approximately 40% of the standard error, meaning that the absolute error may be a better metric to evaluate the model performance.</p>
+<p>The full dataset contained less than 500 observations across the United States. These observations were not evenly distributed across the US, resulting in some states with no data and a handful of states with many data points. The data used also had very few observations of high NO<sub>2</sub> concentrations available for training the model. The best performing neural network model created using this data was a poor predictor of NO<sub>2</sub> concentrations in western states.</p>
 <p>The best performing model showed no evidence of overfitting. The model performed slightly better on the testing data than it did on the validation data, supporting the conclusion that the model is robust.</p>
 <h3 id="limitations-and-future-research">4.3 Limitations and Future Research</h3>
 <p>Still, further research is needed. This model is only applicable to some regions within the United States. More land use and satellite information in other US regions is required to improve the model’s accuracy.</p>
@@ -617,7 +620,7 @@ Zachary C. Lipton, John Berkowitz, Charles Elkan<br />
 <div id="ref-mxBOsI7j">
 <p>13. <strong>Fundamentals of Recurrent Neural Network (RNN) and Long Short-Term Memory (LSTM) Network</strong> <br />
 Alex Sherstinsky<br />
-<em>Physica D: Nonlinear Phenomena</em> (2020-03) <a href="http://arxiv.org/abs/1808.03314">http://arxiv.org/abs/1808.03314</a> <br />
+<em>arXiv:1808.03314 [cs, stat]</em> (2020-05-31) <a href="http://arxiv.org/abs/1808.03314">http://arxiv.org/abs/1808.03314</a> <br />
 DOI: <a href="https://doi.org/10.1016/j.physd.2019.132306">10.1016/j.physd.2019.132306</a></p>
 </div>
 <div id="ref-Ictu6Zb3">
