@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://sfiala2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/69c07cbc4ef99108bb423c6a21784607de99beca/" />
+  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/3f55bf6a0950f5f433edfb7e1c8c5ab4aa63ebfb/" />
 
-  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/69c07cbc4ef99108bb423c6a21784607de99beca/" />
+  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/3f55bf6a0950f5f433edfb7e1c8c5ab4aa63ebfb/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/69c07cbc4ef99108bb423c6a21784607de99beca/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/3f55bf6a0950f5f433edfb7e1c8c5ab4aa63ebfb/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Predicting NO<sub>2</sub> concentrations
 
 <small><em>
 This manuscript
-([permalink](https://sfiala2.github.io/498_NO2_pred/v/69c07cbc4ef99108bb423c6a21784607de99beca/))
+([permalink](https://sfiala2.github.io/498_NO2_pred/v/3f55bf6a0950f5f433edfb7e1c8c5ab4aa63ebfb/))
 was automatically generated
-from [sfiala2/498_NO2_pred@69c07cb](https://github.com/sfiala2/498_NO2_pred/tree/69c07cbc4ef99108bb423c6a21784607de99beca)
+from [sfiala2/498_NO2_pred@3f55bf6](https://github.com/sfiala2/498_NO2_pred/tree/3f55bf6a0950f5f433edfb7e1c8c5ab4aa63ebfb)
 on December 6, 2020.
 </em></small>
 
@@ -200,7 +200,7 @@ The models in each of these studies is summarized in Table 2.1 below:
 **Table 2.1 Models used in literature** 
 
 |PM<sub>2.5</sub>|Both PM<sub>2.5</sub> and AQI|
-|-----|------------------|
+|------------------|------------------|
 |**MLR** (Xu et al, 2018; Enebish et al, 2020; Chen et al, 2018) | **RF** (Chen et al, 2018; Xu et al, 2018; Singh et al, 2013; Liu et al, 2019; Enebish et al, 2020)|
 | **LASSO** (Xu et al, 2018) |  **Neural Network** (Azid et al, 2014; Xu et al, 2018, Gu et al, 2020) |
 | **MARS** (Xu et al, 2018; Enebish et al, 2020 ) | **SVM**  (Xu et al, 2018; Gu et al, 2020; Liu et al, 2019; Enebish et al, 2020; Singh et al, 2013) | 
@@ -214,15 +214,15 @@ As we can see above more models were used to predict PM<sub>2.5</sub> than AQI, 
 **Table 2.2 Best models in each study**
 
 | Study | Target Prediction | Best Model | RMSE | R<sup>2</sup> |
-|-------|-------------------|------------|------|----|
-|Chen et al (2018)[@https://doi.org/10.1016/j.scitotenv.2018.04.251] |Annual average PM2.5|Random Forest|6.9|0.86|
-|Xu et al (2018)[@https://doi.org/10.1016/j.envpol.2018.08.029] |Monthly average PM2.5|Cubist|2.6|0.48|
-|Enebish et al (2020)[@https://doi.org/10.1038/s41370-020-0257-8] |Annual average PM2.5|Random Forest|12.9|0.96|
+|-------------------|-------------------|------------|------|----|
+|Chen et al (2018)[@https://doi.org/10.1016/j.scitotenv.2018.04.251] |Annual average PM<sub>2.5</sub>|Random Forest|6.9|0.86|
+|Xu et al (2018)[@https://doi.org/10.1016/j.envpol.2018.08.029] |Monthly average PM<sub>2.5</sub>|Cubist|2.6|0.48|
+|Enebish et al (2020)[@https://doi.org/10.1038/s41370-020-0257-8] |Annual average PM<sub>2.5</sub>|Random Forest|12.9|0.96|
 |Azid et al (2014)[@https://doi.org/10.1007/s11270-014-2063-1] |Daily AQI|Neural network|10.0|0.62|
 |Gu et al (2020)[@https://doi.org/10.1007/s00521-019-04492-3] |Daily AQI|SVM|n.a.|n.a|
 |Singh et al (2013)[@https://doi.org/10.1016/j.atmosenv.2013.08.023] |Daily AQI|Random Forest|4.4|0.92|
 |Liu et al (2019)[@https://doi.org/10.3390/app9194069] |Hourly AQI|SVM|7.7|0.98|
-|Liu et al (2019)[@https://doi.org/10.3390/app9194069] |Houly NOx|Random Forest|83.7|0.84|
+|Liu et al (2019)[@https://doi.org/10.3390/app9194069] |Houly NO<sub>x</sub>|Random Forest|83.7|0.84|
 
 Table 2.2 demonstrates that RF models tend to provide the most accurate prediction when considering a single pollutant, with 3/4 studies looking at PM<sub>2.5</sub> or NO<sub>x</sub> having RF as the best predicting model. When examining AQI, SVM models tend to work best, with 2/4 studies finding SVM provides the best prediction. 
 
@@ -301,15 +301,10 @@ The multiple regression model presented, although comparable to other models use
 Artificial neural networks are based on the design philosophy of the neural connections in our brain. They consist of a group of interconnected nodes joined through edges. The edges transmit the signals (which in a machine learning model would be a real number) from one neuron to another just like a synapse functions in a brain. A typical neural network has many layers. Each layer is composed of a set of neurons and each layer transforms and processes data in a different way based on the hyperparameters of the model.
 
 There are different kinds of neural networks. The most commonly used of which are:
-
   1. Feed Forward Neural Network
-  
   2. Convolutional Neural Network (CNN)
-  
   3. Recurrent Neural Network (RNN)
-  
   4. Long-short term memory neural network (LSTM)
-  
   5. Gated Recurrent Unit (GRU)
 
 There are several other advanced ones such as General Adversarial Networks, Auto-encoders and Deep Belief Neural networks. However, we restrict our discussion to the five types listed above.
@@ -330,9 +325,7 @@ GRU is similar to LSTM with the exception that an output gate is absent. Instead
 
 #### 2.3.2.5 Neural networks used in this project
 In this project, majority of the models used were simple feed forward neural network models. This decision was based on two factors:
-
     1. The literature search revealed that neural network models are one of the most widely used models especially in pollution prediction problems
-    
     2. Neural networks are simpler as compared to random forests but at the same time slightly more complex than linear regression and hence they incorporate some machine learning components
 
 We used keras, which is an opensource library of functions which allows the use of the tensorflow library for machine learning models in python. The building blocks of a neural network model such as layers, objective functions,activation functions and optimizers, are all provided by keras. 
@@ -405,7 +398,7 @@ The inputs used in a neural network determines the effectiveness of the model; a
 
 Table 3.1 shows the 7 inputs used in the model.  The use of a single length of each input parameter was done to avoid dependencies and the reducing the complexity of the model. The one exception is major road parameter, which is directly imputed once and indirectly added in the total road parameter; this was done due to cars being a major localized source of NO2. The first 3 inputs are considered point inputs, describing the monitor location and unique monitor atttributes; whereas the last 4 inputs are dependent on the surronding area and is defined by the buffer length around the area. This may cause areas dense with monitors may have similar inputs but different NO2 concentrations; to avoid this complication buffer length are kept a small as possible. Another reason to keep the buffer areas small is that some monitors in the training data are close to the United States border, because this outside the scope of this project any parameter outside the continental United States is not counted towards the total (ie. a major road connecting a US city to a mexican city would only have the highway in the United States count aganist the major roads parameter). This may cause some errors in the trainng of the nueral network, so the inputs try to minimize this case.   
 
-```
+'''
 train_dataset = tf.data.Dataset.from_tensor_slices((x_dependent_train,y_ind_train)).batch(batch_size=255)
 
 
@@ -431,7 +424,7 @@ model.compile(
 )
 
 history = model.fit(train_dataset,epochs= 10000)
-```
+'''
 
 Figure C shows the architecture of the neural network used that achieved the best performance. 
 Many choices made regarding were governed by two main motives; reducing the complexity of the model and ensuring the model captures the entire range of concentrations in the training data. 

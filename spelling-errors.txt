@@ -37,7 +37,7 @@ homogenous
 Houly
 HPBL
 hyperparameter
-Hyperparameters
+hyperparameters
 incoportating
 interpretability
 Kaggle
@@ -54,7 +54,6 @@ MODIS
 MSE
 NAAQS
 NDVI
-NOx
 nueral
 oberseved
 opensource
@@ -68,7 +67,7 @@ preduced
 preprocess
 PSO
 RandomForestRegressor
-ReLu
+ReLU
 resedential
 respirable
 RMSE
@@ -81,7 +80,7 @@ scikit
 SDT
 sfiala
 Shenzen
-sigmoid
+Sigmoid
 Spatiotemporal
 Spearman’s
 Spectroradiometer
