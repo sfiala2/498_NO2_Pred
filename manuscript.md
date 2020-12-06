@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/bd3f26fdc4957d11ad078aee124ad094695fad32/" />
+  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/2553e610a77807ec2052fa0f9d962c4427289bb1/" />
 
-  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/bd3f26fdc4957d11ad078aee124ad094695fad32/" />
+  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/2553e610a77807ec2052fa0f9d962c4427289bb1/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/bd3f26fdc4957d11ad078aee124ad094695fad32/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/2553e610a77807ec2052fa0f9d962c4427289bb1/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Predicting NO2 concentrations
 
 <small><em>
 This manuscript
-([permalink](https://tessac2.github.io/498_NO2_pred/v/bd3f26fdc4957d11ad078aee124ad094695fad32/))
+([permalink](https://tessac2.github.io/498_NO2_pred/v/2553e610a77807ec2052fa0f9d962c4427289bb1/))
 was automatically generated
-from [tessac2/498_NO2_pred@bd3f26f](https://github.com/tessac2/498_NO2_pred/tree/bd3f26fdc4957d11ad078aee124ad094695fad32)
+from [tessac2/498_NO2_pred@2553e61](https://github.com/tessac2/498_NO2_pred/tree/2553e610a77807ec2052fa0f9d962c4427289bb1)
 on December 6, 2020.
 </em></small>
 
@@ -187,7 +187,7 @@ Gu et al (2020) focuses on predicting the AQI in Shenzen, China [@https://doi.or
 
 Singh et al (2013) used ensemble learning methods to predict air quality index in Lucknow, India [@https://doi.org/10.1016/j.atmosenv.2013.08.023]. They trained four different models: single decision tree (SDT), decision tree forest (DTF), decision treeboost (DTB) and SVM. While decision trees can be different from random forest, it appears in Singh’s methodology that the DTF and DTB involve randomization with replacement from the training dataset to create separate models, which are then used to predict the entire data from the subsets. This is consistent with RF models, as essentially RF are ensemble decision trees. The parameters included in the model are 5 years of data on: daily air quality measurements (SO<sub>2</sub>, NO<sub>2</sub>, suspended particulate matter and respirable suspended particulate matter) meteorology (air temperature, relative humidity, wind speed, evaporation, and daily sunshine period).  The DTF and DTB models outperformed the SVM models. DTB performed the best, with a RMSE of 4.38 (R<sup>2</sup> = 0.92).
 
-Liu et al (2019) developed SVM and RF models to predict hourly AQI in Beijing, China and hourly NO<sub>x</sub> in an Italian city [@https://doi.org/10.3390/app9194069]. Parameters included historical hourly averaged AQI concentrations for PM<sub>2.5</sub>, O<sub>3</sub>, SO<sub>2</sub>, PM<sub>10</sub> and NO<sub>2</sub> in Beijing (five years), and hourly averaged responses for CO, non-methane hydrocarbons, benzene, NO<sub>x</sub> and NO<sub>2</sub> in the Italian city (1 year). The SVM performed better in predicting AQI in Beijing with a RMSE 7.666 (R2=0.9776), but the RF model performed better in predicting NO<sub>x</sub> concentrations in the Italian city (RMSE = 83.67, R2 = 0.8401).  
+Liu et al (2019) developed SVM and RF models to predict hourly AQI in Beijing, China and hourly NO<sub>x</sub> in an Italian city [@https://doi.org/10.3390/app9194069]. Parameters included historical hourly averaged AQI concentrations for PM<sub>2.5</sub>, O<sub>3</sub>, SO<sub>2</sub>, PM<sub>10</sub> and NO<sub>2</sub> in Beijing (five years), and hourly averaged responses for CO, non-methane hydrocarbons, benzene, NO<sub>x</sub> and NO<sub>2</sub> in the Italian city (1 year). The SVM performed better in predicting AQI in Beijing with a RMSE 7.666 (R<sup>2</sup>=0.9776), but the RF model performed better in predicting NO<sub>x</sub> concentrations in the Italian city (RMSE = 83.67, R<sup>2</sup> = 0.8401).  
 
 ## 2.1.3 Comparison of PM2.5 and AQI/API studies
 The main difference between the PM<sub>2.5</sub> and the AQI studies is that studies examining PM<sub>2.5</sub> tended to only examine one pollutant, whereas AQI studies consisted of measuring and modeling a number of different pollutants. Therefore, some AQI models were more interested in classification than predicting a specific pollutant spatially or temporally. As a result, different parameters tended to be included in the model depending on if it was predicting PM<sub>2.5</sub> or AQI. For example, meteorological data tended to be included in PM<sub>2.5</sub> studies, but not in studies examining API/AQI.  Additionally, different types models tended to perform best depending on the target prediction. 
