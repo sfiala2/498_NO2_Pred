@@ -53,9 +53,9 @@
   <meta name="citation_fulltext_html_url" content="https://tessac2.github.io/498_NO2_pred/" />
   <meta name="citation_pdf_url" content="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/2aa232441ef797cdc49f0048b267afb4236f2312/" />
-  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/2aa232441ef797cdc49f0048b267afb4236f2312/" />
-  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/2aa232441ef797cdc49f0048b267afb4236f2312/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/65b3be6885bab3f455bdd31fe56be62e5a8417c9/" />
+  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/65b3be6885bab3f455bdd31fe56be62e5a8417c9/" />
+  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/65b3be6885bab3f455bdd31fe56be62e5a8417c9/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -69,9 +69,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://tessac2.github.io/498_NO2_pred/v/2aa232441ef797cdc49f0048b267afb4236f2312/">permalink</a>)
+(<a href="https://tessac2.github.io/498_NO2_pred/v/65b3be6885bab3f455bdd31fe56be62e5a8417c9/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/tessac2/498_NO2_pred/tree/2aa232441ef797cdc49f0048b267afb4236f2312">tessac2/498_NO2_pred@2aa2324</a>
+from <a href="https://github.com/tessac2/498_NO2_pred/tree/65b3be6885bab3f455bdd31fe56be62e5a8417c9">tessac2/498_NO2_pred@65b3be6</a>
 on December 6, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -258,6 +258,9 @@ on December 6, 2020.
 <p>The target variable in this predictive case is NO2 concentration in the continental United States. The observations from the data have a mean NO2 concentration of 11.831 ppb with a standard deviation of 6.290 ppb. The NO2 concentration data has a range from 0.309 to 31.016 ppb. The five highest values are considered outliers. The distribution of NO2 concentration values is unimodal with a slight right skew.
 <img src="images/Histogram_NO2.png" alt="Figure 2.1 Histogram of NO2 concentrations" />
 <img src="images/corr_plot.png" alt="Figure 2.2 Correlation plot" /></p>
+<figure>
+<img src="images/NO2_conc_map.png" alt="" /><figcaption>Figure 2.3 Map of Concentrations</figcaption>
+</figure>
 <h2 id="model">2.3 Model</h2>
 <h3 id="multiple-linear-regression">2.3.1 Multiple Linear Regression</h3>
 <p>-&gt; Grace add here</p>
@@ -285,8 +288,8 @@ Largely used for classifying image and audio data, the convolutional neural netw
 <p>Variable selection and feature engineering are very important in data preprocess of random forest. The two main objectives are to find variables highly related to the response variable, and to find a small number of variables sufficient to a good prediction of the response variable<span class="citation" data-cites="IRmeZSsV">[<a href="#ref-IRmeZSsV" role="doc-biblioref">11</a>]</span>.</p>
 <p>Based on previous exploratory data analysis, the raw dataset contains valuable land-use variables in series including impervious surfaces, population, major road length, residential road length, and total road length within different buffers. It also include elevation, distance to coast, latitude, longitude, linear combinations of satellite data and WRF-Chem output. The variables within their series are highly correlated, so a few representative ones should be selected out based on the second criteria mentioned before. Here we select one for each kind of land-use variables. It is interesting that high correlations have been found between some of these land-use variables, like road lengths. Thus, we only selected the road length having the highest relationship with the variable to be predicted. Latitude and longitude are binned and one-hot coded. Around 20% of the raw data were selected out for prediction validation.</p>
 <p>Random forest model in this project is created with scikit-learn RandomForestRegressor library. GridSearchCV was imported to conduct hyperparameter optimization. The model generally get a MSE around 3.2 in the validation data. However, on the test data it did not show a good performance (MES = 4.2). The first reason might be that random forest algorithm perform worse on regression problems than on classification problems since it cannot give a continuous prediction. It is also weak on predicting values with a magnitudes beyond the train dataset, meaning that it cannot confidently handle noise or outliers. It prefers high dimensional, large-scale data, however, in this project the data is in a relatively low scale.</p>
-<p>In conclusion, random forest is possibly not a very appropriate algorithm to make prediction in regression problems from dataset in a low-scale and a low-dimension.
-# 3. Results</p>
+<p>In conclusion, random forest is possibly not a very appropriate algorithm to make prediction in regression problems from dataset in a low-scale and a low-dimension.</p>
+<h1 id="results">3. Results</h1>
 <p>Figure C shows the architecture of the neural network used that achieved the best performance.
 Many choices made regarding were governed by two main motives; reducing the complexity of the model and ensuring the model captures the entire range of concentrations in the training data.
 Both of</p>

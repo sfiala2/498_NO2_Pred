@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/2aa232441ef797cdc49f0048b267afb4236f2312/" />
+  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/65b3be6885bab3f455bdd31fe56be62e5a8417c9/" />
 
-  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/2aa232441ef797cdc49f0048b267afb4236f2312/" />
+  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/65b3be6885bab3f455bdd31fe56be62e5a8417c9/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/2aa232441ef797cdc49f0048b267afb4236f2312/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/65b3be6885bab3f455bdd31fe56be62e5a8417c9/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Predicting NO2 concentrations
 
 <small><em>
 This manuscript
-([permalink](https://tessac2.github.io/498_NO2_pred/v/2aa232441ef797cdc49f0048b267afb4236f2312/))
+([permalink](https://tessac2.github.io/498_NO2_pred/v/65b3be6885bab3f455bdd31fe56be62e5a8417c9/))
 was automatically generated
-from [tessac2/498_NO2_pred@2aa2324](https://github.com/tessac2/498_NO2_pred/tree/2aa232441ef797cdc49f0048b267afb4236f2312)
+from [tessac2/498_NO2_pred@65b3be6](https://github.com/tessac2/498_NO2_pred/tree/65b3be6885bab3f455bdd31fe56be62e5a8417c9)
 on December 6, 2020.
 </em></small>
 
@@ -235,6 +235,10 @@ The target variable in this predictive case is NO2 concentration in the continen
 ![Figure 2.1 Histogram of NO2 concentrations](images/Histogram_NO2.png)
 ![Figure 2.2 Correlation plot](images/corr_plot.png) 
 
+![Figure 2.3 Map of Concentrations](images/NO2_conc_map.png)
+
+
+
 ## 2.3 Model
 ### 2.3.1 Multiple Linear Regression
 -> Grace add here
@@ -278,6 +282,7 @@ Based on previous exploratory data analysis, the raw dataset contains valuable l
 Random forest model in this project is created with scikit-learn RandomForestRegressor library. GridSearchCV was imported to conduct hyperparameter optimization. The model generally get a MSE around 3.2 in the validation data. However, on the test data it did not show a good performance (MES = 4.2). The first reason might be that random forest algorithm perform worse on regression problems than on classification problems since it cannot give a continuous prediction. It is also weak on predicting values with a magnitudes beyond the train dataset, meaning that it cannot confidently handle noise or outliers. It prefers high dimensional, large-scale data, however, in this project the data is in a relatively low scale. 
 
 In conclusion, random forest is possibly not a very appropriate algorithm to make prediction in regression problems from dataset in a low-scale and a low-dimension.
+
 # 3. Results
 
 Figure C shows the architecture of the neural network used that achieved the best performance. 
