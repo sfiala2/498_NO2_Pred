@@ -1,4 +1,5 @@
 acorss
+activations
 albedo
 AOD
 AQI
@@ -10,7 +11,7 @@ BRNN
 Clarizio
 CNNs
 convolutes
-convolutional
+Convolutional
 dataset
 DTB
 DTF
@@ -26,6 +27,7 @@ hyperparameters
 janeroe
 Liu
 LSTM
+LSTMs
 marcelbriguglio
 MLR
 MODIS
@@ -39,18 +41,22 @@ ppb
 preprocess
 PSO
 RandomForestRegressor
+ReLu
 RMSE
 RNN
+RNNs
 RSPM
 Salana
 SAPSO
 scikit
 SDT
 Shenzen
+Sigmoid
 SPM
 Sudheer
 sudheersalana
 SVM
+Tanh
 tessac
 treeboost
 tropospheric
