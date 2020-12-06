@@ -11,7 +11,7 @@ BRNN
 Clarizio
 CNNs
 convolutes
-convolutional
+Convolutional
 dataset
 datasets
 Devolpment
@@ -29,6 +29,7 @@ hyperparameter
 hyperparameters
 janeroe
 Kaggle
+keras
 kurtosis
 Liu
 LSTM
@@ -40,6 +41,8 @@ MSE
 NAAQS
 NDVI
 NOx
+opensource
+optimizers
 overfit
 overfitting
 perceptron
@@ -63,6 +66,7 @@ Sudheer
 sudheersalana
 SVM
 Tanh
+tensorflow
 tessac
 treeboost
 tropospheric

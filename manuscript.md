@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/3d26890fcef64a6b13d7deae162e94645ccac94a/" />
+  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/c0e02d1f78e1f09d2cb6eb412a299113645bd238/" />
 
-  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/3d26890fcef64a6b13d7deae162e94645ccac94a/" />
+  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/c0e02d1f78e1f09d2cb6eb412a299113645bd238/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/3d26890fcef64a6b13d7deae162e94645ccac94a/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/c0e02d1f78e1f09d2cb6eb412a299113645bd238/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Predicting NO2 concentrations
 
 <small><em>
 This manuscript
-([permalink](https://tessac2.github.io/498_NO2_pred/v/3d26890fcef64a6b13d7deae162e94645ccac94a/))
+([permalink](https://tessac2.github.io/498_NO2_pred/v/c0e02d1f78e1f09d2cb6eb412a299113645bd238/))
 was automatically generated
-from [tessac2/498_NO2_pred@3d26890](https://github.com/tessac2/498_NO2_pred/tree/3d26890fcef64a6b13d7deae162e94645ccac94a)
+from [tessac2/498_NO2_pred@c0e02d1](https://github.com/tessac2/498_NO2_pred/tree/c0e02d1f78e1f09d2cb6eb412a299113645bd238)
 on December 6, 2020.
 </em></small>
 
@@ -277,6 +277,13 @@ These neural networks are used to predict the temporal trend of the data.In thes
 
 #### 2.3.2.3 LSTM
 LSTMs are a type of RNN which solve the common problems that RNNs face, that is their inability to efficiently handle short-term memory over a lengthy series of steps. LSTMs solve this problem using a memory cell and gating units and consists of a set of gates called input, output and forget.The input gate is responsible for monitoring and deciding the kind and quantity of data that is allowed to enter the cell, the memory gate is responsible for deciding the proportion of data that should be 'forgotten' and which information is useless and to be discarded. Finally, the output gate is responsible for deciding the amount of data that is passed as output from the cell.
+
+#### 2.3.2.5 Neural networks used in this project
+In this project, majority of our group members used simple feed forward neural network models. This decision was based on two reasons:
+1. The literature search revealed that neural network models are one of the most widely used models especially in pollution prediction problems and they performed relatively better in a large number of cases
+2. Neural networks are simpler as compared to random forests but at the same time slightly more complex than linear regression and hence they involve machine learning components
+
+Among the neural network models we used a combination of different features and hyperparameters. We used keras, which is an opensource library of functions which allows the use of the tensorflow library for machine learning models in python. The building blocks of a neural network model such as layers, objective functions,activation functions and optimizers, are all provided by keras. 
 
 
 ### 2.3.3 Random Forest
