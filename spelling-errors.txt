@@ -8,6 +8,7 @@ AQI
 atttributes
 Azid
 Bechle
+becuase
 Briguglio
 BRNN
 choosen
@@ -38,7 +39,7 @@ homogenous
 Houly
 HPBL
 hyperparameter
-hyperparameters
+Hyperparameters
 hyperparamters
 incoportating
 interpretability
@@ -65,6 +66,7 @@ overfit
 overfits
 overfitting
 perceptron
+perfromance
 ppb
 preduced
 preprocess

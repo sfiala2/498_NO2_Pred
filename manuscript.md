@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://sfiala2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/fa9c8e3f57fdbee741c28f9d9658d2988994cb1f/" />
+  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/cca22f1d853188b484d48c9b063b62299586ea8f/" />
 
-  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/fa9c8e3f57fdbee741c28f9d9658d2988994cb1f/" />
+  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/cca22f1d853188b484d48c9b063b62299586ea8f/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/fa9c8e3f57fdbee741c28f9d9658d2988994cb1f/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/cca22f1d853188b484d48c9b063b62299586ea8f/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Predicting NO<sub>2</sub> concentrations
 
 <small><em>
 This manuscript
-([permalink](https://sfiala2.github.io/498_NO2_pred/v/fa9c8e3f57fdbee741c28f9d9658d2988994cb1f/))
+([permalink](https://sfiala2.github.io/498_NO2_pred/v/cca22f1d853188b484d48c9b063b62299586ea8f/))
 was automatically generated
-from [sfiala2/498_NO2_pred@fa9c8e3](https://github.com/sfiala2/498_NO2_pred/tree/fa9c8e3f57fdbee741c28f9d9658d2988994cb1f)
+from [sfiala2/498_NO2_pred@cca22f1](https://github.com/sfiala2/498_NO2_pred/tree/cca22f1d853188b484d48c9b063b62299586ea8f)
 on December 6, 2020.
 </em></small>
 
@@ -449,13 +449,27 @@ Figure 3.1  shows the distribution for the absolute error on the training data.
 The distribution is nearly gaussian, which is expected with a large sample size.
 The distribution is also centered on 0 and has a very small skew, meaning that there is no bias in the when the model was training.
 The major difference between the distribution and a Gaussian distribution is the kurtosis.
+
 The kurtosis was found to be greater than 3, meaning that the data is more concentrated near the mean with some extreme outliers. 
 This is interesting because since the loss function of the model was mean squared error, these outliers should be minimized.
+
+|Parameter| Value|
+|-----|------------------|
+| mean | 0.002|
+|Standard Deviation| 3.056 |
+| minimum |  -10.976| 
+| 25%| -1.973|
+| 50% | -0.206|
+| 75% |1.514 |
+| maximum | 11.994 |
+
 
 
 ![Figure 3.2. Training Data Absolute Error Geographic Distribution](images/Absolute_map.png)
  
 Figure 3.2 shows that the absolute error is not spatially homogenous, with most of the outliers being in the West. 
+As root mean squared error is the major perfromance metric of our model the extreme outliers are of particular note becuase they are weighted heavily in this metric.
+
 Further analysis shows 75% of the outliers were in contained in the Western region mostly in suburban areas outside of major cities that were surrounded by nature. 
 Another characteristic of the outliers were that they were mainly found in suburban areas near isolated major urban areas. 
 
