@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/df63c1e6ecfdf528094097ac13dc7c91edef8511/" />
+  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/4cd6665267bcdb874530bfe40cb30db67da872ea/" />
 
-  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/df63c1e6ecfdf528094097ac13dc7c91edef8511/" />
+  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/4cd6665267bcdb874530bfe40cb30db67da872ea/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/df63c1e6ecfdf528094097ac13dc7c91edef8511/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/4cd6665267bcdb874530bfe40cb30db67da872ea/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Predicting NO2 concentrations
 
 <small><em>
 This manuscript
-([permalink](https://tessac2.github.io/498_NO2_pred/v/df63c1e6ecfdf528094097ac13dc7c91edef8511/))
+([permalink](https://tessac2.github.io/498_NO2_pred/v/4cd6665267bcdb874530bfe40cb30db67da872ea/))
 was automatically generated
-from [tessac2/498_NO2_pred@df63c1e](https://github.com/tessac2/498_NO2_pred/tree/df63c1e6ecfdf528094097ac13dc7c91edef8511)
+from [tessac2/498_NO2_pred@4cd6665](https://github.com/tessac2/498_NO2_pred/tree/4cd6665267bcdb874530bfe40cb30db67da872ea)
 on December 6, 2020.
 </em></small>
 
@@ -254,7 +254,7 @@ In conclusion, random forest is possibly not a very appropriate algorithm to mak
 # 4. Discussion 
 
 
-[@Breiman2001]: doi:10.1023/A:1010933404324
+
 [@Genuer2010]: doi:10.1016/j.patrec.2010.03.014
 
 
