@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/f0597cc3a61d3c966e527c8bcf43fbff24d62d10/" />
+  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/d25c31a5b77f2918735fb922fd08b46f2bd21b0e/" />
 
-  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/f0597cc3a61d3c966e527c8bcf43fbff24d62d10/" />
+  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/d25c31a5b77f2918735fb922fd08b46f2bd21b0e/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/f0597cc3a61d3c966e527c8bcf43fbff24d62d10/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/d25c31a5b77f2918735fb922fd08b46f2bd21b0e/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Predicting NO2 concentrations
 
 <small><em>
 This manuscript
-([permalink](https://tessac2.github.io/498_NO2_pred/v/f0597cc3a61d3c966e527c8bcf43fbff24d62d10/))
+([permalink](https://tessac2.github.io/498_NO2_pred/v/d25c31a5b77f2918735fb922fd08b46f2bd21b0e/))
 was automatically generated
-from [tessac2/498_NO2_pred@f0597cc](https://github.com/tessac2/498_NO2_pred/tree/f0597cc3a61d3c966e527c8bcf43fbff24d62d10)
+from [tessac2/498_NO2_pred@d25c31a](https://github.com/tessac2/498_NO2_pred/tree/d25c31a5b77f2918735fb922fd08b46f2bd21b0e)
 on December 6, 2020.
 </em></small>
 
@@ -179,9 +179,6 @@ Xu et al (2018) likewise considered a number of machine learning models for PM2.
  
 Enebish et al (2020) considered 6 different machine learning models for PM2.5 prediction in Mongolia: 1) RF, 2) gradient boosting, 3) support vector machine (SVM) with a radial basis kernel, 4) multivariate adaptive regression splines (MARS), 5) generalized linear model with elastic net penalties (a type of MLR), and 6) generalized additive model. These models were run for annual data, cold season and warm season. Parameters considered were air pollution monitoring data, meteorology, land use and population. Across all time periods, the RF had the best R2 and RMSE values. Over the entire period using the hold-out test set, RF had a RMSE of 12.92 (R2 = 0.96), and the cold season and warm season had RMSE of 21.23 (R2 = 0.92) and 7.44 (R2 = 0.84), respectively. 
 
-A common limitation of all three studies is the volume of missing data. In Chen et al (2018), the model had only two years of ground-based measurements to train the model on (2014-2016), and then predicted PM2.5 concentrations for a ten year period (2005 to 2014). Xu et al, 2018 also discussed the challenge of missing data, averaging hourly and daily measurements where available to monthly concentrations to use in model development. Finally Enebish et al, 2020 discussed there being few air quality monitoring stations and insufficient data to well represent the high seasonal variability of PM2.5 concentrations. 
-
-Additionally, all studies considered meteorology when constructing the machine learning model. The dataset in our study does not include meteorology, potentially leaving out an important predictive factor. 
 
 ### 2.1.2 AQI/API
 Azid et al (2014) used a multilayered perceptron feed-forward artificial neural network model to predict API, using daily measurements of NO2, SO2, CO, PM10 and O3 over a period of 7 years in Malaysia. The best RMSE and R2 occurred when the hidden nodes were set to 6, and were 0.618 and 10.017, respectively. 
@@ -192,14 +189,12 @@ Liu et al (2019) developed SVM and RF models to predict hourly AQI in Beijing, C
 
 Singh et al (2013) used ensemble learning methods to predict air quality index in Lucknow, India. They trained four different models: single decision tree (SDT), decision tree forest (DTF), decision treeboost (DTB) and SVM. While decision trees can be different from random forest, it appears in Singh’s methodology that the DTF and DTB involve randomization with replacement from the training dataset to create separate models, which are then used to predict the entire data from the subsets. This is consistent with RF models--essentially RF are ensemble decision trees. The parameters included in the model are 5 years of data on: daily air quality measurements (SO2, NO2, SPM and RSPM) meteorology (air temperature,T(C), relative humidity, RH (%), wind speed, WS(km h-1), evaporation (mm), and daily sunshine period, SS (h)).  The DTF and DTB models outperformed the SVM models. DTB performed the best, with a RMSE of 4.38 (R2 = 0.92).
 
-Similar to the papers examining PM2.5 concentrations some of these papers also discussed the limitations due to limited data. For example, Gu et al (2020) only used pollution data from one year within one region in China, and Liu et al (2019) used pollution data from one Italian city over one year.
-
-However, unlike the PM2.5 studies, many of the API/AQI studies were also interested in classification, and determining which pollutant contributes the most to API/AQI, rather than examining the role meteorology or other factors have on predicting the ambient concentrations of a certain pollutant. This means these studies were more likely to pick areas with suitable air pollutant concentration data to detect patterns between a particular pollutant and AQI. 
-
-Another difference from the PM2.5 studies is that only one AQI study included meteorology in the parameters of the model (Singh et al, 2019). This is because these studies were looking for patterns between ambient concentrations of certain pollutants and API/AQI, rather than necessarily predicting air quality in relation to other environmental factors. 
-
 ## 2.1.3 Comparison of PM2.5 and AQI/API studies
-The main difference between the PM2.5 and the AQI studies is that studies examining PM2.5 tended to only examine one pollutant, whereas AQI studies consisted of measuring and modeling a number of different pollutants. Therefore, some AQI models were more interested in classification than predicting a specific pollutant spatially or temporally. As a result, different parameters tended to be included in the model depending on if it was predicting PM2.5 or AQI. Additionally, different models tended to perform best depending on the target prediction. 
+The main difference between the PM2.5 and the AQI studies is that studies examining PM2.5 tended to only examine one pollutant, whereas AQI studies consisted of measuring and modeling a number of different pollutants. Therefore, some AQI models were more interested in classification than predicting a specific pollutant spatially or temporally. As a result, different parameters tended to be included in the model depending on if it was predicting PM2.5 or AQI. For example, meteorological data tended to be included in PM2.5 studies, but not in studies examining API/AQI.  Additionally, different types models tended to perform best depending on the target prediction. 
+
+A common limitation of all of the studies is the volume of missing data. In Chen et al (2018), the model had only two years of ground-based measurements to train the model on (2014-2016), and then predicted PM2.5 concentrations for a ten year period (2005 to 2014). Xu et al, 2018 also discussed the challenge of missing data, averaging hourly and daily measurements where available to monthly concentrations to use in model development. Enebish et al, 2020 discussed there being few air quality monitoring stations and insufficient data to well represent the high seasonal variability of PM2.5 concentrations. Additionally, Gu et al (2020) only used pollution data from one year within one region in China, and Liu et al (2019) used pollution data from one Italian city over one year.
+
+Additionally, all studies considered meteorology when constructing the machine learning model. The dataset in our study does not include meteorology, potentially leaving out an important predictive factor. 
 
 The models in each of these studies is summarized in Table 2.1 below: 		
 **Table 2.1** 
@@ -238,8 +233,25 @@ Because the objective of this study is to predict a single variable (NO2 concent
 ### 2.3.1 Multiple Linear Regression
 ### 2.3.2 Neural Networks
 ### 2.3.3 Random Forest
+Trees and tree algorithm is among the most widely applied machine learning algorithms. It includes random forest, gradient boosting decision trees, XGBoost, etc. The fundament of trees algorithm is decision tree, which can be divided into classification tree and regression tree. In this project, the label is the observed NO<sub>2</sub> concentration, thus, regression tree algorithm can be applied to make the prediction.
+
+Random forest is a combination of tree predictors based on model aggregation ideas. It is realized by creating an ensemble of trees by generating random vectors that govern the growth of trees and letting them vote for the most popular label [@Breiman2001]. 
+
+Random forest have the advantages of low overfit, low noise affect. However, for random forest regression,  a relatively large number of features are required to reduce the test set error[@Breiman2001].
+
+Variable selection and feature engineering are very important in data preprocess of random forest. The two main objectives are to find variables highly related to the response variable, and to find a small number of variables sufficient to a good prediction of the response variable[@Genuer2010].
+
+Based on previous exploratory data analysis, the raw dataset contains valuable land-use variables in series including impervious surfaces, population, major road length, residential road length, and total road length within different buffers. It also include elevation, distance to coast, latitude, longitude, linear combinations of satellite data and WRF-Chem output. The variables within their series are highly correlated, so a few representative ones should be selected out based on the second criteria mentioned before. Here we select one for each kind of land-use variables. It is interesting that high correlations have been found between some of these land-use variables, like road lengths. Thus, we only selected the road length having the highest relationship with the variable to be predicted. Latitude and longitude are binned and one-hot coded. Around 20% of the raw data were selected out for prediction validation.
+
+Random forest model in this project is created with scikit-learn RandomForestRegressor library. GridSearchCV was imported to conduct hyperparameter optimization. The model generally get a MSE around 3.2 in the validation data. However, on the test data it did not show a good performance (MES = 4.2). The first reason might be that random forest algorithm perform worse on regression problems than on classification problems since it cannot give a continuous prediction. It is also weak on predicting values with a magnitudes beyond the train dataset, meaning that it cannot confidently handle noise or outliers. It prefers high dimensional, large-scale data, however, in this project the data is in a relatively low scale. 
+
+In conclusion, random forest is possibly not a very appropriate algorithm to make prediction in regression problems from dataset in a low-scale and a low-dimension.
 # 3. Results
 # 4. Discussion 
+
+
+[@Breiman2001]: doi:10.1023/A:1010933404324
+[@Genuer2010]: doi:10.1016/j.patrec.2010.03.014
 
 
 ## References {.page_break_before}

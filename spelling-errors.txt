@@ -10,8 +10,11 @@ DTB
 DTF
 EDA
 Enebish
+fundament
+GridSearchCV
 Houly
 HPBL
+hyperparameter
 janeroe
 Liu
 microg
@@ -21,12 +24,16 @@ MSE
 NAAQS
 NDVI
 NOx
+overfit
 perceptron
 ppb
+preprocess
 PSO
+RandomForestRegressor
 RMSE
 RSPM
 SAPSO
+scikit
 SDT
 Shenzen
 SPM
@@ -34,6 +41,7 @@ SVM
 tessac
 treeboost
 tropospheric
+WRF
 WS
 XGBoost
 Xu
