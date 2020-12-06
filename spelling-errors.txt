@@ -12,12 +12,11 @@ Clarizio
 CNNs
 collinearity
 convolutes
-convolutional
+Convolutional
 covariates
 datapoints
 dataset
 datasets
-decribed
 Devolpment
 DTB
 DTF
