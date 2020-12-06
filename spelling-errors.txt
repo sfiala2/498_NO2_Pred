@@ -12,11 +12,12 @@ Clarizio
 CNNs
 collinearity
 convolutes
-convolutional
+Convolutional
 covariates
 datapoints
 dataset
 datasets
+decribed
 Devolpment
 DTB
 DTF
@@ -32,7 +33,7 @@ homogenous
 Houly
 HPBL
 hyperparameter
-hyperparameters
+Hyperparameters
 janeroe
 Kaggle
 keras

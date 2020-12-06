@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/edcd8c5c14c7986a2b02b1be0d54b5de6885bfda/" />
+  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/9d898efaf68e1f3f2e5e7f0788db5348f3cf446e/" />
 
-  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/edcd8c5c14c7986a2b02b1be0d54b5de6885bfda/" />
+  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/9d898efaf68e1f3f2e5e7f0788db5348f3cf446e/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/edcd8c5c14c7986a2b02b1be0d54b5de6885bfda/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/9d898efaf68e1f3f2e5e7f0788db5348f3cf446e/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Predicting NO2 concentrations
 
 <small><em>
 This manuscript
-([permalink](https://tessac2.github.io/498_NO2_pred/v/edcd8c5c14c7986a2b02b1be0d54b5de6885bfda/))
+([permalink](https://tessac2.github.io/498_NO2_pred/v/9d898efaf68e1f3f2e5e7f0788db5348f3cf446e/))
 was automatically generated
-from [tessac2/498_NO2_pred@edcd8c5](https://github.com/tessac2/498_NO2_pred/tree/edcd8c5c14c7986a2b02b1be0d54b5de6885bfda)
+from [tessac2/498_NO2_pred@9d898ef](https://github.com/tessac2/498_NO2_pred/tree/9d898efaf68e1f3f2e5e7f0788db5348f3cf446e)
 on December 6, 2020.
 </em></small>
 
@@ -161,9 +161,9 @@ test commit on abstract
 
 NO<sub>2</sub> is defined by the U.S. Environmental Protection Agency (EPA) as a criteria air pollutant, meaning it poses a risk to human and environmental health.  The primary National Ambient Air Quality Standard (NAAQS) for NO<sub>2</sub> is set at a 53 ppb annual average [@https://www.epa.gov/no2-pollution/primary-national-ambient-air-quality-standards-naaqs-nitrogen-dioxide]. NO<sub>2</sub> can cause respiratory irritation and can aggravate respiratory diseases such as asthma [@https://www.epa.gov/no2-pollution/basic-information-about-no2#What%20is%20NO2]. NO<sub>2</sub> can also react with other chemicals in the atmosphere to form both particulate matter (PM) and tropospheric ozone (O<sub>3</sub>) (US EPA, n.d., B). PM and O<sub>3</sub> are also criteria air pollutants and are harmful to human health. NO<sub>2</sub> also contributes to the formation of acid rain, smog, and nutrient pollution in coastal waters [@https://www.epa.gov/no2-pollution/basic-information-about-no2#What%20is%20NO2]. The primary source of NO2 emissions is fossil fuel combustion, particularly from traffic and power plants [@https://www.epa.gov/no2-pollution/basic-information-about-no2#What%20is%20NO2]. 
 
-Therefore, understanding and predicting the spatial variability of NO<sub>2</sub> emissions is of great importance to public health. However, prediction of air quality can be complicated due to the number of factors that affect local air quality, ranging from meteorology to land use. Machine learning models are a useful tool to interpret and find relationships in complex data. 
+Therefore, understanding and predicting the spatial variability of NO<sub>2</sub> emissions is of great importance to public health. Monitoring air quality can be a difficult task, as monitored data varies in availability by geographic region. Bechle et al (2015) explores the usage of satellite data and GIS derived land use characteristics to better understand NO<sub>2</sub> concentrations and air quality in regions without air quality monitors [@https://doi.org/10.1021/acs.est.5b02882]. This research incorporated WRF-Chem modeled DOMINO satellite column and surface estimates of NO<sub>2</sub> concentrations to create 132 monthly NO<sub>2</sub> concentration estimates based on scaled yearly land use regression data. The resulting dataset consisted of observed concentrations at 255 monitored sites across the United States, land usage at 22 different radii from each site, and estimated NO<sub>2</sub> concentrations based on the developed model. 
 
-Monitoring air quality can be a difficult task, as monitored data varies in availability by geographic region. Bechle et al (2015) explores the usage of satellite data and GIS derived land use characteristics to better understand NO<sub>2</sub> concentrations and air quality in regions without air quality monitors [@https://doi.org/10.1021/acs.est.5b02882]. This research incorporated WRF-Chem modeled DOMINO satellite column and surface estimates of NO<sub>2</sub> concentrations to create 132 monthly NO<sub>2</sub> concentration estimates based on scaled yearly land use regression data. The resulting dataset consisted of observed concentrations at 255 monitored sites across the United States, land usage at 22 different radii from each site, and estimated NO<sub>2</sub> concentrations based on the developed model. 
+As decribed above, prediction of air quality can be complicated due to the number of factors that affect local air quality. While this study focused on using land-use regression to create a model, there are a variety of modeling options that can be used to predict air quality. Machine learning models are a particularly useful tool to interpret and find relationships in complex data. 
 
 This report proposes a machine learning model to predict NO<sub>2</sub> concentrations spatially based on data provided by Bechle et al (2015). First, a literature review was undertaken to understand what machine learning models have typically performed well in predicting air quality. Next, an exploratory data analysis (EDA) was performed on the Bechle et al (2015) dataset. Finally, multiple linear regression, neural network and random forest models were built and results were compared to see which method had the lowest mean-squared error (MSE). 
 
@@ -286,9 +286,7 @@ The model fits the data well for lower NO<sub>2</sub> concentrations. However, t
 
 ![Figure 2.3.1 Linear Model Fit](images/mlr_fit.PNG)
 
-Overall, the model was a fair predictor of NO<sub>2</sub> concentrations, with an R<sup>2</sup> value of 0.775. Of the models presented, it had the second lowest root mean square error (3.08) when applied to the test data. However, this model is not appropriate for the data it is predicting due to the fact that the data exhibits heteroscedacity, meaning that the variance of errors is not constant. This violates this assumption needed for using a linear model, and as a result the predictions are less accurate. Further, building a regression model based on aggregated land use columns resulted in multiple predictions for each monitor. These predictions at each monitor were similar and an average value was taken. However, this is not a good practice for predicting values with precision. Various MLR models with non-aggregated columns were tested, but the model built on aggregated data outperformed in all tests. 
-
-The multiple regression model presented, although comparable to other models used, is not an accurate, appropriate model for predicting NO<sub>2</sub> concentrations based on the available data. 
+Overall, the model was a fair predictor of NO<sub>2</sub> concentrations, with an R<sup>2</sup> value of 0.775. Of the models presented, it had the second lowest root mean square error (3.08) when applied to the test data. However, this model is not appropriate for the data it is predicting due to the fact that the data exhibits heteroscedacity, meaning that the variance of errors is not constant. This violates this assumption needed for using a linear model, and as a result the predictions are less accurate. 
 
 ### 2.3.2 Neural Networks
 Artifical neural networks are based on the design philosophy of the neural connections in our brain. They consist of a group of nodes interconnected to each other through edges. The edges transmit the signals (which in a machine learning model would be a real number) from one neuron to another just like a synapse functions in a brain.
