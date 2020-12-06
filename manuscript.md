@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/155a1f566cc8d88594377dc4c25864805c49aa42/" />
+  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/9254203f8bcff81b0fad3a830ddaac947df8a616/" />
 
-  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/155a1f566cc8d88594377dc4c25864805c49aa42/" />
+  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/9254203f8bcff81b0fad3a830ddaac947df8a616/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/155a1f566cc8d88594377dc4c25864805c49aa42/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/9254203f8bcff81b0fad3a830ddaac947df8a616/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Predicting NO2 concentrations
 
 <small><em>
 This manuscript
-([permalink](https://tessac2.github.io/498_NO2_pred/v/155a1f566cc8d88594377dc4c25864805c49aa42/))
+([permalink](https://tessac2.github.io/498_NO2_pred/v/9254203f8bcff81b0fad3a830ddaac947df8a616/))
 was automatically generated
-from [tessac2/498_NO2_pred@155a1f5](https://github.com/tessac2/498_NO2_pred/tree/155a1f566cc8d88594377dc4c25864805c49aa42)
+from [tessac2/498_NO2_pred@9254203](https://github.com/tessac2/498_NO2_pred/tree/9254203f8bcff81b0fad3a830ddaac947df8a616)
 on December 6, 2020.
 </em></small>
 
@@ -290,8 +290,13 @@ A regular neural network consists of an input layer, hidden layers and an output
 We used a combination of three different activation functions:
 1. Linear Activation - a linear activation uses the weights to multiply the inputs providing an output which is linearly proportional to the input. This function is also termed as no activation function as there is no further transformation being operated on the values
 2. ReLU - Rectified Linear Activation Unit - even though very similar in appearance to a linear, ReLU allows back-propagation of errors. This function always gives an output of 0 for negative values and behaves linearly for values greater than 0.
-3. Sigmoid activation -using this activation the outputs are normalized and bound between 0 and 1 but provides a smooth gradient curve and much clearer predictions
+3. Sigmoid activation - by implementing this activation function, the outputs are normalized and bound between 0 and 1 but provides a smooth gradient curve and much clearer predictions
 
+Further, the compile function is used to compile the model created and takes in a variety of arguments. We used an Adam optimizer. Adam optimizer uses the combination of squared and moving average gradients to individually compute the learning rates for each parameter. As such it provides the benefits of both RMSProp and Stochastic Gradient Descent.
+
+We chose a learning rate of 0.0005 to 0.005. Learning rate is an essential hyperparameter that influences the weights of a model and the extent to which they are updated. A very low learning rate could lead to a model being very slow and eventually unable to reach the desired result and at the same time, a very high learning rate could make worsen the model by making it unstable and inaccurate and eventually lead to inferior quality of weights.
+
+Both absolute error and root mean squared error were chosen as the loss functions.
 
 
 ### 2.3.3 Random Forest

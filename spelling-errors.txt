@@ -53,6 +53,7 @@ RandomForestRegressor
 ReLu
 respirable
 RMSE
+RMSProp
 RNN
 RNNs
 Salana
