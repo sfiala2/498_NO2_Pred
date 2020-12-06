@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://sfiala2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/abf2ed6641f66c508bb1e6ebaaef8c873bb45b7f/" />
+  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/7c6fa547912eaae7d197aa74e1a7e9edb205ed56/" />
 
-  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/abf2ed6641f66c508bb1e6ebaaef8c873bb45b7f/" />
+  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/7c6fa547912eaae7d197aa74e1a7e9edb205ed56/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/abf2ed6641f66c508bb1e6ebaaef8c873bb45b7f/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/7c6fa547912eaae7d197aa74e1a7e9edb205ed56/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Predicting NO<sub>2</sub> concentrations
 
 <small><em>
 This manuscript
-([permalink](https://sfiala2.github.io/498_NO2_pred/v/abf2ed6641f66c508bb1e6ebaaef8c873bb45b7f/))
+([permalink](https://sfiala2.github.io/498_NO2_pred/v/7c6fa547912eaae7d197aa74e1a7e9edb205ed56/))
 was automatically generated
-from [sfiala2/498_NO2_pred@abf2ed6](https://github.com/sfiala2/498_NO2_pred/tree/abf2ed6641f66c508bb1e6ebaaef8c873bb45b7f)
+from [sfiala2/498_NO2_pred@7c6fa54](https://github.com/sfiala2/498_NO2_pred/tree/7c6fa547912eaae7d197aa74e1a7e9edb205ed56)
 on December 6, 2020.
 </em></small>
 
@@ -238,7 +238,7 @@ The data for this study comes from the National Spatiotemporal Exposure Surface 
 The target variable in this predictive case is NO<sub>2</sub> concentration in the continental United States. The observations from the data have a mean NO<sub>2</sub> concentration of 11.831 ppb with a standard deviation of 6.290 ppb. The NO<sub>2</sub> concentration data has a range from 0.309 to 31.016 ppb. The five highest values are considered outliers. The distribution of NO<sub>2</sub> concentration values is unimodal with a slight right skew.
 
 ![Figure 2.1 Histogram of NO2 concentrations](images/Histogram_NO2.png)
-**Figure 2.1** 
+**Figure 2.1 Distribution of NOsub>2</sub> Concentrations** 
 
 The potential explanatory variables of air quality monitor IDs, states, latitude, longitude, and WRF-Chem+DOMINO each exist as single columns. The variables related to land-use of impervious surfaces, population, major road length, residential road length, and total road length each have several columns quantifying these values based on the radius from the air quality monitor. The impervious surfaces, population, and major road length variables have 22 columns each based on radii ranging from 100 to 10,000 meters. The variables minor road length and total road length have 30 columns each based on radii ranging from 100 to 14,000 meters.
 

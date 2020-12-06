@@ -39,7 +39,7 @@ homogenous
 Houly
 HPBL
 hyperparameter
-Hyperparameters
+hyperparameters
 hyperparamters
 incoportating
 interpretability
@@ -57,6 +57,7 @@ MODIS
 MSE
 NAAQS
 NDVI
+NOsub
 NOx
 nueral
 oberseved
