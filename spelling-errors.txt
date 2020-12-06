@@ -29,7 +29,7 @@ homogenous
 Houly
 HPBL
 hyperparameter
-Hyperparameters
+hyperparameters
 janeroe
 Kaggle
 keras

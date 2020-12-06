@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/c54ca70eb317dc1949ef01cca6f12ae784f7888c/" />
+  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/4a413fd75d5edccb9376a4fdfa997f29f45d3695/" />
 
-  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/c54ca70eb317dc1949ef01cca6f12ae784f7888c/" />
+  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/4a413fd75d5edccb9376a4fdfa997f29f45d3695/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/c54ca70eb317dc1949ef01cca6f12ae784f7888c/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/4a413fd75d5edccb9376a4fdfa997f29f45d3695/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Predicting NO2 concentrations
 
 <small><em>
 This manuscript
-([permalink](https://tessac2.github.io/498_NO2_pred/v/c54ca70eb317dc1949ef01cca6f12ae784f7888c/))
+([permalink](https://tessac2.github.io/498_NO2_pred/v/4a413fd75d5edccb9376a4fdfa997f29f45d3695/))
 was automatically generated
-from [tessac2/498_NO2_pred@c54ca70](https://github.com/tessac2/498_NO2_pred/tree/c54ca70eb317dc1949ef01cca6f12ae784f7888c)
+from [tessac2/498_NO2_pred@4a413fd](https://github.com/tessac2/498_NO2_pred/tree/4a413fd75d5edccb9376a4fdfa997f29f45d3695)
 on December 6, 2020.
 </em></small>
 
@@ -252,7 +252,16 @@ Figure 2.3 is a correlation matrix for the variables in this data set. The five 
 
 ## 2.3 Model
 ### 2.3.1 Multiple Linear Regression
-Multiple linear regression (MLR) is a method of predicting a dependent variable using linear combinations of independent variables. MLR is widely used in statistical research because it is easy to interpret and understand. Additionally, multiple regression can also often result in a model with results comparable to that of a more complex model, such as a neural network or random forest model. 
+Multiple linear regression (MLR) is a method of predicting a dependent variable using linear combinations of of any number of independent variables. MLR is widely used in statistical research because it is easy to interpret and understand. Additionally, multiple regression can also often result in a model with results comparable to that of a more complex model, such as a neural network or random forest model. The modeled equation takes the form of the following generalized equation:
+
+$$ y = /beta <sub>0</sub> + /beta <sub>1</sub> /times x <sub>1</sub> +  /beta <sub>2</sub> /times x <sub>2</sub> + . . . +  /beta <sub>i</sub> /times x <sub>i</sub> $$
+
+Where
+y = The dependent variable to be predicted
+$/beta <sub>0</sub>$ = The constant intercept 
+$/beta <sub>i</sub> /times x <sub>i</sub>$ = The i-th constant multiplied by the i-th term 
+
+
 
 ### 2.3.2 Neural Networks
 Artifical neural networks are based on the design philosophy of the neural connections in our brain. They consist of a group of nodes interconnected to each other through edges. The edges transmit the signals (which in a machine learning model would be a real number) from one neuron to another just like a synapse functions in a brain.
