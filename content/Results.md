@@ -3,7 +3,7 @@
 
 Figure (code) shows the architecture of the neural network used that achieved the best performance. 
 Many choices made regarding were governed by two main motives; reducing the complexity of the model and ensuring the model captures the entire range of concentrations in the training data. 
-The reduction of complexity in the model was important due to many the 
+Both of 
 
 
 The final model was further analyzed using two major parameters: squared error and absolute error.
