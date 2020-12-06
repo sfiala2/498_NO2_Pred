@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://sfiala2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/3f55bf6a0950f5f433edfb7e1c8c5ab4aa63ebfb/" />
+  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/e8a2ea56f3c23fed79e8fd70836a09c414b319cc/" />
 
-  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/3f55bf6a0950f5f433edfb7e1c8c5ab4aa63ebfb/" />
+  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/e8a2ea56f3c23fed79e8fd70836a09c414b319cc/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/3f55bf6a0950f5f433edfb7e1c8c5ab4aa63ebfb/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/e8a2ea56f3c23fed79e8fd70836a09c414b319cc/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Predicting NO<sub>2</sub> concentrations
 
 <small><em>
 This manuscript
-([permalink](https://sfiala2.github.io/498_NO2_pred/v/3f55bf6a0950f5f433edfb7e1c8c5ab4aa63ebfb/))
+([permalink](https://sfiala2.github.io/498_NO2_pred/v/e8a2ea56f3c23fed79e8fd70836a09c414b319cc/))
 was automatically generated
-from [sfiala2/498_NO2_pred@3f55bf6](https://github.com/sfiala2/498_NO2_pred/tree/3f55bf6a0950f5f433edfb7e1c8c5ab4aa63ebfb)
+from [sfiala2/498_NO2_pred@e8a2ea5](https://github.com/sfiala2/498_NO2_pred/tree/e8a2ea56f3c23fed79e8fd70836a09c414b319cc)
 on December 6, 2020.
 </em></small>
 
@@ -301,11 +301,11 @@ The multiple regression model presented, although comparable to other models use
 Artificial neural networks are based on the design philosophy of the neural connections in our brain. They consist of a group of interconnected nodes joined through edges. The edges transmit the signals (which in a machine learning model would be a real number) from one neuron to another just like a synapse functions in a brain. A typical neural network has many layers. Each layer is composed of a set of neurons and each layer transforms and processes data in a different way based on the hyperparameters of the model.
 
 There are different kinds of neural networks. The most commonly used of which are:
-  1. Feed Forward Neural Network
-  2. Convolutional Neural Network (CNN)
-  3. Recurrent Neural Network (RNN)
-  4. Long-short term memory neural network (LSTM)
-  5. Gated Recurrent Unit (GRU)
+  &1. Feed Forward Neural Network
+  &2. Convolutional Neural Network (CNN)
+  &3. Recurrent Neural Network (RNN)
+  &4. Long-short term memory neural network (LSTM)
+  &5. Gated Recurrent Unit (GRU)
 
 There are several other advanced ones such as General Adversarial Networks, Auto-encoders and Deep Belief Neural networks. However, we restrict our discussion to the five types listed above.
 
@@ -325,17 +325,17 @@ GRU is similar to LSTM with the exception that an output gate is absent. Instead
 
 #### 2.3.2.5 Neural networks used in this project
 In this project, majority of the models used were simple feed forward neural network models. This decision was based on two factors:
-    1. The literature search revealed that neural network models are one of the most widely used models especially in pollution prediction problems
-    2. Neural networks are simpler as compared to random forests but at the same time slightly more complex than linear regression and hence they incorporate some machine learning components
+    &1. The literature search revealed that neural network models are one of the most widely used models especially in pollution prediction problems
+    &2. Neural networks are simpler as compared to random forests but at the same time slightly more complex than linear regression and hence they incorporate some machine learning components
 
 We used keras, which is an opensource library of functions which allows the use of the tensorflow library for machine learning models in python. The building blocks of a neural network model such as layers, objective functions,activation functions and optimizers, are all provided by keras. 
 
 A regular neural network consists of an input layer, hidden layers and an output layer. We used a sequential model which consists of few layers stacked upon one another, linearly [@https://doi.org/10.1016/S0169-7439(97)00061-0]. Each layer has multiple cells and we could define the number of input cells for these hidden layers. We can also define the type of activation function for each layer. We used an average of 3 to 5 hidden layers in our neural network models.
 
 We used a combination of three different activation functions:
-   1. Linear Activation - a linear activation uses the weights to multiply the inputs providing an output which is linearly proportional to the input. This function is also termed as no activation function as there is no further transformation being operated on the values.
-   2. ReLU - Rectified Linear Activation Unit - even though very similar in appearance to a linear function, ReLU allows back-propagation of errors. This function always gives an output of 0 for negative values and behaves linearly for values greater than 0.
-   3. Sigmoid activation - by implementing this activation function, the outputs are normalized and bound between 0 and 1. A sigmoid function provides a smooth gradient curve and much clearer predictions.
+   &1. Linear Activation - a linear activation uses the weights to multiply the inputs providing an output which is linearly proportional to the input. This function is also termed as no activation function as there is no further transformation being operated on the values.
+   &2. ReLU - Rectified Linear Activation Unit - even though very similar in appearance to a linear function, ReLU allows back-propagation of errors. This function always gives an output of 0 for negative values and behaves linearly for values greater than 0.
+   &3. Sigmoid activation - by implementing this activation function, the outputs are normalized and bound between 0 and 1. A sigmoid function provides a smooth gradient curve and much clearer predictions.
 
 Further, the compile function is used to compile the model created, which takes in a variety of arguments. We used an Adam optimizer which uses the combination of squared and moving average gradients to individually compute the learning rates for each parameter. As such it provides the benefits of both RMSProp and Stochastic Gradient Descent.
 
