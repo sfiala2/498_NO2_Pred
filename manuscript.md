@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/f4307af2cf737937bd8f3b882c2571f8a7b2f0d8/" />
+  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/61fd5775a6dfd00dabf00875c55713fb12f377b9/" />
 
-  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/f4307af2cf737937bd8f3b882c2571f8a7b2f0d8/" />
+  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/61fd5775a6dfd00dabf00875c55713fb12f377b9/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/f4307af2cf737937bd8f3b882c2571f8a7b2f0d8/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/61fd5775a6dfd00dabf00875c55713fb12f377b9/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Predicting NO<sub>2</sub> concentrations
 
 <small><em>
 This manuscript
-([permalink](https://tessac2.github.io/498_NO2_pred/v/f4307af2cf737937bd8f3b882c2571f8a7b2f0d8/))
+([permalink](https://tessac2.github.io/498_NO2_pred/v/61fd5775a6dfd00dabf00875c55713fb12f377b9/))
 was automatically generated
-from [tessac2/498_NO2_pred@f4307af](https://github.com/tessac2/498_NO2_pred/tree/f4307af2cf737937bd8f3b882c2571f8a7b2f0d8)
+from [tessac2/498_NO2_pred@61fd577](https://github.com/tessac2/498_NO2_pred/tree/61fd5775a6dfd00dabf00875c55713fb12f377b9)
 on December 6, 2020.
 </em></small>
 
@@ -232,9 +232,6 @@ Because the objective of this study is to predict a single variable (NO<sub>2</s
 
 
 ## 2.2 Exploratory Data Analysis
-
-The data for this study comes from the National Spatiotemporal Exposure Surface for NO2: Monthly Scaling of a Satellite-Derived Land-Use Regression, 2000−2010, authored by Matthew J. Bechle, Dylan B. Millet, and Julian D. Marshall. The dataset has 255 observations of 134 variables: the IDs of the air quality monitors, the states in which they are located, the latitude and longitude of the monitors, the quantity of NO2 observed in parts per billion, an approximation of satellite data from a linear combination of WRF_Chem and DOMINO models, the distance from a monitor to the coast in kilometers, the elevation of a monitor in kilometers, and several covariates about the land in the area regarding impervious surface, population, and major, residential, and total road length. 
-
 The target variable in this predictive case is NO<sub>2</sub> concentration in the continental United States. The observations from the data have a mean NO<sub>2</sub> concentration of 11.831 ppb with a standard deviation of 6.290 ppb. The NO<sub>2</sub> concentration data has a range from 0.309 to 31.016 ppb. The five highest values are considered outliers. The distribution of NO<sub>2</sub> concentration values is unimodal with a slight right skew.
 
 
@@ -245,12 +242,10 @@ The potential explanatory variables of air quality monitor IDs, states, latitude
 
 The spatially-related data of latitude, longitude, and state of air quality monitors can be best interpreted by viewing this data plotted on a map. Each observation corresponds to a unique monitoring station at a distinct longitude and latitude, so there are 255 points. Monitors in this dataset come from 43 of the 50 states in the USA, excluding Alabama, Alaska, Hawaii, Mississippi, Montana, Oregon, Nebraska, and West Virginia. Many states have just one or two monitors, while nearly half of all of the monitors are in the three states California, Texas, and Pennsylvania. Observing Figure 2.2, there are many spatial gaps in the data and little discernible correlation between position and NO<sub>2</sub> quantity.
 
-**Figure 2.2**
 ![Figure 2.2 Map of Concentrations](images/NO2_conc_map.png)
 
 Figure 2.3 is a correlation matrix for the variables in this data set. The five land-use variables are aggregated such that each of the series of related covariates differentiated by radius are instead one column. As seen in the plot, each of the land-use variables has a moderately strong positive correlation with NO<sub>2</sub>, as well as the variable WRF+DOMINO. The impervious surfaces, major road length, residential road length, and total road length variables each have a heteroskedastic relationship with NO<sub>2</sub> with higher variability occurring when paired with larger NO<sub>2</sub> values. Each of these relationships show a stronger correlation when measured with a Spearman’s correlation as opposed to the Pearson’s correlation used in the matrix. The three road-related variables are related and highly correlated with each other. The variable of population is highly skewed and has an exponential relationship with NO<sub>2</sub>. This correlation is stronger when a log-transformed population is paired with NO<sub>2</sub>. The variables of distance to coast and truncated elevation have a very weak correlation with NO<sub>2</sub>.
 
-**Figure 2.3**
 ![Figure 2.3 Correlation plot](images/corr_plot.png) 
 
 The relationship between NO<sub>2</sub> and each of the five land-use variables changes as the radius changes. As seen in Figure 2.3, the overall correlation is moderately strong. However, the correlation between NO<sub>2</sub> and individual columns for each variable category with differing radii generally increases as the radius increases. The impervious surface correlation is highest at a radius of 7,000 meters (&rho; = 0.794) and the four remaining land-use variables have their highest correlation at 10,000 meters: population (r = 0.721),  major road length (&rho; = 0.770), residential road length (&rho; = 0.754), and total road length (&rho; = 0.771).
@@ -396,7 +391,7 @@ The inputs used in a neural network determines the effectiveness of the model; a
 |Length of Major Roads | 1500|
 |Length of Total Roads | 14000 |
 
-Table 3.1 shows the 7 inputs used in the model.  The use of a single length of each input parameter was done to avoid dependencies and the reducing the complexity of the model. The one exception is major road parameter, which is directly imputed once and indirectly added in the total road parameter; this was done due to cars being a major localized source of NO2. 
+Table 3.1 shows the 7 inputs used in the model.  The use of a single length of each input parameter was done to avoid dependencies and the reducing the complexity of the model. The one exception is major road parameter, which is directly imputed once and indirectly added in the total road parameter; this was done due to cars being a major localized source of NO2. The first 3 inputs are considered point inputs, describing the monitor location and unique monitor atttributes; whereas the last 4 inputs are dependent on the surronding area and is defined by the buffer length around the area. This may cause areas dense with monitors may have similar inputs but different NO2 concentrations; to avoid this complication buffer length are kept a small as possible. Another reason to keep the buffer areas small is that some monitors in the training data are close to the United States border, because this outside the scope of this project any parameter outside the continental United States is not counted towards the total (ie. a major road connecting a US city to a mexican city would only have the highway in the United States count aganist the major roads parameter). This may cause some errors in the trainng of the nueral network, so the inputs try to minimize this case.   
 
 
 
@@ -404,8 +399,10 @@ Table 3.1 shows the 7 inputs used in the model.  The use of a single length of e
 
 Figure C shows the architecture of the neural network used that achieved the best performance. 
 Many choices made regarding were governed by two main motives; reducing the complexity of the model and ensuring the model captures the entire range of concentrations in the training data. 
-
-
+To avoid overfitting the model was designed with reduced complexity in the model, like the inputs, to allow monitors with similar inputs to have the output similar concentrations. 
+Unlike other models used there was no validation data used to confirm that the training process did not overfit the data, this was done intentionally for two reasons.
+The first reason is that the data set was relatively small for training a neural network and that extracting 10-20 percent for validation may cause mistraining of the neural network, this fact is alos compounded by the fact the Observed NO2 concentartion is heavily skewed. 
+Figure C also shows that activations were used in the hidden layers of the model; this was done to allow the extreme outliers in the data be learned and trained from  properly in the model but not impact other nodes in each layer. 
 
 
 ## 3.2 Model Analysis
