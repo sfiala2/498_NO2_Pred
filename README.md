@@ -1,7 +1,7 @@
 # Output directory containing the formatted manuscript
 
 The [`gh-pages`](https://github.com/tessac2/498_NO2_pred/tree/gh-pages) branch hosts the contents of this directory at <https://tessac2.github.io/498_NO2_pred/>.
-The permalink for this webpage version is <https://tessac2.github.io/498_NO2_pred/v/99355228edcd589daf0dd449845f338781a5bed2/>.
+The permalink for this webpage version is <https://tessac2.github.io/498_NO2_pred/v/f4307af2cf737937bd8f3b882c2571f8a7b2f0d8/>.
 To redirect to the permalink for the latest manuscript version at anytime, use the link <https://tessac2.github.io/498_NO2_pred/v/freeze/>.
 
 ## Files
@@ -35,4 +35,4 @@ Verifying timestamps with the `ots verify` command requires running a local bitc
 ## Source
 
 The manuscripts in this directory were built from
-[`99355228edcd589daf0dd449845f338781a5bed2`](https://github.com/tessac2/498_NO2_pred/commit/99355228edcd589daf0dd449845f338781a5bed2).
+[`f4307af2cf737937bd8f3b882c2571f8a7b2f0d8`](https://github.com/tessac2/498_NO2_pred/commit/f4307af2cf737937bd8f3b882c2571f8a7b2f0d8).
