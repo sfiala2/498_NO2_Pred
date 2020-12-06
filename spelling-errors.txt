@@ -11,7 +11,7 @@ Clarizio
 CNNs
 collinearity
 convolutes
-Convolutional
+convolutional
 covariates
 datapoints
 dataset
@@ -31,7 +31,7 @@ homogenous
 Houly
 HPBL
 hyperparameter
-hyperparameters
+Hyperparameters
 incoportating
 janeroe
 Kaggle
@@ -72,7 +72,7 @@ SAPSO
 scikit
 SDT
 Shenzen
-sigmoid
+Sigmoid
 Spearman’s
 Spectroradiometer
 Sudheer
