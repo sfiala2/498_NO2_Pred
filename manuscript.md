@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://sfiala2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/cca22f1d853188b484d48c9b063b62299586ea8f/" />
+  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/461637b3da075f66e67686a5791ae04c66ca852d/" />
 
-  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/cca22f1d853188b484d48c9b063b62299586ea8f/" />
+  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/461637b3da075f66e67686a5791ae04c66ca852d/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/cca22f1d853188b484d48c9b063b62299586ea8f/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/461637b3da075f66e67686a5791ae04c66ca852d/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Predicting NO<sub>2</sub> concentrations
 
 <small><em>
 This manuscript
-([permalink](https://sfiala2.github.io/498_NO2_pred/v/cca22f1d853188b484d48c9b063b62299586ea8f/))
+([permalink](https://sfiala2.github.io/498_NO2_pred/v/461637b3da075f66e67686a5791ae04c66ca852d/))
 was automatically generated
-from [sfiala2/498_NO2_pred@cca22f1](https://github.com/sfiala2/498_NO2_pred/tree/cca22f1d853188b484d48c9b063b62299586ea8f)
+from [sfiala2/498_NO2_pred@461637b](https://github.com/sfiala2/498_NO2_pred/tree/461637b3da075f66e67686a5791ae04c66ca852d)
 on December 6, 2020.
 </em></small>
 
@@ -245,7 +245,7 @@ The potential explanatory variables of air quality monitor IDs, states, latitude
 
 The spatially-related data of latitude, longitude, and state of air quality monitors can be best interpreted by viewing this data plotted on a map. Each observation corresponds to a unique monitoring station at a distinct longitude and latitude, so there are 255 points. Monitors in this dataset come from 43 of the 50 states in the USA, excluding Alabama, Alaska, Hawaii, Mississippi, Montana, Oregon, Nebraska, and West Virginia. Many states have just one or two monitors, while nearly half of all of the monitors are in the three states California, Texas, and Pennsylvania. Observing Figure 2.2, there are many spatial gaps in the data and little discernible correlation between position and NO<sub>2</sub> quantity.
 
-**Figure 2.2** 
+**Figure 2.2 NO<sub>2</sub> Concentrations at Monitors** 
 ![Figure 2.2 Map of Concentrations](images/NO2_conc_map.png)
 
 Figure 2.3 is a correlation matrix for the variables in this data set. The five land-use variables are aggregated such that each of the series of related covariates differentiated by radius are instead one column. As seen in the plot, each of the land-use variables has a moderately strong positive correlation with NO<sub>2</sub>, as well as the variable WRF+DOMINO. The impervious surfaces, major road length, residential road length, and total road length variables each have a heteroskedastic relationship with NO<sub>2</sub> with higher variability occurring when paired with larger NO<sub>2</sub> values. Each of these relationships show a stronger correlation when measured with a Spearman’s correlation as opposed to the Pearson’s correlation used in the matrix. The three road-related variables are related and highly correlated with each other. The variable of population is highly skewed and has an exponential relationship with NO<sub>2</sub>. This correlation is stronger when a log-transformed population is paired with NO<sub>2</sub>. The variables of distance to coast and truncated elevation have a very weak correlation with NO<sub>2</sub>.
