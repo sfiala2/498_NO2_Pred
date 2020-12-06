@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://sfiala2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/7e7db4eea5e92963173508b7c3b5676a997d3544/" />
+  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/bbc0e997c6d731fe9924932878ded0f7bd094a41/" />
 
-  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/7e7db4eea5e92963173508b7c3b5676a997d3544/" />
+  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/bbc0e997c6d731fe9924932878ded0f7bd094a41/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/7e7db4eea5e92963173508b7c3b5676a997d3544/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/bbc0e997c6d731fe9924932878ded0f7bd094a41/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Predicting NO<sub>2</sub> concentrations
 
 <small><em>
 This manuscript
-([permalink](https://sfiala2.github.io/498_NO2_pred/v/7e7db4eea5e92963173508b7c3b5676a997d3544/))
+([permalink](https://sfiala2.github.io/498_NO2_pred/v/bbc0e997c6d731fe9924932878ded0f7bd094a41/))
 was automatically generated
-from [sfiala2/498_NO2_pred@7e7db4e](https://github.com/sfiala2/498_NO2_pred/tree/7e7db4eea5e92963173508b7c3b5676a997d3544)
+from [sfiala2/498_NO2_pred@bbc0e99](https://github.com/sfiala2/498_NO2_pred/tree/bbc0e997c6d731fe9924932878ded0f7bd094a41)
 on December 6, 2020.
 </em></small>
 
@@ -300,19 +300,7 @@ The multiple regression model presented, although comparable to other models use
 ### 2.3.2 Neural Networks
 Artificial neural networks are based on the design philosophy of the neural connections in our brain. They consist of a group of interconnected nodes joined through edges. The edges transmit the signals (which in a machine learning model would be a real number) from one neuron to another just like a synapse functions in a brain. A typical neural network has many layers. Each layer is composed of a set of neurons and each layer transforms and processes data in a different way based on the hyperparameters of the model.
 
-There are different kinds of neural networks. The most commonly used of which are:
-
-&1. Feed Forward Neural Network
-  
-&2. Convolutional Neural Network (CNN)
-  
-&3. Recurrent Neural Network (RNN)
-  
-&4. Long-short term memory neural network (LSTM)
-  
-&5. Gated Recurrent Unit (GRU)
-
-There are several other advanced ones such as General Adversarial Networks, Auto-encoders and Deep Belief Neural networks. However, we restrict our discussion to the five types listed above.
+There are different kinds of neural networks. The most commonly used of which are Feed Forward Neural Network, Convolutional Neural Network (CNN), Recurrent Neural Network (RNN), Long-short term memory neural network (LSTM), Gated Recurrent Unit (GRU). There are several other advanced ones such as General Adversarial Networks, Auto-encoders and Deep Belief Neural networks. However, we restrict our discussion to the five types listed here.
 
 We will first discuss, briefly, the CNN, RNN, LSTM and GRU before moving on to the Feed formal neural network which is the neural network model used in this project.
 
@@ -341,11 +329,11 @@ A regular neural network consists of an input layer, hidden layers and an output
 
 We used a combination of three different activation functions:
 
-&1. Linear Activation - a linear activation uses the weights to multiply the inputs providing an output which is linearly proportional to the input. This function is also termed as no activation function as there is no further transformation being operated on the values.
+&a. Linear Activation - a linear activation uses the weights to multiply the inputs providing an output which is linearly proportional to the input. This function is also termed as no activation function as there is no further transformation being operated on the values.
 
-&2. ReLU - Rectified Linear Activation Unit - even though very similar in appearance to a linear function, ReLU allows back-propagation of errors. This function always gives an output of 0 for negative values and behaves linearly for values greater than 0.
+&b. ReLU - Rectified Linear Activation Unit - even though very similar in appearance to a linear function, ReLU allows back-propagation of errors. This function always gives an output of 0 for negative values and behaves linearly for values greater than 0.
 
-&3. Sigmoid activation - by implementing this activation function, the outputs are normalized and bound between 0 and 1. A sigmoid function provides a smooth gradient curve and much clearer predictions.
+&c. Sigmoid activation - by implementing this activation function, the outputs are normalized and bound between 0 and 1. A sigmoid function provides a smooth gradient curve and much clearer predictions.
 
 Further, the compile function is used to compile the model created, which takes in a variety of arguments. We used an Adam optimizer which uses the combination of squared and moving average gradients to individually compute the learning rates for each parameter. As such it provides the benefits of both RMSProp and Stochastic Gradient Descent.
 
