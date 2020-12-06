@@ -1,8 +1,8 @@
 # Output directory containing the formatted manuscript
 
-The [`gh-pages`](https://github.com/sfiala2/498_NO2_predict/tree/gh-pages) branch hosts the contents of this directory at <https://sfiala2.github.io/498_NO2_predict/>.
-The permalink for this webpage version is <https://sfiala2.github.io/498_NO2_predict/v/d9e9962a6c094aad3df57dd856d5c040b4f8bacd/>.
-To redirect to the permalink for the latest manuscript version at anytime, use the link <https://sfiala2.github.io/498_NO2_predict/v/freeze/>.
+The [`gh-pages`](https://github.com/tessac2/498_NO2_pred/tree/gh-pages) branch hosts the contents of this directory at <https://tessac2.github.io/498_NO2_pred/>.
+The permalink for this webpage version is <https://tessac2.github.io/498_NO2_pred/v/f0597cc3a61d3c966e527c8bcf43fbff24d62d10/>.
+To redirect to the permalink for the latest manuscript version at anytime, use the link <https://tessac2.github.io/498_NO2_pred/v/freeze/>.
 
 ## Files
 
@@ -35,4 +35,4 @@ Verifying timestamps with the `ots verify` command requires running a local bitc
 ## Source
 
 The manuscripts in this directory were built from
-[`d9e9962a6c094aad3df57dd856d5c040b4f8bacd`](https://github.com/sfiala2/498_NO2_predict/commit/d9e9962a6c094aad3df57dd856d5c040b4f8bacd).
+[`f0597cc3a61d3c966e527c8bcf43fbff24d62d10`](https://github.com/tessac2/498_NO2_pred/commit/f0597cc3a61d3c966e527c8bcf43fbff24d62d10).
