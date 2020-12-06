@@ -55,23 +55,23 @@ header-includes: '<!--
 
   <meta name="citation_author" content="Hope Hunter" />
 
-  <link rel="canonical" href="https://tessac2.github.io/498_NO2_pred/" />
+  <link rel="canonical" href="https://sfiala2.github.io/498_NO2_pred/" />
 
-  <meta property="og:url" content="https://tessac2.github.io/498_NO2_pred/" />
+  <meta property="og:url" content="https://sfiala2.github.io/498_NO2_pred/" />
 
-  <meta property="twitter:url" content="https://tessac2.github.io/498_NO2_pred/" />
+  <meta property="twitter:url" content="https://sfiala2.github.io/498_NO2_pred/" />
 
-  <meta name="citation_fulltext_html_url" content="https://tessac2.github.io/498_NO2_pred/" />
+  <meta name="citation_fulltext_html_url" content="https://sfiala2.github.io/498_NO2_pred/" />
 
-  <meta name="citation_pdf_url" content="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
+  <meta name="citation_pdf_url" content="https://sfiala2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="application/pdf" href="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
+  <link rel="alternate" type="application/pdf" href="https://sfiala2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/577f69b4dba10f8b87918136667118c8494608c8/" />
+  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/b51317c8bb57178de19913691ac4f62847b49784/" />
 
-  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/577f69b4dba10f8b87918136667118c8494608c8/" />
+  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/b51317c8bb57178de19913691ac4f62847b49784/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/577f69b4dba10f8b87918136667118c8494608c8/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/b51317c8bb57178de19913691ac4f62847b49784/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Predicting NO<sub>2</sub> concentrations
 
 <small><em>
 This manuscript
-([permalink](https://tessac2.github.io/498_NO2_pred/v/577f69b4dba10f8b87918136667118c8494608c8/))
+([permalink](https://sfiala2.github.io/498_NO2_pred/v/b51317c8bb57178de19913691ac4f62847b49784/))
 was automatically generated
-from [tessac2/498_NO2_pred@577f69b](https://github.com/tessac2/498_NO2_pred/tree/577f69b4dba10f8b87918136667118c8494608c8)
+from [sfiala2/498_NO2_pred@b51317c](https://github.com/sfiala2/498_NO2_pred/tree/b51317c8bb57178de19913691ac4f62847b49784)
 on December 6, 2020.
 </em></small>
 
@@ -393,9 +393,10 @@ The inputs used in a neural network determines the effectiveness of the model; a
 
 Table 3.1 shows the 7 inputs used in the model.  The use of a single length of each input parameter was done to avoid dependencies and the reducing the complexity of the model. The one exception is major road parameter, which is directly imputed once and indirectly added in the total road parameter; this was done due to cars being a major localized source of NO2. The first 3 inputs are considered point inputs, describing the monitor location and unique monitor atttributes; whereas the last 4 inputs are dependent on the surronding area and is defined by the buffer length around the area. This may cause areas dense with monitors may have similar inputs but different NO2 concentrations; to avoid this complication buffer length are kept a small as possible. Another reason to keep the buffer areas small is that some monitors in the training data are close to the United States border, because this outside the scope of this project any parameter outside the continental United States is not counted towards the total (ie. a major road connecting a US city to a mexican city would only have the highway in the United States count aganist the major roads parameter). This may cause some errors in the trainng of the nueral network, so the inputs try to minimize this case.   
 
+'''
+train_dataset = tf.data.Dataset.from_tensor_slices((x_dependent_train,y_ind_train)).batch(batch_size=255)
 
-
-* Code inputs
+'''
 
 Figure C shows the architecture of the neural network used that achieved the best performance. 
 Many choices made regarding were governed by two main motives; reducing the complexity of the model and ensuring the model captures the entire range of concentrations in the training data. 

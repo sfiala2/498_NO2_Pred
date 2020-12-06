@@ -37,7 +37,7 @@ homogenous
 Houly
 HPBL
 hyperparameter
-Hyperparameters
+hyperparameters
 incoportating
 interpretability
 Kaggle
@@ -81,7 +81,7 @@ scikit
 SDT
 sfiala
 Shenzen
-sigmoid
+Sigmoid
 Spearman’s
 Spectroradiometer
 Sudheer
