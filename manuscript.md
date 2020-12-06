@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/7ebf2a8a213574f0f6d0b09bf4fce027ead41394/" />
+  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/3916601c666ea739666d0321e4af6ff0cc653ab0/" />
 
-  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/7ebf2a8a213574f0f6d0b09bf4fce027ead41394/" />
+  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/3916601c666ea739666d0321e4af6ff0cc653ab0/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/7ebf2a8a213574f0f6d0b09bf4fce027ead41394/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/3916601c666ea739666d0321e4af6ff0cc653ab0/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Predicting NO2 concentrations
 
 <small><em>
 This manuscript
-([permalink](https://tessac2.github.io/498_NO2_pred/v/7ebf2a8a213574f0f6d0b09bf4fce027ead41394/))
+([permalink](https://tessac2.github.io/498_NO2_pred/v/3916601c666ea739666d0321e4af6ff0cc653ab0/))
 was automatically generated
-from [tessac2/498_NO2_pred@7ebf2a8](https://github.com/tessac2/498_NO2_pred/tree/7ebf2a8a213574f0f6d0b09bf4fce027ead41394)
+from [tessac2/498_NO2_pred@3916601](https://github.com/tessac2/498_NO2_pred/tree/3916601c666ea739666d0321e4af6ff0cc653ab0)
 on December 6, 2020.
 </em></small>
 
@@ -231,8 +231,12 @@ Because the objective of this study is to predict a single variable (NO<sub>2</s
 
 
 ## 2.2 Exploratory Data Analysis
+
+
 ## 2.3 Model
 ### 2.3.1 Multiple Linear Regression
+-> Grace add here
+
 ### 2.3.2 Neural Networks
 Artifical neural networks are based on the design philosophy of the neural connections in our brain. They consist of a group of nodes interconnected to each other through edges. The edges transmit the signals (which in a machine learning model would be a real number) from one neuron to another just like a synapse functions in a brain.
 
