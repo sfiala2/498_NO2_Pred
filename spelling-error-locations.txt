@@ -174,10 +174,10 @@ content/02.Report_Body.md:140:Devolpment
 content/02.Report_Body.md:142:underfitting
 content/02.Report_Body.md:145:datasets
 content/02.Report_Body.md:145:overfitting
-content/02.Report_Body.md:161:Kaggle
-content/02.Report_Body.md:171:kurtosis
-content/02.Report_Body.md:172:kurtosis
-content/02.Report_Body.md:178:homogenous
+content/02.Report_Body.md:164:Kaggle
+content/02.Report_Body.md:174:kurtosis
+content/02.Report_Body.md:175:kurtosis
+content/02.Report_Body.md:181:homogenous
 content/Results_old.md:11:Kaggle
 content/Results_old.md:20:kurtosis
 content/Results_old.md:21:kurtosis
