@@ -11,8 +11,9 @@ BRNN
 Clarizio
 CNNs
 convolutes
-convolutional
+Convolutional
 dataset
+datasets
 Devolpment
 DTB
 DTF
@@ -40,6 +41,7 @@ NAAQS
 NDVI
 NOx
 overfit
+overfitting
 perceptron
 ppb
 preprocess
