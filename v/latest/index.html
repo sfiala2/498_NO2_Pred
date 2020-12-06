@@ -53,9 +53,9 @@
   <meta name="citation_fulltext_html_url" content="https://tessac2.github.io/498_NO2_pred/" />
   <meta name="citation_pdf_url" content="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/155a1f566cc8d88594377dc4c25864805c49aa42/" />
-  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/155a1f566cc8d88594377dc4c25864805c49aa42/" />
-  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/155a1f566cc8d88594377dc4c25864805c49aa42/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/9254203f8bcff81b0fad3a830ddaac947df8a616/" />
+  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/9254203f8bcff81b0fad3a830ddaac947df8a616/" />
+  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/9254203f8bcff81b0fad3a830ddaac947df8a616/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -69,9 +69,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://tessac2.github.io/498_NO2_pred/v/155a1f566cc8d88594377dc4c25864805c49aa42/">permalink</a>)
+(<a href="https://tessac2.github.io/498_NO2_pred/v/9254203f8bcff81b0fad3a830ddaac947df8a616/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/tessac2/498_NO2_pred/tree/155a1f566cc8d88594377dc4c25864805c49aa42">tessac2/498_NO2_pred@155a1f5</a>
+from <a href="https://github.com/tessac2/498_NO2_pred/tree/9254203f8bcff81b0fad3a830ddaac947df8a616">tessac2/498_NO2_pred@9254203</a>
 on December 6, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -296,7 +296,10 @@ Largely used for classifying image and audio data, the convolutional neural netw
 <p>We used a combination of three different activation functions:
 1. Linear Activation - a linear activation uses the weights to multiply the inputs providing an output which is linearly proportional to the input. This function is also termed as no activation function as there is no further transformation being operated on the values
 2. ReLU - Rectified Linear Activation Unit - even though very similar in appearance to a linear, ReLU allows back-propagation of errors. This function always gives an output of 0 for negative values and behaves linearly for values greater than 0.
-3. Sigmoid activation -using this activation the outputs are normalized and bound between 0 and 1 but provides a smooth gradient curve and much clearer predictions</p>
+3. Sigmoid activation - by implementing this activation function, the outputs are normalized and bound between 0 and 1 but provides a smooth gradient curve and much clearer predictions</p>
+<p>Further, the compile function is used to compile the model created and takes in a variety of arguments. We used an Adam optimizer. Adam optimizer uses the combination of squared and moving average gradients to individually compute the learning rates for each parameter. As such it provides the benefits of both RMSProp and Stochastic Gradient Descent.</p>
+<p>We chose a learning rate of 0.0005 to 0.005. Learning rate is an essential hyperparameter that influences the weights of a model and the extent to which they are updated. A very low learning rate could lead to a model being very slow and eventually unable to reach the desired result and at the same time, a very high learning rate could make worsen the model by making it unstable and inaccurate and eventually lead to inferior quality of weights.</p>
+<p>Both absolute error and root mean squared error were chosen as the loss functions.</p>
 <h3 id="random-forest">2.3.3 Random Forest</h3>
 <p>Trees and tree algorithm is among the most widely applied machine learning algorithms. It includes random forest, gradient boosting decision trees, XGBoost, etc. The fundament of trees algorithm is decision tree, which can be divided into classification tree and regression tree. In this project, the label is the observed NO<sub>2</sub> concentration, thus, regression tree algorithm can be applied to make the prediction.</p>
 <p>Random forest is a combination of tree predictors based on model aggregation ideas. It is realized by creating an ensemble of trees by generating random vectors that govern the growth of trees and letting them vote for the most popular label <span class="citation" data-cites="yp5oGc1T">[<a href="#ref-yp5oGc1T" role="doc-biblioref">11</a>]</span>.</p>
