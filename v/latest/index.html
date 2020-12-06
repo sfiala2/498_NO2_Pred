@@ -53,9 +53,9 @@
   <meta name="citation_fulltext_html_url" content="https://tessac2.github.io/498_NO2_pred/" />
   <meta name="citation_pdf_url" content="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/c54ca70eb317dc1949ef01cca6f12ae784f7888c/" />
-  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/c54ca70eb317dc1949ef01cca6f12ae784f7888c/" />
-  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/c54ca70eb317dc1949ef01cca6f12ae784f7888c/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/4a413fd75d5edccb9376a4fdfa997f29f45d3695/" />
+  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/4a413fd75d5edccb9376a4fdfa997f29f45d3695/" />
+  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/4a413fd75d5edccb9376a4fdfa997f29f45d3695/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -69,9 +69,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://tessac2.github.io/498_NO2_pred/v/c54ca70eb317dc1949ef01cca6f12ae784f7888c/">permalink</a>)
+(<a href="https://tessac2.github.io/498_NO2_pred/v/4a413fd75d5edccb9376a4fdfa997f29f45d3695/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/tessac2/498_NO2_pred/tree/c54ca70eb317dc1949ef01cca6f12ae784f7888c">tessac2/498_NO2_pred@c54ca70</a>
+from <a href="https://github.com/tessac2/498_NO2_pred/tree/4a413fd75d5edccb9376a4fdfa997f29f45d3695">tessac2/498_NO2_pred@4a413fd</a>
 on December 6, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -270,7 +270,12 @@ on December 6, 2020.
 </figure>
 <h2 id="model">2.3 Model</h2>
 <h3 id="multiple-linear-regression">2.3.1 Multiple Linear Regression</h3>
-<p>Multiple linear regression (MLR) is a method of predicting a dependent variable using linear combinations of independent variables. MLR is widely used in statistical research because it is easy to interpret and understand. Additionally, multiple regression can also often result in a model with results comparable to that of a more complex model, such as a neural network or random forest model.</p>
+<p>Multiple linear regression (MLR) is a method of predicting a dependent variable using linear combinations of of any number of independent variables. MLR is widely used in statistical research because it is easy to interpret and understand. Additionally, multiple regression can also often result in a model with results comparable to that of a more complex model, such as a neural network or random forest model. The modeled equation takes the form of the following generalized equation:</p>
+<p><span class="math display">\[ y = /beta &lt;sub&gt;0&lt;/sub&gt; + /beta &lt;sub&gt;1&lt;/sub&gt; /times x &lt;sub&gt;1&lt;/sub&gt; +  /beta &lt;sub&gt;2&lt;/sub&gt; /times x &lt;sub&gt;2&lt;/sub&gt; + . . . +  /beta &lt;sub&gt;i&lt;/sub&gt; /times x &lt;sub&gt;i&lt;/sub&gt; \]</span></p>
+<p>Where
+y = The dependent variable to be predicted
+<span class="math inline">\(/beta &lt;sub&gt;0&lt;/sub&gt;\)</span> = The constant intercept
+<span class="math inline">\(/beta &lt;sub&gt;i&lt;/sub&gt; /times x &lt;sub&gt;i&lt;/sub&gt;\)</span> = The i-th constant multiplied by the i-th term</p>
 <h3 id="neural-networks">2.3.2 Neural Networks</h3>
 <p>Artifical neural networks are based on the design philosophy of the neural connections in our brain. They consist of a group of nodes interconnected to each other through edges. The edges transmit the signals (which in a machine learning model would be a real number) from one neuron to another just like a synapse functions in a brain.</p>
 <p>A typical neural network has many layers. Each layer is composed of a set of neurons and each layer transforms and processes data in a different way based on the hyperparameters of the model.</p>
