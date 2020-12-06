@@ -3,7 +3,7 @@ author-meta:
 - Tessa Clarizio
 - Marcel Briguglio
 - Sudheer Salana
-- Jane Roe
+- Xiaokai Yang
 - Jane Roe
 - Jane Roe
 bibliography:
@@ -49,7 +49,7 @@ header-includes: '<!--
 
   <meta name="citation_author" content="Sudheer Salana" />
 
-  <meta name="citation_author" content="Jane Roe" />
+  <meta name="citation_author" content="Xiaokai Yang" />
 
   <meta name="citation_author" content="Jane Roe" />
 
@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/4cd6665267bcdb874530bfe40cb30db67da872ea/" />
+  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/ad9b0424959fbafd88d1ba5c32515c578c0de2f5/" />
 
-  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/4cd6665267bcdb874530bfe40cb30db67da872ea/" />
+  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/ad9b0424959fbafd88d1ba5c32515c578c0de2f5/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/4cd6665267bcdb874530bfe40cb30db67da872ea/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/ad9b0424959fbafd88d1ba5c32515c578c0de2f5/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Predicting NO2 concentrations
 
 <small><em>
 This manuscript
-([permalink](https://tessac2.github.io/498_NO2_pred/v/4cd6665267bcdb874530bfe40cb30db67da872ea/))
+([permalink](https://tessac2.github.io/498_NO2_pred/v/ad9b0424959fbafd88d1ba5c32515c578c0de2f5/))
 was automatically generated
-from [tessac2/498_NO2_pred@4cd6665](https://github.com/tessac2/498_NO2_pred/tree/4cd6665267bcdb874530bfe40cb30db67da872ea)
+from [tessac2/498_NO2_pred@ad9b042](https://github.com/tessac2/498_NO2_pred/tree/ad9b0424959fbafd88d1ba5c32515c578c0de2f5)
 on December 6, 2020.
 </em></small>
 
@@ -131,9 +131,9 @@ on December 6, 2020.
   <small>
   </small>
 
-+ **Jane Roe**<br>
++ **Xiaokai Yang**<br>
     · ![GitHub icon](images/github.svg){.inline_icon}
-    [janeroe](https://github.com/janeroe)<br>
+    [xiaoky97](https://github.com/xiaoky97)<br>
   <small>
   </small>
 
