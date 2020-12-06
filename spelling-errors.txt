@@ -25,6 +25,7 @@ Enebish
 fundament
 GridSearchCV
 GRU
+heteroscedacity
 heteroskedastic
 homogenous
 Houly
@@ -83,7 +84,6 @@ treeboost
 tropospheric
 underfitting
 unimodal
-VIF
 WRF
 XGBoost
 Xiaokai

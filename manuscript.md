@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/0f5ec41df34ef52eefb6f493f351bf630b7fd2d4/" />
+  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/e114f813579c3449059ce6bd64956c7f77d35a75/" />
 
-  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/0f5ec41df34ef52eefb6f493f351bf630b7fd2d4/" />
+  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/e114f813579c3449059ce6bd64956c7f77d35a75/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/0f5ec41df34ef52eefb6f493f351bf630b7fd2d4/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/e114f813579c3449059ce6bd64956c7f77d35a75/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Predicting NO2 concentrations
 
 <small><em>
 This manuscript
-([permalink](https://tessac2.github.io/498_NO2_pred/v/0f5ec41df34ef52eefb6f493f351bf630b7fd2d4/))
+([permalink](https://tessac2.github.io/498_NO2_pred/v/e114f813579c3449059ce6bd64956c7f77d35a75/))
 was automatically generated
-from [tessac2/498_NO2_pred@0f5ec41](https://github.com/tessac2/498_NO2_pred/tree/0f5ec41df34ef52eefb6f493f351bf630b7fd2d4)
+from [tessac2/498_NO2_pred@e114f81](https://github.com/tessac2/498_NO2_pred/tree/e114f813579c3449059ce6bd64956c7f77d35a75)
 on December 6, 2020.
 </em></small>
 
@@ -266,22 +266,16 @@ y = The dependent variable to be predicted,
 &beta;<sub>i</sub> x <sub>i</sub> = The i-th constant multiplied by the i-th term 
 
 &epsilon; = The error term (difference between y predicted and y oberseved)
- 
-The multiple regression model used in this project first investigated and removed variables with colinearity. This was done using variance inflation factors, as shown in Table 2.3.1
 
-**Table 2.3.1 Variance inflation factor for each variable**
-| Variable      |    VIF  |
-|-----------------------|----------|
-| Observed_NO2_ppb      |    3.956374 |
-| WRF+DOMINO            |    2.912862 |
-| Distance_to_coast_km   |   1.627729|
-| Elevation_truncated_km  |  1.752602|
-| radius                  | 3.163531|
-| impervious              | 2.529755|
-| population              | 1.730017|
-| major_road              |     inf|
-| resident_road           |     inf|
-| total_road              |     inf|
+The multiple regression model used in this project first investigated and removed variables with colinearity. This was done by removing variables with a variance inflation factor over 5. This resulted in all road data being removed. 
+
+
+#### MLR Fit 
+The model fits the data well for lower NO<sub>2</sub> concentrations. However, the model predicts high concentrations very poorly. This is due to the distribution of the data used to build the model: There are very few observations of high NO<sub>2</sub> values. The model fit is plotted in Figure 2.3.1.
+
+![Figure 2.3.1 Linear Model Fit](images/mlr_fit.PNG)
+
+Overall, the model was a fair predictor of NO<sub>2</sub> concentrations, with an R<sup>2</sup> value of 0.77. Of the models presented, it had the second lowest root mean square error (3.08) when applied to the test data of  However, this model is not appropriate for the data it is predicting. This is due to the fact that the data exhibits heteroscedacity, meaning that the variance of errors is not constant. This violates an assumption needed for using a linear model, and as a result the predictions are less accurate. 
 
 ### 2.3.2 Neural Networks
 Artifical neural networks are based on the design philosophy of the neural connections in our brain. They consist of a group of nodes interconnected to each other through edges. The edges transmit the signals (which in a machine learning model would be a real number) from one neuron to another just like a synapse functions in a brain.
