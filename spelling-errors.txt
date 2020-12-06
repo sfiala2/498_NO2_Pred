@@ -3,6 +3,7 @@ AOD
 AQI
 Azid
 Bechle
+Briguglio
 BRNN
 Clarizio
 dataset
@@ -17,7 +18,7 @@ HPBL
 hyperparameter
 janeroe
 Liu
-microg
+marcelbriguglio
 MLR
 MODIS
 MSE
