@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/2553e610a77807ec2052fa0f9d962c4427289bb1/" />
+  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/b750addd16b5f3e694d66065e1012f9febe65264/" />
 
-  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/2553e610a77807ec2052fa0f9d962c4427289bb1/" />
+  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/b750addd16b5f3e694d66065e1012f9febe65264/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/2553e610a77807ec2052fa0f9d962c4427289bb1/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/b750addd16b5f3e694d66065e1012f9febe65264/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Predicting NO2 concentrations
 
 <small><em>
 This manuscript
-([permalink](https://tessac2.github.io/498_NO2_pred/v/2553e610a77807ec2052fa0f9d962c4427289bb1/))
+([permalink](https://tessac2.github.io/498_NO2_pred/v/b750addd16b5f3e694d66065e1012f9febe65264/))
 was automatically generated
-from [tessac2/498_NO2_pred@2553e61](https://github.com/tessac2/498_NO2_pred/tree/2553e610a77807ec2052fa0f9d962c4427289bb1)
+from [tessac2/498_NO2_pred@b750add](https://github.com/tessac2/498_NO2_pred/tree/b750addd16b5f3e694d66065e1012f9febe65264)
 on December 6, 2020.
 </em></small>
 
@@ -163,7 +163,7 @@ NO<sub>2</sub> is defined by the U.S. Environmental Protection Agency (EPA) as a
 
 Therefore, understanding and predicting the spatial variability of NO<sub>2</sub> emissions is of great importance to public health. However, prediction of air quality can be complicated due to the number of factors that affect local air quality, ranging from meteorology to land use. Machine learning models are a useful tool to interpret and find relationships in complex data. 
 
-[introduce Bechle study…] Bechle et al (2015) explores the impact of.. [Grace please add here]
+Bechle et al (2015) explores the impact of.. [@https://doi.org/10.1021/acs.est.5b02882] Grace
 
 This report proposes a machine learning model to predict NO<sub>2</sub> concentrations spatially. First, a literature review was undertaken to understand what machine learning models have typically performed well in predicting air quality. Next, an exploratory data analysis (EDA) was performed on the Bechle et al (2015) dataset. Finally, multiple linear regression, neural network and random forest models were built and results were compared to see which method had the lowest mean-squared error (MSE). 
 

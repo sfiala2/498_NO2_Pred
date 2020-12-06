@@ -3,7 +3,6 @@ content/02.Report_Body.md:3:NAAQS
 content/02.Report_Body.md:3:ppb
 content/02.Report_Body.md:3:tropospheric
 content/02.Report_Body.md:7:Bechle
-content/02.Report_Body.md:7:Bechle
 content/02.Report_Body.md:9:Bechle
 content/02.Report_Body.md:9:dataset
 content/02.Report_Body.md:9:EDA
