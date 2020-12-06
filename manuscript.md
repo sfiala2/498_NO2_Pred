@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/0de531bd0ddf0448f3f8c3d7a17affbb5223047a/" />
+  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/a321328f7a4b42dda6d4887612324aa5d7a3dafa/" />
 
-  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/0de531bd0ddf0448f3f8c3d7a17affbb5223047a/" />
+  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/a321328f7a4b42dda6d4887612324aa5d7a3dafa/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/0de531bd0ddf0448f3f8c3d7a17affbb5223047a/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/a321328f7a4b42dda6d4887612324aa5d7a3dafa/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Predicting NO2 concentrations
 
 <small><em>
 This manuscript
-([permalink](https://tessac2.github.io/498_NO2_pred/v/0de531bd0ddf0448f3f8c3d7a17affbb5223047a/))
+([permalink](https://tessac2.github.io/498_NO2_pred/v/a321328f7a4b42dda6d4887612324aa5d7a3dafa/))
 was automatically generated
-from [tessac2/498_NO2_pred@0de531b](https://github.com/tessac2/498_NO2_pred/tree/0de531bd0ddf0448f3f8c3d7a17affbb5223047a)
+from [tessac2/498_NO2_pred@a321328](https://github.com/tessac2/498_NO2_pred/tree/a321328f7a4b42dda6d4887612324aa5d7a3dafa)
 on December 6, 2020.
 </em></small>
 
@@ -163,7 +163,7 @@ NO<sub>2</sub> is defined by the U.S. Environmental Protection Agency (EPA) as a
 
 Therefore, understanding and predicting the spatial variability of NO<sub>2</sub> emissions is of great importance to public health. However, prediction of air quality can be complicated due to the number of factors that affect local air quality, ranging from meteorology to land use. Machine learning models are a useful tool to interpret and find relationships in complex data. 
 
-Bechle et al (2015) explores the impact of.. [@https://doi.org/10.1021/acs.est.5b02882] Grace
+Monitoring air quality can be a difficult task, as monitored data varies in availability by geographic region. Bechle et al (2015) explores the usage of satellite data and GIS derived land use characteristics to better understand NO<sub>2</sub> concentrations and air quality in regions without air quality monitors. [@https://doi.org/10.1021/acs.est.5b02882] This research incorporated DOMINO satellite column and surface estimates of NO<sub>2</sub> concentrations and a WRF-Chem model to create monthly NO<sub>2</sub> concentration estimates based on scaled yearly land use regression data. 
 
 This report proposes a machine learning model to predict NO<sub>2</sub> concentrations spatially. First, a literature review was undertaken to understand what machine learning models have typically performed well in predicting air quality. Next, an exploratory data analysis (EDA) was performed on the Bechle et al (2015) dataset. Finally, multiple linear regression, neural network and random forest models were built and results were compared to see which method had the lowest mean-squared error (MSE). 
 
@@ -233,6 +233,8 @@ Because the objective of this study is to predict a single variable (NO<sub>2</s
 ## 2.2 Exploratory Data Analysis
 The target variable in this predictive case is NO<sub>2</sub> concentration in the continental United States. The observations from the data have a mean NO<sub>2</sub> concentration of 11.831 ppb with a standard deviation of 6.290 ppb. The NO<sub>2</sub> concentration data has a range from 0.309 to 31.016 ppb. The five highest values are considered outliers. The distribution of NO<sub>2</sub> concentration values is unimodal with a slight right skew.
 
+
+**Figure 2.1** 
 ![Figure 2.1 Histogram of NO2 concentrations](images/Histogram_NO2.png)
 
 The potential explanatory variables of air quality monitor IDs, states, latitude, longitude, and WRF-Chem+DOMINO each exist as single columns. The variables related to land-use of impervious surfaces, population, major road length, residential road length, and total road length each have several columns quantifying these values based on the radius from the air quality monitor. The impervious surfaces, population, and major road length variables have 22 columns each based on radii ranging from 100 to 10,000 meters. The variables minor road length and total road length have 30 columns each based on radii ranging from 100 to 14,000 meters.
@@ -245,7 +247,7 @@ Figure 2.3 is a correlation matrix for the variables in this data set. The five 
 
 ![Figure 2.3 Correlation plot](images/corr_plot.png) 
 
-The relationship between NO<sub>2</sub> and each of the five land-use variables changes as the radius changes. As seen in Figure 2.3, the overall correlation is moderately strong. However, the correlation between NO<sub>2</sub> and individual columns for each variable category with differing radii generally increases as the radius increases. The impervious surface correlation is highest at a radius of 7,000 meters (rho = 0.794) and the four remaining land-use variables have their highest correlation at 10,000 meters: population (r = 0.721),  major road length (&rho = 0.770), residential road length (rho = 0.754), and total road length (rho = 0.771).
+The relationship between NO<sub>2</sub> and each of the five land-use variables changes as the radius changes. As seen in Figure 2.3, the overall correlation is moderately strong. However, the correlation between NO<sub>2</sub> and individual columns for each variable category with differing radii generally increases as the radius increases. The impervious surface correlation is highest at a radius of 7,000 meters (&rho; = 0.794) and the four remaining land-use variables have their highest correlation at 10,000 meters: population (r = 0.721),  major road length (&rho; = 0.770), residential road length (&rho; = 0.754), and total road length (&rho; = 0.771).
 
 ## 2.3 Model
 ### 2.3.1 Multiple Linear Regression

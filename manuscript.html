@@ -53,9 +53,9 @@
   <meta name="citation_fulltext_html_url" content="https://tessac2.github.io/498_NO2_pred/" />
   <meta name="citation_pdf_url" content="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/0de531bd0ddf0448f3f8c3d7a17affbb5223047a/" />
-  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/0de531bd0ddf0448f3f8c3d7a17affbb5223047a/" />
-  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/0de531bd0ddf0448f3f8c3d7a17affbb5223047a/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/a321328f7a4b42dda6d4887612324aa5d7a3dafa/" />
+  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/a321328f7a4b42dda6d4887612324aa5d7a3dafa/" />
+  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/a321328f7a4b42dda6d4887612324aa5d7a3dafa/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -69,9 +69,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://tessac2.github.io/498_NO2_pred/v/0de531bd0ddf0448f3f8c3d7a17affbb5223047a/">permalink</a>)
+(<a href="https://tessac2.github.io/498_NO2_pred/v/a321328f7a4b42dda6d4887612324aa5d7a3dafa/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/tessac2/498_NO2_pred/tree/0de531bd0ddf0448f3f8c3d7a17affbb5223047a">tessac2/498_NO2_pred@0de531b</a>
+from <a href="https://github.com/tessac2/498_NO2_pred/tree/a321328f7a4b42dda6d4887612324aa5d7a3dafa">tessac2/498_NO2_pred@a321328</a>
 on December 6, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -112,7 +112,7 @@ on December 6, 2020.
 <h1 id="introduction">1. Introduction</h1>
 <p>NO<sub>2</sub> is defined by the U.S. Environmental Protection Agency (EPA) as a criteria air pollutant, meaning it poses a risk to human and environmental health. The primary National Ambient Air Quality Standard (NAAQS) for NO<sub>2</sub> is set at a 53 ppb annual average <span class="citation" data-cites="VPPFmmlA">[<a href="#ref-VPPFmmlA" role="doc-biblioref">1</a>]</span>. NO<sub>2</sub> can cause respiratory irritation and can aggravate respiratory diseases such as asthma <span class="citation" data-cites="10Z19reB3">[<a href="#ref-10Z19reB3" role="doc-biblioref">2</a>]</span>. NO<sub>2</sub> can also react with other chemicals in the atmosphere to form both particulate matter (PM) and tropospheric ozone (O<sub>3</sub>) (US EPA, n.d., B). PM and O<sub>3</sub> are also criteria air pollutants and are harmful to human health. NO<sub>2</sub> also contributes to the formation of acid rain, smog, and nutrient pollution in coastal waters <span class="citation" data-cites="10Z19reB3">[<a href="#ref-10Z19reB3" role="doc-biblioref">2</a>]</span>. The primary source of NO2 emissions is fossil fuel combustion, particularly from traffic and power plants <span class="citation" data-cites="10Z19reB3">[<a href="#ref-10Z19reB3" role="doc-biblioref">2</a>]</span>.</p>
 <p>Therefore, understanding and predicting the spatial variability of NO<sub>2</sub> emissions is of great importance to public health. However, prediction of air quality can be complicated due to the number of factors that affect local air quality, ranging from meteorology to land use. Machine learning models are a useful tool to interpret and find relationships in complex data.</p>
-<p>Bechle et al (2015) explores the impact of.. <span class="citation" data-cites="Ian1ZRjy">[<a href="#ref-Ian1ZRjy" role="doc-biblioref">3</a>]</span> Grace</p>
+<p>Monitoring air quality can be a difficult task, as monitored data varies in availability by geographic region. Bechle et al (2015) explores the usage of satellite data and GIS derived land use characteristics to better understand NO<sub>2</sub> concentrations and air quality in regions without air quality monitors. <span class="citation" data-cites="Ian1ZRjy">[<a href="#ref-Ian1ZRjy" role="doc-biblioref">3</a>]</span> This research incorporated DOMINO satellite column and surface estimates of NO<sub>2</sub> concentrations and a WRF-Chem model to create monthly NO<sub>2</sub> concentration estimates based on scaled yearly land use regression data.</p>
 <p>This report proposes a machine learning model to predict NO<sub>2</sub> concentrations spatially. First, a literature review was undertaken to understand what machine learning models have typically performed well in predicting air quality. Next, an exploratory data analysis (EDA) was performed on the Bechle et al (2015) dataset. Finally, multiple linear regression, neural network and random forest models were built and results were compared to see which method had the lowest mean-squared error (MSE).</p>
 <h1 id="methods">2. Methods</h1>
 <h2 id="literature-review">2.1 Literature Review</h2>
@@ -256,9 +256,8 @@ on December 6, 2020.
 <p>Because the objective of this study is to predict a single variable (NO<sub>2</sub> concentrations), then the models used by PM<sub>2.5</sub> studies are the most relevant. Therefore, in our model analysis, we will use MLR, neural networks and RF.</p>
 <h2 id="exploratory-data-analysis">2.2 Exploratory Data Analysis</h2>
 <p>The target variable in this predictive case is NO<sub>2</sub> concentration in the continental United States. The observations from the data have a mean NO<sub>2</sub> concentration of 11.831 ppb with a standard deviation of 6.290 ppb. The NO<sub>2</sub> concentration data has a range from 0.309 to 31.016 ppb. The five highest values are considered outliers. The distribution of NO<sub>2</sub> concentration values is unimodal with a slight right skew.</p>
-<figure>
-<img src="images/Histogram_NO2.png" alt="" /><figcaption>Figure 2.1 Histogram of NO2 concentrations</figcaption>
-</figure>
+<p><strong>Figure 2.1</strong>
+<img src="images/Histogram_NO2.png" alt="Figure 2.1 Histogram of NO2 concentrations" /></p>
 <p>The potential explanatory variables of air quality monitor IDs, states, latitude, longitude, and WRF-Chem+DOMINO each exist as single columns. The variables related to land-use of impervious surfaces, population, major road length, residential road length, and total road length each have several columns quantifying these values based on the radius from the air quality monitor. The impervious surfaces, population, and major road length variables have 22 columns each based on radii ranging from 100 to 10,000 meters. The variables minor road length and total road length have 30 columns each based on radii ranging from 100 to 14,000 meters.</p>
 <p>The spatially-related data of latitude, longitude, and state of air quality monitors can be best interpreted by viewing this data plotted on a map. Each observation corresponds to a unique monitoring station at a distinct longitude and latitude, so there are 255 points. Monitors in this dataset come from 43 of the 50 states in the USA, excluding Alabama, Alaska, Hawaii, Mississippi, Montana, Oregon, Nebraska, and West Virginia. Many of the states. Many states have just one or two monitors, while nearly half of all of the monitors are in the three states California, Texas, and Pennsylvania. Observing Figure 2.2, there are many spatial gaps in the data and little discernible correlation between position and NO<sub>2</sub> quantity.</p>
 <figure>
@@ -268,7 +267,7 @@ on December 6, 2020.
 <figure>
 <img src="images/corr_plot.png" alt="" /><figcaption>Figure 2.3 Correlation plot</figcaption>
 </figure>
-<p>The relationship between NO<sub>2</sub> and each of the five land-use variables changes as the radius changes. As seen in Figure 2.3, the overall correlation is moderately strong. However, the correlation between NO<sub>2</sub> and individual columns for each variable category with differing radii generally increases as the radius increases. The impervious surface correlation is highest at a radius of 7,000 meters (rho = 0.794) and the four remaining land-use variables have their highest correlation at 10,000 meters: population (r = 0.721), major road length (&amp;rho = 0.770), residential road length (rho = 0.754), and total road length (rho = 0.771).</p>
+<p>The relationship between NO<sub>2</sub> and each of the five land-use variables changes as the radius changes. As seen in Figure 2.3, the overall correlation is moderately strong. However, the correlation between NO<sub>2</sub> and individual columns for each variable category with differing radii generally increases as the radius increases. The impervious surface correlation is highest at a radius of 7,000 meters (ρ = 0.794) and the four remaining land-use variables have their highest correlation at 10,000 meters: population (r = 0.721), major road length (ρ = 0.770), residential road length (ρ = 0.754), and total road length (ρ = 0.771).</p>
 <h2 id="model">2.3 Model</h2>
 <h3 id="multiple-linear-regression">2.3.1 Multiple Linear Regression</h3>
 <p>Multiple linear regression (MLR) is a method of predicting a dependent variable using linear combinations of of any number of independent variables. MLR is widely used in statistical research because it is easy to interpret and understand. Additionally, multiple regression can also often result in a model with results comparable to that of a more complex model, such as a neural network or random forest model. The modeled equation takes the form of the following generalized equation:</p>

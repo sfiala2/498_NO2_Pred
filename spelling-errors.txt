@@ -12,7 +12,7 @@ Clarizio
 CNNs
 colinearity
 convolutes
-convolutional
+Convolutional
 covariates
 datapoints
 dataset
@@ -23,6 +23,7 @@ DTF
 EDA
 Enebish
 fundament
+GIS
 GridSearchCV
 GRU
 heteroscedacity
@@ -31,7 +32,7 @@ homogenous
 Houly
 HPBL
 hyperparameter
-Hyperparameters
+hyperparameters
 janeroe
 Kaggle
 keras
@@ -58,7 +59,7 @@ ppb
 preprocess
 PSO
 RandomForestRegressor
-ReLU
+ReLu
 resedential
 respirable
 RMSE
