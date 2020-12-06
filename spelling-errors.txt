@@ -11,7 +11,8 @@ BRNN
 Clarizio
 CNNs
 convolutes
-Convolutional
+convolutional
+datapoints
 dataset
 datasets
 Devolpment
@@ -35,6 +36,7 @@ Liu
 LSTM
 LSTMs
 marcelbriguglio
+memorises
 MLR
 MODIS
 MSE
@@ -44,13 +46,14 @@ NOx
 opensource
 optimizers
 overfit
+overfits
 overfitting
 perceptron
 ppb
 preprocess
 PSO
 RandomForestRegressor
-ReLU
+ReLu
 respirable
 RMSE
 RMSProp

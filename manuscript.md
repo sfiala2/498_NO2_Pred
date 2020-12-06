@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/ce88d58bdf86f65e53281c9c183cd739224b9d2f/" />
+  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/e737d7b14f14a35221f9b56bd189cd325e5f68f3/" />
 
-  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/ce88d58bdf86f65e53281c9c183cd739224b9d2f/" />
+  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/e737d7b14f14a35221f9b56bd189cd325e5f68f3/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/ce88d58bdf86f65e53281c9c183cd739224b9d2f/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/e737d7b14f14a35221f9b56bd189cd325e5f68f3/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Predicting NO2 concentrations
 
 <small><em>
 This manuscript
-([permalink](https://tessac2.github.io/498_NO2_pred/v/ce88d58bdf86f65e53281c9c183cd739224b9d2f/))
+([permalink](https://tessac2.github.io/498_NO2_pred/v/e737d7b14f14a35221f9b56bd189cd325e5f68f3/))
 was automatically generated
-from [tessac2/498_NO2_pred@ce88d58](https://github.com/tessac2/498_NO2_pred/tree/ce88d58bdf86f65e53281c9c183cd739224b9d2f)
+from [tessac2/498_NO2_pred@e737d7b](https://github.com/tessac2/498_NO2_pred/tree/e737d7b14f14a35221f9b56bd189cd325e5f68f3)
 on December 6, 2020.
 </em></small>
 
@@ -300,7 +300,11 @@ Both absolute error and root mean squared error were chosen as the loss function
 
 The final step was to train our model so created using training dataset and the keras function model.fit. An important parameter for fitting the model is epoch which indicates the number of times the training dataset is run through our model. For example, if we choose 500 epochs we are allowing the training data to run through the model for 500 times. The number of epochs determine how well the model familiarizes itself with the model. Greater the number of epochs the better the model understands your data.
 
+However, it must be ensured that excessive epochs in proportion to the complexity of the model and the dataset is avoided as this could result in a situation wherein the model no longer tries to find a pattern among the data but rather simply memorises it. In such situations, the model overfits the data. We used a range of epochs between 350- 1000.
 
+Usually, training dataset is split into training and validation dataset to resolve the problem of overfitting if encountered. A validation dataset also allows for considerable improvements in model before the model is fit using the test data. A common practice is to split the training data in such a way that 80% of the data is used to train the model and 10-20% to validate. We used a 10-20% split. However, our bets performing neural network model did not use any validation data citing the limited number of datapoints available for the competition.
+
+Our neural networks achieved a RMSE values in the range of 2.92-6.6. The best performing neural network model is described in detail in the Results section of the report.
 
 
 ### 2.3.3 Random Forest
