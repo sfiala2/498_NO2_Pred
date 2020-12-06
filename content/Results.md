@@ -12,7 +12,7 @@ The squared error is also related to the root mean squared error, the measured u
 The problem is that the loss function used was the mean squared error, meaning that only using this metric can may cause us to fail to observe other possible problems while training the data.
 Absolute error as a criterion for analysis fills these gaps in knowledge, such as bias in the training data or the geographic distribution of the error. 
 
-![Figure X. Absolute Error Distribution Histogram](images/Absolute_dis.png)
+![Figure X. Training Data Absolute Error Histogram](images/Absolute_dis.png)
 
 Figure H (histogram) shows the distribution for the absolute error on the training data. 
 The distribution is nearly gaussian, which is expected with a large sample size.
@@ -21,6 +21,8 @@ The major difference between the distribution and a Gaussian distribution is the
 The kurtosis was found to be greater than 3, meaning that the data is more concentrated near the mean with some extreme outliers. 
 This is interesting because since the loss function of the model was mean squared error, these outliers should be minimized.
 
+
+![Figure X. Training Data Absolute Error Geographic Distribution](images/Absolute_map.png)
 
 Figure A (Absolute value map) shows the geographic distribution of the absolute error. 
 This figure shows that the absolute error is not spatially homogenous, with most of the outliers being in the West. 
