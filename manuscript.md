@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/940920da24e4251c02c606d9d886e979e6db5890/" />
+  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/ee16492af243d8f71e594294873b3833e8ca67c1/" />
 
-  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/940920da24e4251c02c606d9d886e979e6db5890/" />
+  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/ee16492af243d8f71e594294873b3833e8ca67c1/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/940920da24e4251c02c606d9d886e979e6db5890/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/ee16492af243d8f71e594294873b3833e8ca67c1/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Predicting NO2 concentrations
 
 <small><em>
 This manuscript
-([permalink](https://tessac2.github.io/498_NO2_pred/v/940920da24e4251c02c606d9d886e979e6db5890/))
+([permalink](https://tessac2.github.io/498_NO2_pred/v/ee16492af243d8f71e594294873b3833e8ca67c1/))
 was automatically generated
-from [tessac2/498_NO2_pred@940920d](https://github.com/tessac2/498_NO2_pred/tree/940920da24e4251c02c606d9d886e979e6db5890)
+from [tessac2/498_NO2_pred@ee16492](https://github.com/tessac2/498_NO2_pred/tree/ee16492af243d8f71e594294873b3833e8ca67c1)
 on December 6, 2020.
 </em></small>
 
@@ -199,6 +199,7 @@ Additionally, all studies considered meteorology when constructing the machine l
 The models in each of these studies is summarized in Table 2.1 below:
 
 **Table 2.1 Models used in literature** 
+
 |PM2.5|Both PM2.5 and AQI|
 |-----|------------------|
 |**MLR** (Xu et al, 2018; Enebish et al, 2020; Chen et al, 2018) | **RF** (Chen et al, 2018; Xu et al, 2018; Singh et al, 2013; Liu et al, 2019; Enebish et al, 2020)|
@@ -212,6 +213,7 @@ The models in each of these studies is summarized in Table 2.1 below:
 As we can see above more models were used to predict PM2.5 than AQI, and the ones that were used in AQI studies were also used in predicting PM2.5. The best-predicting models in each study are shown in Table 2.2, alongside their RMSE and R2 values. 
 
 **Table 2.2 Best models in each study**
+
 | Study | Target Prediction | Best Model | RMSE | R2 |
 |-------|-------------------|------------|------|----|
 |Chen et al (2018)|Annual average PM2.5|Random Forest|6.9|0.86|

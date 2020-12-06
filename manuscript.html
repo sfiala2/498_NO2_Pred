@@ -53,9 +53,9 @@
   <meta name="citation_fulltext_html_url" content="https://tessac2.github.io/498_NO2_pred/" />
   <meta name="citation_pdf_url" content="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/940920da24e4251c02c606d9d886e979e6db5890/" />
-  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/940920da24e4251c02c606d9d886e979e6db5890/" />
-  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/940920da24e4251c02c606d9d886e979e6db5890/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/ee16492af243d8f71e594294873b3833e8ca67c1/" />
+  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/ee16492af243d8f71e594294873b3833e8ca67c1/" />
+  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/ee16492af243d8f71e594294873b3833e8ca67c1/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -69,9 +69,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://tessac2.github.io/498_NO2_pred/v/940920da24e4251c02c606d9d886e979e6db5890/">permalink</a>)
+(<a href="https://tessac2.github.io/498_NO2_pred/v/ee16492af243d8f71e594294873b3833e8ca67c1/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/tessac2/498_NO2_pred/tree/940920da24e4251c02c606d9d886e979e6db5890">tessac2/498_NO2_pred@940920d</a>
+from <a href="https://github.com/tessac2/498_NO2_pred/tree/ee16492af243d8f71e594294873b3833e8ca67c1">tessac2/498_NO2_pred@ee16492</a>
 on December 6, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -131,28 +131,120 @@ on December 6, 2020.
 <p>A common limitation of all of the studies is the volume of missing data. In Chen et al (2018), the model had only two years of ground-based measurements to train the model on (2014-2016), and then predicted PM2.5 concentrations for a ten year period (2005 to 2014). Xu et al, 2018 also discussed the challenge of missing data, averaging hourly and daily measurements where available to monthly concentrations to use in model development. Enebish et al, 2020 discussed there being few air quality monitoring stations and insufficient data to well represent the high seasonal variability of PM2.5 concentrations. Additionally, Gu et al (2020) only used pollution data from one year within one region in China, and Liu et al (2019) used pollution data from one Italian city over one year.</p>
 <p>Additionally, all studies considered meteorology when constructing the machine learning model. The dataset in our study does not include meteorology, potentially leaving out an important predictive factor.</p>
 <p>The models in each of these studies is summarized in Table 2.1 below:</p>
-<p><strong>Table 2.1 Models used in literature</strong>
-|PM2.5|Both PM2.5 and AQI|
-|—–|——————|
-|<strong>MLR</strong> (Xu et al, 2018; Enebish et al, 2020; Chen et al, 2018) | <strong>RF</strong> (Chen et al, 2018; Xu et al, 2018; Singh et al, 2013; Liu et al, 2019; Enebish et al, 2020)|
-| <strong>LASSO</strong> (Xu et al, 2018) | <strong>Neural Network</strong> (Azid et al, 2014; Xu et al, 2018, Gu et al, 2020) |
-| <strong>MARS</strong> (Xu et al, 2018; Enebish et al, 2020 ) | <strong>SVM</strong> (Xu et al, 2018; Gu et al, 2020; Liu et al, 2019; Enebish et al, 2020; Singh et al, 2013) |
-| <strong>Gradient Boosting</strong> (Xu et al, 2018; Enebish et al, 2020) | |
-| <strong>Cubist</strong> (Xu et al, 2018) | |
-| <strong>Generalized additive model</strong> (Enebish et al, 2020; Chen et al, 2018)| |
-| <strong>Mixed effects models</strong> (Chen et al, 2018) | |</p>
+<p><strong>Table 2.1 Models used in literature</strong></p>
+<table>
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 78%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>PM2.5</th>
+<th>Both PM2.5 and AQI</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>MLR</strong> (Xu et al, 2018; Enebish et al, 2020; Chen et al, 2018)</td>
+<td><strong>RF</strong> (Chen et al, 2018; Xu et al, 2018; Singh et al, 2013; Liu et al, 2019; Enebish et al, 2020)</td>
+</tr>
+<tr class="even">
+<td><strong>LASSO</strong> (Xu et al, 2018)</td>
+<td><strong>Neural Network</strong> (Azid et al, 2014; Xu et al, 2018, Gu et al, 2020)</td>
+</tr>
+<tr class="odd">
+<td><strong>MARS</strong> (Xu et al, 2018; Enebish et al, 2020 )</td>
+<td><strong>SVM</strong> (Xu et al, 2018; Gu et al, 2020; Liu et al, 2019; Enebish et al, 2020; Singh et al, 2013)</td>
+</tr>
+<tr class="even">
+<td><strong>Gradient Boosting</strong> (Xu et al, 2018; Enebish et al, 2020)</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><strong>Cubist</strong> (Xu et al, 2018)</td>
+<td></td>
+</tr>
+<tr class="even">
+<td><strong>Generalized additive model</strong> (Enebish et al, 2020; Chen et al, 2018)</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><strong>Mixed effects models</strong> (Chen et al, 2018)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
 <p>As we can see above more models were used to predict PM2.5 than AQI, and the ones that were used in AQI studies were also used in predicting PM2.5. The best-predicting models in each study are shown in Table 2.2, alongside their RMSE and R2 values.</p>
-<p><strong>Table 2.2 Best models in each study</strong>
-| Study | Target Prediction | Best Model | RMSE | R2 |
-|——-|——————-|————|——|—-|
-|Chen et al (2018)|Annual average PM2.5|Random Forest|6.9|0.86|
-|Xu et al (2018)|Monthly average PM2.5|Cubist|2.6|0.48|
-|Enebish et al (2020)|Annual average PM2.5|Random Forest|12.9|0.96|
-|Azid et al (2014)|Daily AQI|Neural network|10.0|0.62|
-|Gu et al (2020)|Daily AQI|SVM|n.a.|n.a|
-|Singh et al (2013)|Daily AQI|Random Forest|4.4|0.92|
-|Liu et al (2019)|Hourly AQI|SVM|7.7|0.98|
-|Liu et al (2019)|Houly NOx|Random Forest|83.7|0.84|</p>
+<p><strong>Table 2.2 Best models in each study</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Study</th>
+<th>Target Prediction</th>
+<th>Best Model</th>
+<th>RMSE</th>
+<th>R2</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Chen et al (2018)</td>
+<td>Annual average PM2.5</td>
+<td>Random Forest</td>
+<td>6.9</td>
+<td>0.86</td>
+</tr>
+<tr class="even">
+<td>Xu et al (2018)</td>
+<td>Monthly average PM2.5</td>
+<td>Cubist</td>
+<td>2.6</td>
+<td>0.48</td>
+</tr>
+<tr class="odd">
+<td>Enebish et al (2020)</td>
+<td>Annual average PM2.5</td>
+<td>Random Forest</td>
+<td>12.9</td>
+<td>0.96</td>
+</tr>
+<tr class="even">
+<td>Azid et al (2014)</td>
+<td>Daily AQI</td>
+<td>Neural network</td>
+<td>10.0</td>
+<td>0.62</td>
+</tr>
+<tr class="odd">
+<td>Gu et al (2020)</td>
+<td>Daily AQI</td>
+<td>SVM</td>
+<td>n.a.</td>
+<td>n.a</td>
+</tr>
+<tr class="even">
+<td>Singh et al (2013)</td>
+<td>Daily AQI</td>
+<td>Random Forest</td>
+<td>4.4</td>
+<td>0.92</td>
+</tr>
+<tr class="odd">
+<td>Liu et al (2019)</td>
+<td>Hourly AQI</td>
+<td>SVM</td>
+<td>7.7</td>
+<td>0.98</td>
+</tr>
+<tr class="even">
+<td>Liu et al (2019)</td>
+<td>Houly NOx</td>
+<td>Random Forest</td>
+<td>83.7</td>
+<td>0.84</td>
+</tr>
+</tbody>
+</table>
 <p>Table 2.2 demonstrates that RF models tend to provide the most accurate prediction when considering a single pollutant, with 3/4 studies looking at PM2.5 or NOx having RF as the best predicting model. When examining AQI, SVM models tend to work best, with 2/4 studies finding SVM provides the best prediction.</p>
 <p>The RMSE and R2 values vary significantly for each study. This can be attributed to the different geographic areas considered, varying spatial resolutions, amount of uncertainty in the data sources, prediction type and different parameters included in the model.</p>
 <p>Because the objective of this study is to predict a single variable (NO2 concentrations), then the models used by PM2.5 studies are the most relevant. Therefore, in our model analysis, we will use MLR, neural networks and RF.</p>
