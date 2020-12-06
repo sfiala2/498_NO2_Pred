@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://sfiala2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/74ed8d6ca6766a8f0af380cb935d8e8c6e2726c1/" />
+  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/5ad5c664edd974dbb21417846a17a9fd1469635f/" />
 
-  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/74ed8d6ca6766a8f0af380cb935d8e8c6e2726c1/" />
+  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/5ad5c664edd974dbb21417846a17a9fd1469635f/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/74ed8d6ca6766a8f0af380cb935d8e8c6e2726c1/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/5ad5c664edd974dbb21417846a17a9fd1469635f/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Predicting NO<sub>2</sub> concentrations
 
 <small><em>
 This manuscript
-([permalink](https://sfiala2.github.io/498_NO2_pred/v/74ed8d6ca6766a8f0af380cb935d8e8c6e2726c1/))
+([permalink](https://sfiala2.github.io/498_NO2_pred/v/5ad5c664edd974dbb21417846a17a9fd1469635f/))
 was automatically generated
-from [sfiala2/498_NO2_pred@74ed8d6](https://github.com/sfiala2/498_NO2_pred/tree/74ed8d6ca6766a8f0af380cb935d8e8c6e2726c1)
+from [sfiala2/498_NO2_pred@5ad5c66](https://github.com/sfiala2/498_NO2_pred/tree/5ad5c664edd974dbb21417846a17a9fd1469635f)
 on December 6, 2020.
 </em></small>
 
@@ -250,7 +250,7 @@ The spatially-related data of latitude, longitude, and state of air quality moni
 
 Figure 2.3 is a correlation matrix for the variables in this data set. The five land-use variables are aggregated such that each of the series of related covariates differentiated by radius are instead one column. As seen in the plot, each of the land-use variables has a moderately strong positive correlation with NO<sub>2</sub>, as well as the variable WRF+DOMINO. The impervious surfaces, major road length, residential road length, and total road length variables each have a heteroskedastic relationship with NO<sub>2</sub> with higher variability occurring when paired with larger NO<sub>2</sub> values. Each of these relationships show a stronger correlation when measured with a Spearman’s correlation as opposed to the Pearson’s correlation used in the matrix. The three road-related variables are related and highly correlated with each other. The variable of population is highly skewed and has an exponential relationship with NO<sub>2</sub>. This correlation is stronger when a log-transformed population is paired with NO<sub>2</sub>. The variables of distance to coast and truncated elevation have a very weak correlation with NO<sub>2</sub>.
 
-**Figure 2.3** 
+**Figure 2.3 Correlation Matrix of Variables** 
 ![Figure 2.3 Correlation plot](images/corr_plot.png) 
 
 The relationship between NO<sub>2</sub> and each of the five land-use variables changes as the radius changes. As seen in Figure 2.3, the overall correlation is moderately strong. However, the correlation between NO<sub>2</sub> and individual columns for each variable category with differing radii generally increases as the radius increases. The impervious surface correlation is highest at a radius of 7,000 meters (&rho; = 0.794) and the four remaining land-use variables have their highest correlation at 10,000 meters: population (r = 0.721),  major road length (&rho; = 0.770), residential road length (&rho; = 0.754), and total road length (&rho; = 0.771).
@@ -301,11 +301,11 @@ The multiple regression model presented, although comparable to other models use
 Artificial neural networks are based on the design philosophy of the neural connections in our brain. They consist of a group of interconnected nodes joined through edges. The edges transmit the signals (which in a machine learning model would be a real number) from one neuron to another just like a synapse functions in a brain. A typical neural network has many layers. Each layer is composed of a set of neurons and each layer transforms and processes data in a different way based on the hyperparameters of the model.
 
 There are different kinds of neural networks. The most commonly used of which are:
-1. Feed Forward Neural Network
-2. Convolutional Neural Network (CNN)
-3. Recurrent Neural Network (RNN)
-4. Long-short term memory neural network (LSTM)
-5. Gated Recurrent Unit (GRU)
+1.  Feed Forward Neural Network
+2.  Convolutional Neural Network (CNN)
+3.  Recurrent Neural Network (RNN)
+4.  Long-short term memory neural network (LSTM)
+5.  Gated Recurrent Unit (GRU)
 
 There are several other advanced ones such as General Adversarial Networks, Auto-encoders and Deep Belief Neural networks. However, we restrict our discussion to the five types listed above.
 
@@ -371,7 +371,7 @@ Variable selection and feature engineering are very important in data preprocess
 
 Based on previous exploratory data analysis, the raw dataset contains valuable land-use variables in series including impervious surfaces, population, major road length, residential road length, and total road length within different buffers. It also include elevation, distance to coast, latitude, longitude, linear combinations of satellite data and WRF-Chem output. The variables within their series are highly correlated, so a few representative ones should be selected out based on the second criteria mentioned before. Here we select one for each kind of land-use variables. It is interesting that high correlations have been found between some of these land-use variables, like road lengths. Thus, we only selected the road length having the highest relationship with the variable to be predicted. Latitude and longitude are binned and one-hot coded. Around 20% of the raw data were selected out for prediction validation.
 
-Random forest model in this project was created with scikit-learn RandomForestRegressor library. GridSearchCV was imported to conduct hyperparameter optimization. The model output generally had a MSE around 3.2 in the validation data. However, on the test data it did not show a good performance (MSE = 4.2). One possible reason is that random forest regression is weak on predicting values with magnitudes beyond the train dataset, meaning that it cannot confidently handle noise or outliers. It also prefers high dimensional, large-scale data, however, in this project the data is on a relatively low scale. 
+Random forest model in this project was created with scikit-learn RandomForestRegressor library. GridSearchCV was imported to conduct hyperparameter optimization. The model output generally had a MSE around 3.2 in the validation data. However, on the test data it did not show a good performance (MSE = 4.2). One possible reason is that random forest regression is weak on predicting values with magnitudes beyond the train dataset, meaning that it cannot confidently handle noise or outliers. It also prefers high dimensional, large-scale data, however, in this project the dataset is on a relatively low scale. 
 
 In conclusion, random forest is possibly not a very appropriate algorithm to make prediction in regression problems from dataset in a low-scale and a low-dimension.
 

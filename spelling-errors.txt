@@ -15,7 +15,7 @@ CNNs
 collinearity
 concentartion
 convolutes
-Convolutional
+convolutional
 covariates
 datapoints
 dataset
@@ -68,7 +68,7 @@ preduced
 preprocess
 PSO
 RandomForestRegressor
-ReLU
+ReLu
 resedential
 respirable
 RMSE
