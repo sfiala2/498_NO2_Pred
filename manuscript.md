@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/9d898efaf68e1f3f2e5e7f0788db5348f3cf446e/" />
+  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/8f3b69ea9bb333e503aefbbe9b35262123e3db66/" />
 
-  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/9d898efaf68e1f3f2e5e7f0788db5348f3cf446e/" />
+  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/8f3b69ea9bb333e503aefbbe9b35262123e3db66/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/9d898efaf68e1f3f2e5e7f0788db5348f3cf446e/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/8f3b69ea9bb333e503aefbbe9b35262123e3db66/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Predicting NO2 concentrations
 
 <small><em>
 This manuscript
-([permalink](https://tessac2.github.io/498_NO2_pred/v/9d898efaf68e1f3f2e5e7f0788db5348f3cf446e/))
+([permalink](https://tessac2.github.io/498_NO2_pred/v/8f3b69ea9bb333e503aefbbe9b35262123e3db66/))
 was automatically generated
-from [tessac2/498_NO2_pred@9d898ef](https://github.com/tessac2/498_NO2_pred/tree/9d898efaf68e1f3f2e5e7f0788db5348f3cf446e)
+from [tessac2/498_NO2_pred@8f3b69e](https://github.com/tessac2/498_NO2_pred/tree/8f3b69ea9bb333e503aefbbe9b35262123e3db66)
 on December 6, 2020.
 </em></small>
 
@@ -286,7 +286,9 @@ The model fits the data well for lower NO<sub>2</sub> concentrations. However, t
 
 ![Figure 2.3.1 Linear Model Fit](images/mlr_fit.PNG)
 
-Overall, the model was a fair predictor of NO<sub>2</sub> concentrations, with an R<sup>2</sup> value of 0.775. Of the models presented, it had the second lowest root mean square error (3.08) when applied to the test data. However, this model is not appropriate for the data it is predicting due to the fact that the data exhibits heteroscedacity, meaning that the variance of errors is not constant. This violates this assumption needed for using a linear model, and as a result the predictions are less accurate. 
+Overall, the model was a fair predictor of NO<sub>2</sub> concentrations, with an R<sup>2</sup> value of 0.775. Of the models presented, it had the second lowest root mean square error (3.08) when applied to the test data. However, this model is not appropriate for the data it is predicting due to the fact that the data exhibits heteroscedacity, meaning that the variance of errors is not constant. This violates this assumption needed for using a linear model, and as a result the predictions are less accurate. Further, building a regression model based on aggregated land use columns resulted in multiple predictions for each monitor. These predictions at each monitor were similar and an average value was taken. However, this is not a good practice for predicting values with precision. Various MLR models with non-aggregated columns were tested, but the model built on aggregated data outperformed in all tests. 
+
+The multiple regression model presented, although comparable to other models used, is not an accurate, appropriate model for predicting NO<sub>2</sub> concentrations based on the available data.  
 
 ### 2.3.2 Neural Networks
 Artifical neural networks are based on the design philosophy of the neural connections in our brain. They consist of a group of nodes interconnected to each other through edges. The edges transmit the signals (which in a machine learning model would be a real number) from one neuron to another just like a synapse functions in a brain.

@@ -12,7 +12,7 @@ Clarizio
 CNNs
 collinearity
 convolutes
-Convolutional
+convolutional
 covariates
 datapoints
 dataset
