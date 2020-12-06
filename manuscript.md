@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/4a413fd75d5edccb9376a4fdfa997f29f45d3695/" />
+  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/216bcbba1015daf2981a1a38feda0f7e6c837258/" />
 
-  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/4a413fd75d5edccb9376a4fdfa997f29f45d3695/" />
+  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/216bcbba1015daf2981a1a38feda0f7e6c837258/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/4a413fd75d5edccb9376a4fdfa997f29f45d3695/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/216bcbba1015daf2981a1a38feda0f7e6c837258/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Predicting NO2 concentrations
 
 <small><em>
 This manuscript
-([permalink](https://tessac2.github.io/498_NO2_pred/v/4a413fd75d5edccb9376a4fdfa997f29f45d3695/))
+([permalink](https://tessac2.github.io/498_NO2_pred/v/216bcbba1015daf2981a1a38feda0f7e6c837258/))
 was automatically generated
-from [tessac2/498_NO2_pred@4a413fd](https://github.com/tessac2/498_NO2_pred/tree/4a413fd75d5edccb9376a4fdfa997f29f45d3695)
+from [tessac2/498_NO2_pred@216bcbb](https://github.com/tessac2/498_NO2_pred/tree/216bcbba1015daf2981a1a38feda0f7e6c837258)
 on December 6, 2020.
 </em></small>
 
@@ -254,11 +254,15 @@ Figure 2.3 is a correlation matrix for the variables in this data set. The five 
 ### 2.3.1 Multiple Linear Regression
 Multiple linear regression (MLR) is a method of predicting a dependent variable using linear combinations of of any number of independent variables. MLR is widely used in statistical research because it is easy to interpret and understand. Additionally, multiple regression can also often result in a model with results comparable to that of a more complex model, such as a neural network or random forest model. The modeled equation takes the form of the following generalized equation:
 
-$$ y = /beta <sub>0</sub> + /beta <sub>1</sub> /times x <sub>1</sub> +  /beta <sub>2</sub> /times x <sub>2</sub> + . . . +  /beta <sub>i</sub> /times x <sub>i</sub> $$
+y = &beta;<sub>0</sub> + &beta;<sub>1</sub> x<sub>1</sub> +  &beta;<sub>2</sub> x <sub>2</sub> + . . . +  &beta;<sub>i</sub> x <sub>i</sub> + &epsilon;
 
-Where
-y = The dependent variable to be predicted
-$/beta <sub>0</sub>$ = The constant intercept 
+
+Where:
+
+y = The dependent variable to be predicted,
+
+$/beta <sub>0</sub>$ = The constant intercept ,
+
 $/beta <sub>i</sub> /times x <sub>i</sub>$ = The i-th constant multiplied by the i-th term 
 
 
