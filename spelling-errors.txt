@@ -73,7 +73,7 @@ SAPSO
 scikit
 SDT
 Shenzen
-sigmoid
+Sigmoid
 Spearman’s
 Spectroradiometer
 Sudheer

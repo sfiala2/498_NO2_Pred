@@ -19,13 +19,13 @@ header-includes: '<!--
 
   <meta name="dc.format" content="text/html" />
 
-  <meta name="dc.title" content="Predicting NO2 concentrations" />
+  <meta name="dc.title" content="Predicting NO&lt;sub&gt;2&lt;/sub&gt; concentrations" />
 
-  <meta name="citation_title" content="Predicting NO2 concentrations" />
+  <meta name="citation_title" content="Predicting NO&lt;sub&gt;2&lt;/sub&gt; concentrations" />
 
-  <meta property="og:title" content="Predicting NO2 concentrations" />
+  <meta property="og:title" content="Predicting NO&lt;sub&gt;2&lt;/sub&gt; concentrations" />
 
-  <meta property="twitter:title" content="Predicting NO2 concentrations" />
+  <meta property="twitter:title" content="Predicting NO&lt;sub&gt;2&lt;/sub&gt; concentrations" />
 
   <meta name="dc.date" content="2020-12-06" />
 
@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/0fc1472fd71e057ee1251a6abb4997c5d32fc72d/" />
+  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/99355228edcd589daf0dd449845f338781a5bed2/" />
 
-  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/0fc1472fd71e057ee1251a6abb4997c5d32fc72d/" />
+  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/99355228edcd589daf0dd449845f338781a5bed2/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/0fc1472fd71e057ee1251a6abb4997c5d32fc72d/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/99355228edcd589daf0dd449845f338781a5bed2/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -93,7 +93,7 @@ manubot-clear-requests-cache: false
 manubot-output-bibliography: output/references.json
 manubot-output-citekeys: output/citations.tsv
 manubot-requests-cache-path: ci/cache/requests-cache
-title: Predicting NO2 concentrations
+title: Predicting NO<sub>2</sub> concentrations
 ...
 
 
@@ -103,9 +103,9 @@ title: Predicting NO2 concentrations
 
 <small><em>
 This manuscript
-([permalink](https://tessac2.github.io/498_NO2_pred/v/0fc1472fd71e057ee1251a6abb4997c5d32fc72d/))
+([permalink](https://tessac2.github.io/498_NO2_pred/v/99355228edcd589daf0dd449845f338781a5bed2/))
 was automatically generated
-from [tessac2/498_NO2_pred@0fc1472](https://github.com/tessac2/498_NO2_pred/tree/0fc1472fd71e057ee1251a6abb4997c5d32fc72d)
+from [tessac2/498_NO2_pred@9935522](https://github.com/tessac2/498_NO2_pred/tree/99355228edcd589daf0dd449845f338781a5bed2)
 on December 6, 2020.
 </em></small>
 
