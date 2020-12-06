@@ -53,9 +53,9 @@
   <meta name="citation_fulltext_html_url" content="https://tessac2.github.io/498_NO2_pred/" />
   <meta name="citation_pdf_url" content="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/e114f813579c3449059ce6bd64956c7f77d35a75/" />
-  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/e114f813579c3449059ce6bd64956c7f77d35a75/" />
-  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/e114f813579c3449059ce6bd64956c7f77d35a75/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/ff593b47b8b4180326376c28c13d43c0ca9c1625/" />
+  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/ff593b47b8b4180326376c28c13d43c0ca9c1625/" />
+  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/ff593b47b8b4180326376c28c13d43c0ca9c1625/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -69,9 +69,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://tessac2.github.io/498_NO2_pred/v/e114f813579c3449059ce6bd64956c7f77d35a75/">permalink</a>)
+(<a href="https://tessac2.github.io/498_NO2_pred/v/ff593b47b8b4180326376c28c13d43c0ca9c1625/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/tessac2/498_NO2_pred/tree/e114f813579c3449059ce6bd64956c7f77d35a75">tessac2/498_NO2_pred@e114f81</a>
+from <a href="https://github.com/tessac2/498_NO2_pred/tree/ff593b47b8b4180326376c28c13d43c0ca9c1625">tessac2/498_NO2_pred@ff593b4</a>
 on December 6, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -279,11 +279,50 @@ on December 6, 2020.
 <p>ε = The error term (difference between y predicted and y oberseved)</p>
 <p>The multiple regression model used in this project first investigated and removed variables with colinearity. This was done by removing variables with a variance inflation factor over 5. This resulted in all road data being removed.</p>
 <h4 id="mlr-fit">MLR Fit</h4>
+<p>The final model equation is presented in Table 2.3.1.1.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Constant intercept</td>
+<td>2.9128368899112775</td>
+</tr>
+<tr class="even">
+<td>WRF+DOMINO</td>
+<td>0.69</td>
+</tr>
+<tr class="odd">
+<td>Distance_to_coast_km</td>
+<td>-0.0013</td>
+</tr>
+<tr class="even">
+<td>Elevation_truncated_km</td>
+<td>1.1e+01</td>
+</tr>
+<tr class="odd">
+<td>radius</td>
+<td>0.00013</td>
+</tr>
+<tr class="even">
+<td>Impervious</td>
+<td>0.11</td>
+</tr>
+<tr class="odd">
+<td>Population</td>
+<td>0.00011</td>
+</tr>
+</tbody>
+</table>
 <p>The model fits the data well for lower NO<sub>2</sub> concentrations. However, the model predicts high concentrations very poorly. This is due to the distribution of the data used to build the model: There are very few observations of high NO<sub>2</sub> values. The model fit is plotted in Figure 2.3.1.</p>
 <figure>
 <img src="images/mlr_fit.PNG" alt="" /><figcaption>Figure 2.3.1 Linear Model Fit</figcaption>
 </figure>
-<p>Overall, the model was a fair predictor of NO<sub>2</sub> concentrations, with an R<sup>2</sup> value of 0.77. Of the models presented, it had the second lowest root mean square error (3.08) when applied to the test data of However, this model is not appropriate for the data it is predicting. This is due to the fact that the data exhibits heteroscedacity, meaning that the variance of errors is not constant. This violates an assumption needed for using a linear model, and as a result the predictions are less accurate.</p>
+<p>Overall, the model was a fair predictor of NO<sub>2</sub> concentrations, with an R<sup>2</sup> value of 0.775. Of the models presented, it had the second lowest root mean square error (3.08) when applied to the test data. However, this model is not appropriate for the data it is predicting due to the fact that the data exhibits heteroscedacity, meaning that the variance of errors is not constant. This violates this assumption needed for using a linear model, and as a result the predictions are less accurate.</p>
 <h3 id="neural-networks">2.3.2 Neural Networks</h3>
 <p>Artifical neural networks are based on the design philosophy of the neural connections in our brain. They consist of a group of nodes interconnected to each other through edges. The edges transmit the signals (which in a machine learning model would be a real number) from one neuron to another just like a synapse functions in a brain.</p>
 <p>A typical neural network has many layers. Each layer is composed of a set of neurons and each layer transforms and processes data in a different way based on the hyperparameters of the model.</p>
@@ -439,6 +478,7 @@ Another characteristic of the outliers were that they were mainly found in subur
 The model was run on 165 samples and the root mean squared error was found to be 2.925, which is lower than the root mean squared error on the training data (3.05).
 This means that the final model is robust and can be applicable across the United States.</p>
 <h1 id="discussion">4. Discussion</h1>
+<p>The models presented</p>
 <h2 class="page_break_before" id="references">References</h2>
 <!-- Explicitly insert bibliography here -->
 <div id="refs" class="references hanging-indent" role="doc-bibliography">

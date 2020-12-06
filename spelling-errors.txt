@@ -12,7 +12,7 @@ Clarizio
 CNNs
 colinearity
 convolutes
-Convolutional
+convolutional
 covariates
 datapoints
 dataset
@@ -58,7 +58,7 @@ ppb
 preprocess
 PSO
 RandomForestRegressor
-ReLU
+ReLu
 resedential
 respirable
 RMSE

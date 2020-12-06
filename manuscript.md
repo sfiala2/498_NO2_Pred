@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/e114f813579c3449059ce6bd64956c7f77d35a75/" />
+  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/ff593b47b8b4180326376c28c13d43c0ca9c1625/" />
 
-  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/e114f813579c3449059ce6bd64956c7f77d35a75/" />
+  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/ff593b47b8b4180326376c28c13d43c0ca9c1625/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/e114f813579c3449059ce6bd64956c7f77d35a75/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/ff593b47b8b4180326376c28c13d43c0ca9c1625/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Predicting NO2 concentrations
 
 <small><em>
 This manuscript
-([permalink](https://tessac2.github.io/498_NO2_pred/v/e114f813579c3449059ce6bd64956c7f77d35a75/))
+([permalink](https://tessac2.github.io/498_NO2_pred/v/ff593b47b8b4180326376c28c13d43c0ca9c1625/))
 was automatically generated
-from [tessac2/498_NO2_pred@e114f81](https://github.com/tessac2/498_NO2_pred/tree/e114f813579c3449059ce6bd64956c7f77d35a75)
+from [tessac2/498_NO2_pred@ff593b4](https://github.com/tessac2/498_NO2_pred/tree/ff593b47b8b4180326376c28c13d43c0ca9c1625)
 on December 6, 2020.
 </em></small>
 
@@ -269,13 +269,26 @@ y = The dependent variable to be predicted,
 
 The multiple regression model used in this project first investigated and removed variables with colinearity. This was done by removing variables with a variance inflation factor over 5. This resulted in all road data being removed. 
 
-
 #### MLR Fit 
+
+The final model equation is presented in Table 2.3.1.1. 
+
+|Variable   |  Value |
+|-----------|--------|
+|Constant intercept | 2.9128368899112775 |
+|WRF+DOMINO | 0.69 |
+|Distance_to_coast_km | -0.0013 |
+|Elevation_truncated_km | 1.1e+01 |
+|radius | 0.00013 |
+|Impervious | 0.11 | 
+|Population | 0.00011 |
+
+
 The model fits the data well for lower NO<sub>2</sub> concentrations. However, the model predicts high concentrations very poorly. This is due to the distribution of the data used to build the model: There are very few observations of high NO<sub>2</sub> values. The model fit is plotted in Figure 2.3.1.
 
 ![Figure 2.3.1 Linear Model Fit](images/mlr_fit.PNG)
 
-Overall, the model was a fair predictor of NO<sub>2</sub> concentrations, with an R<sup>2</sup> value of 0.77. Of the models presented, it had the second lowest root mean square error (3.08) when applied to the test data of  However, this model is not appropriate for the data it is predicting. This is due to the fact that the data exhibits heteroscedacity, meaning that the variance of errors is not constant. This violates an assumption needed for using a linear model, and as a result the predictions are less accurate. 
+Overall, the model was a fair predictor of NO<sub>2</sub> concentrations, with an R<sup>2</sup> value of 0.775. Of the models presented, it had the second lowest root mean square error (3.08) when applied to the test data. However, this model is not appropriate for the data it is predicting due to the fact that the data exhibits heteroscedacity, meaning that the variance of errors is not constant. This violates this assumption needed for using a linear model, and as a result the predictions are less accurate. 
 
 ### 2.3.2 Neural Networks
 Artifical neural networks are based on the design philosophy of the neural connections in our brain. They consist of a group of nodes interconnected to each other through edges. The edges transmit the signals (which in a machine learning model would be a real number) from one neuron to another just like a synapse functions in a brain.
@@ -422,7 +435,7 @@ This means that the final model is robust and can be applicable across the Unite
 
 # 4. Discussion 
 
-
+The models presented 
 
 [@Genuer2010]: doi:10.1016/j.patrec.2010.03.014
 
