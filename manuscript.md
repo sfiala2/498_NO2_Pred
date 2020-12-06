@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/5739233a51a4dc69fc9f7c47df88f61b8d7582ad/" />
+  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/93b5181fc612e682bc38a8b050126384c981ae01/" />
 
-  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/5739233a51a4dc69fc9f7c47df88f61b8d7582ad/" />
+  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/93b5181fc612e682bc38a8b050126384c981ae01/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/5739233a51a4dc69fc9f7c47df88f61b8d7582ad/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/93b5181fc612e682bc38a8b050126384c981ae01/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Predicting NO2 concentrations
 
 <small><em>
 This manuscript
-([permalink](https://tessac2.github.io/498_NO2_pred/v/5739233a51a4dc69fc9f7c47df88f61b8d7582ad/))
+([permalink](https://tessac2.github.io/498_NO2_pred/v/93b5181fc612e682bc38a8b050126384c981ae01/))
 was automatically generated
-from [tessac2/498_NO2_pred@5739233](https://github.com/tessac2/498_NO2_pred/tree/5739233a51a4dc69fc9f7c47df88f61b8d7582ad)
+from [tessac2/498_NO2_pred@93b5181](https://github.com/tessac2/498_NO2_pred/tree/93b5181fc612e682bc38a8b050126384c981ae01)
 on December 6, 2020.
 </em></small>
 
@@ -273,7 +273,7 @@ We will first discuss, briefly, the CNN, RNN, LSTM and GRU before moving on to t
 Largely used for classifying image and audio data, the convolutional neural network, similar to neural networks has an input and output layer with hidden layers in between them. Further, a CNN has three layers called convolutional layer, pooling layer and a fully-connected layer which is similar to the regular neural network. The convolutional layer takes the input from the input layer and convolutes the data and sends it downstream for further processing. In simpler terms, in CNNs an input image is taken and a filter is applied on it repeatedly acorss the image to create a feature map which can be used to identify and classify the input image [@https://arxiv.org/abs/1511.08458].
 
 #### 2.3.2.2 RNN
-These neural networks are used to predict the temporal trend of the data.In these kind of models, the 'memory' of the previous inputs of is stored and used for further processing of future inputs and outputs.This relationship between input and output data could be both unidirectional (moving in the forward direction) or bidirectional where future data could also be used to improve the current inputs and outputs.These neural networks could use a variety of relationships between their inputs and outputs and could be described as one to one, one to many, many to many and many to one relationships. Sigmoid, ReLu, Tanh are the common activations used in RNNs.
+These neural networks are used to predict the temporal trend of the data.In these kind of models, the 'memory' of the previous inputs of is stored and used for further processing of future inputs and outputs.This relationship between input and output data could be both unidirectional (moving in the forward direction) or bidirectional where future data could also be used to improve the current inputs and outputs.These neural networks could use a variety of relationships between their inputs and outputs and could be described as one to one, one to many, many to many and many to one relationships. Sigmoid, ReLu, Tanh are the common activations used in RNNs [@https://arxiv.org/abs/1506.00019v4].
 
 #### 2.3.2.3 LSTM
 LSTMs are a type of RNN which solve the common problems that RNNs face, that is their inability to efficiently handle short-term memory over a lengthy series of steps. LSTMs solve this problem using a memory cell and gating units and consists of a set of gates called input, output and forget.The input gate is responsible for monitoring and deciding the kind and quantity of data that is allowed to enter the cell, the memory gate is responsible for deciding the proportion of data that should be 'forgotten' and which information is useless and to be discarded. Finally, the output gate is responsible for deciding the amount of data that is passed as output from the cell.
