@@ -53,9 +53,9 @@
   <meta name="citation_fulltext_html_url" content="https://tessac2.github.io/498_NO2_pred/" />
   <meta name="citation_pdf_url" content="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/fea17f6e4aae1354cafe008670adf58312d0e06f/" />
-  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/fea17f6e4aae1354cafe008670adf58312d0e06f/" />
-  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/fea17f6e4aae1354cafe008670adf58312d0e06f/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/edcd8c5c14c7986a2b02b1be0d54b5de6885bfda/" />
+  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/edcd8c5c14c7986a2b02b1be0d54b5de6885bfda/" />
+  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/edcd8c5c14c7986a2b02b1be0d54b5de6885bfda/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -69,9 +69,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://tessac2.github.io/498_NO2_pred/v/fea17f6e4aae1354cafe008670adf58312d0e06f/">permalink</a>)
+(<a href="https://tessac2.github.io/498_NO2_pred/v/edcd8c5c14c7986a2b02b1be0d54b5de6885bfda/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/tessac2/498_NO2_pred/tree/fea17f6e4aae1354cafe008670adf58312d0e06f">tessac2/498_NO2_pred@fea17f6</a>
+from <a href="https://github.com/tessac2/498_NO2_pred/tree/edcd8c5c14c7986a2b02b1be0d54b5de6885bfda">tessac2/498_NO2_pred@edcd8c5</a>
 on December 6, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -322,7 +322,8 @@ on December 6, 2020.
 <figure>
 <img src="images/mlr_fit.PNG" alt="" /><figcaption>Figure 2.3.1 Linear Model Fit</figcaption>
 </figure>
-<p>Overall, the model was a fair predictor of NO<sub>2</sub> concentrations, with an R<sup>2</sup> value of 0.775. Of the models presented, it had the second lowest root mean square error (3.08) when applied to the test data. However, this model is not appropriate for the data it is predicting due to the fact that the data exhibits heteroscedacity, meaning that the variance of errors is not constant. This violates this assumption needed for using a linear model, and as a result the predictions are less accurate.</p>
+<p>Overall, the model was a fair predictor of NO<sub>2</sub> concentrations, with an R<sup>2</sup> value of 0.775. Of the models presented, it had the second lowest root mean square error (3.08) when applied to the test data. However, this model is not appropriate for the data it is predicting due to the fact that the data exhibits heteroscedacity, meaning that the variance of errors is not constant. This violates this assumption needed for using a linear model, and as a result the predictions are less accurate. Further, building a regression model based on aggregated land use columns resulted in multiple predictions for each monitor. These predictions at each monitor were similar and an average value was taken. However, this is not a good practice for predicting values with precision. Various MLR models with non-aggregated columns were tested, but the model built on aggregated data outperformed in all tests.</p>
+<p>The multiple regression model presented, although comparable to other models used, is not an accurate, appropriate model for predicting NO<sub>2</sub> concentrations based on the available data.</p>
 <h3 id="neural-networks">2.3.2 Neural Networks</h3>
 <p>Artifical neural networks are based on the design philosophy of the neural connections in our brain. They consist of a group of nodes interconnected to each other through edges. The edges transmit the signals (which in a machine learning model would be a real number) from one neuron to another just like a synapse functions in a brain.</p>
 <p>A typical neural network has many layers. Each layer is composed of a set of neurons and each layer transforms and processes data in a different way based on the hyperparameters of the model.</p>
