@@ -53,9 +53,9 @@
   <meta name="citation_fulltext_html_url" content="https://tessac2.github.io/498_NO2_pred/" />
   <meta name="citation_pdf_url" content="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/5739233a51a4dc69fc9f7c47df88f61b8d7582ad/" />
-  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/5739233a51a4dc69fc9f7c47df88f61b8d7582ad/" />
-  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/5739233a51a4dc69fc9f7c47df88f61b8d7582ad/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/93b5181fc612e682bc38a8b050126384c981ae01/" />
+  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/93b5181fc612e682bc38a8b050126384c981ae01/" />
+  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/93b5181fc612e682bc38a8b050126384c981ae01/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -69,9 +69,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://tessac2.github.io/498_NO2_pred/v/5739233a51a4dc69fc9f7c47df88f61b8d7582ad/">permalink</a>)
+(<a href="https://tessac2.github.io/498_NO2_pred/v/93b5181fc612e682bc38a8b050126384c981ae01/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/tessac2/498_NO2_pred/tree/5739233a51a4dc69fc9f7c47df88f61b8d7582ad">tessac2/498_NO2_pred@5739233</a>
+from <a href="https://github.com/tessac2/498_NO2_pred/tree/93b5181fc612e682bc38a8b050126384c981ae01">tessac2/498_NO2_pred@93b5181</a>
 on December 6, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -284,7 +284,7 @@ on December 6, 2020.
 #### 2.3.2.1 CNN
 Largely used for classifying image and audio data, the convolutional neural network, similar to neural networks has an input and output layer with hidden layers in between them. Further, a CNN has three layers called convolutional layer, pooling layer and a fully-connected layer which is similar to the regular neural network. The convolutional layer takes the input from the input layer and convolutes the data and sends it downstream for further processing. In simpler terms, in CNNs an input image is taken and a filter is applied on it repeatedly acorss the image to create a feature map which can be used to identify and classify the input image <span class="citation" data-cites="7jG4ORkP">[<a href="#ref-7jG4ORkP" role="doc-biblioref">11</a>]</span>.</p>
 <h4 id="rnn">2.3.2.2 RNN</h4>
-<p>These neural networks are used to predict the temporal trend of the data.In these kind of models, the ‘memory’ of the previous inputs of is stored and used for further processing of future inputs and outputs.This relationship between input and output data could be both unidirectional (moving in the forward direction) or bidirectional where future data could also be used to improve the current inputs and outputs.These neural networks could use a variety of relationships between their inputs and outputs and could be described as one to one, one to many, many to many and many to one relationships. Sigmoid, ReLu, Tanh are the common activations used in RNNs.</p>
+<p>These neural networks are used to predict the temporal trend of the data.In these kind of models, the ‘memory’ of the previous inputs of is stored and used for further processing of future inputs and outputs.This relationship between input and output data could be both unidirectional (moving in the forward direction) or bidirectional where future data could also be used to improve the current inputs and outputs.These neural networks could use a variety of relationships between their inputs and outputs and could be described as one to one, one to many, many to many and many to one relationships. Sigmoid, ReLu, Tanh are the common activations used in RNNs <span class="citation" data-cites="oXBfd5SX">[<a href="#ref-oXBfd5SX" role="doc-biblioref">12</a>]</span>.</p>
 <h4 id="lstm">2.3.2.3 LSTM</h4>
 <p>LSTMs are a type of RNN which solve the common problems that RNNs face, that is their inability to efficiently handle short-term memory over a lengthy series of steps. LSTMs solve this problem using a memory cell and gating units and consists of a set of gates called input, output and forget.The input gate is responsible for monitoring and deciding the kind and quantity of data that is allowed to enter the cell, the memory gate is responsible for deciding the proportion of data that should be ‘forgotten’ and which information is useless and to be discarded. Finally, the output gate is responsible for deciding the amount of data that is passed as output from the cell.</p>
 <h4 id="neural-networks-used-in-this-project">2.3.2.5 Neural networks used in this project</h4>
@@ -306,9 +306,9 @@ Largely used for classifying image and audio data, the convolutional neural netw
 <p>Our neural networks achieved a RMSE values in the range of 2.92-6.6. The best performing neural network model is described in detail in the Results section of the report.</p>
 <h3 id="random-forest">2.3.3 Random Forest</h3>
 <p>Trees and tree algorithm is among the most widely applied machine learning algorithms. It includes random forest, gradient boosting decision trees, XGBoost, etc. The fundament of trees algorithm is decision tree, which can be divided into classification tree and regression tree. In this project, the label is the observed NO<sub>2</sub> concentration, thus, regression tree algorithm can be applied to make the prediction.</p>
-<p>Random forest is a combination of tree predictors based on model aggregation ideas. It is realized by creating an ensemble of trees by generating random vectors that govern the growth of trees and letting them vote for the most popular label <span class="citation" data-cites="yp5oGc1T">[<a href="#ref-yp5oGc1T" role="doc-biblioref">12</a>]</span>.</p>
-<p>Random forest have the advantages of low overfit, low noise affect. However, for random forest regression, a relatively large number of features are required to reduce the test set error<span class="citation" data-cites="yp5oGc1T">[<a href="#ref-yp5oGc1T" role="doc-biblioref">12</a>]</span>.</p>
-<p>Variable selection and feature engineering are very important in data preprocess of random forest. The two main objectives are to find variables highly related to the response variable, and to find a small number of variables sufficient to a good prediction of the response variable<span class="citation" data-cites="IRmeZSsV">[<a href="#ref-IRmeZSsV" role="doc-biblioref">13</a>]</span>.</p>
+<p>Random forest is a combination of tree predictors based on model aggregation ideas. It is realized by creating an ensemble of trees by generating random vectors that govern the growth of trees and letting them vote for the most popular label <span class="citation" data-cites="yp5oGc1T">[<a href="#ref-yp5oGc1T" role="doc-biblioref">13</a>]</span>.</p>
+<p>Random forest have the advantages of low overfit, low noise affect. However, for random forest regression, a relatively large number of features are required to reduce the test set error<span class="citation" data-cites="yp5oGc1T">[<a href="#ref-yp5oGc1T" role="doc-biblioref">13</a>]</span>.</p>
+<p>Variable selection and feature engineering are very important in data preprocess of random forest. The two main objectives are to find variables highly related to the response variable, and to find a small number of variables sufficient to a good prediction of the response variable<span class="citation" data-cites="IRmeZSsV">[<a href="#ref-IRmeZSsV" role="doc-biblioref">14</a>]</span>.</p>
 <p>Based on previous exploratory data analysis, the raw dataset contains valuable land-use variables in series including impervious surfaces, population, major road length, residential road length, and total road length within different buffers. It also include elevation, distance to coast, latitude, longitude, linear combinations of satellite data and WRF-Chem output. The variables within their series are highly correlated, so a few representative ones should be selected out based on the second criteria mentioned before. Here we select one for each kind of land-use variables. It is interesting that high correlations have been found between some of these land-use variables, like road lengths. Thus, we only selected the road length having the highest relationship with the variable to be predicted. Latitude and longitude are binned and one-hot coded. Around 20% of the raw data were selected out for prediction validation.</p>
 <p>Random forest model in this project is created with scikit-learn RandomForestRegressor library. GridSearchCV was imported to conduct hyperparameter optimization. The model generally get a MSE around 3.2 in the validation data. However, on the test data it did not show a good performance (MES = 4.2). The first reason might be that random forest algorithm perform worse on regression problems than on classification problems since it cannot give a continuous prediction. It is also weak on predicting values with a magnitudes beyond the train dataset, meaning that it cannot confidently handle noise or outliers. It prefers high dimensional, large-scale data, however, in this project the data is in a relatively low scale.</p>
 <p>In conclusion, random forest is possibly not a very appropriate algorithm to make prediction in regression problems from dataset in a low-scale and a low-dimension.</p>
@@ -443,14 +443,19 @@ DOI: <a href="https://doi.org/10.3390/app9194069">10.3390/app9194069</a></p>
 Keiron O’Shea, Ryan Nash<br />
 <em>arXiv:1511.08458 [cs]</em> (2015-12-02) <a href="http://arxiv.org/abs/1511.08458">http://arxiv.org/abs/1511.08458</a></p>
 </div>
+<div id="ref-oXBfd5SX">
+<p>12. <strong>A Critical Review of Recurrent Neural Networks for Sequence Learning</strong> <br />
+Zachary C. Lipton, John Berkowitz, Charles Elkan<br />
+<em>arXiv:1506.00019 [cs]</em> (2015-10-17) <a href="http://arxiv.org/abs/1506.00019">http://arxiv.org/abs/1506.00019</a></p>
+</div>
 <div id="ref-yp5oGc1T">
-<p>12. <strong>Random Forest</strong> <br />
+<p>13. <strong>Random Forest</strong> <br />
 Leo Breiman<br />
 <em>Machine Learning</em> (2001) <br />
 DOI: <a href="https://doi.org/doi:10.1023/A:1010933404324">doi:10.1023/a:1010933404324</a></p>
 </div>
 <div id="ref-IRmeZSsV">
-<p>13. <strong>Variable selection using random forests</strong> <br />
+<p>14. <strong>Variable selection using random forests</strong> <br />
 Robin Genuer, Jean-Michel Poggi, Christine Tuleau-Malot<br />
 <em>Pattern Recognition Letters</em> (2010-10) <a href="https://doi.org/czr7p4">https://doi.org/czr7p4</a> <br />
 DOI: <a href="https://doi.org/10.1016/j.patrec.2010.03.014">10.1016/j.patrec.2010.03.014</a></p>
