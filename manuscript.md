@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/6a35973f5d25c19c886c15130797a1ce53126947/" />
+  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/315176c9f96d5cd3dd418baccc753f66fe1be292/" />
 
-  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/6a35973f5d25c19c886c15130797a1ce53126947/" />
+  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/315176c9f96d5cd3dd418baccc753f66fe1be292/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/6a35973f5d25c19c886c15130797a1ce53126947/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/315176c9f96d5cd3dd418baccc753f66fe1be292/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Predicting NO2 concentrations
 
 <small><em>
 This manuscript
-([permalink](https://tessac2.github.io/498_NO2_pred/v/6a35973f5d25c19c886c15130797a1ce53126947/))
+([permalink](https://tessac2.github.io/498_NO2_pred/v/315176c9f96d5cd3dd418baccc753f66fe1be292/))
 was automatically generated
-from [tessac2/498_NO2_pred@6a35973](https://github.com/tessac2/498_NO2_pred/tree/6a35973f5d25c19c886c15130797a1ce53126947)
+from [tessac2/498_NO2_pred@315176c](https://github.com/tessac2/498_NO2_pred/tree/315176c9f96d5cd3dd418baccc753f66fe1be292)
 on December 6, 2020.
 </em></small>
 
@@ -309,6 +309,9 @@ Usually, training dataset is split into training and validation dataset to resol
 
 Our neural networks achieved a RMSE values in the range of 2.92-6.6. The best performing neural network model is described in detail in the Results section of the report.
 
+|Features|Hyperparameters|Group Member|RMSE Achieved|
+|--------|---------------|------------|-------------|
+|WRF+DOMINO,	impervious percentage,	pop_number,	maj_road_km,	res_road_km,	tot_road_km: All at buffer 10000 m|learning rate = 0.0004; batch size = 120; hidden layers = 4|Sudheer|6.6|
 
 ### 2.3.3 Random Forest
 Trees and tree algorithm is among the most widely applied machine learning algorithms. It includes random forest, gradient boosting decision trees, XGBoost, etc. The fundament of trees algorithm is decision tree, which can be divided into classification tree and regression tree. In this project, the label is the observed NO<sub>2</sub> concentration, thus, regression tree algorithm can be applied to make the prediction.
