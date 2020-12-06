@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://sfiala2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/bbc0e997c6d731fe9924932878ded0f7bd094a41/" />
+  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/d92250462393b723d34ea13b535fd63e97995d43/" />
 
-  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/bbc0e997c6d731fe9924932878ded0f7bd094a41/" />
+  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/d92250462393b723d34ea13b535fd63e97995d43/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/bbc0e997c6d731fe9924932878ded0f7bd094a41/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/d92250462393b723d34ea13b535fd63e97995d43/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Predicting NO<sub>2</sub> concentrations
 
 <small><em>
 This manuscript
-([permalink](https://sfiala2.github.io/498_NO2_pred/v/bbc0e997c6d731fe9924932878ded0f7bd094a41/))
+([permalink](https://sfiala2.github.io/498_NO2_pred/v/d92250462393b723d34ea13b535fd63e97995d43/))
 was automatically generated
-from [sfiala2/498_NO2_pred@bbc0e99](https://github.com/sfiala2/498_NO2_pred/tree/bbc0e997c6d731fe9924932878ded0f7bd094a41)
+from [sfiala2/498_NO2_pred@d922504](https://github.com/sfiala2/498_NO2_pred/tree/d92250462393b723d34ea13b535fd63e97995d43)
 on December 6, 2020.
 </em></small>
 
@@ -319,9 +319,9 @@ GRU is similar to LSTM with the exception that an output gate is absent. Instead
 #### 2.3.2.5 Neural networks used in this project
 In this project, majority of the models used were simple feed forward neural network models. This decision was based on two factors:
 
-&1. The literature search revealed that neural network models are one of the most widely used models especially in pollution prediction problems
+1. The literature search revealed that neural network models are one of the most widely used models especially in pollution prediction problems
 
-&2. Neural networks are simpler as compared to random forests but at the same time slightly more complex than linear regression and hence they incorporate some machine learning components
+2. Neural networks are simpler as compared to random forests but at the same time slightly more complex than linear regression and hence they incorporate some machine learning components
 
 We used keras, which is an opensource library of functions which allows the use of the tensorflow library for machine learning models in python. The building blocks of a neural network model such as layers, objective functions,activation functions and optimizers, are all provided by keras. 
 
@@ -329,11 +329,11 @@ A regular neural network consists of an input layer, hidden layers and an output
 
 We used a combination of three different activation functions:
 
-&a. Linear Activation - a linear activation uses the weights to multiply the inputs providing an output which is linearly proportional to the input. This function is also termed as no activation function as there is no further transformation being operated on the values.
+a. Linear Activation - a linear activation uses the weights to multiply the inputs providing an output which is linearly proportional to the input. This function is also termed as no activation function as there is no further transformation being operated on the values.
 
-&b. ReLU - Rectified Linear Activation Unit - even though very similar in appearance to a linear function, ReLU allows back-propagation of errors. This function always gives an output of 0 for negative values and behaves linearly for values greater than 0.
+b. ReLU - Rectified Linear Activation Unit - even though very similar in appearance to a linear function, ReLU allows back-propagation of errors. This function always gives an output of 0 for negative values and behaves linearly for values greater than 0.
 
-&c. Sigmoid activation - by implementing this activation function, the outputs are normalized and bound between 0 and 1. A sigmoid function provides a smooth gradient curve and much clearer predictions.
+c. Sigmoid activation - by implementing this activation function, the outputs are normalized and bound between 0 and 1. A sigmoid function provides a smooth gradient curve and much clearer predictions.
 
 Further, the compile function is used to compile the model created, which takes in a variety of arguments. We used an Adam optimizer which uses the combination of squared and moving average gradients to individually compute the learning rates for each parameter. As such it provides the benefits of both RMSProp and Stochastic Gradient Descent.
 
