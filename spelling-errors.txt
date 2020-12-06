@@ -3,7 +3,6 @@ activations
 albedo
 AOD
 AQI
-Artifical
 Azid
 Bechle
 Briguglio
@@ -12,7 +11,7 @@ Clarizio
 CNNs
 collinearity
 convolutes
-Convolutional
+convolutional
 covariates
 datapoints
 dataset
@@ -32,7 +31,7 @@ homogenous
 Houly
 HPBL
 hyperparameter
-Hyperparameters
+hyperparameters
 incoportating
 janeroe
 Kaggle

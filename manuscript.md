@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/0c277276b7cc9114f8b10251d35907088598d889/" />
+  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/c2b775c8de2d3153904883606f8df6cee3d2cf2b/" />
 
-  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/0c277276b7cc9114f8b10251d35907088598d889/" />
+  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/c2b775c8de2d3153904883606f8df6cee3d2cf2b/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/0c277276b7cc9114f8b10251d35907088598d889/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/c2b775c8de2d3153904883606f8df6cee3d2cf2b/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Predicting NO2 concentrations
 
 <small><em>
 This manuscript
-([permalink](https://tessac2.github.io/498_NO2_pred/v/0c277276b7cc9114f8b10251d35907088598d889/))
+([permalink](https://tessac2.github.io/498_NO2_pred/v/c2b775c8de2d3153904883606f8df6cee3d2cf2b/))
 was automatically generated
-from [tessac2/498_NO2_pred@0c27727](https://github.com/tessac2/498_NO2_pred/tree/0c277276b7cc9114f8b10251d35907088598d889)
+from [tessac2/498_NO2_pred@c2b775c](https://github.com/tessac2/498_NO2_pred/tree/c2b775c8de2d3153904883606f8df6cee3d2cf2b)
 on December 6, 2020.
 </em></small>
 
@@ -293,9 +293,7 @@ Overall, the model was a fair predictor of NO<sub>2</sub> concentrations, with a
 The multiple regression model presented, although comparable to other models used, is not an accurate, appropriate model for predicting NO<sub>2</sub> concentrations based on the available data.  
 
 ### 2.3.2 Neural Networks
-Artifical neural networks are based on the design philosophy of the neural connections in our brain. They consist of a group of nodes interconnected to each other through edges. The edges transmit the signals (which in a machine learning model would be a real number) from one neuron to another just like a synapse functions in a brain.
-
-A typical neural network has many layers. Each layer is composed of a set of neurons and each layer transforms and processes data in a different way based on the hyperparameters of the model.
+Artificial neural networks are based on the design philosophy of the neural connections in our brain. They consist of a group of interconnected nodes joined through edges. The edges transmit the signals (which in a machine learning model would be a real number) from one neuron to another just like a synapse functions in a brain. A typical neural network has many layers. Each layer is composed of a set of neurons and each layer transforms and processes data in a different way based on the hyperparameters of the model.
 
 There are different kinds of neural networks. The most commonly used of which are:
 1. Feed Forward Neural Network
@@ -304,33 +302,34 @@ There are different kinds of neural networks. The most commonly used of which ar
 4. Long-short term memory neural network (LSTM)
 5. Gated Recurrent Unit (GRU)
 
-There are several other advanced ones such as General Adversarial Networks,Auto-encoders and Deep Belief Neural networks.
+There are several other advanced ones such as General Adversarial Networks,Auto-encoders and Deep Belief Neural networks. However, we restrict our discussion to the five types listed above.
 
 We will first discuss, briefly, the CNN, RNN, LSTM and GRU before moving on to the Feed formal neural network which is the neural network model used in this project.
+
 #### 2.3.2.1 CNN
-Largely used for classifying image and audio data, the convolutional neural network, similar to neural networks has an input and output layer with hidden layers in between them. Further, a CNN has three layers called convolutional layer, pooling layer and a fully-connected layer which is similar to the regular neural network. The convolutional layer takes the input from the input layer and convolutes the data and sends it downstream for further processing. In simpler terms, in CNNs an input image is taken and a filter is applied on it repeatedly acorss the image to create a feature map which can be used to identify and classify the input image [@https://arxiv.org/abs/1511.08458].
+Largely used for classifying image and audio data, the convolutional neural network, has three layers called convolutional layer, pooling layer and a fully-connected layer which is similar to the regular neural network. Additionally, similar to a regular neural network, there is an input and output layer. The convolutional layer takes the input from the input layer and convolutes the data and sends it downstream for further processing. In simpler terms, in CNNs an input image is taken and a filter is applied on it repeatedly acorss the image to create a feature map which can be used to identify and classify the input image [@https://arxiv.org/abs/1511.08458].
 
 #### 2.3.2.2 RNN
-These neural networks are used to predict the temporal trend of the data.In these kind of models, the 'memory' of the previous inputs of is stored and used for further processing of future inputs and outputs.This relationship between input and output data could be both unidirectional (moving in the forward direction) or bidirectional where future data could also be used to improve the current inputs and outputs.These neural networks could use a variety of relationships between their inputs and outputs and could be described as one to one, one to many, many to many and many to one relationships. Sigmoid, ReLu, Tanh are the common activations used in RNNs [@https://arxiv.org/abs/1506.00019v4].
+These neural networks are used to predict the temporal trend of the data.In RNNs, the 'memory' of the previous inputs is stored and used for further processing of future inputs and outputs.This relationship between input and output data could be both unidirectional (moving in the forward direction) or bidirectional (moving both forward and backward) where future data could also be used to improve the current inputs and outputs.These neural networks could use a variety of relationships between their inputs and outputs and could be described as one to one, one to many, many to one and and many to many relationships. Sigmoid, ReLu, Tanh are the common activations used in RNNs [@https://arxiv.org/abs/1506.00019v4].
 
 #### 2.3.2.3 LSTM
 LSTMs are a type of RNN which solve the common problems that RNNs face, that is their inability to efficiently handle short-term memory over a lengthy series of steps. LSTMs solve this problem using a memory cell and gating units and consists of a set of gates called input, output and forget.The input gate is responsible for monitoring and deciding the kind and quantity of data that is allowed to enter the cell, the memory gate is responsible for deciding the proportion of data that should be 'forgotten' and which information is useless and to be discarded. Finally, the output gate is responsible for deciding the amount of data that is passed as output from the cell [@https://arxiv.org/abs/1808.03314v7].
 
 #### 2.3.2.4 GRU
-GRU is similar to LSTMs with the exception that an output gate is absent. Instead it has a reset and update gates. The reset gate works as a combination of input and forget gate and the update gate works as an additional forget gate. Their performance is equivalent and sometimes even better than LSTMs, especially when dealing with some infrequent data[@https://arxiv.org/abs/1412.3555v1].
+GRU is similar to LSTM with the exception that an output gate is absent. Instead it has a reset and update gates. The reset gate works as a combination of input and forget gate and the update gate works as an additional forget gate. Their performance is equivalent and sometimes even better than LSTMs, especially when dealing with some special data such as those involved in language processing[@https://arxiv.org/abs/1412.3555v1].
 
 #### 2.3.2.5 Neural networks used in this project
-In this project, majority of our group members used simple feed forward neural network models. This decision was based on two reasons:
+In this project, majority of the models used were simple feed forward neural network models. This decision was based on two factors:
 1. The literature search revealed that neural network models are one of the most widely used models especially in pollution prediction problems and they performed relatively better in a large number of cases
-2. Neural networks are simpler as compared to random forests but at the same time slightly more complex than linear regression and hence they involve machine learning components
+2. Neural networks are simpler as compared to random forests but at the same time slightly more complex than linear regression and hence they incorporate some machine learning components
 
-Among the neural network models we used a combination of different features and hyperparameters. We used keras, which is an opensource library of functions which allows the use of the tensorflow library for machine learning models in python. The building blocks of a neural network model such as layers, objective functions,activation functions and optimizers, are all provided by keras. 
+We used keras, which is an opensource library of functions which allows the use of the tensorflow library for machine learning models in python. The building blocks of a neural network model such as layers, objective functions,activation functions and optimizers, are all provided by keras. 
 
 A regular neural network consists of an input layer, hidden layers and an output layer. We used a sequential model which consists of few layers stacked upon one another, linearly [@https://doi.org/10.1016/S0169-7439(97)00061-0]. Each layer has multiple cells and we could define the number of input cells for these hidden layers. We can also define the type of activation function for each layer. We used an average of 3 to 5 hidden layers in our neural network models.
 
 We used a combination of three different activation functions:
 1. Linear Activation - a linear activation uses the weights to multiply the inputs providing an output which is linearly proportional to the input. This function is also termed as no activation function as there is no further transformation being operated on the values
-2. ReLU - Rectified Linear Activation Unit - even though very similar in appearance to a linear, ReLU allows back-propagation of errors. This function always gives an output of 0 for negative values and behaves linearly for values greater than 0.
+2. ReLU - Rectified Linear Activation Unit - even though very similar in appearance to a linear function, ReLU allows back-propagation of errors. This function always gives an output of 0 for negative values and behaves linearly for values greater than 0.
 3. Sigmoid activation - by implementing this activation function, the outputs are normalized and bound between 0 and 1 but provides a smooth gradient curve and much clearer predictions
 
 Further, the compile function is used to compile the model created and takes in a variety of arguments. We used an Adam optimizer. Adam optimizer uses the combination of squared and moving average gradients to individually compute the learning rates for each parameter. As such it provides the benefits of both RMSProp and Stochastic Gradient Descent.
@@ -367,7 +366,7 @@ Variable selection and feature engineering are very important in data preprocess
 
 Based on previous exploratory data analysis, the raw dataset contains valuable land-use variables in series including impervious surfaces, population, major road length, residential road length, and total road length within different buffers. It also include elevation, distance to coast, latitude, longitude, linear combinations of satellite data and WRF-Chem output. The variables within their series are highly correlated, so a few representative ones should be selected out based on the second criteria mentioned before. Here we select one for each kind of land-use variables. It is interesting that high correlations have been found between some of these land-use variables, like road lengths. Thus, we only selected the road length having the highest relationship with the variable to be predicted. Latitude and longitude are binned and one-hot coded. Around 20% of the raw data were selected out for prediction validation.
 
-Random forest model in this project is created with scikit-learn RandomForestRegressor library. GridSearchCV was imported to conduct hyperparameter optimization. The model generally get a MSE around 3.2 in the validation data. However, on the test data it did not show a good performance (MES = 4.2). The first reason might be that random forest algorithm perform worse on regression problems than on classification problems since it cannot give a continuous prediction. It is also weak on predicting values with a magnitudes beyond the train dataset, meaning that it cannot confidently handle noise or outliers. It prefers high dimensional, large-scale data, however, in this project the data is in a relatively low scale. 
+Random forest model in this project was created with scikit-learn RandomForestRegressor library. GridSearchCV was imported to conduct hyperparameter optimization. The model output generally had a MSE around 3.2 in the validation data. However, on the test data it did not show a good performance (MSE = 4.2). The first reason might be that random forest algorithm performs worse on regression problems than on classification problems since it cannot give a continuous prediction. It is also weak on predicting values with a magnitudes beyond the train dataset, meaning that it cannot confidently handle noise or outliers. It prefers high dimensional, large-scale data, however, in this project the data is on a relatively low scale. 
 
 In conclusion, random forest is possibly not a very appropriate algorithm to make prediction in regression problems from dataset in a low-scale and a low-dimension.
 
