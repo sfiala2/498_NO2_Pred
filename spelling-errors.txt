@@ -33,11 +33,14 @@ PSO
 RandomForestRegressor
 RMSE
 RSPM
+Salana
 SAPSO
 scikit
 SDT
 Shenzen
 SPM
+Sudheer
+sudheersalana
 SVM
 tessac
 treeboost

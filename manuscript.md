@@ -2,7 +2,7 @@
 author-meta:
 - Tessa Clarizio
 - Marcel Briguglio
-- Jane Roe
+- Sudheer Salana
 - Jane Roe
 - Jane Roe
 - Jane Roe
@@ -47,7 +47,7 @@ header-includes: '<!--
 
   <meta name="citation_author" content="Marcel Briguglio" />
 
-  <meta name="citation_author" content="Jane Roe" />
+  <meta name="citation_author" content="Sudheer Salana" />
 
   <meta name="citation_author" content="Jane Roe" />
 
@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/7324ff7f03aaa7bd8d6a6184022373d65ce6bc75/" />
+  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/940920da24e4251c02c606d9d886e979e6db5890/" />
 
-  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/7324ff7f03aaa7bd8d6a6184022373d65ce6bc75/" />
+  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/940920da24e4251c02c606d9d886e979e6db5890/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/7324ff7f03aaa7bd8d6a6184022373d65ce6bc75/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/940920da24e4251c02c606d9d886e979e6db5890/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Predicting NO2 concentrations
 
 <small><em>
 This manuscript
-([permalink](https://tessac2.github.io/498_NO2_pred/v/7324ff7f03aaa7bd8d6a6184022373d65ce6bc75/))
+([permalink](https://tessac2.github.io/498_NO2_pred/v/940920da24e4251c02c606d9d886e979e6db5890/))
 was automatically generated
-from [tessac2/498_NO2_pred@7324ff7](https://github.com/tessac2/498_NO2_pred/tree/7324ff7f03aaa7bd8d6a6184022373d65ce6bc75)
+from [tessac2/498_NO2_pred@940920d](https://github.com/tessac2/498_NO2_pred/tree/940920da24e4251c02c606d9d886e979e6db5890)
 on December 6, 2020.
 </em></small>
 
@@ -125,9 +125,9 @@ on December 6, 2020.
   <small>
   </small>
 
-+ **Jane Roe**<br>
++ **Sudheer Salana**<br>
     · ![GitHub icon](images/github.svg){.inline_icon}
-    [janeroe](https://github.com/janeroe)<br>
+    [sudheersalana1](https://github.com/sudheersalana1)<br>
   <small>
   </small>
 
