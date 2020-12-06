@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://sfiala2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/72775012e947903e69060609816ae19910f98021/" />
+  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/5950d5c2113bb3bd46becd21014aeba18f670e6d/" />
 
-  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/72775012e947903e69060609816ae19910f98021/" />
+  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/5950d5c2113bb3bd46becd21014aeba18f670e6d/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/72775012e947903e69060609816ae19910f98021/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/5950d5c2113bb3bd46becd21014aeba18f670e6d/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Predicting NO<sub>2</sub> concentrations
 
 <small><em>
 This manuscript
-([permalink](https://sfiala2.github.io/498_NO2_pred/v/72775012e947903e69060609816ae19910f98021/))
+([permalink](https://sfiala2.github.io/498_NO2_pred/v/5950d5c2113bb3bd46becd21014aeba18f670e6d/))
 was automatically generated
-from [sfiala2/498_NO2_pred@7277501](https://github.com/sfiala2/498_NO2_pred/tree/72775012e947903e69060609816ae19910f98021)
+from [sfiala2/498_NO2_pred@5950d5c](https://github.com/sfiala2/498_NO2_pred/tree/5950d5c2113bb3bd46becd21014aeba18f670e6d)
 on December 6, 2020.
 </em></small>
 
@@ -307,7 +307,7 @@ There are different kinds of neural networks. The most commonly used of which ar
 4. Long-short term memory neural network (LSTM)
 5. Gated Recurrent Unit (GRU)
 
-There are several other advanced ones such as General Adversarial Networks,Auto-encoders and Deep Belief Neural networks. However, we restrict our discussion to the five types listed above.
+There are several other advanced ones such as General Adversarial Networks, Auto-encoders and Deep Belief Neural networks. However, we restrict our discussion to the five types listed above.
 
 We will first discuss, briefly, the CNN, RNN, LSTM and GRU before moving on to the Feed formal neural network which is the neural network model used in this project.
 
@@ -347,9 +347,9 @@ The final step was to train our model so created using training dataset and the 
 
 However, it must be ensured that excessive epochs in proportion to the complexity of the model and the dataset is avoided as this could result in a situation wherein the model no longer tries to find a pattern among the data but rather simply memorises it. In such situations, the model overfits the data. We used a range of epochs between 350- 1000, based on several trials, where in each case, a different epoch was chosen and the final RMSE was monitored. The final model used the most suitable epoch for the given set of features and other hyperparameters.
 
-Usually, training dataset is split into training and validation dataset to resolve the problem of overfitting if encountered. A validation dataset also allows for considerable improvements in model before the model is fit using the test data. A common practice is to split the training data in such a way that 80%-90% of the data is used to train the model and 10-20% to validate. We used a 10-20% split. However, our best performing neural network model did not use any validation data citing the limited number of datapoints available for the competition.
+Usually, training dataset is split into training and validation dataset to resolve the problem of overfitting if encountered. A validation dataset also allows for considerable improvements in model before the model is fit using the test data. A common practice is to split the training data in such a way that 80%-90% of the data is used to train the model and 10-20% to validate. However, our best performing neural network model did not use any validation data citing the limited number of datapoints available for the competition.
 
-Our neural networks achieved a RMSE values in the range of 2.92-6.6, which implies that, in most cases, our model overfit the training data. The best performing neural network model is described in detail in the Results section of the report. The details about the neural networks are summarised in Table 2.3
+Our neural networks achieved a RMSE values in the range of 2.92-6.6, which implies that, in most cases, our model overfit the training data. The best performing neural network model is described in detail in the Results section of the report. The details about the neural networks are summarised in Table 2.3.
 
 **Table 2.3 Summary of 3 Neural Networks Used in the project (the fourth and the best performing is explained in detail in the Results Section)**
 

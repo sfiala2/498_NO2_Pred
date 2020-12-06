@@ -53,9 +53,9 @@
   <meta name="citation_fulltext_html_url" content="https://sfiala2.github.io/498_NO2_pred/" />
   <meta name="citation_pdf_url" content="https://sfiala2.github.io/498_NO2_pred/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://sfiala2.github.io/498_NO2_pred/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/72775012e947903e69060609816ae19910f98021/" />
-  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/72775012e947903e69060609816ae19910f98021/" />
-  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/72775012e947903e69060609816ae19910f98021/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/5950d5c2113bb3bd46becd21014aeba18f670e6d/" />
+  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/5950d5c2113bb3bd46becd21014aeba18f670e6d/" />
+  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/5950d5c2113bb3bd46becd21014aeba18f670e6d/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -69,9 +69,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://sfiala2.github.io/498_NO2_pred/v/72775012e947903e69060609816ae19910f98021/">permalink</a>)
+(<a href="https://sfiala2.github.io/498_NO2_pred/v/5950d5c2113bb3bd46becd21014aeba18f670e6d/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/sfiala2/498_NO2_pred/tree/72775012e947903e69060609816ae19910f98021">sfiala2/498_NO2_pred@7277501</a>
+from <a href="https://github.com/sfiala2/498_NO2_pred/tree/5950d5c2113bb3bd46becd21014aeba18f670e6d">sfiala2/498_NO2_pred@5950d5c</a>
 on December 6, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -332,7 +332,7 @@ on December 6, 2020.
 3. Recurrent Neural Network (RNN)
 4. Long-short term memory neural network (LSTM)
 5. Gated Recurrent Unit (GRU)</p>
-<p>There are several other advanced ones such as General Adversarial Networks,Auto-encoders and Deep Belief Neural networks. However, we restrict our discussion to the five types listed above.</p>
+<p>There are several other advanced ones such as General Adversarial Networks, Auto-encoders and Deep Belief Neural networks. However, we restrict our discussion to the five types listed above.</p>
 <p>We will first discuss, briefly, the CNN, RNN, LSTM and GRU before moving on to the Feed formal neural network which is the neural network model used in this project.</p>
 <h4 id="cnn">2.3.2.1 CNN</h4>
 <p>Largely used for classifying image and audio data, the convolutional neural network, has three layers called convolutional layer, pooling layer and a fully-connected layer which is similar to the regular neural network. Additionally, similar to a regular neural network, there is an input and output layer. The convolutional layer takes the input from the input layer and convolutes the data and sends it downstream for further processing. In simpler terms, in CNNs an input image is taken and a filter is applied on it repeatedly acorss the image to create a feature map which can be used to identify and classify the input image <span class="citation" data-cites="7jG4ORkP">[<a href="#ref-7jG4ORkP" role="doc-biblioref">11</a>]</span>.</p>
@@ -357,8 +357,8 @@ on December 6, 2020.
 <p>A loss function refers to the quantity that the model is trying to either minimize or maximize and used as a metric to define the fit of the model. Both absolute error and root mean squared error were chosen as the loss functions.</p>
 <p>The final step was to train our model so created using training dataset and the keras function model.fit. An important parameter for fitting the model is ‘epoch’ which indicates the number of times the training dataset is run through our model. For example, if we choose 500 epochs we are allowing the training data to run through the model for 500 times. The number of epochs determine how well the model familiarizes itself with the model. Greater the number of epochs the better the model understands your data.</p>
 <p>However, it must be ensured that excessive epochs in proportion to the complexity of the model and the dataset is avoided as this could result in a situation wherein the model no longer tries to find a pattern among the data but rather simply memorises it. In such situations, the model overfits the data. We used a range of epochs between 350- 1000, based on several trials, where in each case, a different epoch was chosen and the final RMSE was monitored. The final model used the most suitable epoch for the given set of features and other hyperparameters.</p>
-<p>Usually, training dataset is split into training and validation dataset to resolve the problem of overfitting if encountered. A validation dataset also allows for considerable improvements in model before the model is fit using the test data. A common practice is to split the training data in such a way that 80%-90% of the data is used to train the model and 10-20% to validate. We used a 10-20% split. However, our best performing neural network model did not use any validation data citing the limited number of datapoints available for the competition.</p>
-<p>Our neural networks achieved a RMSE values in the range of 2.92-6.6, which implies that, in most cases, our model overfit the training data. The best performing neural network model is described in detail in the Results section of the report. The details about the neural networks are summarised in Table 2.3</p>
+<p>Usually, training dataset is split into training and validation dataset to resolve the problem of overfitting if encountered. A validation dataset also allows for considerable improvements in model before the model is fit using the test data. A common practice is to split the training data in such a way that 80%-90% of the data is used to train the model and 10-20% to validate. However, our best performing neural network model did not use any validation data citing the limited number of datapoints available for the competition.</p>
+<p>Our neural networks achieved a RMSE values in the range of 2.92-6.6, which implies that, in most cases, our model overfit the training data. The best performing neural network model is described in detail in the Results section of the report. The details about the neural networks are summarised in Table 2.3.</p>
 <p><strong>Table 2.3 Summary of 3 Neural Networks Used in the project (the fourth and the best performing is explained in detail in the Results Section)</strong></p>
 <table>
 <colgroup>

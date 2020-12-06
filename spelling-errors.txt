@@ -81,7 +81,7 @@ scikit
 SDT
 sfiala
 Shenzen
-sigmoid
+Sigmoid
 Spatiotemporal
 Spearman’s
 Spectroradiometer
