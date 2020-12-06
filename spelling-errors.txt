@@ -10,12 +10,13 @@ Azid
 Bechle
 Briguglio
 BRNN
+choosen
 Clarizio
 CNNs
 collinearity
 concentartion
 convolutes
-convolutional
+Convolutional
 covariates
 datapoints
 dataset
@@ -38,6 +39,7 @@ Houly
 HPBL
 hyperparameter
 Hyperparameters
+hyperparamters
 incoportating
 interpretability
 Kaggle
@@ -54,6 +56,7 @@ MODIS
 MSE
 NAAQS
 NDVI
+NOx
 nueral
 oberseved
 opensource
@@ -80,7 +83,7 @@ scikit
 SDT
 sfiala
 Shenzen
-Sigmoid
+sigmoid
 Spatiotemporal
 Spearman’s
 Spectroradiometer
@@ -92,6 +95,7 @@ SVM
 Tanh
 tensorflow
 tessac
+traing
 trainng
 treeboost
 tropospheric
