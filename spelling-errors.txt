@@ -39,7 +39,7 @@ homogenous
 Houly
 HPBL
 hyperparameter
-hyperparameters
+Hyperparameters
 hyperparamters
 incoportating
 interpretability
@@ -57,7 +57,6 @@ MODIS
 MSE
 NAAQS
 NDVI
-NOsub
 NOx
 nueral
 oberseved
@@ -86,7 +85,7 @@ scikit
 SDT
 sfiala
 Shenzen
-sigmoid
+Sigmoid
 Spatiotemporal
 Spearman’s
 Spectroradiometer
