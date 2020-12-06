@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/9a93736907ced401194ef74dd1455db99591001c/" />
+  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/ef0b5e15e6a2fd9c2bb29a5880cedbcb32d1d2ea/" />
 
-  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/9a93736907ced401194ef74dd1455db99591001c/" />
+  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/ef0b5e15e6a2fd9c2bb29a5880cedbcb32d1d2ea/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/9a93736907ced401194ef74dd1455db99591001c/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/ef0b5e15e6a2fd9c2bb29a5880cedbcb32d1d2ea/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Predicting NO2 concentrations
 
 <small><em>
 This manuscript
-([permalink](https://tessac2.github.io/498_NO2_pred/v/9a93736907ced401194ef74dd1455db99591001c/))
+([permalink](https://tessac2.github.io/498_NO2_pred/v/ef0b5e15e6a2fd9c2bb29a5880cedbcb32d1d2ea/))
 was automatically generated
-from [tessac2/498_NO2_pred@9a93736](https://github.com/tessac2/498_NO2_pred/tree/9a93736907ced401194ef74dd1455db99591001c)
+from [tessac2/498_NO2_pred@ef0b5e1](https://github.com/tessac2/498_NO2_pred/tree/ef0b5e15e6a2fd9c2bb29a5880cedbcb32d1d2ea)
 on December 6, 2020.
 </em></small>
 
@@ -307,8 +307,10 @@ However, it must be ensured that excessive epochs in proportion to the complexit
 
 Usually, training dataset is split into training and validation dataset to resolve the problem of overfitting if encountered. A validation dataset also allows for considerable improvements in model before the model is fit using the test data. A common practice is to split the training data in such a way that 80% of the data is used to train the model and 10-20% to validate. We used a 10-20% split. However, our best performing neural network model did not use any validation data citing the limited number of datapoints available for the competition.
 
-Our neural networks achieved a RMSE values in the range of 2.92-6.6. The best performing neural network model is described in detail in the Results section of the report.
+Our neural networks achieved a RMSE values in the range of 2.92-6.6. The best performing neural network model is described in detail in the Results section of the report. The details about the neural networks are summarised in Table 2.3
+
 **Table 2.3 Summary of 3 Neural Networks Used in the project (the fourth and the best performing is explained in detail in the Results Section)**
+
 |Features|Hyperparameters|Group Member|FInal RMSE Achieved|
 |--------|---------------|------------|-------------|
 |WRF+DOMINO, percentage impervious surface,	population,	major road length,	resedential road,	total road: All at buffer 10000 m|learning rate = 0.0004; batch size = 120; hidden layers = 4; epochs = 350|Sudheer|6.60|

@@ -11,7 +11,7 @@ BRNN
 Clarizio
 CNNs
 convolutes
-convolutional
+Convolutional
 datapoints
 dataset
 datasets
@@ -27,7 +27,7 @@ homogenous
 Houly
 HPBL
 hyperparameter
-Hyperparameters
+hyperparameters
 janeroe
 Kaggle
 keras
@@ -53,7 +53,7 @@ ppb
 preprocess
 PSO
 RandomForestRegressor
-ReLU
+ReLu
 resedential
 respirable
 RMSE
@@ -69,6 +69,7 @@ Sigmoid
 Spectroradiometer
 Sudheer
 sudheersalana
+summarised
 SVM
 Tanh
 tensorflow
