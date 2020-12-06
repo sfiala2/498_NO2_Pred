@@ -37,7 +37,7 @@ homogenous
 Houly
 HPBL
 hyperparameter
-hyperparameters
+Hyperparameters
 incoportating
 interpretability
 Kaggle

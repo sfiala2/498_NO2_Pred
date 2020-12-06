@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://sfiala2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/7cf6d8226cb898d09ffb8f5ab8a0f8c01c0d4a1b/" />
+  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/74ed8d6ca6766a8f0af380cb935d8e8c6e2726c1/" />
 
-  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/7cf6d8226cb898d09ffb8f5ab8a0f8c01c0d4a1b/" />
+  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/74ed8d6ca6766a8f0af380cb935d8e8c6e2726c1/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/7cf6d8226cb898d09ffb8f5ab8a0f8c01c0d4a1b/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/74ed8d6ca6766a8f0af380cb935d8e8c6e2726c1/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Predicting NO<sub>2</sub> concentrations
 
 <small><em>
 This manuscript
-([permalink](https://sfiala2.github.io/498_NO2_pred/v/7cf6d8226cb898d09ffb8f5ab8a0f8c01c0d4a1b/))
+([permalink](https://sfiala2.github.io/498_NO2_pred/v/74ed8d6ca6766a8f0af380cb935d8e8c6e2726c1/))
 was automatically generated
-from [sfiala2/498_NO2_pred@7cf6d82](https://github.com/sfiala2/498_NO2_pred/tree/7cf6d8226cb898d09ffb8f5ab8a0f8c01c0d4a1b)
+from [sfiala2/498_NO2_pred@74ed8d6](https://github.com/sfiala2/498_NO2_pred/tree/74ed8d6ca6766a8f0af380cb935d8e8c6e2726c1)
 on December 6, 2020.
 </em></small>
 
@@ -371,7 +371,7 @@ Variable selection and feature engineering are very important in data preprocess
 
 Based on previous exploratory data analysis, the raw dataset contains valuable land-use variables in series including impervious surfaces, population, major road length, residential road length, and total road length within different buffers. It also include elevation, distance to coast, latitude, longitude, linear combinations of satellite data and WRF-Chem output. The variables within their series are highly correlated, so a few representative ones should be selected out based on the second criteria mentioned before. Here we select one for each kind of land-use variables. It is interesting that high correlations have been found between some of these land-use variables, like road lengths. Thus, we only selected the road length having the highest relationship with the variable to be predicted. Latitude and longitude are binned and one-hot coded. Around 20% of the raw data were selected out for prediction validation.
 
-Random forest model in this project was created with scikit-learn RandomForestRegressor library. GridSearchCV was imported to conduct hyperparameter optimization. The model output generally had a MSE around 3.2 in the validation data. However, on the test data it did not show a good performance (MSE = 4.2). The first reason might be that random forest algorithm performs worse on regression problems than on classification problems since it cannot give a continuous prediction. It is also weak on predicting values with a magnitudes beyond the train dataset, meaning that it cannot confidently handle noise or outliers. It prefers high dimensional, large-scale data, however, in this project the data is on a relatively low scale. 
+Random forest model in this project was created with scikit-learn RandomForestRegressor library. GridSearchCV was imported to conduct hyperparameter optimization. The model output generally had a MSE around 3.2 in the validation data. However, on the test data it did not show a good performance (MSE = 4.2). One possible reason is that random forest regression is weak on predicting values with magnitudes beyond the train dataset, meaning that it cannot confidently handle noise or outliers. It also prefers high dimensional, large-scale data, however, in this project the data is on a relatively low scale. 
 
 In conclusion, random forest is possibly not a very appropriate algorithm to make prediction in regression problems from dataset in a low-scale and a low-dimension.
 
