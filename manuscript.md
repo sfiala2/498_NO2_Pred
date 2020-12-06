@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/b94beb383c992c4172276f6545b16a04ebabc09e/" />
+  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/a2e3f9fd3523777dd49cad09c2fead97e339c365/" />
 
-  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/b94beb383c992c4172276f6545b16a04ebabc09e/" />
+  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/a2e3f9fd3523777dd49cad09c2fead97e339c365/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/b94beb383c992c4172276f6545b16a04ebabc09e/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/a2e3f9fd3523777dd49cad09c2fead97e339c365/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Predicting NO2 concentrations
 
 <small><em>
 This manuscript
-([permalink](https://tessac2.github.io/498_NO2_pred/v/b94beb383c992c4172276f6545b16a04ebabc09e/))
+([permalink](https://tessac2.github.io/498_NO2_pred/v/a2e3f9fd3523777dd49cad09c2fead97e339c365/))
 was automatically generated
-from [tessac2/498_NO2_pred@b94beb3](https://github.com/tessac2/498_NO2_pred/tree/b94beb383c992c4172276f6545b16a04ebabc09e)
+from [tessac2/498_NO2_pred@a2e3f9f](https://github.com/tessac2/498_NO2_pred/tree/a2e3f9fd3523777dd49cad09c2fead97e339c365)
 on December 6, 2020.
 </em></small>
 
