@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/216bcbba1015daf2981a1a38feda0f7e6c837258/" />
+  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/0f5ec41df34ef52eefb6f493f351bf630b7fd2d4/" />
 
-  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/216bcbba1015daf2981a1a38feda0f7e6c837258/" />
+  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/0f5ec41df34ef52eefb6f493f351bf630b7fd2d4/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/216bcbba1015daf2981a1a38feda0f7e6c837258/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/0f5ec41df34ef52eefb6f493f351bf630b7fd2d4/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Predicting NO2 concentrations
 
 <small><em>
 This manuscript
-([permalink](https://tessac2.github.io/498_NO2_pred/v/216bcbba1015daf2981a1a38feda0f7e6c837258/))
+([permalink](https://tessac2.github.io/498_NO2_pred/v/0f5ec41df34ef52eefb6f493f351bf630b7fd2d4/))
 was automatically generated
-from [tessac2/498_NO2_pred@216bcbb](https://github.com/tessac2/498_NO2_pred/tree/216bcbba1015daf2981a1a38feda0f7e6c837258)
+from [tessac2/498_NO2_pred@0f5ec41](https://github.com/tessac2/498_NO2_pred/tree/0f5ec41df34ef52eefb6f493f351bf630b7fd2d4)
 on December 6, 2020.
 </em></small>
 
@@ -261,11 +261,27 @@ Where:
 
 y = The dependent variable to be predicted,
 
-$/beta <sub>0</sub>$ = The constant intercept ,
+&beta;<sub>0</sub> = The constant intercept ,
 
-$/beta <sub>i</sub> /times x <sub>i</sub>$ = The i-th constant multiplied by the i-th term 
+&beta;<sub>i</sub> x <sub>i</sub> = The i-th constant multiplied by the i-th term 
 
+&epsilon; = The error term (difference between y predicted and y oberseved)
+ 
+The multiple regression model used in this project first investigated and removed variables with colinearity. This was done using variance inflation factors, as shown in Table 2.3.1
 
+**Table 2.3.1 Variance inflation factor for each variable**
+| Variable      |    VIF  |
+|-----------------------|----------|
+| Observed_NO2_ppb      |    3.956374 |
+| WRF+DOMINO            |    2.912862 |
+| Distance_to_coast_km   |   1.627729|
+| Elevation_truncated_km  |  1.752602|
+| radius                  | 3.163531|
+| impervious              | 2.529755|
+| population              | 1.730017|
+| major_road              |     inf|
+| resident_road           |     inf|
+| total_road              |     inf|
 
 ### 2.3.2 Neural Networks
 Artifical neural networks are based on the design philosophy of the neural connections in our brain. They consist of a group of nodes interconnected to each other through edges. The edges transmit the signals (which in a machine learning model would be a real number) from one neuron to another just like a synapse functions in a brain.

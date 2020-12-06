@@ -10,8 +10,9 @@ Briguglio
 BRNN
 Clarizio
 CNNs
+colinearity
 convolutes
-convolutional
+Convolutional
 covariates
 datapoints
 dataset
@@ -29,7 +30,7 @@ homogenous
 Houly
 HPBL
 hyperparameter
-Hyperparameters
+hyperparameters
 janeroe
 Kaggle
 keras
@@ -45,6 +46,7 @@ MSE
 NAAQS
 NDVI
 NOx
+oberseved
 opensource
 optimizers
 overfit
@@ -55,7 +57,7 @@ ppb
 preprocess
 PSO
 RandomForestRegressor
-ReLu
+ReLU
 resedential
 respirable
 RMSE
@@ -81,6 +83,7 @@ treeboost
 tropospheric
 underfitting
 unimodal
+VIF
 WRF
 XGBoost
 Xiaokai
