@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/6a9090c212410009522af1eb858d3d97a8f6359f/" />
+  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/5739233a51a4dc69fc9f7c47df88f61b8d7582ad/" />
 
-  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/6a9090c212410009522af1eb858d3d97a8f6359f/" />
+  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/5739233a51a4dc69fc9f7c47df88f61b8d7582ad/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/6a9090c212410009522af1eb858d3d97a8f6359f/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/5739233a51a4dc69fc9f7c47df88f61b8d7582ad/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Predicting NO2 concentrations
 
 <small><em>
 This manuscript
-([permalink](https://tessac2.github.io/498_NO2_pred/v/6a9090c212410009522af1eb858d3d97a8f6359f/))
+([permalink](https://tessac2.github.io/498_NO2_pred/v/5739233a51a4dc69fc9f7c47df88f61b8d7582ad/))
 was automatically generated
-from [tessac2/498_NO2_pred@6a9090c](https://github.com/tessac2/498_NO2_pred/tree/6a9090c212410009522af1eb858d3d97a8f6359f)
+from [tessac2/498_NO2_pred@5739233](https://github.com/tessac2/498_NO2_pred/tree/5739233a51a4dc69fc9f7c47df88f61b8d7582ad)
 on December 6, 2020.
 </em></small>
 
@@ -270,7 +270,7 @@ There are several other advanced ones such as General Adversarial Networks,Auto-
 
 We will first discuss, briefly, the CNN, RNN, LSTM and GRU before moving on to the Feed formal neural network which is the neural network model used in this project.
 #### 2.3.2.1 CNN
-Largely used for classifying image and audio data, the convolutional neural network, similar to neural networks has an input and output layer with hidden layers in between them. Further, a CNN has three layers called convolutional layer, pooling layer and a fully-connected layer which is similar to the regular neural network. The convolutional layer takes the input from the input layer and convolutes the data and sends it downstream for further processing. In simpler terms, in CNNs an input image is taken and a filter is applied on it repeatedly acorss the image to create a feature map which can be used to identify and classify the input image.
+Largely used for classifying image and audio data, the convolutional neural network, similar to neural networks has an input and output layer with hidden layers in between them. Further, a CNN has three layers called convolutional layer, pooling layer and a fully-connected layer which is similar to the regular neural network. The convolutional layer takes the input from the input layer and convolutes the data and sends it downstream for further processing. In simpler terms, in CNNs an input image is taken and a filter is applied on it repeatedly acorss the image to create a feature map which can be used to identify and classify the input image [@https://arxiv.org/abs/1511.08458].
 
 #### 2.3.2.2 RNN
 These neural networks are used to predict the temporal trend of the data.In these kind of models, the 'memory' of the previous inputs of is stored and used for further processing of future inputs and outputs.This relationship between input and output data could be both unidirectional (moving in the forward direction) or bidirectional where future data could also be used to improve the current inputs and outputs.These neural networks could use a variety of relationships between their inputs and outputs and could be described as one to one, one to many, many to many and many to one relationships. Sigmoid, ReLu, Tanh are the common activations used in RNNs.
