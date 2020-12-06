@@ -53,9 +53,9 @@
   <meta name="citation_fulltext_html_url" content="https://tessac2.github.io/498_NO2_pred/" />
   <meta name="citation_pdf_url" content="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/ce88d58bdf86f65e53281c9c183cd739224b9d2f/" />
-  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/ce88d58bdf86f65e53281c9c183cd739224b9d2f/" />
-  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/ce88d58bdf86f65e53281c9c183cd739224b9d2f/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/e737d7b14f14a35221f9b56bd189cd325e5f68f3/" />
+  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/e737d7b14f14a35221f9b56bd189cd325e5f68f3/" />
+  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/e737d7b14f14a35221f9b56bd189cd325e5f68f3/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -69,9 +69,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://tessac2.github.io/498_NO2_pred/v/ce88d58bdf86f65e53281c9c183cd739224b9d2f/">permalink</a>)
+(<a href="https://tessac2.github.io/498_NO2_pred/v/e737d7b14f14a35221f9b56bd189cd325e5f68f3/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/tessac2/498_NO2_pred/tree/ce88d58bdf86f65e53281c9c183cd739224b9d2f">tessac2/498_NO2_pred@ce88d58</a>
+from <a href="https://github.com/tessac2/498_NO2_pred/tree/e737d7b14f14a35221f9b56bd189cd325e5f68f3">tessac2/498_NO2_pred@e737d7b</a>
 on December 6, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -301,6 +301,9 @@ Largely used for classifying image and audio data, the convolutional neural netw
 <p>We chose a learning rate of 0.0005 to 0.005. Learning rate is an essential hyperparameter that influences the weights of a model and the extent to which they are updated. A very low learning rate could lead to a model being very slow and eventually unable to reach the desired result and at the same time, a very high learning rate could make worsen the model by making it unstable and inaccurate and eventually lead to inferior quality of weights.</p>
 <p>Both absolute error and root mean squared error were chosen as the loss functions.</p>
 <p>The final step was to train our model so created using training dataset and the keras function model.fit. An important parameter for fitting the model is epoch which indicates the number of times the training dataset is run through our model. For example, if we choose 500 epochs we are allowing the training data to run through the model for 500 times. The number of epochs determine how well the model familiarizes itself with the model. Greater the number of epochs the better the model understands your data.</p>
+<p>However, it must be ensured that excessive epochs in proportion to the complexity of the model and the dataset is avoided as this could result in a situation wherein the model no longer tries to find a pattern among the data but rather simply memorises it. In such situations, the model overfits the data. We used a range of epochs between 350- 1000.</p>
+<p>Usually, training dataset is split into training and validation dataset to resolve the problem of overfitting if encountered. A validation dataset also allows for considerable improvements in model before the model is fit using the test data. A common practice is to split the training data in such a way that 80% of the data is used to train the model and 10-20% to validate. We used a 10-20% split. However, our bets performing neural network model did not use any validation data citing the limited number of datapoints available for the competition.</p>
+<p>Our neural networks achieved a RMSE values in the range of 2.92-6.6. The best performing neural network model is described in detail in the Results section of the report.</p>
 <h3 id="random-forest">2.3.3 Random Forest</h3>
 <p>Trees and tree algorithm is among the most widely applied machine learning algorithms. It includes random forest, gradient boosting decision trees, XGBoost, etc. The fundament of trees algorithm is decision tree, which can be divided into classification tree and regression tree. In this project, the label is the observed NO<sub>2</sub> concentration, thus, regression tree algorithm can be applied to make the prediction.</p>
 <p>Random forest is a combination of tree predictors based on model aggregation ideas. It is realized by creating an ensemble of trees by generating random vectors that govern the growth of trees and letting them vote for the most popular label <span class="citation" data-cites="yp5oGc1T">[<a href="#ref-yp5oGc1T" role="doc-biblioref">11</a>]</span>.</p>
