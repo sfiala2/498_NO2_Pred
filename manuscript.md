@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://sfiala2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/b7b7015ff49a350bf93c4bef1bfbf19e4119660f/" />
+  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/5fe731cfe7372e0eed973f8e94d23629e7ea30a3/" />
 
-  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/b7b7015ff49a350bf93c4bef1bfbf19e4119660f/" />
+  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/5fe731cfe7372e0eed973f8e94d23629e7ea30a3/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/b7b7015ff49a350bf93c4bef1bfbf19e4119660f/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/5fe731cfe7372e0eed973f8e94d23629e7ea30a3/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Predicting NO<sub>2</sub> concentrations
 
 <small><em>
 This manuscript
-([permalink](https://sfiala2.github.io/498_NO2_pred/v/b7b7015ff49a350bf93c4bef1bfbf19e4119660f/))
+([permalink](https://sfiala2.github.io/498_NO2_pred/v/5fe731cfe7372e0eed973f8e94d23629e7ea30a3/))
 was automatically generated
-from [sfiala2/498_NO2_pred@b7b7015](https://github.com/sfiala2/498_NO2_pred/tree/b7b7015ff49a350bf93c4bef1bfbf19e4119660f)
+from [sfiala2/498_NO2_pred@5fe731c](https://github.com/sfiala2/498_NO2_pred/tree/5fe731cfe7372e0eed973f8e94d23629e7ea30a3)
 on December 6, 2020.
 </em></small>
 
@@ -401,6 +401,29 @@ Table 3.1 shows the 7 inputs used in the model.  The use of a single length of e
 '''
 train_dataset = tf.data.Dataset.from_tensor_slices((x_dependent_train,y_ind_train)).batch(batch_size=255)
 
+
+
+model = tf.keras.Sequential()
+
+
+model.add(tf.keras.layers.Dense(units=128))
+
+model.add(tf.keras.layers.Dense(units=16))
+
+model.add(tf.keras.layers.Dense(units=8))
+
+model.add(tf.keras.layers.Dense(units=4))
+
+
+model.add(tf.keras.layers.Dense(units=1, input_shape=(7,)))
+
+
+model.compile(
+    optimizer=tf.keras.optimizers.Adam(learning_rate=.0005), 
+    loss='mean_squared_error',
+)
+
+history = model.fit(train_dataset,epochs= 10000)
 '''
 
 Figure C shows the architecture of the neural network used that achieved the best performance. 
