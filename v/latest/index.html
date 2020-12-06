@@ -53,9 +53,9 @@
   <meta name="citation_fulltext_html_url" content="https://tessac2.github.io/498_NO2_pred/" />
   <meta name="citation_pdf_url" content="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/315176c9f96d5cd3dd418baccc753f66fe1be292/" />
-  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/315176c9f96d5cd3dd418baccc753f66fe1be292/" />
-  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/315176c9f96d5cd3dd418baccc753f66fe1be292/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/9a93736907ced401194ef74dd1455db99591001c/" />
+  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/9a93736907ced401194ef74dd1455db99591001c/" />
+  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/9a93736907ced401194ef74dd1455db99591001c/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -69,9 +69,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://tessac2.github.io/498_NO2_pred/v/315176c9f96d5cd3dd418baccc753f66fe1be292/">permalink</a>)
+(<a href="https://tessac2.github.io/498_NO2_pred/v/9a93736907ced401194ef74dd1455db99591001c/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/tessac2/498_NO2_pred/tree/315176c9f96d5cd3dd418baccc753f66fe1be292">tessac2/498_NO2_pred@315176c</a>
+from <a href="https://github.com/tessac2/498_NO2_pred/tree/9a93736907ced401194ef74dd1455db99591001c">tessac2/498_NO2_pred@9a93736</a>
 on December 6, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -305,31 +305,13 @@ Largely used for classifying image and audio data, the convolutional neural netw
 <p>The final step was to train our model so created using training dataset and the keras function model.fit. An important parameter for fitting the model is epoch which indicates the number of times the training dataset is run through our model. For example, if we choose 500 epochs we are allowing the training data to run through the model for 500 times. The number of epochs determine how well the model familiarizes itself with the model. Greater the number of epochs the better the model understands your data.</p>
 <p>However, it must be ensured that excessive epochs in proportion to the complexity of the model and the dataset is avoided as this could result in a situation wherein the model no longer tries to find a pattern among the data but rather simply memorises it. In such situations, the model overfits the data. We used a range of epochs between 350- 1000.</p>
 <p>Usually, training dataset is split into training and validation dataset to resolve the problem of overfitting if encountered. A validation dataset also allows for considerable improvements in model before the model is fit using the test data. A common practice is to split the training data in such a way that 80% of the data is used to train the model and 10-20% to validate. We used a 10-20% split. However, our best performing neural network model did not use any validation data citing the limited number of datapoints available for the competition.</p>
-<p>Our neural networks achieved a RMSE values in the range of 2.92-6.6. The best performing neural network model is described in detail in the Results section of the report.</p>
-<table>
-<colgroup>
-<col style="width: 16%" />
-<col style="width: 31%" />
-<col style="width: 25%" />
-<col style="width: 27%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Features</th>
-<th>Hyperparameters</th>
-<th>Group Member</th>
-<th>RMSE Achieved</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>WRF+DOMINO, impervious percentage, pop_number, maj_road_km, res_road_km, tot_road_km: All at buffer 10000 m</td>
-<td>learning rate = 0.0004; batch size = 120; hidden layers = 4</td>
-<td>Sudheer</td>
-<td>6.6</td>
-</tr>
-</tbody>
-</table>
+<p>Our neural networks achieved a RMSE values in the range of 2.92-6.6. The best performing neural network model is described in detail in the Results section of the report.
+<strong>Table 2.3 Summary of 3 Neural Networks Used in the project (the fourth and the best performing is explained in detail in the Results Section)</strong>
+|Features|Hyperparameters|Group Member|FInal RMSE Achieved|
+|——–|—————|————|————-|
+|WRF+DOMINO, percentage impervious surface, population, major road length, resedential road, total road: All at buffer 10000 m|learning rate = 0.0004; batch size = 120; hidden layers = 4; epochs = 350|Sudheer|6.60|
+|WRF+DOMINO, impervious percentage, population, major road length, resedential road, total road: All at buffer 10000 m|learning rate = 0.001; hidden layers = 1; epochs=2000|Hope|4.23|
+|WRF+DOMINO, percentage impervious surface at buffers 3000,3500,4000,5000,6000,7000,8000,10000 m|learning_rate = 0.005; epochs = 400; hidden layers = 4; batch_size = 100| Tessa|4.33|</p>
 <h3 id="random-forest">2.3.3 Random Forest</h3>
 <p>Trees and tree algorithm is among the most widely applied machine learning algorithms. It includes random forest, gradient boosting decision trees, XGBoost, etc. The fundament of trees algorithm is decision tree, which can be divided into classification tree and regression tree. In this project, the label is the observed NO<sub>2</sub> concentration, thus, regression tree algorithm can be applied to make the prediction.</p>
 <p>Random forest is a combination of tree predictors based on model aggregation ideas. It is realized by creating an ensemble of trees by generating random vectors that govern the growth of trees and letting them vote for the most popular label <span class="citation" data-cites="yp5oGc1T">[<a href="#ref-yp5oGc1T" role="doc-biblioref">16</a>]</span>.</p>
