@@ -53,9 +53,9 @@
   <meta name="citation_fulltext_html_url" content="https://tessac2.github.io/498_NO2_pred/" />
   <meta name="citation_pdf_url" content="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/5e2bd9ae96cfb66d91b801a885cf65d11d82358b/" />
-  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/5e2bd9ae96cfb66d91b801a885cf65d11d82358b/" />
-  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/5e2bd9ae96cfb66d91b801a885cf65d11d82358b/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/bd3f26fdc4957d11ad078aee124ad094695fad32/" />
+  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/bd3f26fdc4957d11ad078aee124ad094695fad32/" />
+  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/bd3f26fdc4957d11ad078aee124ad094695fad32/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -69,9 +69,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://tessac2.github.io/498_NO2_pred/v/5e2bd9ae96cfb66d91b801a885cf65d11d82358b/">permalink</a>)
+(<a href="https://tessac2.github.io/498_NO2_pred/v/bd3f26fdc4957d11ad078aee124ad094695fad32/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/tessac2/498_NO2_pred/tree/5e2bd9ae96cfb66d91b801a885cf65d11d82358b">tessac2/498_NO2_pred@5e2bd9a</a>
+from <a href="https://github.com/tessac2/498_NO2_pred/tree/bd3f26fdc4957d11ad078aee124ad094695fad32">tessac2/498_NO2_pred@bd3f26f</a>
 on December 6, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -290,13 +290,14 @@ Largely used for classifying image and audio data, the convolutional neural netw
 <p>Random forest model in this project is created with scikit-learn RandomForestRegressor library. GridSearchCV was imported to conduct hyperparameter optimization. The model generally get a MSE around 3.2 in the validation data. However, on the test data it did not show a good performance (MES = 4.2). The first reason might be that random forest algorithm perform worse on regression problems than on classification problems since it cannot give a continuous prediction. It is also weak on predicting values with a magnitudes beyond the train dataset, meaning that it cannot confidently handle noise or outliers. It prefers high dimensional, large-scale data, however, in this project the data is in a relatively low scale.</p>
 <p>In conclusion, random forest is possibly not a very appropriate algorithm to make prediction in regression problems from dataset in a low-scale and a low-dimension.</p>
 <h1 id="results">3. Results</h1>
+<h3 id="model-devolpment">3.1 Model Devolpment</h3>
 <p>Figure C shows the architecture of the neural network used that achieved the best performance.
-Many choices made regarding were governed by two main motives; reducing the complexity of the model and ensuring the model captures the entire range of concentrations in the training data.
-Both of</p>
+Many choices made regarding were governed by two main motives; reducing the complexity of the model and ensuring the model captures the entire range of concentrations in the training data.</p>
+<h3 id="model-analysis">3.2 Model Analysis</h3>
 <p>The final model was further analyzed using two major parameters: squared error and absolute error.
 Squared error penalizes predictions further from the observed concentrations, which is beneficial for detecting outliers and anomalies in the data.
-The squared error is also related to the root mean squared error, the measured used to determine the best model in the Kaggle competition meaning it can provide insights on the individual monitors in the training data.
-The problem is that the loss function used was the mean squared error, meaning that only using this metric can may cause us to fail to observe other possible problems while training the data.
+The squared error is also related to the root mean squared error, the measured used to determine the best model in the Kaggle competition meaning it can provide insights on the individual monitors in the training data.</p>
+<p>The problem is that the loss function used was the mean squared error, meaning that only using this metric can may cause us to fail to observe other possible problems while training the data.
 Absolute error as a criterion for analysis fills these gaps in knowledge, such as bias in the training data or the geographic distribution of the error.</p>
 <figure>
 <img src="images/Absolute_dis.png" alt="" /><figcaption>Figure H. Training Data Absolute Error Histogram</figcaption>
