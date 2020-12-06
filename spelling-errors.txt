@@ -11,8 +11,9 @@ BRNN
 Clarizio
 CNNs
 convolutes
-convolutional
+Convolutional
 dataset
+Devolpment
 DTB
 DTF
 EDA

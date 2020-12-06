@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/5e2bd9ae96cfb66d91b801a885cf65d11d82358b/" />
+  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/bd3f26fdc4957d11ad078aee124ad094695fad32/" />
 
-  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/5e2bd9ae96cfb66d91b801a885cf65d11d82358b/" />
+  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/bd3f26fdc4957d11ad078aee124ad094695fad32/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/5e2bd9ae96cfb66d91b801a885cf65d11d82358b/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/bd3f26fdc4957d11ad078aee124ad094695fad32/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Predicting NO2 concentrations
 
 <small><em>
 This manuscript
-([permalink](https://tessac2.github.io/498_NO2_pred/v/5e2bd9ae96cfb66d91b801a885cf65d11d82358b/))
+([permalink](https://tessac2.github.io/498_NO2_pred/v/bd3f26fdc4957d11ad078aee124ad094695fad32/))
 was automatically generated
-from [tessac2/498_NO2_pred@5e2bd9a](https://github.com/tessac2/498_NO2_pred/tree/5e2bd9ae96cfb66d91b801a885cf65d11d82358b)
+from [tessac2/498_NO2_pred@bd3f26f](https://github.com/tessac2/498_NO2_pred/tree/bd3f26fdc4957d11ad078aee124ad094695fad32)
 on December 6, 2020.
 </em></small>
 
@@ -285,14 +285,19 @@ In conclusion, random forest is possibly not a very appropriate algorithm to mak
 
 # 3. Results
 
+### 3.1 Model Devolpment 
+
+
+
 Figure C shows the architecture of the neural network used that achieved the best performance. 
 Many choices made regarding were governed by two main motives; reducing the complexity of the model and ensuring the model captures the entire range of concentrations in the training data. 
-Both of 
 
+### 3.2 Model Analysis
 
 The final model was further analyzed using two major parameters: squared error and absolute error.
 Squared error penalizes predictions further from the observed concentrations, which is beneficial for detecting outliers and anomalies in the data. 
 The squared error is also related to the root mean squared error, the measured used to determine the best model in the Kaggle competition meaning it can provide insights on the individual monitors in the training data. 
+
 The problem is that the loss function used was the mean squared error, meaning that only using this metric can may cause us to fail to observe other possible problems while training the data.
 Absolute error as a criterion for analysis fills these gaps in knowledge, such as bias in the training data or the geographic distribution of the error. 
 
