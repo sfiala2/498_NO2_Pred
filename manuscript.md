@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://sfiala2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/c1e723555b444a8dffeb5dafc0d87aac36de9835/" />
+  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/72775012e947903e69060609816ae19910f98021/" />
 
-  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/c1e723555b444a8dffeb5dafc0d87aac36de9835/" />
+  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/72775012e947903e69060609816ae19910f98021/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/c1e723555b444a8dffeb5dafc0d87aac36de9835/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/72775012e947903e69060609816ae19910f98021/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Predicting NO<sub>2</sub> concentrations
 
 <small><em>
 This manuscript
-([permalink](https://sfiala2.github.io/498_NO2_pred/v/c1e723555b444a8dffeb5dafc0d87aac36de9835/))
+([permalink](https://sfiala2.github.io/498_NO2_pred/v/72775012e947903e69060609816ae19910f98021/))
 was automatically generated
-from [sfiala2/498_NO2_pred@c1e7235](https://github.com/sfiala2/498_NO2_pred/tree/c1e723555b444a8dffeb5dafc0d87aac36de9835)
+from [sfiala2/498_NO2_pred@7277501](https://github.com/sfiala2/498_NO2_pred/tree/72775012e947903e69060609816ae19910f98021)
 on December 6, 2020.
 </em></small>
 
@@ -325,7 +325,7 @@ GRU is similar to LSTM with the exception that an output gate is absent. Instead
 
 #### 2.3.2.5 Neural networks used in this project
 In this project, majority of the models used were simple feed forward neural network models. This decision was based on two factors:
-1. The literature search revealed that neural network models are one of the most widely used models especially in pollution prediction problems and they performed relatively better in a large number of cases
+1. The literature search revealed that neural network models are one of the most widely used models especially in pollution prediction problems
 2. Neural networks are simpler as compared to random forests but at the same time slightly more complex than linear regression and hence they incorporate some machine learning components
 
 We used keras, which is an opensource library of functions which allows the use of the tensorflow library for machine learning models in python. The building blocks of a neural network model such as layers, objective functions,activation functions and optimizers, are all provided by keras. 
@@ -345,7 +345,7 @@ A loss function refers to the quantity that the model is trying to either minimi
 
 The final step was to train our model so created using training dataset and the keras function model.fit. An important parameter for fitting the model is 'epoch' which indicates the number of times the training dataset is run through our model. For example, if we choose 500 epochs we are allowing the training data to run through the model for 500 times. The number of epochs determine how well the model familiarizes itself with the model. Greater the number of epochs the better the model understands your data.
 
-However, it must be ensured that excessive epochs in proportion to the complexity of the model and the dataset is avoided as this could result in a situation wherein the model no longer tries to find a pattern among the data but rather simply memorises it. In such situations, the model overfits the data. We used a range of epochs between 350- 1000., based on several trials, where in each case, a different epoch was chosen and the final RMSE was monitored. The final model used the most suitable epoch for the given set of features and other hyperparameters.
+However, it must be ensured that excessive epochs in proportion to the complexity of the model and the dataset is avoided as this could result in a situation wherein the model no longer tries to find a pattern among the data but rather simply memorises it. In such situations, the model overfits the data. We used a range of epochs between 350- 1000, based on several trials, where in each case, a different epoch was chosen and the final RMSE was monitored. The final model used the most suitable epoch for the given set of features and other hyperparameters.
 
 Usually, training dataset is split into training and validation dataset to resolve the problem of overfitting if encountered. A validation dataset also allows for considerable improvements in model before the model is fit using the test data. A common practice is to split the training data in such a way that 80%-90% of the data is used to train the model and 10-20% to validate. We used a 10-20% split. However, our best performing neural network model did not use any validation data citing the limited number of datapoints available for the competition.
 
@@ -353,7 +353,7 @@ Our neural networks achieved a RMSE values in the range of 2.92-6.6, which impli
 
 **Table 2.3 Summary of 3 Neural Networks Used in the project (the fourth and the best performing is explained in detail in the Results Section)**
 
-|Features|Hyperparameters|Group Member|FInal RMSE Achieved|
+|Features|Hyperparameters|Group Member|Final RMSE Achieved|
 |--------|---------------|------------|-------------|
 |WRF+DOMINO, percentage impervious surface,	population,	major road length,	resedential road,	total road: All at buffer 10000 m|learning rate = 0.0004; batch size = 120; hidden layers = 4; epochs = 350|Sudheer|6.60|
 |WRF+DOMINO,	impervious percentage,	population,	major road length,	resedential road,	total road: All at buffer 10000 m|learning rate = 0.001; hidden layers = 1; epochs=2000|Hope|4.23|
