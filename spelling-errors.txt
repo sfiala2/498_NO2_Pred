@@ -31,8 +31,9 @@ homogenous
 Houly
 HPBL
 hyperparameter
-Hyperparameters
+hyperparameters
 incoportating
+interpretability
 janeroe
 Kaggle
 keras
@@ -60,7 +61,7 @@ preduced
 preprocess
 PSO
 RandomForestRegressor
-ReLu
+ReLU
 resedential
 respirable
 RMSE
@@ -72,7 +73,7 @@ SAPSO
 scikit
 SDT
 Shenzen
-Sigmoid
+sigmoid
 Spearman’s
 Spectroradiometer
 Sudheer

@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/458ff12f98a242b4e03d61e3cc6667bd76d16e7a/" />
+  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/0fc1472fd71e057ee1251a6abb4997c5d32fc72d/" />
 
-  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/458ff12f98a242b4e03d61e3cc6667bd76d16e7a/" />
+  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/0fc1472fd71e057ee1251a6abb4997c5d32fc72d/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/458ff12f98a242b4e03d61e3cc6667bd76d16e7a/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/0fc1472fd71e057ee1251a6abb4997c5d32fc72d/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Predicting NO2 concentrations
 
 <small><em>
 This manuscript
-([permalink](https://tessac2.github.io/498_NO2_pred/v/458ff12f98a242b4e03d61e3cc6667bd76d16e7a/))
+([permalink](https://tessac2.github.io/498_NO2_pred/v/0fc1472fd71e057ee1251a6abb4997c5d32fc72d/))
 was automatically generated
-from [tessac2/498_NO2_pred@458ff12](https://github.com/tessac2/498_NO2_pred/tree/458ff12f98a242b4e03d61e3cc6667bd76d16e7a)
+from [tessac2/498_NO2_pred@0fc1472](https://github.com/tessac2/498_NO2_pred/tree/0fc1472fd71e057ee1251a6abb4997c5d32fc72d)
 on December 6, 2020.
 </em></small>
 
@@ -154,7 +154,7 @@ on December 6, 2020.
 ## Abstract {.page_break_before}
 
 
-test commit on abstract
+The application of machine learning models to inform environmental quality and change is continuously growing. Machine learning models with varying levels of complexity and interpretability can be used to improve understanding of air quality in regions where monitored data is not available. This research presents a neural network model that uses GIS-derived land use characteristics and modeled satellite data to estimate NO2 concentrations at monitored sites across the contiguous United States. This neural network model was selected as the highest performing model of six, consisting of four neural network, one multiple regression, and one random forest model. Model performance was evaluated based on the root mean square error of the test predictions, with the best model having a root mean square error of 2.95 (training data mean = 11.83 ppb).  Our model shows a relatively high root mean square error, thus making the model not highly applicable. More data is required to improve the model. 
 
 
 # 1. Introduction
