@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/5f5ce15f5e753e0434d8aaf46174f54bf3baceb4/" />
+  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/3d26890fcef64a6b13d7deae162e94645ccac94a/" />
 
-  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/5f5ce15f5e753e0434d8aaf46174f54bf3baceb4/" />
+  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/3d26890fcef64a6b13d7deae162e94645ccac94a/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/5f5ce15f5e753e0434d8aaf46174f54bf3baceb4/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/3d26890fcef64a6b13d7deae162e94645ccac94a/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Predicting NO2 concentrations
 
 <small><em>
 This manuscript
-([permalink](https://tessac2.github.io/498_NO2_pred/v/5f5ce15f5e753e0434d8aaf46174f54bf3baceb4/))
+([permalink](https://tessac2.github.io/498_NO2_pred/v/3d26890fcef64a6b13d7deae162e94645ccac94a/))
 was automatically generated
-from [tessac2/498_NO2_pred@5f5ce15](https://github.com/tessac2/498_NO2_pred/tree/5f5ce15f5e753e0434d8aaf46174f54bf3baceb4)
+from [tessac2/498_NO2_pred@3d26890](https://github.com/tessac2/498_NO2_pred/tree/3d26890fcef64a6b13d7deae162e94645ccac94a)
 on December 6, 2020.
 </em></small>
 
@@ -315,7 +315,7 @@ The inputs used in a neural network determines the effectiveness of the model; a
 |Length of Major Roads | 1500|
 |Length of Total Roads | 14000 |
 
-Figure F shows the X inputs used in the model.  The use of a single length of each input parameter was done to avoid dependencies and the reducing the complexity of the model. The one exception is major road parameter, which is directly imputed once and indirectly added in the total road parameter; this was done due to cars being a major localized source of NO2. 
+Table 3.1 shows the 7 inputs used in the model.  The use of a single length of each input parameter was done to avoid dependencies and the reducing the complexity of the model. The one exception is major road parameter, which is directly imputed once and indirectly added in the total road parameter; this was done due to cars being a major localized source of NO2. 
 
 
 
