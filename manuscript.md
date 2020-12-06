@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/b71078e2cc6142fd0acd1908c00716ebd6e21611/" />
+  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/6a35973f5d25c19c886c15130797a1ce53126947/" />
 
-  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/b71078e2cc6142fd0acd1908c00716ebd6e21611/" />
+  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/6a35973f5d25c19c886c15130797a1ce53126947/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/b71078e2cc6142fd0acd1908c00716ebd6e21611/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/6a35973f5d25c19c886c15130797a1ce53126947/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Predicting NO2 concentrations
 
 <small><em>
 This manuscript
-([permalink](https://tessac2.github.io/498_NO2_pred/v/b71078e2cc6142fd0acd1908c00716ebd6e21611/))
+([permalink](https://tessac2.github.io/498_NO2_pred/v/6a35973f5d25c19c886c15130797a1ce53126947/))
 was automatically generated
-from [tessac2/498_NO2_pred@b71078e](https://github.com/tessac2/498_NO2_pred/tree/b71078e2cc6142fd0acd1908c00716ebd6e21611)
+from [tessac2/498_NO2_pred@6a35973](https://github.com/tessac2/498_NO2_pred/tree/6a35973f5d25c19c886c15130797a1ce53126947)
 on December 6, 2020.
 </em></small>
 
@@ -288,7 +288,7 @@ In this project, majority of our group members used simple feed forward neural n
 
 Among the neural network models we used a combination of different features and hyperparameters. We used keras, which is an opensource library of functions which allows the use of the tensorflow library for machine learning models in python. The building blocks of a neural network model such as layers, objective functions,activation functions and optimizers, are all provided by keras. 
 
-A regular neural network consists of an input layer, hidden layers and an output layer. We used a sequential model which consists of few layers stacked upon one another, linearly. Each layer has multiple cells and we could define the number of input cells for these hidden layers. We can also define the type of activation function for each layer. We used an average of 3 to 5 hidden layers in our neural network models.
+A regular neural network consists of an input layer, hidden layers and an output layer. We used a sequential model which consists of few layers stacked upon one another, linearly [@https://doi.org/10.1016/S0169-7439(97)00061-0]. Each layer has multiple cells and we could define the number of input cells for these hidden layers. We can also define the type of activation function for each layer. We used an average of 3 to 5 hidden layers in our neural network models.
 
 We used a combination of three different activation functions:
 1. Linear Activation - a linear activation uses the weights to multiply the inputs providing an output which is linearly proportional to the input. This function is also termed as no activation function as there is no further transformation being operated on the values
