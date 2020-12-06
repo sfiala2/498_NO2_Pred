@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://sfiala2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/5fe731cfe7372e0eed973f8e94d23629e7ea30a3/" />
+  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/69c07cbc4ef99108bb423c6a21784607de99beca/" />
 
-  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/5fe731cfe7372e0eed973f8e94d23629e7ea30a3/" />
+  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/69c07cbc4ef99108bb423c6a21784607de99beca/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/5fe731cfe7372e0eed973f8e94d23629e7ea30a3/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/69c07cbc4ef99108bb423c6a21784607de99beca/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Predicting NO<sub>2</sub> concentrations
 
 <small><em>
 This manuscript
-([permalink](https://sfiala2.github.io/498_NO2_pred/v/5fe731cfe7372e0eed973f8e94d23629e7ea30a3/))
+([permalink](https://sfiala2.github.io/498_NO2_pred/v/69c07cbc4ef99108bb423c6a21784607de99beca/))
 was automatically generated
-from [sfiala2/498_NO2_pred@5fe731c](https://github.com/sfiala2/498_NO2_pred/tree/5fe731cfe7372e0eed973f8e94d23629e7ea30a3)
+from [sfiala2/498_NO2_pred@69c07cb](https://github.com/sfiala2/498_NO2_pred/tree/69c07cbc4ef99108bb423c6a21784607de99beca)
 on December 6, 2020.
 </em></small>
 
@@ -301,10 +301,15 @@ The multiple regression model presented, although comparable to other models use
 Artificial neural networks are based on the design philosophy of the neural connections in our brain. They consist of a group of interconnected nodes joined through edges. The edges transmit the signals (which in a machine learning model would be a real number) from one neuron to another just like a synapse functions in a brain. A typical neural network has many layers. Each layer is composed of a set of neurons and each layer transforms and processes data in a different way based on the hyperparameters of the model.
 
 There are different kinds of neural networks. The most commonly used of which are:
+
   1. Feed Forward Neural Network
+  
   2. Convolutional Neural Network (CNN)
+  
   3. Recurrent Neural Network (RNN)
+  
   4. Long-short term memory neural network (LSTM)
+  
   5. Gated Recurrent Unit (GRU)
 
 There are several other advanced ones such as General Adversarial Networks, Auto-encoders and Deep Belief Neural networks. However, we restrict our discussion to the five types listed above.
@@ -325,7 +330,9 @@ GRU is similar to LSTM with the exception that an output gate is absent. Instead
 
 #### 2.3.2.5 Neural networks used in this project
 In this project, majority of the models used were simple feed forward neural network models. This decision was based on two factors:
+
     1. The literature search revealed that neural network models are one of the most widely used models especially in pollution prediction problems
+    
     2. Neural networks are simpler as compared to random forests but at the same time slightly more complex than linear regression and hence they incorporate some machine learning components
 
 We used keras, which is an opensource library of functions which allows the use of the tensorflow library for machine learning models in python. The building blocks of a neural network model such as layers, objective functions,activation functions and optimizers, are all provided by keras. 
@@ -398,7 +405,7 @@ The inputs used in a neural network determines the effectiveness of the model; a
 
 Table 3.1 shows the 7 inputs used in the model.  The use of a single length of each input parameter was done to avoid dependencies and the reducing the complexity of the model. The one exception is major road parameter, which is directly imputed once and indirectly added in the total road parameter; this was done due to cars being a major localized source of NO2. The first 3 inputs are considered point inputs, describing the monitor location and unique monitor atttributes; whereas the last 4 inputs are dependent on the surronding area and is defined by the buffer length around the area. This may cause areas dense with monitors may have similar inputs but different NO2 concentrations; to avoid this complication buffer length are kept a small as possible. Another reason to keep the buffer areas small is that some monitors in the training data are close to the United States border, because this outside the scope of this project any parameter outside the continental United States is not counted towards the total (ie. a major road connecting a US city to a mexican city would only have the highway in the United States count aganist the major roads parameter). This may cause some errors in the trainng of the nueral network, so the inputs try to minimize this case.   
 
-'''
+```
 train_dataset = tf.data.Dataset.from_tensor_slices((x_dependent_train,y_ind_train)).batch(batch_size=255)
 
 
@@ -424,7 +431,7 @@ model.compile(
 )
 
 history = model.fit(train_dataset,epochs= 10000)
-'''
+```
 
 Figure C shows the architecture of the neural network used that achieved the best performance. 
 Many choices made regarding were governed by two main motives; reducing the complexity of the model and ensuring the model captures the entire range of concentrations in the training data. 

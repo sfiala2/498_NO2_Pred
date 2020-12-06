@@ -53,9 +53,9 @@
   <meta name="citation_fulltext_html_url" content="https://sfiala2.github.io/498_NO2_pred/" />
   <meta name="citation_pdf_url" content="https://sfiala2.github.io/498_NO2_pred/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://sfiala2.github.io/498_NO2_pred/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/5fe731cfe7372e0eed973f8e94d23629e7ea30a3/" />
-  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/5fe731cfe7372e0eed973f8e94d23629e7ea30a3/" />
-  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/5fe731cfe7372e0eed973f8e94d23629e7ea30a3/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/69c07cbc4ef99108bb423c6a21784607de99beca/" />
+  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/69c07cbc4ef99108bb423c6a21784607de99beca/" />
+  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/69c07cbc4ef99108bb423c6a21784607de99beca/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -69,9 +69,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://sfiala2.github.io/498_NO2_pred/v/5fe731cfe7372e0eed973f8e94d23629e7ea30a3/">permalink</a>)
+(<a href="https://sfiala2.github.io/498_NO2_pred/v/69c07cbc4ef99108bb423c6a21784607de99beca/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/sfiala2/498_NO2_pred/tree/5fe731cfe7372e0eed973f8e94d23629e7ea30a3">sfiala2/498_NO2_pred@5fe731c</a>
+from <a href="https://github.com/sfiala2/498_NO2_pred/tree/69c07cbc4ef99108bb423c6a21784607de99beca">sfiala2/498_NO2_pred@69c07cb</a>
 on December 6, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -326,12 +326,14 @@ on December 6, 2020.
 <p>The multiple regression model presented, although comparable to other models used, is not an accurate, appropriate model for predicting NO<sub>2</sub> concentrations based on the available data.</p>
 <h3 id="neural-networks">2.3.2 Neural Networks</h3>
 <p>Artificial neural networks are based on the design philosophy of the neural connections in our brain. They consist of a group of interconnected nodes joined through edges. The edges transmit the signals (which in a machine learning model would be a real number) from one neuron to another just like a synapse functions in a brain. A typical neural network has many layers. Each layer is composed of a set of neurons and each layer transforms and processes data in a different way based on the hyperparameters of the model.</p>
-<p>There are different kinds of neural networks. The most commonly used of which are:
-1. Feed Forward Neural Network
-2. Convolutional Neural Network (CNN)
-3. Recurrent Neural Network (RNN)
-4. Long-short term memory neural network (LSTM)
-5. Gated Recurrent Unit (GRU)</p>
+<p>There are different kinds of neural networks. The most commonly used of which are:</p>
+<ol type="1">
+<li><p>Feed Forward Neural Network</p></li>
+<li><p>Convolutional Neural Network (CNN)</p></li>
+<li><p>Recurrent Neural Network (RNN)</p></li>
+<li><p>Long-short term memory neural network (LSTM)</p></li>
+<li><p>Gated Recurrent Unit (GRU)</p></li>
+</ol>
 <p>There are several other advanced ones such as General Adversarial Networks, Auto-encoders and Deep Belief Neural networks. However, we restrict our discussion to the five types listed above.</p>
 <p>We will first discuss, briefly, the CNN, RNN, LSTM and GRU before moving on to the Feed formal neural network which is the neural network model used in this project.</p>
 <h4 id="cnn">2.3.2.1 CNN</h4>
@@ -343,9 +345,10 @@ on December 6, 2020.
 <h4 id="gru">2.3.2.4 GRU</h4>
 <p>GRU is similar to LSTM with the exception that an output gate is absent. Instead it has a reset and update gates. The reset gate works as a combination of input and forget gate and the update gate works as an additional forget gate. Their performance is equivalent and sometimes even better than LSTMs, especially when dealing with some special data such as those involved in language processing<span class="citation" data-cites="Ictu6Zb3">[<a href="#ref-Ictu6Zb3" role="doc-biblioref">14</a>]</span>.</p>
 <h4 id="neural-networks-used-in-this-project">2.3.2.5 Neural networks used in this project</h4>
-<p>In this project, majority of the models used were simple feed forward neural network models. This decision was based on two factors:
-1. The literature search revealed that neural network models are one of the most widely used models especially in pollution prediction problems
-2. Neural networks are simpler as compared to random forests but at the same time slightly more complex than linear regression and hence they incorporate some machine learning components</p>
+<p>In this project, majority of the models used were simple feed forward neural network models. This decision was based on two factors:</p>
+<pre><code>1. The literature search revealed that neural network models are one of the most widely used models especially in pollution prediction problems
+
+2. Neural networks are simpler as compared to random forests but at the same time slightly more complex than linear regression and hence they incorporate some machine learning components</code></pre>
 <p>We used keras, which is an opensource library of functions which allows the use of the tensorflow library for machine learning models in python. The building blocks of a neural network model such as layers, objective functions,activation functions and optimizers, are all provided by keras.</p>
 <p>A regular neural network consists of an input layer, hidden layers and an output layer. We used a sequential model which consists of few layers stacked upon one another, linearly <span class="citation" data-cites="yCfM4S2y">[<a href="#ref-yCfM4S2y" role="doc-biblioref">15</a>]</span>. Each layer has multiple cells and we could define the number of input cells for these hidden layers. We can also define the type of activation function for each layer. We used an average of 3 to 5 hidden layers in our neural network models.</p>
 <p>We used a combination of three different activation functions:
@@ -448,20 +451,31 @@ on December 6, 2020.
 </tbody>
 </table>
 <p>Table 3.1 shows the 7 inputs used in the model. The use of a single length of each input parameter was done to avoid dependencies and the reducing the complexity of the model. The one exception is major road parameter, which is directly imputed once and indirectly added in the total road parameter; this was done due to cars being a major localized source of NO2. The first 3 inputs are considered point inputs, describing the monitor location and unique monitor atttributes; whereas the last 4 inputs are dependent on the surronding area and is defined by the buffer length around the area. This may cause areas dense with monitors may have similar inputs but different NO2 concentrations; to avoid this complication buffer length are kept a small as possible. Another reason to keep the buffer areas small is that some monitors in the training data are close to the United States border, because this outside the scope of this project any parameter outside the continental United States is not counted towards the total (ie. a major road connecting a US city to a mexican city would only have the highway in the United States count aganist the major roads parameter). This may cause some errors in the trainng of the nueral network, so the inputs try to minimize this case.</p>
-<p>’’’
-train_dataset = tf.data.Dataset.from_tensor_slices((x_dependent_train,y_ind_train)).batch(batch_size=255)</p>
-<p>model = tf.keras.Sequential()</p>
-<p>model.add(tf.keras.layers.Dense(units=128))</p>
-<p>model.add(tf.keras.layers.Dense(units=16))</p>
-<p>model.add(tf.keras.layers.Dense(units=8))</p>
-<p>model.add(tf.keras.layers.Dense(units=4))</p>
-<p>model.add(tf.keras.layers.Dense(units=1, input_shape=(7,)))</p>
-<p>model.compile(
-optimizer=tf.keras.optimizers.Adam(learning_rate=.0005),
-loss=‘mean_squared_error’,
-)</p>
-<p>history = model.fit(train_dataset,epochs= 10000)
-’’’</p>
+<pre><code>train_dataset = tf.data.Dataset.from_tensor_slices((x_dependent_train,y_ind_train)).batch(batch_size=255)
+
+
+
+model = tf.keras.Sequential()
+
+
+model.add(tf.keras.layers.Dense(units=128))
+
+model.add(tf.keras.layers.Dense(units=16))
+
+model.add(tf.keras.layers.Dense(units=8))
+
+model.add(tf.keras.layers.Dense(units=4))
+
+
+model.add(tf.keras.layers.Dense(units=1, input_shape=(7,)))
+
+
+model.compile(
+    optimizer=tf.keras.optimizers.Adam(learning_rate=.0005), 
+    loss=&#39;mean_squared_error&#39;,
+)
+
+history = model.fit(train_dataset,epochs= 10000)</code></pre>
 <p>Figure C shows the architecture of the neural network used that achieved the best performance.
 Many choices made regarding were governed by two main motives; reducing the complexity of the model and ensuring the model captures the entire range of concentrations in the training data.
 To avoid overfitting the model was designed with reduced complexity in the model, like the inputs, to allow monitors with similar inputs to have the output similar concentrations.
