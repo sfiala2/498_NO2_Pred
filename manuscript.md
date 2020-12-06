@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/bf1e16eafb485a288d60d819aa2f05e4e3fad42c/" />
+  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/b7812e68538f2816ee23f11ac716675348bf2b82/" />
 
-  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/bf1e16eafb485a288d60d819aa2f05e4e3fad42c/" />
+  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/b7812e68538f2816ee23f11ac716675348bf2b82/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/bf1e16eafb485a288d60d819aa2f05e4e3fad42c/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/b7812e68538f2816ee23f11ac716675348bf2b82/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Predicting NO2 concentrations
 
 <small><em>
 This manuscript
-([permalink](https://tessac2.github.io/498_NO2_pred/v/bf1e16eafb485a288d60d819aa2f05e4e3fad42c/))
+([permalink](https://tessac2.github.io/498_NO2_pred/v/b7812e68538f2816ee23f11ac716675348bf2b82/))
 was automatically generated
-from [tessac2/498_NO2_pred@bf1e16e](https://github.com/tessac2/498_NO2_pred/tree/bf1e16eafb485a288d60d819aa2f05e4e3fad42c)
+from [tessac2/498_NO2_pred@b7812e6](https://github.com/tessac2/498_NO2_pred/tree/b7812e68538f2816ee23f11ac716675348bf2b82)
 on December 6, 2020.
 </em></small>
 
@@ -163,7 +163,7 @@ NO<sub>2</sub> is defined by the U.S. Environmental Protection Agency (EPA) as a
 
 Therefore, understanding and predicting the spatial variability of NO<sub>2</sub> emissions is of great importance to public health. However, prediction of air quality can be complicated due to the number of factors that affect local air quality, ranging from meteorology to land use. Machine learning models are a useful tool to interpret and find relationships in complex data. 
 
-Monitoring air quality can be a difficult task, as monitored data varies in availability by geographic region. Bechle et al (2015) explores the usage of satellite data and GIS derived land use characteristics to better understand NO<sub>2</sub> concentrations and air quality in regions without air quality monitors [@https://doi.org/10.1021/acs.est.5b02882]. This research incorporated WRF-Chem modeled DOMINO satellite column and surface estimates of NO<sub>2</sub> concentrations to create 132 monthly NO<sub>2</sub> concentration estimates based on scaled yearly land use regression data. The resulting dataset consisted of observed concentrations at 255 monitored sites, land usage at 22 different radii from each site, and estimated NO<sub>2</sub> concentrations based on the developed model. 
+Monitoring air quality can be a difficult task, as monitored data varies in availability by geographic region. Bechle et al (2015) explores the usage of satellite data and GIS derived land use characteristics to better understand NO<sub>2</sub> concentrations and air quality in regions without air quality monitors [@https://doi.org/10.1021/acs.est.5b02882]. This research incorporated WRF-Chem modeled DOMINO satellite column and surface estimates of NO<sub>2</sub> concentrations to create 132 monthly NO<sub>2</sub> concentration estimates based on scaled yearly land use regression data. The resulting dataset consisted of observed concentrations at 255 monitored sites across the United States, land usage at 22 different radii from each site, and estimated NO<sub>2</sub> concentrations based on the developed model. 
 
 This report proposes a machine learning model to predict NO<sub>2</sub> concentrations spatially based on data provided by Bechle et al (2015). First, a literature review was undertaken to understand what machine learning models have typically performed well in predicting air quality. Next, an exploratory data analysis (EDA) was performed on the Bechle et al (2015) dataset. Finally, multiple linear regression, neural network and random forest models were built and results were compared to see which method had the lowest mean-squared error (MSE). 
 
@@ -265,11 +265,11 @@ y = The dependent variable to be predicted,
 
 &epsilon; = The error term (difference between y predicted and y oberseved)
 
-The multiple regression model used in this project first investigated and removed variables with colinearity. This was done by removing variables with a variance inflation factor over 5. This resulted in all road data being removed. 
+The multiple regression model used in this project first investigated and removed variables with colinearity. This was done by removing variables with a variance inflation factor over 5. This resulted in all road data being removed. Then, a model was developed using ordinary least squares linear regression. 
 
 #### MLR Fit 
 
-The final model equation is presented in Table 2.3.1.1. 
+The final model equation is presented in Table 2.3.1.1 with each feature and its respective coefficient.
 
 |Variable   |  Value |
 |-----------|--------|
