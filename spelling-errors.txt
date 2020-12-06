@@ -27,7 +27,7 @@ homogenous
 Houly
 HPBL
 hyperparameter
-hyperparameters
+Hyperparameters
 janeroe
 Kaggle
 keras
@@ -54,6 +54,7 @@ preprocess
 PSO
 RandomForestRegressor
 ReLU
+resedential
 respirable
 RMSE
 RMSProp

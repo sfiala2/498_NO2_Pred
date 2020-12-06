@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/315176c9f96d5cd3dd418baccc753f66fe1be292/" />
+  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/9a93736907ced401194ef74dd1455db99591001c/" />
 
-  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/315176c9f96d5cd3dd418baccc753f66fe1be292/" />
+  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/9a93736907ced401194ef74dd1455db99591001c/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/315176c9f96d5cd3dd418baccc753f66fe1be292/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/9a93736907ced401194ef74dd1455db99591001c/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Predicting NO2 concentrations
 
 <small><em>
 This manuscript
-([permalink](https://tessac2.github.io/498_NO2_pred/v/315176c9f96d5cd3dd418baccc753f66fe1be292/))
+([permalink](https://tessac2.github.io/498_NO2_pred/v/9a93736907ced401194ef74dd1455db99591001c/))
 was automatically generated
-from [tessac2/498_NO2_pred@315176c](https://github.com/tessac2/498_NO2_pred/tree/315176c9f96d5cd3dd418baccc753f66fe1be292)
+from [tessac2/498_NO2_pred@9a93736](https://github.com/tessac2/498_NO2_pred/tree/9a93736907ced401194ef74dd1455db99591001c)
 on December 6, 2020.
 </em></small>
 
@@ -308,10 +308,13 @@ However, it must be ensured that excessive epochs in proportion to the complexit
 Usually, training dataset is split into training and validation dataset to resolve the problem of overfitting if encountered. A validation dataset also allows for considerable improvements in model before the model is fit using the test data. A common practice is to split the training data in such a way that 80% of the data is used to train the model and 10-20% to validate. We used a 10-20% split. However, our best performing neural network model did not use any validation data citing the limited number of datapoints available for the competition.
 
 Our neural networks achieved a RMSE values in the range of 2.92-6.6. The best performing neural network model is described in detail in the Results section of the report.
-
-|Features|Hyperparameters|Group Member|RMSE Achieved|
+**Table 2.3 Summary of 3 Neural Networks Used in the project (the fourth and the best performing is explained in detail in the Results Section)**
+|Features|Hyperparameters|Group Member|FInal RMSE Achieved|
 |--------|---------------|------------|-------------|
-|WRF+DOMINO,	impervious percentage,	pop_number,	maj_road_km,	res_road_km,	tot_road_km: All at buffer 10000 m|learning rate = 0.0004; batch size = 120; hidden layers = 4|Sudheer|6.6|
+|WRF+DOMINO, percentage impervious surface,	population,	major road length,	resedential road,	total road: All at buffer 10000 m|learning rate = 0.0004; batch size = 120; hidden layers = 4; epochs = 350|Sudheer|6.60|
+|WRF+DOMINO,	impervious percentage,	population,	major road length,	resedential road,	total road: All at buffer 10000 m|learning rate = 0.001; hidden layers = 1; epochs=2000|Hope|4.23|
+|WRF+DOMINO, percentage impervious surface at buffers 3000,3500,4000,5000,6000,7000,8000,10000 m|learning_rate = 0.005; epochs = 400; hidden layers = 4; batch_size = 100| Tessa|4.33|
+
 
 ### 2.3.3 Random Forest
 Trees and tree algorithm is among the most widely applied machine learning algorithms. It includes random forest, gradient boosting decision trees, XGBoost, etc. The fundament of trees algorithm is decision tree, which can be divided into classification tree and regression tree. In this project, the label is the observed NO<sub>2</sub> concentration, thus, regression tree algorithm can be applied to make the prediction.
