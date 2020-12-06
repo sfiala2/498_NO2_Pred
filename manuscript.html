@@ -53,9 +53,9 @@
   <meta name="citation_fulltext_html_url" content="https://tessac2.github.io/498_NO2_pred/" />
   <meta name="citation_pdf_url" content="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/6a684f1a8955eed2e25ba29f4b19e97d2490aa74/" />
-  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/6a684f1a8955eed2e25ba29f4b19e97d2490aa74/" />
-  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/6a684f1a8955eed2e25ba29f4b19e97d2490aa74/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/c6c366bc06ca732131d2f3b14ca3d4a49d051079/" />
+  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/c6c366bc06ca732131d2f3b14ca3d4a49d051079/" />
+  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/c6c366bc06ca732131d2f3b14ca3d4a49d051079/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -69,9 +69,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://tessac2.github.io/498_NO2_pred/v/6a684f1a8955eed2e25ba29f4b19e97d2490aa74/">permalink</a>)
+(<a href="https://tessac2.github.io/498_NO2_pred/v/c6c366bc06ca732131d2f3b14ca3d4a49d051079/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/tessac2/498_NO2_pred/tree/6a684f1a8955eed2e25ba29f4b19e97d2490aa74">tessac2/498_NO2_pred@6a684f1</a>
+from <a href="https://github.com/tessac2/498_NO2_pred/tree/c6c366bc06ca732131d2f3b14ca3d4a49d051079">tessac2/498_NO2_pred@c6c366b</a>
 on December 6, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -297,6 +297,7 @@ Largely used for classifying image and audio data, the convolutional neural netw
 <p>In conclusion, random forest is possibly not a very appropriate algorithm to make prediction in regression problems from dataset in a low-scale and a low-dimension.</p>
 <h1 id="results">3. Results</h1>
 <h2 id="model-devolpment">3.1 Model Devolpment</h2>
+<p>The choice of algorithm to use is one of the most important and consequential choices in the process of developing a model. Using the information obtained in the exploratory data analysis, the most important factors that will dominate this choice is the fact there is only 255 samples in the training data and that the data is skew right; meaning that an algorithm needs to be able to make predictions based on finite data and inputs but can evaluate each sample independently. A neural network model is the most applicable to this situation to make the best predictions for most of the data but can also avoid over and underfitting.</p>
 <p>Figure C shows the architecture of the neural network used that achieved the best performance.
 Many choices made regarding were governed by two main motives; reducing the complexity of the model and ensuring the model captures the entire range of concentrations in the training data.</p>
 <h2 id="model-analysis">3.2 Model Analysis</h2>

@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/6a684f1a8955eed2e25ba29f4b19e97d2490aa74/" />
+  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/c6c366bc06ca732131d2f3b14ca3d4a49d051079/" />
 
-  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/6a684f1a8955eed2e25ba29f4b19e97d2490aa74/" />
+  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/c6c366bc06ca732131d2f3b14ca3d4a49d051079/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/6a684f1a8955eed2e25ba29f4b19e97d2490aa74/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/c6c366bc06ca732131d2f3b14ca3d4a49d051079/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Predicting NO2 concentrations
 
 <small><em>
 This manuscript
-([permalink](https://tessac2.github.io/498_NO2_pred/v/6a684f1a8955eed2e25ba29f4b19e97d2490aa74/))
+([permalink](https://tessac2.github.io/498_NO2_pred/v/c6c366bc06ca732131d2f3b14ca3d4a49d051079/))
 was automatically generated
-from [tessac2/498_NO2_pred@6a684f1](https://github.com/tessac2/498_NO2_pred/tree/6a684f1a8955eed2e25ba29f4b19e97d2490aa74)
+from [tessac2/498_NO2_pred@c6c366b](https://github.com/tessac2/498_NO2_pred/tree/c6c366bc06ca732131d2f3b14ca3d4a49d051079)
 on December 6, 2020.
 </em></small>
 
@@ -295,6 +295,8 @@ In conclusion, random forest is possibly not a very appropriate algorithm to mak
 # 3. Results
 
 ## 3.1 Model Devolpment 
+
+The choice of algorithm to use is one of the most important and consequential choices in the process of developing a model.  Using the information obtained in the exploratory data analysis, the most important factors that will dominate this choice is the fact there is only 255 samples in the training data and that the data is skew right; meaning that an algorithm needs to be able to make predictions based on finite data and inputs but can evaluate each sample independently. A neural network model is the most applicable to this situation to make the best predictions for most of the data but can also avoid over and underfitting. 
 
 Figure C shows the architecture of the neural network used that achieved the best performance. 
 Many choices made regarding were governed by two main motives; reducing the complexity of the model and ensuring the model captures the entire range of concentrations in the training data. 
