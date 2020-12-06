@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/e737d7b14f14a35221f9b56bd189cd325e5f68f3/" />
+  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/6a9090c212410009522af1eb858d3d97a8f6359f/" />
 
-  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/e737d7b14f14a35221f9b56bd189cd325e5f68f3/" />
+  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/6a9090c212410009522af1eb858d3d97a8f6359f/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/e737d7b14f14a35221f9b56bd189cd325e5f68f3/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/6a9090c212410009522af1eb858d3d97a8f6359f/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Predicting NO2 concentrations
 
 <small><em>
 This manuscript
-([permalink](https://tessac2.github.io/498_NO2_pred/v/e737d7b14f14a35221f9b56bd189cd325e5f68f3/))
+([permalink](https://tessac2.github.io/498_NO2_pred/v/6a9090c212410009522af1eb858d3d97a8f6359f/))
 was automatically generated
-from [tessac2/498_NO2_pred@e737d7b](https://github.com/tessac2/498_NO2_pred/tree/e737d7b14f14a35221f9b56bd189cd325e5f68f3)
+from [tessac2/498_NO2_pred@6a9090c](https://github.com/tessac2/498_NO2_pred/tree/6a9090c212410009522af1eb858d3d97a8f6359f)
 on December 6, 2020.
 </em></small>
 
@@ -302,7 +302,7 @@ The final step was to train our model so created using training dataset and the 
 
 However, it must be ensured that excessive epochs in proportion to the complexity of the model and the dataset is avoided as this could result in a situation wherein the model no longer tries to find a pattern among the data but rather simply memorises it. In such situations, the model overfits the data. We used a range of epochs between 350- 1000.
 
-Usually, training dataset is split into training and validation dataset to resolve the problem of overfitting if encountered. A validation dataset also allows for considerable improvements in model before the model is fit using the test data. A common practice is to split the training data in such a way that 80% of the data is used to train the model and 10-20% to validate. We used a 10-20% split. However, our bets performing neural network model did not use any validation data citing the limited number of datapoints available for the competition.
+Usually, training dataset is split into training and validation dataset to resolve the problem of overfitting if encountered. A validation dataset also allows for considerable improvements in model before the model is fit using the test data. A common practice is to split the training data in such a way that 80% of the data is used to train the model and 10-20% to validate. We used a 10-20% split. However, our best performing neural network model did not use any validation data citing the limited number of datapoints available for the competition.
 
 Our neural networks achieved a RMSE values in the range of 2.92-6.6. The best performing neural network model is described in detail in the Results section of the report.
 
