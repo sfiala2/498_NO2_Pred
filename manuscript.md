@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://sfiala2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/461637b3da075f66e67686a5791ae04c66ca852d/" />
+  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/f1e1021ef25a8e4ca732bddde2814f9f65dc1fe5/" />
 
-  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/461637b3da075f66e67686a5791ae04c66ca852d/" />
+  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/f1e1021ef25a8e4ca732bddde2814f9f65dc1fe5/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/461637b3da075f66e67686a5791ae04c66ca852d/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/f1e1021ef25a8e4ca732bddde2814f9f65dc1fe5/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Predicting NO<sub>2</sub> concentrations
 
 <small><em>
 This manuscript
-([permalink](https://sfiala2.github.io/498_NO2_pred/v/461637b3da075f66e67686a5791ae04c66ca852d/))
+([permalink](https://sfiala2.github.io/498_NO2_pred/v/f1e1021ef25a8e4ca732bddde2814f9f65dc1fe5/))
 was automatically generated
-from [sfiala2/498_NO2_pred@461637b](https://github.com/sfiala2/498_NO2_pred/tree/461637b3da075f66e67686a5791ae04c66ca852d)
+from [sfiala2/498_NO2_pred@f1e1021](https://github.com/sfiala2/498_NO2_pred/tree/f1e1021ef25a8e4ca732bddde2814f9f65dc1fe5)
 on December 6, 2020.
 </em></small>
 
@@ -199,8 +199,8 @@ The models in each of these studies is summarized in Table 2.1 below:
 
 **Table 2.1 Models used in literature** 
 
-|PM<sub>2.5</sub>|Both PM<sub>2.5</sub> and AQI|
-|-----|------------------|
+| PM<sub>2.5</sub> | Both PM<sub>2.5</sub> and AQI |
+|-------------|--------------------|
 |**MLR** (Xu et al, 2018; Enebish et al, 2020; Chen et al, 2018) | **RF** (Chen et al, 2018; Xu et al, 2018; Singh et al, 2013; Liu et al, 2019; Enebish et al, 2020)|
 | **LASSO** (Xu et al, 2018) |  **Neural Network** (Azid et al, 2014; Xu et al, 2018, Gu et al, 2020) |
 | **MARS** (Xu et al, 2018; Enebish et al, 2020 ) | **SVM**  (Xu et al, 2018; Gu et al, 2020; Liu et al, 2019; Enebish et al, 2020; Singh et al, 2013) | 
@@ -214,7 +214,7 @@ As we can see above more models were used to predict PM<sub>2.5</sub> than AQI, 
 **Table 2.2 Best models in each study**
 
 | Study | Target Prediction | Best Model | RMSE | R<sup>2</sup> |
-|-------|-------------------|------------|------|----|
+|-----------|-------------------|------------|------|----|
 |Chen et al (2018)[@https://doi.org/10.1016/j.scitotenv.2018.04.251] |Annual average PM2.5|Random Forest|6.9|0.86|
 |Xu et al (2018)[@https://doi.org/10.1016/j.envpol.2018.08.029] |Monthly average PM2.5|Cubist|2.6|0.48|
 |Enebish et al (2020)[@https://doi.org/10.1038/s41370-020-0257-8] |Annual average PM2.5|Random Forest|12.9|0.96|
@@ -245,13 +245,13 @@ The potential explanatory variables of air quality monitor IDs, states, latitude
 
 The spatially-related data of latitude, longitude, and state of air quality monitors can be best interpreted by viewing this data plotted on a map. Each observation corresponds to a unique monitoring station at a distinct longitude and latitude, so there are 255 points. Monitors in this dataset come from 43 of the 50 states in the USA, excluding Alabama, Alaska, Hawaii, Mississippi, Montana, Oregon, Nebraska, and West Virginia. Many states have just one or two monitors, while nearly half of all of the monitors are in the three states California, Texas, and Pennsylvania. Observing Figure 2.2, there are many spatial gaps in the data and little discernible correlation between position and NO<sub>2</sub> quantity.
 
-**Figure 2.2 NO<sub>2</sub> Concentrations at Monitors** 
 ![Figure 2.2 Map of Concentrations](images/NO2_conc_map.png)
+**Figure 2.2 NO<sub>2</sub> Concentrations at Monitors** 
 
 Figure 2.3 is a correlation matrix for the variables in this data set. The five land-use variables are aggregated such that each of the series of related covariates differentiated by radius are instead one column. As seen in the plot, each of the land-use variables has a moderately strong positive correlation with NO<sub>2</sub>, as well as the variable WRF+DOMINO. The impervious surfaces, major road length, residential road length, and total road length variables each have a heteroskedastic relationship with NO<sub>2</sub> with higher variability occurring when paired with larger NO<sub>2</sub> values. Each of these relationships show a stronger correlation when measured with a Spearman’s correlation as opposed to the Pearson’s correlation used in the matrix. The three road-related variables are related and highly correlated with each other. The variable of population is highly skewed and has an exponential relationship with NO<sub>2</sub>. This correlation is stronger when a log-transformed population is paired with NO<sub>2</sub>. The variables of distance to coast and truncated elevation have a very weak correlation with NO<sub>2</sub>.
 
+![Figure 2.3 Correlation plot](images/corr_plot.png)
 **Figure 2.3 Correlation Matrix of Variables** 
-![Figure 2.3 Correlation plot](images/corr_plot.png) 
 
 The relationship between NO<sub>2</sub> and each of the five land-use variables changes as the radius changes. As seen in Figure 2.3, the overall correlation is moderately strong. However, the correlation between NO<sub>2</sub> and individual columns for each variable category with differing radii generally increases as the radius increases. The impervious surface correlation is highest at a radius of 7,000 meters (&rho; = 0.794) and the four remaining land-use variables have their highest correlation at 10,000 meters: population (r = 0.721),  major road length (&rho; = 0.770), residential road length (&rho; = 0.754), and total road length (&rho; = 0.771).
 
