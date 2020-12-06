@@ -11,7 +11,7 @@ Clarizio
 CNNs
 collinearity
 convolutes
-convolutional
+Convolutional
 covariates
 datapoints
 dataset
@@ -60,7 +60,7 @@ preduced
 preprocess
 PSO
 RandomForestRegressor
-ReLU
+ReLu
 resedential
 respirable
 RMSE
@@ -72,7 +72,7 @@ SAPSO
 scikit
 SDT
 Shenzen
-Sigmoid
+sigmoid
 Spearman’s
 Spectroradiometer
 Sudheer

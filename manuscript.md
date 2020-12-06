@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/c2b775c8de2d3153904883606f8df6cee3d2cf2b/" />
+  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/05a1407545a1de489ddd711d25850750d80853c3/" />
 
-  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/c2b775c8de2d3153904883606f8df6cee3d2cf2b/" />
+  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/05a1407545a1de489ddd711d25850750d80853c3/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/c2b775c8de2d3153904883606f8df6cee3d2cf2b/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/05a1407545a1de489ddd711d25850750d80853c3/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Predicting NO2 concentrations
 
 <small><em>
 This manuscript
-([permalink](https://tessac2.github.io/498_NO2_pred/v/c2b775c8de2d3153904883606f8df6cee3d2cf2b/))
+([permalink](https://tessac2.github.io/498_NO2_pred/v/05a1407545a1de489ddd711d25850750d80853c3/))
 was automatically generated
-from [tessac2/498_NO2_pred@c2b775c](https://github.com/tessac2/498_NO2_pred/tree/c2b775c8de2d3153904883606f8df6cee3d2cf2b)
+from [tessac2/498_NO2_pred@05a1407](https://github.com/tessac2/498_NO2_pred/tree/05a1407545a1de489ddd711d25850750d80853c3)
 on December 6, 2020.
 </em></small>
 
@@ -328,17 +328,17 @@ We used keras, which is an opensource library of functions which allows the use 
 A regular neural network consists of an input layer, hidden layers and an output layer. We used a sequential model which consists of few layers stacked upon one another, linearly [@https://doi.org/10.1016/S0169-7439(97)00061-0]. Each layer has multiple cells and we could define the number of input cells for these hidden layers. We can also define the type of activation function for each layer. We used an average of 3 to 5 hidden layers in our neural network models.
 
 We used a combination of three different activation functions:
-1. Linear Activation - a linear activation uses the weights to multiply the inputs providing an output which is linearly proportional to the input. This function is also termed as no activation function as there is no further transformation being operated on the values
+1. Linear Activation - a linear activation uses the weights to multiply the inputs providing an output which is linearly proportional to the input. This function is also termed as no activation function as there is no further transformation being operated on the values.
 2. ReLU - Rectified Linear Activation Unit - even though very similar in appearance to a linear function, ReLU allows back-propagation of errors. This function always gives an output of 0 for negative values and behaves linearly for values greater than 0.
-3. Sigmoid activation - by implementing this activation function, the outputs are normalized and bound between 0 and 1 but provides a smooth gradient curve and much clearer predictions
+3. Sigmoid activation - by implementing this activation function, the outputs are normalized and bound between 0 and 1. A sigmoid function provides a smooth gradient curve and much clearer predictions.
 
-Further, the compile function is used to compile the model created and takes in a variety of arguments. We used an Adam optimizer. Adam optimizer uses the combination of squared and moving average gradients to individually compute the learning rates for each parameter. As such it provides the benefits of both RMSProp and Stochastic Gradient Descent.
+Further, the compile function is used to compile the model created, which takes in a variety of arguments. We used an Adam optimizer which uses the combination of squared and moving average gradients to individually compute the learning rates for each parameter. As such it provides the benefits of both RMSProp and Stochastic Gradient Descent.
 
-We chose a learning rate of 0.0005 to 0.005. Learning rate is an essential hyperparameter that influences the weights of a model and the extent to which they are updated. A very low learning rate could lead to a model being very slow and eventually unable to reach the desired result and at the same time, a very high learning rate could make worsen the model by making it unstable and inaccurate and eventually lead to inferior quality of weights.
+We chose a learning rate of 0.0005 to 0.005. Learning rate is an essential hyperparameter that influences the weights of a model and the extent to which they are updated. A very low learning rate could lead to a model being very slow and eventually unable to reach the desired result. At the same time, a very high learning rate could worsen the model by making it unstable and inaccurate and eventually lead to inferior quality of weights.
 
-Both absolute error and root mean squared error were chosen as the loss functions.
+A loss function refers to the quantity that the model is trying to either minimize or maximize and used as a metric to define the fit of the model. Both absolute error and root mean squared error were chosen as the loss functions.
 
-The final step was to train our model so created using training dataset and the keras function model.fit. An important parameter for fitting the model is epoch which indicates the number of times the training dataset is run through our model. For example, if we choose 500 epochs we are allowing the training data to run through the model for 500 times. The number of epochs determine how well the model familiarizes itself with the model. Greater the number of epochs the better the model understands your data.
+The final step was to train our model so created using training dataset and the keras function model.fit. An important parameter for fitting the model is 'epoch' which indicates the number of times the training dataset is run through our model. For example, if we choose 500 epochs we are allowing the training data to run through the model for 500 times. The number of epochs determine how well the model familiarizes itself with the model. Greater the number of epochs the better the model understands your data.
 
 However, it must be ensured that excessive epochs in proportion to the complexity of the model and the dataset is avoided as this could result in a situation wherein the model no longer tries to find a pattern among the data but rather simply memorises it. In such situations, the model overfits the data. We used a range of epochs between 350- 1000.
 

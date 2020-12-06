@@ -184,6 +184,7 @@ content/02.Report_Body.md:167:optimizers
 content/02.Report_Body.md:167:tensorflow
 content/02.Report_Body.md:173:ReLU
 content/02.Report_Body.md:173:ReLU
+content/02.Report_Body.md:174:sigmoid
 content/02.Report_Body.md:174:Sigmoid
 content/02.Report_Body.md:176:RMSProp
 content/02.Report_Body.md:178:hyperparameter
