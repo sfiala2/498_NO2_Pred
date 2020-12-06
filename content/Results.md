@@ -12,7 +12,7 @@ The squared error is also related to the root mean squared error, the measured u
 The problem is that the loss function used was the mean squared error, meaning that only using this metric can may cause us to fail to observe other possible problems while training the data.
 Absolute error as a criterion for analysis fills these gaps in knowledge, such as bias in the training data or the geographic distribution of the error. 
 
-![Figure X. Absolute Error Distribution Histogram](images/Absolute_dis.png){}
+![Figure X. Absolute Error Distribution Histogram](images/Absolute_dis.png)
 
 Figure H (histogram) shows the distribution for the absolute error on the training data. 
 The distribution is nearly gaussian, which is expected with a large sample size.
