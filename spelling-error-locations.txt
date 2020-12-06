@@ -232,6 +232,11 @@ content/02.Report_Body.md:250:Kaggle
 content/02.Report_Body.md:260:kurtosis
 content/02.Report_Body.md:261:kurtosis
 content/02.Report_Body.md:267:homogenous
+content/02.Report_Body.md:280:heteroscedacity
+content/02.Report_Body.md:280:preduced
+content/02.Report_Body.md:284:dataset
+content/02.Report_Body.md:284:ppb
+content/02.Report_Body.md:286:dataset
 content/Results_old.md:11:Kaggle
 content/Results_old.md:20:kurtosis
 content/Results_old.md:21:kurtosis

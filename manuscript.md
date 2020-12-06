@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/8f3b69ea9bb333e503aefbbe9b35262123e3db66/" />
+  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/7ffdeb9b9b9f9d9a32b46a749a59d9c00c3dfebf/" />
 
-  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/8f3b69ea9bb333e503aefbbe9b35262123e3db66/" />
+  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/7ffdeb9b9b9f9d9a32b46a749a59d9c00c3dfebf/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/8f3b69ea9bb333e503aefbbe9b35262123e3db66/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/7ffdeb9b9b9f9d9a32b46a749a59d9c00c3dfebf/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Predicting NO2 concentrations
 
 <small><em>
 This manuscript
-([permalink](https://tessac2.github.io/498_NO2_pred/v/8f3b69ea9bb333e503aefbbe9b35262123e3db66/))
+([permalink](https://tessac2.github.io/498_NO2_pred/v/7ffdeb9b9b9f9d9a32b46a749a59d9c00c3dfebf/))
 was automatically generated
-from [tessac2/498_NO2_pred@8f3b69e](https://github.com/tessac2/498_NO2_pred/tree/8f3b69ea9bb333e503aefbbe9b35262123e3db66)
+from [tessac2/498_NO2_pred@7ffdeb9](https://github.com/tessac2/498_NO2_pred/tree/7ffdeb9b9b9f9d9a32b46a749a59d9c00c3dfebf)
 on December 6, 2020.
 </em></small>
 
@@ -435,7 +435,14 @@ This means that the final model is robust and can be applicable across the Unite
 
 # 4. Discussion 
 
-The models presented 
+### Models Presented
+Our team presented six different models for predicting NO<sub>2</sub> concentrations with varying degrees of complexity: one multiple linear regression, four neural networks, and one random forest model. The models were compared based on their test data predictions' root mean square errors. This found that, while most models preduced comparable results, a neural network model was the best predictor of NO<sub>2</sub> concentrations and was the most applicable model. Multiple linear regression models were tested, but despite having a relatively low root mean square error, the heteroscedacity of the data makes for a non-applicable model. A random forest model is also presented. The model was a good predictor on the validation data, but showed poor performance on testing data, likely due to the continuous dependent variable. The random forest model was found to not be appropriate for predicting NO<sub>2</sub> concentrations. 
+
+### Model Accuracy and Limitations
+
+Every model tested resulted in a relatively high root mean square error when compared to the mean value of the data (11.83 ppb). This may be due to a combination of factors. The model parameters could be better fine-tuned; however, we attribute much of this error to the size of the dataset used for training the model. 
+
+The full dataset contained less than 300 observations unevenly distributed across the United States. The data used also had very few observations for high NO<sub>2</sub> available for training the model. The best performing neural network model created using this data was a poor predictor of NO<sub>2</sub> concentrations in western states 
 
 [@Genuer2010]: doi:10.1016/j.patrec.2010.03.014
 
