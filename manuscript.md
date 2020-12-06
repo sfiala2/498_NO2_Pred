@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://sfiala2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/5ad5c664edd974dbb21417846a17a9fd1469635f/" />
+  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/72b97fca41852ee33db1180e51eaad144e0bd65a/" />
 
-  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/5ad5c664edd974dbb21417846a17a9fd1469635f/" />
+  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/72b97fca41852ee33db1180e51eaad144e0bd65a/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/5ad5c664edd974dbb21417846a17a9fd1469635f/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/72b97fca41852ee33db1180e51eaad144e0bd65a/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Predicting NO<sub>2</sub> concentrations
 
 <small><em>
 This manuscript
-([permalink](https://sfiala2.github.io/498_NO2_pred/v/5ad5c664edd974dbb21417846a17a9fd1469635f/))
+([permalink](https://sfiala2.github.io/498_NO2_pred/v/72b97fca41852ee33db1180e51eaad144e0bd65a/))
 was automatically generated
-from [sfiala2/498_NO2_pred@5ad5c66](https://github.com/sfiala2/498_NO2_pred/tree/5ad5c664edd974dbb21417846a17a9fd1469635f)
+from [sfiala2/498_NO2_pred@72b97fc](https://github.com/sfiala2/498_NO2_pred/tree/72b97fca41852ee33db1180e51eaad144e0bd65a)
 on December 6, 2020.
 </em></small>
 
@@ -301,11 +301,11 @@ The multiple regression model presented, although comparable to other models use
 Artificial neural networks are based on the design philosophy of the neural connections in our brain. They consist of a group of interconnected nodes joined through edges. The edges transmit the signals (which in a machine learning model would be a real number) from one neuron to another just like a synapse functions in a brain. A typical neural network has many layers. Each layer is composed of a set of neurons and each layer transforms and processes data in a different way based on the hyperparameters of the model.
 
 There are different kinds of neural networks. The most commonly used of which are:
-1.  Feed Forward Neural Network
-2.  Convolutional Neural Network (CNN)
-3.  Recurrent Neural Network (RNN)
-4.  Long-short term memory neural network (LSTM)
-5.  Gated Recurrent Unit (GRU)
+    1. Feed Forward Neural Network
+    2. Convolutional Neural Network (CNN)
+    3. Recurrent Neural Network (RNN)
+    4. Long-short term memory neural network (LSTM)
+    5. Gated Recurrent Unit (GRU)
 
 There are several other advanced ones such as General Adversarial Networks, Auto-encoders and Deep Belief Neural networks. However, we restrict our discussion to the five types listed above.
 
