@@ -11,7 +11,7 @@ BRNN
 Clarizio
 CNNs
 convolutes
-Convolutional
+convolutional
 dataset
 DTB
 DTF
@@ -34,6 +34,7 @@ MODIS
 MSE
 NAAQS
 NDVI
+NOO
 NOx
 overfit
 perceptron
@@ -42,17 +43,17 @@ preprocess
 PSO
 RandomForestRegressor
 ReLu
+respirable
 RMSE
 RNN
 RNNs
-RSPM
 Salana
 SAPSO
 scikit
 SDT
 Shenzen
 Sigmoid
-SPM
+Spectroradiometer
 Sudheer
 sudheersalana
 SVM
@@ -61,7 +62,6 @@ tessac
 treeboost
 tropospheric
 WRF
-WS
 XGBoost
 Xiaokai
 xiaoky
