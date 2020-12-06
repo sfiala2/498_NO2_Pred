@@ -53,9 +53,9 @@
   <meta name="citation_fulltext_html_url" content="https://tessac2.github.io/498_NO2_pred/" />
   <meta name="citation_pdf_url" content="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/b750addd16b5f3e694d66065e1012f9febe65264/" />
-  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/b750addd16b5f3e694d66065e1012f9febe65264/" />
-  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/b750addd16b5f3e694d66065e1012f9febe65264/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/1d9b3877a9c2d5860f40638f75b5634f1bf729d9/" />
+  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/1d9b3877a9c2d5860f40638f75b5634f1bf729d9/" />
+  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/1d9b3877a9c2d5860f40638f75b5634f1bf729d9/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -69,9 +69,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://tessac2.github.io/498_NO2_pred/v/b750addd16b5f3e694d66065e1012f9febe65264/">permalink</a>)
+(<a href="https://tessac2.github.io/498_NO2_pred/v/1d9b3877a9c2d5860f40638f75b5634f1bf729d9/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/tessac2/498_NO2_pred/tree/b750addd16b5f3e694d66065e1012f9febe65264">tessac2/498_NO2_pred@b750add</a>
+from <a href="https://github.com/tessac2/498_NO2_pred/tree/1d9b3877a9c2d5860f40638f75b5634f1bf729d9">tessac2/498_NO2_pred@1d9b387</a>
 on December 6, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -290,10 +290,10 @@ Largely used for classifying image and audio data, the convolutional neural netw
 <p>Random forest model in this project is created with scikit-learn RandomForestRegressor library. GridSearchCV was imported to conduct hyperparameter optimization. The model generally get a MSE around 3.2 in the validation data. However, on the test data it did not show a good performance (MES = 4.2). The first reason might be that random forest algorithm perform worse on regression problems than on classification problems since it cannot give a continuous prediction. It is also weak on predicting values with a magnitudes beyond the train dataset, meaning that it cannot confidently handle noise or outliers. It prefers high dimensional, large-scale data, however, in this project the data is in a relatively low scale.</p>
 <p>In conclusion, random forest is possibly not a very appropriate algorithm to make prediction in regression problems from dataset in a low-scale and a low-dimension.</p>
 <h1 id="results">3. Results</h1>
-<h3 id="model-devolpment">3.1 Model Devolpment</h3>
+<h2 id="model-devolpment">3.1 Model Devolpment</h2>
 <p>Figure C shows the architecture of the neural network used that achieved the best performance.
 Many choices made regarding were governed by two main motives; reducing the complexity of the model and ensuring the model captures the entire range of concentrations in the training data.</p>
-<h3 id="model-analysis">3.2 Model Analysis</h3>
+<h2 id="model-analysis">3.2 Model Analysis</h2>
 <p>The final model was further analyzed using two major parameters: squared error and absolute error.
 Squared error penalizes predictions further from the observed concentrations, which is beneficial for detecting outliers and anomalies in the data.
 The squared error is also related to the root mean squared error, the measured used to determine the best model in the Kaggle competition meaning it can provide insights on the individual monitors in the training data.</p>
