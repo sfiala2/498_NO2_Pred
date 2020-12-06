@@ -53,9 +53,9 @@
   <meta name="citation_fulltext_html_url" content="https://sfiala2.github.io/498_NO2_pred/" />
   <meta name="citation_pdf_url" content="https://sfiala2.github.io/498_NO2_pred/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://sfiala2.github.io/498_NO2_pred/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/3f55bf6a0950f5f433edfb7e1c8c5ab4aa63ebfb/" />
-  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/3f55bf6a0950f5f433edfb7e1c8c5ab4aa63ebfb/" />
-  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/3f55bf6a0950f5f433edfb7e1c8c5ab4aa63ebfb/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/e8a2ea56f3c23fed79e8fd70836a09c414b319cc/" />
+  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/e8a2ea56f3c23fed79e8fd70836a09c414b319cc/" />
+  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/e8a2ea56f3c23fed79e8fd70836a09c414b319cc/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -69,9 +69,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://sfiala2.github.io/498_NO2_pred/v/3f55bf6a0950f5f433edfb7e1c8c5ab4aa63ebfb/">permalink</a>)
+(<a href="https://sfiala2.github.io/498_NO2_pred/v/e8a2ea56f3c23fed79e8fd70836a09c414b319cc/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/sfiala2/498_NO2_pred/tree/3f55bf6a0950f5f433edfb7e1c8c5ab4aa63ebfb">sfiala2/498_NO2_pred@3f55bf6</a>
+from <a href="https://github.com/sfiala2/498_NO2_pred/tree/e8a2ea56f3c23fed79e8fd70836a09c414b319cc">sfiala2/498_NO2_pred@e8a2ea5</a>
 on December 6, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -327,11 +327,11 @@ on December 6, 2020.
 <h3 id="neural-networks">2.3.2 Neural Networks</h3>
 <p>Artificial neural networks are based on the design philosophy of the neural connections in our brain. They consist of a group of interconnected nodes joined through edges. The edges transmit the signals (which in a machine learning model would be a real number) from one neuron to another just like a synapse functions in a brain. A typical neural network has many layers. Each layer is composed of a set of neurons and each layer transforms and processes data in a different way based on the hyperparameters of the model.</p>
 <p>There are different kinds of neural networks. The most commonly used of which are:
-1. Feed Forward Neural Network
-2. Convolutional Neural Network (CNN)
-3. Recurrent Neural Network (RNN)
-4. Long-short term memory neural network (LSTM)
-5. Gated Recurrent Unit (GRU)</p>
+&amp;1. Feed Forward Neural Network
+&amp;2. Convolutional Neural Network (CNN)
+&amp;3. Recurrent Neural Network (RNN)
+&amp;4. Long-short term memory neural network (LSTM)
+&amp;5. Gated Recurrent Unit (GRU)</p>
 <p>There are several other advanced ones such as General Adversarial Networks, Auto-encoders and Deep Belief Neural networks. However, we restrict our discussion to the five types listed above.</p>
 <p>We will first discuss, briefly, the CNN, RNN, LSTM and GRU before moving on to the Feed formal neural network which is the neural network model used in this project.</p>
 <h4 id="cnn">2.3.2.1 CNN</h4>
@@ -344,14 +344,14 @@ on December 6, 2020.
 <p>GRU is similar to LSTM with the exception that an output gate is absent. Instead it has a reset and update gates. The reset gate works as a combination of input and forget gate and the update gate works as an additional forget gate. Their performance is equivalent and sometimes even better than LSTMs, especially when dealing with some special data such as those involved in language processing<span class="citation" data-cites="Ictu6Zb3">[<a href="#ref-Ictu6Zb3" role="doc-biblioref">14</a>]</span>.</p>
 <h4 id="neural-networks-used-in-this-project">2.3.2.5 Neural networks used in this project</h4>
 <p>In this project, majority of the models used were simple feed forward neural network models. This decision was based on two factors:
-1. The literature search revealed that neural network models are one of the most widely used models especially in pollution prediction problems
-2. Neural networks are simpler as compared to random forests but at the same time slightly more complex than linear regression and hence they incorporate some machine learning components</p>
+&amp;1. The literature search revealed that neural network models are one of the most widely used models especially in pollution prediction problems
+&amp;2. Neural networks are simpler as compared to random forests but at the same time slightly more complex than linear regression and hence they incorporate some machine learning components</p>
 <p>We used keras, which is an opensource library of functions which allows the use of the tensorflow library for machine learning models in python. The building blocks of a neural network model such as layers, objective functions,activation functions and optimizers, are all provided by keras.</p>
 <p>A regular neural network consists of an input layer, hidden layers and an output layer. We used a sequential model which consists of few layers stacked upon one another, linearly <span class="citation" data-cites="yCfM4S2y">[<a href="#ref-yCfM4S2y" role="doc-biblioref">15</a>]</span>. Each layer has multiple cells and we could define the number of input cells for these hidden layers. We can also define the type of activation function for each layer. We used an average of 3 to 5 hidden layers in our neural network models.</p>
 <p>We used a combination of three different activation functions:
-1. Linear Activation - a linear activation uses the weights to multiply the inputs providing an output which is linearly proportional to the input. This function is also termed as no activation function as there is no further transformation being operated on the values.
-2. ReLU - Rectified Linear Activation Unit - even though very similar in appearance to a linear function, ReLU allows back-propagation of errors. This function always gives an output of 0 for negative values and behaves linearly for values greater than 0.
-3. Sigmoid activation - by implementing this activation function, the outputs are normalized and bound between 0 and 1. A sigmoid function provides a smooth gradient curve and much clearer predictions.</p>
+&amp;1. Linear Activation - a linear activation uses the weights to multiply the inputs providing an output which is linearly proportional to the input. This function is also termed as no activation function as there is no further transformation being operated on the values.
+&amp;2. ReLU - Rectified Linear Activation Unit - even though very similar in appearance to a linear function, ReLU allows back-propagation of errors. This function always gives an output of 0 for negative values and behaves linearly for values greater than 0.
+&amp;3. Sigmoid activation - by implementing this activation function, the outputs are normalized and bound between 0 and 1. A sigmoid function provides a smooth gradient curve and much clearer predictions.</p>
 <p>Further, the compile function is used to compile the model created, which takes in a variety of arguments. We used an Adam optimizer which uses the combination of squared and moving average gradients to individually compute the learning rates for each parameter. As such it provides the benefits of both RMSProp and Stochastic Gradient Descent.</p>
 <p>We chose a learning rate of 0.0005 to 0.005. Learning rate is an essential hyperparameter that influences the weights of a model and the extent to which they are updated. A very low learning rate could lead to a model being very slow and eventually unable to reach the desired result. At the same time, a very high learning rate could worsen the model by making it unstable and inaccurate and eventually lead to inferior quality of weights.</p>
 <p>A loss function refers to the quantity that the model is trying to either minimize or maximize and used as a metric to define the fit of the model. Both absolute error and root mean squared error were chosen as the loss functions.</p>
