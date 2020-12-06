@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/3bf5005f9eed139c42a428b4bf65b3926b05616b/" />
+  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/3f1cbbe25fe235e90573770b90f22f473ec0a051/" />
 
-  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/3bf5005f9eed139c42a428b4bf65b3926b05616b/" />
+  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/3f1cbbe25fe235e90573770b90f22f473ec0a051/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/3bf5005f9eed139c42a428b4bf65b3926b05616b/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/3f1cbbe25fe235e90573770b90f22f473ec0a051/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Predicting NO2 concentrations
 
 <small><em>
 This manuscript
-([permalink](https://tessac2.github.io/498_NO2_pred/v/3bf5005f9eed139c42a428b4bf65b3926b05616b/))
+([permalink](https://tessac2.github.io/498_NO2_pred/v/3f1cbbe25fe235e90573770b90f22f473ec0a051/))
 was automatically generated
-from [tessac2/498_NO2_pred@3bf5005](https://github.com/tessac2/498_NO2_pred/tree/3bf5005f9eed139c42a428b4bf65b3926b05616b)
+from [tessac2/498_NO2_pred@3f1cbbe](https://github.com/tessac2/498_NO2_pred/tree/3f1cbbe25fe235e90573770b90f22f473ec0a051)
 on December 6, 2020.
 </em></small>
 
@@ -232,6 +232,8 @@ Because the objective of this study is to predict a single variable (NO<sub>2</s
 
 ## 2.2 Exploratory Data Analysis
 
+![Figure 2.1 Histogram of NO2 concentrations](images/Histogram_NO2.png)
+![Figure 2.2 Correlation plot](images/corr_plot.png) 
 
 ## 2.3 Model
 ### 2.3.1 Multiple Linear Regression
