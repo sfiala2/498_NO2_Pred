@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/9254203f8bcff81b0fad3a830ddaac947df8a616/" />
+  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/ce88d58bdf86f65e53281c9c183cd739224b9d2f/" />
 
-  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/9254203f8bcff81b0fad3a830ddaac947df8a616/" />
+  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/ce88d58bdf86f65e53281c9c183cd739224b9d2f/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/9254203f8bcff81b0fad3a830ddaac947df8a616/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/ce88d58bdf86f65e53281c9c183cd739224b9d2f/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Predicting NO2 concentrations
 
 <small><em>
 This manuscript
-([permalink](https://tessac2.github.io/498_NO2_pred/v/9254203f8bcff81b0fad3a830ddaac947df8a616/))
+([permalink](https://tessac2.github.io/498_NO2_pred/v/ce88d58bdf86f65e53281c9c183cd739224b9d2f/))
 was automatically generated
-from [tessac2/498_NO2_pred@9254203](https://github.com/tessac2/498_NO2_pred/tree/9254203f8bcff81b0fad3a830ddaac947df8a616)
+from [tessac2/498_NO2_pred@ce88d58](https://github.com/tessac2/498_NO2_pred/tree/ce88d58bdf86f65e53281c9c183cd739224b9d2f)
 on December 6, 2020.
 </em></small>
 
@@ -297,6 +297,10 @@ Further, the compile function is used to compile the model created and takes in 
 We chose a learning rate of 0.0005 to 0.005. Learning rate is an essential hyperparameter that influences the weights of a model and the extent to which they are updated. A very low learning rate could lead to a model being very slow and eventually unable to reach the desired result and at the same time, a very high learning rate could make worsen the model by making it unstable and inaccurate and eventually lead to inferior quality of weights.
 
 Both absolute error and root mean squared error were chosen as the loss functions.
+
+The final step was to train our model so created using training dataset and the keras function model.fit. An important parameter for fitting the model is epoch which indicates the number of times the training dataset is run through our model. For example, if we choose 500 epochs we are allowing the training data to run through the model for 500 times. The number of epochs determine how well the model familiarizes itself with the model. Greater the number of epochs the better the model understands your data.
+
+
 
 
 ### 2.3.3 Random Forest

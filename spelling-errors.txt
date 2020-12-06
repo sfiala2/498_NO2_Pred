@@ -50,7 +50,7 @@ ppb
 preprocess
 PSO
 RandomForestRegressor
-ReLu
+ReLU
 respirable
 RMSE
 RMSProp
