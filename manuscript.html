@@ -53,9 +53,9 @@
   <meta name="citation_fulltext_html_url" content="https://tessac2.github.io/498_NO2_pred/" />
   <meta name="citation_pdf_url" content="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/53005b50227a19ed3e4824665f9ae0c00d049cf0/" />
-  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/53005b50227a19ed3e4824665f9ae0c00d049cf0/" />
-  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/53005b50227a19ed3e4824665f9ae0c00d049cf0/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/d3e027ef7142b7d361bf1193310ea62132397ab1/" />
+  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/d3e027ef7142b7d361bf1193310ea62132397ab1/" />
+  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/d3e027ef7142b7d361bf1193310ea62132397ab1/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -69,9 +69,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://tessac2.github.io/498_NO2_pred/v/53005b50227a19ed3e4824665f9ae0c00d049cf0/">permalink</a>)
+(<a href="https://tessac2.github.io/498_NO2_pred/v/d3e027ef7142b7d361bf1193310ea62132397ab1/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/tessac2/498_NO2_pred/tree/53005b50227a19ed3e4824665f9ae0c00d049cf0">tessac2/498_NO2_pred@53005b5</a>
+from <a href="https://github.com/tessac2/498_NO2_pred/tree/d3e027ef7142b7d361bf1193310ea62132397ab1">tessac2/498_NO2_pred@d3e027e</a>
 on December 6, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -299,8 +299,46 @@ Largely used for classifying image and audio data, the convolutional neural netw
 <h2 id="model-devolpment">3.1 Model Devolpment</h2>
 <p>The choice of algorithm to use is one of the most important and consequential choices in the process of developing a model. Using the information obtained in the exploratory data analysis, the most important factors that will dominate this choice is the fact there is only 255 samples in the training data and that the data is skew right; meaning that an algorithm needs to be able to make predictions based on finite data and inputs but can evaluate each sample independently. A neural network model is the most applicable to this situation to make the best predictions for most of the data but can also avoid over and underfitting.</p>
 <p>The inputs used in a neural network determines the effectiveness of the model; and as with all datasets some data is more important than others, while some have no bearing on the dependent variable. The spatial variance of the monitors and outliers in the data means that less complexity in the inputs will reduce overfitting.</p>
-<p>*Table of 6 inputs</p>
-<p>Figure F shows the X inputs used in the model. The use of a single length of each input parameter was done to avoid dependencies and the reducing the complexity of the model. The one exception is major roads, which is directly imputed once and indirectly added in the total roads parameter; this was done due to cars being a major localized source of NO2.</p>
+<p><strong>Table 3.1 Inputs used in Neural Network Model</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Data Parameter</th>
+<th>Buffer Length (m) if applicable</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>WRF+ DOMINO</td>
+<td>N/A</td>
+</tr>
+<tr class="even">
+<td>Distance to the coast (km)</td>
+<td>N/A</td>
+</tr>
+<tr class="odd">
+<td>Truncated elevation (km)</td>
+<td>N/A</td>
+</tr>
+<tr class="even">
+<td>Percentage of Impervious surfaces</td>
+<td>1500</td>
+</tr>
+<tr class="odd">
+<td>Population (in Thousands)</td>
+<td>4000</td>
+</tr>
+<tr class="even">
+<td>Length of Major Roads</td>
+<td>1500</td>
+</tr>
+<tr class="odd">
+<td>Length of Total Roads</td>
+<td>140000</td>
+</tr>
+</tbody>
+</table>
+<p>Figure F shows the X inputs used in the model. The use of a single length of each input parameter was done to avoid dependencies and the reducing the complexity of the model. The one exception is major road parameter, which is directly imputed once and indirectly added in the total road parameter; this was done due to cars being a major localized source of NO2.</p>
 <ul>
 <li>Code inputs</li>
 </ul>

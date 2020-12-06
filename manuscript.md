@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/53005b50227a19ed3e4824665f9ae0c00d049cf0/" />
+  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/d3e027ef7142b7d361bf1193310ea62132397ab1/" />
 
-  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/53005b50227a19ed3e4824665f9ae0c00d049cf0/" />
+  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/d3e027ef7142b7d361bf1193310ea62132397ab1/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/53005b50227a19ed3e4824665f9ae0c00d049cf0/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/d3e027ef7142b7d361bf1193310ea62132397ab1/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Predicting NO2 concentrations
 
 <small><em>
 This manuscript
-([permalink](https://tessac2.github.io/498_NO2_pred/v/53005b50227a19ed3e4824665f9ae0c00d049cf0/))
+([permalink](https://tessac2.github.io/498_NO2_pred/v/d3e027ef7142b7d361bf1193310ea62132397ab1/))
 was automatically generated
-from [tessac2/498_NO2_pred@53005b5](https://github.com/tessac2/498_NO2_pred/tree/53005b50227a19ed3e4824665f9ae0c00d049cf0)
+from [tessac2/498_NO2_pred@d3e027e](https://github.com/tessac2/498_NO2_pred/tree/d3e027ef7142b7d361bf1193310ea62132397ab1)
 on December 6, 2020.
 </em></small>
 
@@ -303,10 +303,21 @@ The choice of algorithm to use is one of the most important and consequential ch
 
 The inputs used in a neural network determines the effectiveness of the model; and as with all datasets some data is more important than others, while some have no bearing on the dependent variable. The spatial variance of the monitors and outliers in the data means that less complexity in the inputs will reduce overfitting.  
 
+**Table 3.1 Inputs used in Neural Network Model**
 
-*Table of 6 inputs
+|Data Parameter|Buffer Length (m) if applicable|
+|-----|------------------|
+| WRF+ DOMINO| N/A|
+|Distance to the coast (km)| N/A |
+| Truncated elevation (km)| N/A | 
+| Percentage of Impervious surfaces| 1500|
+|Population (in Thousands) |4000 |
+|Length of Major Roads | 1500|
+|Length of Total Roads | 140000 |
 
-Figure F shows the X inputs used in the model.  The use of a single length of each input parameter was done to avoid dependencies and the reducing the complexity of the model. The one exception is major roads, which is directly imputed once and indirectly added in the total roads parameter; this was done due to cars being a major localized source of NO2. 
+Figure F shows the X inputs used in the model.  The use of a single length of each input parameter was done to avoid dependencies and the reducing the complexity of the model. The one exception is major road parameter, which is directly imputed once and indirectly added in the total road parameter; this was done due to cars being a major localized source of NO2. 
+
+
 
 * Code inputs
 
