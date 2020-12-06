@@ -53,9 +53,9 @@
   <meta name="citation_fulltext_html_url" content="https://tessac2.github.io/498_NO2_pred/" />
   <meta name="citation_pdf_url" content="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/7ffdeb9b9b9f9d9a32b46a749a59d9c00c3dfebf/" />
-  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/7ffdeb9b9b9f9d9a32b46a749a59d9c00c3dfebf/" />
-  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/7ffdeb9b9b9f9d9a32b46a749a59d9c00c3dfebf/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/5a3a03d7b3cf44f926aa67ca04cfec8356218df5/" />
+  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/5a3a03d7b3cf44f926aa67ca04cfec8356218df5/" />
+  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/5a3a03d7b3cf44f926aa67ca04cfec8356218df5/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -69,9 +69,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://tessac2.github.io/498_NO2_pred/v/7ffdeb9b9b9f9d9a32b46a749a59d9c00c3dfebf/">permalink</a>)
+(<a href="https://tessac2.github.io/498_NO2_pred/v/5a3a03d7b3cf44f926aa67ca04cfec8356218df5/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/tessac2/498_NO2_pred/tree/7ffdeb9b9b9f9d9a32b46a749a59d9c00c3dfebf">tessac2/498_NO2_pred@7ffdeb9</a>
+from <a href="https://github.com/tessac2/498_NO2_pred/tree/5a3a03d7b3cf44f926aa67ca04cfec8356218df5">tessac2/498_NO2_pred@5a3a03d</a>
 on December 6, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -479,11 +479,15 @@ Another characteristic of the outliers were that they were mainly found in subur
 The model was run on 165 samples and the root mean squared error was found to be 2.925, which is lower than the root mean squared error on the training data (3.05).
 This means that the final model is robust and can be applicable across the United States.</p>
 <h1 id="discussion">4. Discussion</h1>
-<h3 id="models-presented">Models Presented</h3>
+<h3 id="models-presented">4.1 Models Presented</h3>
 <p>Our team presented six different models for predicting NO<sub>2</sub> concentrations with varying degrees of complexity: one multiple linear regression, four neural networks, and one random forest model. The models were compared based on their test data predictions’ root mean square errors. This found that, while most models preduced comparable results, a neural network model was the best predictor of NO<sub>2</sub> concentrations and was the most applicable model. Multiple linear regression models were tested, but despite having a relatively low root mean square error, the heteroscedacity of the data makes for a non-applicable model. A random forest model is also presented. The model was a good predictor on the validation data, but showed poor performance on testing data, likely due to the continuous dependent variable. The random forest model was found to not be appropriate for predicting NO<sub>2</sub> concentrations.</p>
-<h3 id="model-accuracy-and-limitations">Model Accuracy and Limitations</h3>
+<h3 id="model-performance">4.2 Model Performance</h3>
 <p>Every model tested resulted in a relatively high root mean square error when compared to the mean value of the data (11.83 ppb). This may be due to a combination of factors. The model parameters could be better fine-tuned; however, we attribute much of this error to the size of the dataset used for training the model.</p>
-<p>The full dataset contained less than 300 observations unevenly distributed across the United States. The data used also had very few observations for high NO<sub>2</sub> available for training the model. The best performing neural network model created using this data was a poor predictor of NO<sub>2</sub> concentrations in western states</p>
+<p>The full dataset contained less than 300 observations across the United States. These observations were not evenly distributed across the US, resulting in some states with no data and a handful of states with many data points. The data used also had very few observations of high NO<sub>2</sub> concentrations available for training the model. The best performing neural network model created using this data was a poor predictor of NO<sub>2</sub> concentrations in western states.</p>
+<p>The best performing model showed no evidence of overfitting. The model performed slightly better on the testing data than it did on the validation data, supporting the conclusion that the model is robust.</p>
+<h3 id="limitations-and-future-research">4.3 Limitations and Future Research</h3>
+<p>Still, further research is needed. This model is only applicable to some regions within the United States. More land use and satellite information in other US regions is required to improve the model’s accuracy.</p>
+<p>Future research may include incoportating more data sources to paint a more detailed picture of how NO<sub>2</sub> concentrations vary across the United States. Additionally, with more sources of data, future versions of this model could be used to predict NO<sub>2</sub> concentrations outside of the United States.</p>
 <h2 class="page_break_before" id="references">References</h2>
 <!-- Explicitly insert bibliography here -->
 <div id="refs" class="references hanging-indent" role="doc-bibliography">
