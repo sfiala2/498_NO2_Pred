@@ -20,11 +20,14 @@ Enebish
 fundament
 GridSearchCV
 GRU
+homogenous
 Houly
 HPBL
 hyperparameter
 hyperparameters
 janeroe
+Kaggle
+kurtosis
 Liu
 LSTM
 LSTMs

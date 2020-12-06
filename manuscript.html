@@ -53,9 +53,9 @@
   <meta name="citation_fulltext_html_url" content="https://tessac2.github.io/498_NO2_pred/" />
   <meta name="citation_pdf_url" content="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/cb87c8bf342dd86abbf15b0aac776be1ab67ae82/" />
-  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/cb87c8bf342dd86abbf15b0aac776be1ab67ae82/" />
-  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/cb87c8bf342dd86abbf15b0aac776be1ab67ae82/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/498f1a6b9773670b7632aaf0d9f0885dd7902e19/" />
+  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/498f1a6b9773670b7632aaf0d9f0885dd7902e19/" />
+  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/498f1a6b9773670b7632aaf0d9f0885dd7902e19/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -69,9 +69,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://tessac2.github.io/498_NO2_pred/v/cb87c8bf342dd86abbf15b0aac776be1ab67ae82/">permalink</a>)
+(<a href="https://tessac2.github.io/498_NO2_pred/v/498f1a6b9773670b7632aaf0d9f0885dd7902e19/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/tessac2/498_NO2_pred/tree/cb87c8bf342dd86abbf15b0aac776be1ab67ae82">tessac2/498_NO2_pred@cb87c8b</a>
+from <a href="https://github.com/tessac2/498_NO2_pred/tree/498f1a6b9773670b7632aaf0d9f0885dd7902e19">tessac2/498_NO2_pred@498f1a6</a>
 on December 6, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -277,6 +277,34 @@ Largely used for classifying image and audio data, the convolutional neural netw
 <p>In conclusion, random forest is possibly not a very appropriate algorithm to make prediction in regression problems from dataset in a low-scale and a low-dimension.
 # 3. Results
 # 4. Discussion</p>
+<h2 id="results">3. Results</h2>
+<p>Figure (code) shows the architecture of the neural network used that achieved the best performance.
+Many choices made regarding were governed by two main motives; reducing the complexity of the model and ensuring the model captures the entire range of concentrations in the training data.
+Both of</p>
+<p>The final model was further analyzed using two major parameters: squared error and absolute error.
+Squared error penalizes predictions further from the observed concentrations, which is beneficial for detecting outliers and anomalies in the data.
+The squared error is also related to the root mean squared error, the measured used to determine the best model in the Kaggle competition meaning it can provide insights on the individual monitors in the training data.
+The problem is that the loss function used was the mean squared error, meaning that only using this metric can may cause us to fail to observe other possible problems while training the data.
+Absolute error as a criterion for analysis fills these gaps in knowledge, such as bias in the training data or the geographic distribution of the error.</p>
+<figure>
+<img src="images/Absolute_dis.png" alt="" /><figcaption>Figure X. Training Data Absolute Error Histogram</figcaption>
+</figure>
+<p>Figure H (histogram) shows the distribution for the absolute error on the training data.
+The distribution is nearly gaussian, which is expected with a large sample size.
+The distribution is also centered on 0 and has a very small skew, meaning that there is no bias in the when the model was training.
+The major difference between the distribution and a Gaussian distribution is the kurtosis.
+The kurtosis was found to be greater than 3, meaning that the data is more concentrated near the mean with some extreme outliers.
+This is interesting because since the loss function of the model was mean squared error, these outliers should be minimized.</p>
+<figure>
+<img src="images/Absolute_map.png" alt="" /><figcaption>Figure X. Training Data Absolute Error Geographic Distribution</figcaption>
+</figure>
+<p>Figure A (Absolute value map) shows the geographic distribution of the absolute error.
+This figure shows that the absolute error is not spatially homogenous, with most of the outliers being in the West.
+Further analysis shows 75% of the outliers were in contained in the Western region mostly in suburban areas outside of major cities that were surrounded by nature.
+Another characteristic of the outliers were that they were mainly found in suburban areas near isolated major urban areas.</p>
+<p>All the previous analysis was done on the training data but to ensure our model is robust, the model needs to be run on other data.
+The model was run on 165 samples and the root mean squared error was found to be 2.925, which is lower than the root mean squared error on the training data (3.05).
+This means that the final model is robust and can be applicable across the United States.</p>
 <h2 class="page_break_before" id="references">References</h2>
 <!-- Explicitly insert bibliography here -->
 <div id="refs" class="references hanging-indent" role="doc-bibliography">
