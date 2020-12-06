@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://tessac2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/3f1cbbe25fe235e90573770b90f22f473ec0a051/" />
+  <link rel="alternate" type="text/html" href="https://tessac2.github.io/498_NO2_pred/v/2aa232441ef797cdc49f0048b267afb4236f2312/" />
 
-  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/3f1cbbe25fe235e90573770b90f22f473ec0a051/" />
+  <meta name="manubot_html_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/2aa232441ef797cdc49f0048b267afb4236f2312/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/3f1cbbe25fe235e90573770b90f22f473ec0a051/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://tessac2.github.io/498_NO2_pred/v/2aa232441ef797cdc49f0048b267afb4236f2312/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Predicting NO2 concentrations
 
 <small><em>
 This manuscript
-([permalink](https://tessac2.github.io/498_NO2_pred/v/3f1cbbe25fe235e90573770b90f22f473ec0a051/))
+([permalink](https://tessac2.github.io/498_NO2_pred/v/2aa232441ef797cdc49f0048b267afb4236f2312/))
 was automatically generated
-from [tessac2/498_NO2_pred@3f1cbbe](https://github.com/tessac2/498_NO2_pred/tree/3f1cbbe25fe235e90573770b90f22f473ec0a051)
+from [tessac2/498_NO2_pred@2aa2324](https://github.com/tessac2/498_NO2_pred/tree/2aa232441ef797cdc49f0048b267afb4236f2312)
 on December 6, 2020.
 </em></small>
 
@@ -231,7 +231,7 @@ Because the objective of this study is to predict a single variable (NO<sub>2</s
 
 
 ## 2.2 Exploratory Data Analysis
-
+The target variable in this predictive case is NO2 concentration in the continental United States. The observations from the data have a mean NO2 concentration of 11.831 ppb with a standard deviation of 6.290 ppb. The NO2 concentration data has a range from 0.309 to 31.016 ppb. The five highest values are considered outliers. The distribution of NO2 concentration values is unimodal with a slight right skew.
 ![Figure 2.1 Histogram of NO2 concentrations](images/Histogram_NO2.png)
 ![Figure 2.2 Correlation plot](images/corr_plot.png) 
 
