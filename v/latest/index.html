@@ -53,9 +53,9 @@
   <meta name="citation_fulltext_html_url" content="https://sfiala2.github.io/498_NO2_pred/" />
   <meta name="citation_pdf_url" content="https://sfiala2.github.io/498_NO2_pred/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://sfiala2.github.io/498_NO2_pred/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/bfc2db185ce321c0e72b70b3f044b8f27154989a/" />
-  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/bfc2db185ce321c0e72b70b3f044b8f27154989a/" />
-  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/bfc2db185ce321c0e72b70b3f044b8f27154989a/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/cabdd6e2e7d64fd72f4dbb8a2d084b2ecd8bd7a9/" />
+  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/cabdd6e2e7d64fd72f4dbb8a2d084b2ecd8bd7a9/" />
+  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/cabdd6e2e7d64fd72f4dbb8a2d084b2ecd8bd7a9/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -69,9 +69,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://sfiala2.github.io/498_NO2_pred/v/bfc2db185ce321c0e72b70b3f044b8f27154989a/">permalink</a>)
+(<a href="https://sfiala2.github.io/498_NO2_pred/v/cabdd6e2e7d64fd72f4dbb8a2d084b2ecd8bd7a9/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/sfiala2/498_NO2_pred/tree/bfc2db185ce321c0e72b70b3f044b8f27154989a">sfiala2/498_NO2_pred@bfc2db1</a>
+from <a href="https://github.com/sfiala2/498_NO2_pred/tree/cabdd6e2e7d64fd72f4dbb8a2d084b2ecd8bd7a9">sfiala2/498_NO2_pred@cabdd6e</a>
 on December 7, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -112,7 +112,7 @@ on December 7, 2020.
 <h1 id="introduction">1. Introduction</h1>
 <p>NO<sub>2</sub> is defined by the U.S. Environmental Protection Agency (EPA) as a criteria air pollutant, meaning it poses a risk to human and environmental health. The primary National Ambient Air Quality Standard (NAAQS) for NO<sub>2</sub> is set at a 53 ppb annual average <span class="citation" data-cites="VPPFmmlA">[<a href="#ref-VPPFmmlA" role="doc-biblioref">1</a>]</span>. NO<sub>2</sub> can cause respiratory irritation and can aggravate respiratory diseases such as asthma <span class="citation" data-cites="10Z19reB3">[<a href="#ref-10Z19reB3" role="doc-biblioref">2</a>]</span>. NO<sub>2</sub> can also react with other chemicals in the atmosphere to form both particulate matter (PM) and tropospheric ozone (O<sub>3</sub>) (US EPA, n.d., B). PM and O<sub>3</sub> are also criteria air pollutants and are harmful to human health. NO<sub>2</sub> also contributes to the formation of acid rain, smog, and nutrient pollution in coastal waters <span class="citation" data-cites="10Z19reB3">[<a href="#ref-10Z19reB3" role="doc-biblioref">2</a>]</span>. The primary source of NO2 emissions is fossil fuel combustion, particularly from traffic and power plants <span class="citation" data-cites="10Z19reB3">[<a href="#ref-10Z19reB3" role="doc-biblioref">2</a>]</span>.</p>
 <p>Therefore, understanding and predicting the spatial variability of NO<sub>2</sub> emissions is of great importance to public health. But the prediction of air quality can be complicated due to the number of factors that affect local air quality and the limited availability of monitored air quality data.</p>
-<p>Bechle et al (2015) explores the usage of satellite data and GIS derived land use characteristics to better understand NO<sub>2</sub> concentrations and air quality in regions without air quality monitors <span class="citation" data-cites="Ian1ZRjy">[<a href="#ref-Ian1ZRjy" role="doc-biblioref">3</a>]</span>. This research incorporated WRF-Chem modeled DOMINO satellite column and surface estimates of NO<sub>2</sub> concentrations to create 132 monthly NO<sub>2</sub> concentration estimates based on scaled yearly land use regression data. The resulting dataset consisted of observed concentrations at 255 monitored sites across the United States, land usage at 22 different radii from each site, and estimated NO<sub>2</sub> concentrations based on the developed model.</p>
+<p>Bechle et al (2015) explores the usage of satellite data and GIS derived land use characteristics to better understand NO<sub>2</sub> concentrations and air quality in regions without air quality monitors <span class="citation" data-cites="Ian1ZRjy">[<a href="#ref-Ian1ZRjy" role="doc-biblioref">3</a>]</span>. This research incorporated WRF-Chem modeled DOMINO satellite column and surface estimates of NO<sub>2</sub> concentrations to create 132 monthly NO<sub>2</sub> concentration estimates based on scaled yearly land use regression data. The resulting dataset consisted of observed concentrations at monitored sites across the United States, land usage at 22 different radii from each site, and estimated NO<sub>2</sub> concentrations based on the developed model.</p>
 <p>While this study focused on using land-use regression to create a model, there are a variety of modeling options that can be used to predict air quality. Machine learning models are a particularly useful tool to interpret and find relationships in complex data.</p>
 <p>This report proposes a machine learning model to predict NO<sub>2</sub> concentrations spatially based on data provided by Bechle et al (2015). First, a literature review was undertaken to understand what machine learning models have typically performed well in predicting air quality. Next, an exploratory data analysis (EDA) was performed on the Bechle et al (2015) dataset. Finally, multiple linear regression, neural network and random forest models were built and results were compared to see which method had the lowest mean-squared error (MSE).</p>
 <h1 id="methods">2. Methods</h1>
@@ -279,48 +279,20 @@ on December 7, 2020.
 <p>ε = The error term (difference between y predicted and y oberseved)</p>
 <p>The multiple regression model used in this project first aggregates all 5 land use variables. Then, features with collinearity were removed. This was done by removing variables with a variance inflation factor over 5, and resulted in all road data being removed. The model was developed using ordinary least squares linear regression. Choosing the root mean square error as the loss function for the model, tests were run to select combinations of variables that resulted in the lowest root mean square error. The tests evaluated the effect of removing any combination of one, two, or 3 columns. These tests concluded that further removing columns only resulted in a higher root mean square error.</p>
 <h4 id="mlr-fit">MLR Fit</h4>
-<p>The final model equation is presented in Table 2.3.1.1 with each feature and its respective coefficient.</p>
-<table>
-<thead>
-<tr class="header">
-<th>Variable</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Constant intercept</td>
-<td>2.9128368899112775</td>
-</tr>
-<tr class="even">
-<td>WRF+DOMINO</td>
-<td>0.69</td>
-</tr>
-<tr class="odd">
-<td>Distance_to_coast_km</td>
-<td>-0.0013</td>
-</tr>
-<tr class="even">
-<td>Elevation_truncated_km</td>
-<td>1.1e+01</td>
-</tr>
-<tr class="odd">
-<td>radius</td>
-<td>0.00013</td>
-</tr>
-<tr class="even">
-<td>Impervious</td>
-<td>0.11</td>
-</tr>
-<tr class="odd">
-<td>Population</td>
-<td>0.00011</td>
-</tr>
-</tbody>
-</table>
-<p>The model fits the data well for lower NO<sub>2</sub> concentrations. However, the model predicts high concentrations very poorly. This is due to the distribution of the data used to build the model: There are very few observations of high NO<sub>2</sub> values. The model fit is plotted in Figure 2.3.1.</p>
+<p>The final model equation is presented in Table 2.3 with each feature and its respective coefficient.</p>
+<p><strong>Table 2.3 Coefficients used in final MLR model</strong>
+|Variable | Value |
+|———–|——–|
+|Constant intercept | 2.9128368899112775 |
+|WRF+DOMINO | 0.69 |
+|Distance_to_coast_km | -0.0013 |
+|Elevation_truncated_km | 1.1e+01 |
+|radius | 0.00013 |
+|Impervious | 0.11 |
+|Population | 0.00011 |</p>
+<p>The model fits the data well for lower NO<sub>2</sub> concentrations. However, the model predicts high concentrations very poorly. This is due to the distribution of the data used to build the model: There are very few observations of high NO<sub>2</sub> values. The model fit is plotted in Figure 2.4</p>
 <figure>
-<img src="images/mlr_fit.PNG" alt="" /><figcaption>Figure 2.3.1 Linear Model Fit</figcaption>
+<img src="images/mlr_fit.PNG" alt="" /><figcaption>Figure 2.4 Linear Model Fit</figcaption>
 </figure>
 <p>Overall, the model was a fair predictor of NO<sub>2</sub> concentrations, with an R<sup>2</sup> value of 0.775. Of the models presented, it had the second lowest root mean square error (3.08) when applied to the test data. However, this model is not appropriate for the data it is predicting due to the fact that the data exhibits heteroscedacity, meaning that the variance of errors is not constant. This violates this assumption needed for using a linear model, and as a result the predictions are less accurate. Further, building a regression model based on aggregated land use columns resulted in multiple predictions for each monitor. These predictions at each monitor were similar and an average value was taken. However, this is not a good practice for predicting values with precision. Various MLR models with non-aggregated columns were tested, but the model built on aggregated data outperformed in all tests.</p>
 <p>The multiple regression model presented, although comparable to other models used, is not an accurate, appropriate model for predicting NO<sub>2</sub> concentrations based on the available data.</p>
@@ -445,8 +417,7 @@ on December 7, 2020.
 </tr>
 </tbody>
 </table>
-<p>Table 3.1 shows the 7 inputs used in the model. The use of a single length of each input parameter was done to avoid dependencies and the reducing the complexity of the model. The one exception is major road parameter, which is directly imputed once and indirectly added in the total road parameter; this was done due to cars being a major localized source of NO2. The first 3 inputs are considered point inputs, describing the monitor location and unique monitor atttributes; whereas the last 4 inputs are dependent on the surronding area and is defined by the buffer length around the area. This may cause areas dense with monitors may have similar inputs but different NO2 concentrations; to avoid this complication buffer length are kept a small as possible. Another reason to keep the buffer areas small is that some monitors in the training data are close to the United States border, because this outside the scope of this project any parameter outside the continental United States is not counted towards the total (ie. a major road connecting a US city to a mexican city would only have the highway in the United States count aganist the major roads parameter). This may cause some errors in the trainng of the neural network, so the inputs try to minimize this case.</p>
-<p>The buffer area for each parameter was choosen based on the R<sup>2</sup> vs buffer area scatterplot.</p>
+<p>Table 3.1 shows the 7 inputs used in the model. The use of a single length of each input parameter was done to avoid dependencies and the reducing the complexity of the model. The one exception is major road parameter, which is directly imputed once and indirectly added in the total road parameter; this was done due to cars being a major localized source of NO2. The first 3 inputs are considered point inputs, describing the monitor location and unique monitor atttributes; whereas the last 4 inputs are dependent on the surronding area and is defined by the buffer length around the area. This may cause areas dense with monitors may have similar inputs but different NO2 concentrations; to avoid this complication buffer length are kept a small as possible. Another reason to keep the buffer areas small is that some monitors in the training data are close to the United States border, because this outside the scope of this project any parameter outside the continental United States is not counted towards the total (ie. a major road connecting a US city to a mexican city would only have the highway in the United States count aganist the major roads parameter). This may cause some errors in the trainng of the nueral network, so the inputs try to minimize this case.</p>
 <pre><code>train_dataset = tf.data.Dataset.from_tensor_slices((x_dependent_train,y_ind_train)).batch(batch_size=255)
 
 model = tf.keras.Sequential()
@@ -534,26 +505,27 @@ This is also an interesting because since the loss function of the model was mea
 </table>
 <p>Table 3.2 shows that the the majority of monitors predicted value is within 2 ppb of the actual value, with outliers being greater than 5.99 and less than -6.45.</p>
 <figure>
-<img src="images/Absolute_map_Final.png" alt="" /><figcaption>Figure 3.2. Training Data Absolute Error Geographic Distribution</figcaption>
+<img src="images/Absolute_map.png" alt="" /><figcaption>Figure 3.2. Training Data Absolute Error Geographic Distribution</figcaption>
 </figure>
 <p>Figure 3.2 shows that the absolute error is not spatially homogenous, with most of the outliers being in the West.
 As root mean squared error is the major performance metric of our model the extreme outliers are of particular note becuase they are weighted heavily in this metric.</p>
 <p>All the previous analysis was done on the training data but to ensure our model is robust, the model needs to be run on other data to ensure it valdity as a model.</p>
 <figure>
-<img src="images/Predicted_NO2_Final.png" alt="" /><figcaption>Figure 3.3. Testing Data NO<sub>2</sub> Concentrations Map</figcaption>
+<img src="images/NO2_test.png" alt="" /><figcaption>Figure 3.3. Testing Data NO<sub>2</sub> Concentrations Map</figcaption>
 </figure>
 <p>Figure 3.3 shows the predicted values of the known testing data. The model was run on 165 samples (139 of the testing data and 26 hidden values) and the root mean squared error was found to be 2.925, which is lower than the root mean squared error on the training data (3.05).
 This means that the final model is robust and can be applicable across the United States.</p>
 <h1 id="discussion">4. Discussion</h1>
 <h3 id="models-presented">4.1 Models Presented</h3>
-<p>Our team presented six different models for predicting NO<sub>2</sub> concentrations with varying degrees of complexity: one multiple linear regression, four neural networks, and one random forest model. The models were compared based on their test data predictions’ root mean square errors. This found that, while most models preduced comparable results, a neural network model was the best predictor of NO<sub>2</sub> concentrations and was the most applicable model. Multiple linear regression models were tested, but despite having a relatively low root mean square error, the heteroscedacity of the data makes for a non-applicable model. A random forest model is also presented. The model was a good predictor on the validation data, but showed poor performance on testing data, likely due to the continuous dependent variable. The random forest model was found to not be appropriate for predicting NO<sub>2</sub> concentrations.</p>
+<p>Our team presented six different models for predicting NO<sub>2</sub> concentrations with varying degrees of complexity: one multiple linear regression, four neural networks, and one random forest model. The models were compared based on their test data predictions’ root mean square errors. This found that, while most models preduced comparable results, a neural network model was the best predictor of NO<sub>2</sub> concentrations and was the most applicable model. Multiple linear regression models were tested, but despite having a relatively low root mean square error, the heteroscedacity of the data makes for a non-applicable model. A random forest model is also presented. The model was a good predictor on the validation data, but showed poor performance on testing data. The random forest model was found to not be appropriate for predicting NO<sub>2</sub> concentrations when using few data points.</p>
 <h3 id="model-performance">4.2 Model Performance</h3>
 <p>Every model tested resulted in a relatively high root mean square error when compared to the mean value of the data (11.83 ppb). This may be due to a combination of factors. The model parameters could be better fine-tuned; however, we attribute much of this error to the size of the dataset used for training the model. Analysis on the dataset shows that the outliers accounted for approximately 40% of the standard error, meaning that the absolute error may be a better metric to evaluate the model performance.</p>
 <p>The full dataset contained less than 500 observations across the United States. These observations were not evenly distributed across the US, resulting in some states with no data and a handful of states with many data points. The data used also had very few observations of high NO<sub>2</sub> concentrations available for training the model. The best performing neural network model created using this data was a poor predictor of NO<sub>2</sub> concentrations in western states.</p>
 <p>The best performing model showed no evidence of overfitting. The model performed slightly better on the testing data than it did on the validation data, supporting the conclusion that the model is robust.</p>
 <h3 id="limitations-and-future-research">4.3 Limitations and Future Research</h3>
-<p>Still, further research is needed. This model is only applicable to some regions within the United States. More land use and satellite information in other US regions is required to improve the model’s accuracy.</p>
-<p>Future research may include incoportating more data sources to paint a more detailed picture of how NO<sub>2</sub> concentrations vary across the United States. Additionally, with more sources of data, future versions of this model could be used to predict NO<sub>2</sub> concentrations outside of the United States.</p>
+<p>Still, further research is needed. This may include incoportating more data sources to paint a more detailed picture of how NO<sub>2</sub> concentrations vary across the United States. The data used in this report was based on land use information. Other recent studies have found that incorporating meteorological data can improve the model predictions. Although these factors are present implicitly through the WRF+DOMINO data column, our model may benefit from data like temperature and humidity being explicit. Also, NO<sub>2</sub> comes from multiple sources. This dataset includes information about roads, but does not include information regarding distance from nearby power plants or industry. This may be causing the model to underpredict the NO<sub>2</sub> concentration at stations nearby to other sources of NO<sub>2</sub>.</p>
+<p>Because of the spatial variability and limited data, this model is only applicable to some regions within the United States. And, due to the limited amount of US data and the uneven distribution of this data across the country, it may have been better to focus on modeling air quality across different regions in the country instead of across the entire contigous United States.</p>
+<p>Further, neural networks are limited due to their difficulty of determining a learning rate, slow speed of convergence, and lack of precision <span class="citation" data-cites="AoYhaMiF">[<a href="#ref-AoYhaMiF" role="doc-biblioref">8</a>]</span>. Given a larger amount of data, it may be useful to revisit the random forest models, as it was shown to perform well in previous air quality studies.</p>
 <h2 class="page_break_before" id="references">References</h2>
 <!-- Explicitly insert bibliography here -->
 <div id="refs" class="references hanging-indent" role="doc-bibliography">
@@ -609,23 +581,23 @@ DOI: <a href="https://doi.org/10.3390/app9194069">10.3390/app9194069</a></p>
 <div id="ref-7jG4ORkP">
 <p>11. <strong>An Introduction to Convolutional Neural Networks</strong> <br />
 Keiron O’Shea, Ryan Nash<br />
-(2015-11-26) <a href="https://arxiv.org/abs/1511.08458v2">https://arxiv.org/abs/1511.08458v2</a></p>
+<em>arXiv:1511.08458 [cs]</em> (2015-12-02) <a href="http://arxiv.org/abs/1511.08458">http://arxiv.org/abs/1511.08458</a></p>
 </div>
 <div id="ref-oXBfd5SX">
 <p>12. <strong>A Critical Review of Recurrent Neural Networks for Sequence Learning</strong> <br />
 Zachary C. Lipton, John Berkowitz, Charles Elkan<br />
-(2015-05-29) <a href="https://arxiv.org/abs/1506.00019v4">https://arxiv.org/abs/1506.00019v4</a></p>
+<em>arXiv:1506.00019 [cs]</em> (2015-10-17) <a href="http://arxiv.org/abs/1506.00019">http://arxiv.org/abs/1506.00019</a></p>
 </div>
 <div id="ref-mxBOsI7j">
 <p>13. <strong>Fundamentals of Recurrent Neural Network (RNN) and Long Short-Term Memory (LSTM) Network</strong> <br />
 Alex Sherstinsky<br />
-(2018-08-09) <a href="https://arxiv.org/abs/1808.03314v7">https://arxiv.org/abs/1808.03314v7</a> <br />
+<em>Physica D: Nonlinear Phenomena</em> (2020-03) <a href="http://arxiv.org/abs/1808.03314">http://arxiv.org/abs/1808.03314</a> <br />
 DOI: <a href="https://doi.org/10.1016/j.physd.2019.132306">10.1016/j.physd.2019.132306</a></p>
 </div>
 <div id="ref-Ictu6Zb3">
 <p>14. <strong>Empirical Evaluation of Gated Recurrent Neural Networks on Sequence Modeling</strong> <br />
-Junyoung Chung, Caglar Gulcehre, Cho, KyungHyun, Yoshua Bengio<br />
-<em>arXiv.org</em> (2014-12-11) <a href="https://arxiv.org/abs/1412.3555v1">https://arxiv.org/abs/1412.3555v1</a></p>
+Junyoung Chung, Caglar Gulcehre, KyungHyun Cho, Yoshua Bengio<br />
+<em>arXiv:1412.3555 [cs]</em> (2014-12-11) <a href="http://arxiv.org/abs/1412.3555">http://arxiv.org/abs/1412.3555</a></p>
 </div>
 <div id="ref-yCfM4S2y">
 <p>15. <a href="https://doi.org/10.1016/S0169-7439">https://doi.org/10.1016/S0169-7439</a></p>
