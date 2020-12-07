@@ -18,7 +18,7 @@ collinearity
 concentartion
 contigous
 convolutes
-Convolutional
+convolutional
 covariates
 datapoints
 dataset
@@ -40,7 +40,7 @@ homogenous
 Houly
 HPBL
 hyperparameter
-hyperparameters
+Hyperparameters
 hyperparamters
 incoportating
 interpretability
@@ -85,7 +85,7 @@ scikit
 SDT
 sfiala
 Shenzen
-Sigmoid
+sigmoid
 Spatiotemporal
 Spearman’s
 Spectroradiometer

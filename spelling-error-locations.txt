@@ -285,7 +285,3 @@ content/02.Report_Body.md:340:incoportating
 content/02.Report_Body.md:340:underpredict
 content/02.Report_Body.md:340:WRF
 content/02.Report_Body.md:342:contigous
-content/Results_old.md:11:Kaggle
-content/Results_old.md:20:kurtosis
-content/Results_old.md:21:kurtosis
-content/Results_old.md:27:homogenous
