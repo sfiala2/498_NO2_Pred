@@ -53,9 +53,9 @@
   <meta name="citation_fulltext_html_url" content="https://sfiala2.github.io/498_NO2_pred/" />
   <meta name="citation_pdf_url" content="https://sfiala2.github.io/498_NO2_pred/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://sfiala2.github.io/498_NO2_pred/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/7071d045541b4b12882c2f7e5e182619d16c1819/" />
-  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/7071d045541b4b12882c2f7e5e182619d16c1819/" />
-  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/7071d045541b4b12882c2f7e5e182619d16c1819/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/4f1453b1d1efd4e03aab9bcfabb4da4b3f14f27d/" />
+  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/4f1453b1d1efd4e03aab9bcfabb4da4b3f14f27d/" />
+  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/4f1453b1d1efd4e03aab9bcfabb4da4b3f14f27d/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -69,9 +69,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://sfiala2.github.io/498_NO2_pred/v/7071d045541b4b12882c2f7e5e182619d16c1819/">permalink</a>)
+(<a href="https://sfiala2.github.io/498_NO2_pred/v/4f1453b1d1efd4e03aab9bcfabb4da4b3f14f27d/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/sfiala2/498_NO2_pred/tree/7071d045541b4b12882c2f7e5e182619d16c1819">sfiala2/498_NO2_pred@7071d04</a>
+from <a href="https://github.com/sfiala2/498_NO2_pred/tree/4f1453b1d1efd4e03aab9bcfabb4da4b3f14f27d">sfiala2/498_NO2_pred@4f1453b</a>
 on December 7, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -509,7 +509,7 @@ This is also an interesting because since the loss function of the model was mea
 <img src="images/Absolute_map_Final.png" alt="" /><figcaption>Figure 3.2. Training Data Absolute Error Geographic Distribution</figcaption>
 </figure>
 <p>Figure 3.2 shows that the absolute error is not spatially homogenous, with most of the outliers being in the West. Further analysis shows out of the 255 training points, 12 of those were outliers.
-As root mean squared error is the major performance metric of our model the extreme outliers are of particular note becuase they are weighted heavily in this metric.</p>
+As root mean squared error is the major performance metric of our model the extreme outliers are of particular note becuase they are weighted heavily in this metric. Analysis of the monitors that were outliers were near a major sized city that did not have many suburbs or were surronded by nature. An example of this were the outliers in Utah, they were situated in suburbs of Salt Lake City but both had the peaks of Mountains in the Rocky Mountain range within the 2 km buffer raidius, so there not good advective transport causing NO<sub>2</sub> concentrations to be higher than expected. Other outliers had very rare cases that could not be accounted for. An example of this is a monitor that is near the Los Angeles airport, it is expected have an average NO<sub>2</sub> concentration but it is actually one of the highest NO<sub>2</sub> concentration due to airplane emissions.</p>
 <p>All the previous analysis was done on the training data but to ensure our model is robust, the model needs to be run on other data to ensure it valdity as a model.</p>
 <figure>
 <img src="images/Predicted_NO2_Final.png" alt="" /><figcaption>Figure 3.3. Testing Data NO<sub>2</sub> Concentrations Map</figcaption>
@@ -520,7 +520,7 @@ This means that the final model is robust and can be applicable across the Unite
 <h3 id="models-presented">4.1 Models Presented</h3>
 <p>Our team presented six different models for predicting NO<sub>2</sub> concentrations with varying degrees of complexity: one multiple linear regression, four neural networks, and one random forest model. The models were compared based on their test data predictions’ root mean square errors. This found that, while most models preduced comparable results, a neural network model was the best predictor of NO<sub>2</sub> concentrations and was the most applicable model. Multiple linear regression models were tested, but despite having a relatively low root mean square error, the heteroscedacity of the data makes for a non-applicable model. A random forest model is also presented. The model was a good predictor on the validation data, but showed poor performance on testing data. The random forest model was found to not be appropriate for predicting NO<sub>2</sub> concentrations when using few data points.</p>
 <h3 id="model-performance">4.2 Model Performance</h3>
-<p>Every model tested resulted in a relatively high root mean square error when compared to the mean value of the data (11.83 ppb). This may be due to a combination of factors. The model parameters could be better fine-tuned; however, we attribute much of this error to the size of the dataset used for training the model. Analysis on the dataset shows that the outliers accounted for approximately 40% of the standard error, meaning that the absolute error may be a better metric to evaluate the model performance.</p>
+<p>Every model tested resulted in a relatively high root mean square error when compared to the mean value of the data (11.83 ppb). This may be due to a combination of factors. The model parameters could be better fine-tuned; however, we attribute much of this error to the size of the dataset used for training the model. Analysis on the dataset shows that the outliers accounted for approximately 40% of the standard error, meaning that the absolute error may be a better metric to evaluate the model performance. Many of these outliers had characteristics that were not be taken into account by the model or had circumstances that were made the model be unable to predict the NO<sub>2</sub> concentration accurately without compromising model robustness impossible.</p>
 <p>The full dataset contained less than 500 observations across the United States. These observations were not evenly distributed across the US, resulting in some states with no data and a handful of states with many data points. The data used also had very few observations of high NO<sub>2</sub> concentrations available for training the model. The best performing neural network model created using this data was a poor predictor of NO<sub>2</sub> concentrations in western states.</p>
 <p>The best performing model showed no evidence of overfitting. The model performed slightly better on the testing data than it did on the validation data, supporting the conclusion that the model is robust.</p>
 <h3 id="limitations-and-future-research">4.3 Limitations and Future Research</h3>

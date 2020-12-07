@@ -1,5 +1,6 @@
 acorss
 activations
+advective
 aganist
 albedo
 AOD
@@ -16,7 +17,7 @@ CNNs
 collinearity
 contigous
 convolutes
-Convolutional
+convolutional
 covariates
 datapoints
 dataset
@@ -71,6 +72,7 @@ ppb
 preduced
 preprocess
 PSO
+raidius
 RandomForestRegressor
 ReLu
 resedential
@@ -93,6 +95,7 @@ Spectroradiometer
 Sudheer
 sudheersalana
 summarised
+surronded
 surronding
 SVM
 Tanh

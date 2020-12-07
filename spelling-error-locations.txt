@@ -274,7 +274,10 @@ content/02.Report_Body.md:296:kurtosis
 content/02.Report_Body.md:312:ppb
 content/02.Report_Body.md:312:ppb
 content/02.Report_Body.md:316:homogenous
+content/02.Report_Body.md:317:advective
 content/02.Report_Body.md:317:becuase
+content/02.Report_Body.md:317:raidius
+content/02.Report_Body.md:317:surronded
 content/02.Report_Body.md:320:valdity
 content/02.Report_Body.md:332:heteroscedacity
 content/02.Report_Body.md:332:preduced
