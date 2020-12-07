@@ -13,7 +13,6 @@ content/02.Report_Body.md:11:Bechle
 content/02.Report_Body.md:11:Bechle
 content/02.Report_Body.md:11:dataset
 content/02.Report_Body.md:11:EDA
-content/02.Report_Body.md:11:MSE
 content/02.Report_Body.md:15:AQI
 content/02.Report_Body.md:15:AQI
 content/02.Report_Body.md:18:AOD

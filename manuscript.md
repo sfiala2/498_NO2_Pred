@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://sfiala2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/fd4cbd00d9c50fd83029e069a2aae5ca72bd59d3/" />
+  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/1a189808b4f984be817663b88f7dd6435044579e/" />
 
-  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/fd4cbd00d9c50fd83029e069a2aae5ca72bd59d3/" />
+  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/1a189808b4f984be817663b88f7dd6435044579e/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/fd4cbd00d9c50fd83029e069a2aae5ca72bd59d3/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/1a189808b4f984be817663b88f7dd6435044579e/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Predicting NO<sub>2</sub> concentrations
 
 <small><em>
 This manuscript
-([permalink](https://sfiala2.github.io/498_NO2_pred/v/fd4cbd00d9c50fd83029e069a2aae5ca72bd59d3/))
+([permalink](https://sfiala2.github.io/498_NO2_pred/v/1a189808b4f984be817663b88f7dd6435044579e/))
 was automatically generated
-from [sfiala2/498_NO2_pred@fd4cbd0](https://github.com/sfiala2/498_NO2_pred/tree/fd4cbd00d9c50fd83029e069a2aae5ca72bd59d3)
+from [sfiala2/498_NO2_pred@1a18980](https://github.com/sfiala2/498_NO2_pred/tree/1a189808b4f984be817663b88f7dd6435044579e)
 on December 7, 2020.
 </em></small>
 
@@ -167,14 +167,14 @@ Bechle et al (2015) explores the usage of satellite data and GIS derived land us
 
 While this study focused on using land-use regression to create a model, there are a variety of modeling options that can be used to predict air quality. Machine learning models are a particularly useful tool to interpret and find relationships in complex data. 
 
-This report proposes a machine learning model to predict NO<sub>2</sub> concentrations spatially based on data provided by Bechle et al (2015). First, a literature review was undertaken to understand what machine learning models have typically performed well in predicting air quality. Next, an exploratory data analysis (EDA) was performed on the Bechle et al (2015) dataset. Finally, multiple linear regression, neural network and random forest models were built and results were compared to see which method had the lowest mean-squared error (MSE). 
+This report proposes a machine learning model to predict NO<sub>2</sub> concentrations spatially based on data provided by Bechle et al (2015). First, a literature review was undertaken to understand what machine learning models have typically performed well in predicting air quality. Next, an exploratory data analysis (EDA) was performed on the Bechle et al (2015) dataset. Finally, multiple linear regression, neural network and random forest models were built and results were compared to see which method had the lowest root mean square error. 
 
 # 2. Methods
 ## 2.1 Literature Review
 There are a number of studies examining how machine learning models can be used to predict air quality. Seven studies were examined as part of this literature review, and can be broadly categorized into 2 areas: predicting PM<sub>2.5</sub> and predicting the Air Quality Index (AQI)/ Air Pollution Index (API). One exception is that one of the studies examining AQI also predicted NO<sub>x</sub> concentrations. 
 
 ### 2.1.1 PM<sub>2.5</sub>
-Chen et al (2018) explored the use of random forest (RF) models to predict PM<sub>2.5</sub> concentrations spatially in China and compared them to multiple linear regression (MLR) and generalized additive models [@http://www.sciencedirect.com/science/article/pii/S0048969718314281]. While the study began with a large number of predictors, these were narrowed down to ground-based measurements, satellite retrieved AOD data, urban cover data and  meteorological data. The random forests model had the greatest predictive power of all the models considered, with a root mean squared error (RMSE) of 28.1 µg/m<sup>3</sup> on a daily scale (R<sup>2</sup> = 83%), improving to 10.7 µg/m<sup>3</sup> (R<sup>2</sup> = 86%) and 6.9µg/m<sup>3</sup> (R<sup>2</sup> =86%) on monthly and annual time-scales, respectively. 
+Chen et al (2018) explored the use of random forest (RF) models to predict PM<sub>2.5</sub> concentrations spatially in China and compared them to multiple linear regression (MLR) and generalized additive models [@http://www.sciencedirect.com/science/article/pii/S0048969718314281]. While the study began with a large number of predictors, these were narrowed down to ground-based measurements, satellite retrieved AOD data, urban cover data and  meteorological data. The random forests model had the greatest predictive power of all the models considered, with a root mean square error (RMSE) of 28.1 µg/m<sup>3</sup> on a daily scale (R<sup>2</sup> = 83%), improving to 10.7 µg/m<sup>3</sup> (R<sup>2</sup> = 86%) and 6.9µg/m<sup>3</sup> (R<sup>2</sup> =86%) on monthly and annual time-scales, respectively. 
 
 Xu et al (2018) likewise considered a number of machine learning models for PM<sub>2.5</sub> prediction in British Columbia, Canada [@http://www.sciencedirect.com/science/article/pii/S0269749118324229]. 8 models were examined in this study:  1) MLR, 2) Bayesian Regularized Neural Networks (BRNN), 3) Support Vector Machines with Radial Basis Function Kernel (SVM), 4) Least Absolute Shrinkage and Selection Operator (LASSO), 5) Multivariate Adaptive Regression Splines (MARS), 6) RF, 7) eXtreme Gradient Boosting (XGBoost), and 8) Cubist. The predictors included humidity, temperature, albedo, normalized difference vegetation index (NDVI), height of the planetary boundary layer (HPBL), wind speed, distance to the ocean, elevation, and calendar month beside the ground level monthly averaged P<sub>2.5</sub> data collected from 63 stations between 2001 to 2014 as well as 3km resolution aerosol optical depth (AOD) data from Moderate Resolution Imaging Spectroradiometer (MODIS). This study found that the cubist model had the highest accuracy (RMSE=2.64 µg/m<sup>3</sup> and R<sup>2</sup>=0.48) and the the MLR had the lowest accuracy (MSE = 3.24 µg/m<sup>3</sup> and R<sup>2</sup>=0.22). The predictors with the most influence were monthly AOD and elevation. 
  
