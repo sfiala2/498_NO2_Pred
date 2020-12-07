@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://sfiala2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/47b0892d64e076e3137cd53120dba5b93e93beb1/" />
+  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/2ea48ac9a5b12478981554c46866d8124d79370a/" />
 
-  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/47b0892d64e076e3137cd53120dba5b93e93beb1/" />
+  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/2ea48ac9a5b12478981554c46866d8124d79370a/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/47b0892d64e076e3137cd53120dba5b93e93beb1/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/2ea48ac9a5b12478981554c46866d8124d79370a/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Predicting NO<sub>2</sub> concentrations
 
 <small><em>
 This manuscript
-([permalink](https://sfiala2.github.io/498_NO2_pred/v/47b0892d64e076e3137cd53120dba5b93e93beb1/))
+([permalink](https://sfiala2.github.io/498_NO2_pred/v/2ea48ac9a5b12478981554c46866d8124d79370a/))
 was automatically generated
-from [sfiala2/498_NO2_pred@47b0892](https://github.com/sfiala2/498_NO2_pred/tree/47b0892d64e076e3137cd53120dba5b93e93beb1)
+from [sfiala2/498_NO2_pred@2ea48ac](https://github.com/sfiala2/498_NO2_pred/tree/2ea48ac9a5b12478981554c46866d8124d79370a)
 on December 7, 2020.
 </em></small>
 
@@ -233,7 +233,7 @@ Because the objective of this study is to predict a single variable (NO<sub>2</s
 
 ## 2.2 Exploratory Data Analysis
 
-The data for this study comes from the National Spatiotemporal Exposure Surface for NO<sub>2</sub>: Monthly Scaling of a Satellite-Derived Land-Use Regression, 2000−2010, authored by Matthew J. Bechle, Dylan B. Millet, and Julian D. Marshall. The dataset has 255 observations of 134 variables: the IDs of the air quality monitors, the states in which they are located, the latitude and longitude of the monitors, the quantity of NO<sub>2</sub> observed in parts per billion, an approximation of DOMINO satellite data using the WRF-Chem model, the distance from a monitor to the coast in kilometers, the elevation of a monitor in kilometers, and several covariates about the land in the area regarding impervious surface, population, and major, residential, and total road length. 
+The data for this study comes from the National Spatiotemporal Exposure Surface for NO<sub>2</sub>: Monthly Scaling of a Satellite-Derived Land-Use Regression, 2000−2010, authored by Matthew J. Bechle, Dylan B. Millet, and Julian D. Marshall [@https://doi.org/10.1021/acs.est.5b02882]. The dataset has 255 observations of 134 variables: the IDs of the air quality monitors, the states in which they are located, the latitude and longitude of the monitors, the quantity of NO<sub>2</sub> observed in parts per billion, an approximation of DOMINO satellite data using the WRF-Chem model, the distance from a monitor to the coast in kilometers, the elevation of a monitor in kilometers, and several covariates about the land in the area regarding impervious surface, population, and major, residential, and total road length. 
 
 The target variable in this predictive case is NO<sub>2</sub> concentration in the continental United States. The observations from the data have a mean NO<sub>2</sub> concentration of 11.831 ppb with a standard deviation of 6.290 ppb. The NO<sub>2</sub> concentration data has a range from 0.309 to 31.016 ppb. The five highest values are considered outliers. The distribution of NO<sub>2</sub> concentration values is unimodal with a slight right skew.
 
@@ -443,7 +443,7 @@ The squared error is also related to the root mean squared error, the measured u
 The problem is that the loss function used was the mean squared error, meaning that only using this metric can may cause us to fail to observe other possible problems while training the data.
 Absolute error as a criterion for analysis fills these gaps in knowledge, such as bias in the training data or the geographic distribution of the error. 
 
-![Figure 3.1. Training Data Absolute Error Histogram](images/Absolute_dis.png)
+![Figure 3.1. Training Data Absolute Error Histogram](images/Absolute_dis_Final.png)
 
 Figure 3.1  shows the distribution for the absolute error on the training data. 
 The distribution is nearly gaussian, which is expected with a large sample size.
