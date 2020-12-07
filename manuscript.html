@@ -53,9 +53,9 @@
   <meta name="citation_fulltext_html_url" content="https://sfiala2.github.io/498_NO2_pred/" />
   <meta name="citation_pdf_url" content="https://sfiala2.github.io/498_NO2_pred/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://sfiala2.github.io/498_NO2_pred/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/0e47c56be59a0535b21311aab6141ef072af583c/" />
-  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/0e47c56be59a0535b21311aab6141ef072af583c/" />
-  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/0e47c56be59a0535b21311aab6141ef072af583c/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/ed134d603623e176d318da117175ff0559031985/" />
+  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/ed134d603623e176d318da117175ff0559031985/" />
+  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/ed134d603623e176d318da117175ff0559031985/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -69,9 +69,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://sfiala2.github.io/498_NO2_pred/v/0e47c56be59a0535b21311aab6141ef072af583c/">permalink</a>)
+(<a href="https://sfiala2.github.io/498_NO2_pred/v/ed134d603623e176d318da117175ff0559031985/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/sfiala2/498_NO2_pred/tree/0e47c56be59a0535b21311aab6141ef072af583c">sfiala2/498_NO2_pred@0e47c56</a>
+from <a href="https://github.com/sfiala2/498_NO2_pred/tree/ed134d603623e176d318da117175ff0559031985">sfiala2/498_NO2_pred@ed134d6</a>
 on December 7, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -108,7 +108,7 @@ on December 7, 2020.
 </small></p></li>
 </ul>
 <h2 class="page_break_before" id="abstract">Abstract</h2>
-<p>The application of machine learning models to inform environmental quality and change is continuously growing. Machine learning models with varying levels of complexity and interpretability can be used to improve understanding of air quality in regions where monitored data is not available. This research presents a neural network model that uses GIS-derived land use characteristics and modeled satellite data to estimate NO2 concentrations at monitored sites across the contiguous United States. This neural network model was selected as the highest performing model of six, consisting of four neural network, one multiple regression, and one random forest models. Model performance was evaluated based on the root mean square error of the test predictions, with the best model having a root mean square error of 2.95 (training data mean = 11.83 ppb). Our model shows a relatively high root mean square error; however, most of this error comes from outliers. To further improve model predictions, more data is needed.</p>
+<p>The application of machine learning models to inform environmental quality and change is continuously growing. Machine learning models with varying levels of complexity and interpretability can be used to improve understanding of air quality in regions where monitored data is not available. This research presents a neural network model that uses GIS-derived land use characteristics and modeled satellite data to estimate NO<sub>2</sub> concentrations at monitored sites across the contiguous United States. This neural network model was selected as the highest performing model of six, consisting of four neural network, one multiple regression, and one random forest models. Model performance was evaluated based on the root mean square error of the test predictions, with the best model having a root mean square error of 2.95 (training data mean = 11.83 ppb). Our model shows a relatively high root mean square error; however, most of this error comes from outliers. To further improve model predictions, more data is needed.</p>
 <h1 id="introduction">1. Introduction</h1>
 <p>NO<sub>2</sub> is defined by the U.S. Environmental Protection Agency (EPA) as a criteria air pollutant, meaning it poses a risk to human and environmental health. The primary National Ambient Air Quality Standard (NAAQS) for NO<sub>2</sub> is set at a 53 ppb annual average <span class="citation" data-cites="VPPFmmlA">[<a href="#ref-VPPFmmlA" role="doc-biblioref">1</a>]</span>. NO<sub>2</sub> can cause respiratory irritation and can aggravate respiratory diseases such as asthma <span class="citation" data-cites="10Z19reB3">[<a href="#ref-10Z19reB3" role="doc-biblioref">2</a>]</span>. NO<sub>2</sub> can also react with other chemicals in the atmosphere to form both particulate matter (PM) and tropospheric ozone (O<sub>3</sub>) (US EPA, n.d., B). PM and O<sub>3</sub> are also criteria air pollutants and are harmful to human health. NO<sub>2</sub> also contributes to the formation of acid rain, smog, and nutrient pollution in coastal waters <span class="citation" data-cites="10Z19reB3">[<a href="#ref-10Z19reB3" role="doc-biblioref">2</a>]</span>. The primary source of NO2 emissions is fossil fuel combustion, particularly from traffic and power plants <span class="citation" data-cites="10Z19reB3">[<a href="#ref-10Z19reB3" role="doc-biblioref">2</a>]</span>.</p>
 <p>Therefore, understanding and predicting the spatial variability of NO<sub>2</sub> emissions is of great importance to public health. But the prediction of air quality can be complicated due to the number of factors that affect local air quality and the limited availability of monitored air quality data.</p>

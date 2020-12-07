@@ -18,7 +18,7 @@ collinearity
 concentartion
 contigous
 convolutes
-convolutional
+Convolutional
 covariates
 datapoints
 dataset
@@ -40,7 +40,7 @@ homogenous
 Houly
 HPBL
 hyperparameter
-Hyperparameters
+hyperparameters
 hyperparamters
 incoportating
 interpretability
@@ -72,7 +72,7 @@ preduced
 preprocess
 PSO
 RandomForestRegressor
-ReLu
+ReLU
 resedential
 respirable
 RMSE
