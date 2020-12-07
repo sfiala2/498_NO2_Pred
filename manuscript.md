@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://sfiala2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/4f1453b1d1efd4e03aab9bcfabb4da4b3f14f27d/" />
+  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/9d375bc4482b4e13bbbebd52aa874e339b90b8e2/" />
 
-  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/4f1453b1d1efd4e03aab9bcfabb4da4b3f14f27d/" />
+  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/9d375bc4482b4e13bbbebd52aa874e339b90b8e2/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/4f1453b1d1efd4e03aab9bcfabb4da4b3f14f27d/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/9d375bc4482b4e13bbbebd52aa874e339b90b8e2/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Predicting NO<sub>2</sub> concentrations
 
 <small><em>
 This manuscript
-([permalink](https://sfiala2.github.io/498_NO2_pred/v/4f1453b1d1efd4e03aab9bcfabb4da4b3f14f27d/))
+([permalink](https://sfiala2.github.io/498_NO2_pred/v/9d375bc4482b4e13bbbebd52aa874e339b90b8e2/))
 was automatically generated
-from [sfiala2/498_NO2_pred@4f1453b](https://github.com/sfiala2/498_NO2_pred/tree/4f1453b1d1efd4e03aab9bcfabb4da4b3f14f27d)
+from [sfiala2/498_NO2_pred@9d375bc](https://github.com/sfiala2/498_NO2_pred/tree/9d375bc4482b4e13bbbebd52aa874e339b90b8e2)
 on December 7, 2020.
 </em></small>
 
@@ -324,17 +324,17 @@ In this project, majority of the models used were simple feed forward neural net
 
 2. Neural networks are simpler as compared to random forests but at the same time slightly more complex than linear regression and hence they incorporate some machine learning components
 
-We used keras, which is an opensource library of functions that allows the use of the tensorflow library for machine learning models in python. The building blocks of a neural network model such as layers, objective functions,activation functions and optimizers, are all provided by keras. 
+We used keras, which is an opensource library of functions that allows the use of the tensorflow library for machine learning models in python. The building blocks of a neural network model such as layers, objective functions, activation functions and optimizers, are all provided by keras. 
 
 A regular neural network consists of an input layer, hidden layers and an output layer. We used a sequential model which consists of few layers stacked upon one another, linearly [@https://doi.org/10.1016/S0169-7439(97)00061-0]. Each layer has multiple cells and we could define the number of input cells for these hidden layers. We can also define the type of activation function for each layer. We used an average of 3 to 5 hidden layers in our neural network models.
 
 We used a combination of three different activation functions:
 
-a. Linear Activation - a linear activation uses the weights to multiply the inputs providing an output which is linearly proportional to the input. This function is also termed as no activation function as there is no further transformation being operated on the values.
+1. Linear Activation - a linear activation uses the weights to multiply the inputs providing an output which is linearly proportional to the input. This function is also termed as no activation function as there is no further transformation being operated on the values.
 
-b. ReLU - Rectified Linear Activation Unit - even though very similar in appearance to a linear function, ReLU allows back-propagation of errors. This function always gives an output of 0 for negative values and behaves linearly for values greater than 0.
+2. ReLU - Rectified Linear Activation Unit - even though very similar in appearance to a linear function, ReLU allows back-propagation of errors. This function always gives an output of 0 for negative values and behaves linearly for values greater than 0.
 
-c. Sigmoid activation - by implementing this activation function, the outputs are normalized and bound between 0 and 1. A sigmoid function provides a smooth gradient curve and much clearer predictions.
+3. Sigmoid activation - by implementing this activation function, the outputs are normalized and bound between 0 and 1. A sigmoid function provides a smooth gradient curve and much clearer predictions.
 
 Further, the compile function is used to compile the model created, which takes in a variety of arguments. We used an Adam optimizer which uses the combination of squared and moving average gradients to individually compute the learning rates for each parameter. As such it provides the benefits of both RMSProp and Stochastic Gradient Descent.
 
@@ -344,11 +344,11 @@ A loss function refers to the quantity that the model is trying to either minimi
 
 The final step was to train our model so created using training dataset and the keras function model.fit. An important parameter for fitting the model is 'epoch' which indicates the number of times the training dataset is run through our model. For example, if we choose 500 epochs we are allowing the training data to run through the model for 500 times. The number of epochs determine how well the model familiarizes itself with the model. Greater the number of epochs the better the model understands your data.
 
-However, it must be ensured that excessive epochs in proportion to the complexity of the model and the dataset is avoided as this could result in a situation wherein the model no longer tries to find a pattern among the data but rather simply memorises it. In such situations, the model overfits the data. We used a range of epochs between 350- 1000, based on several trials, where in each case, a different epoch was chosen and the final RMSE was monitored. The final model used the most suitable epoch for the given set of features and other hyperparameters.
+However, it must be ensured that excessive epochs in proportion to the complexity of the model and the dataset is avoided as this could result in a situation wherein the model no longer tries to find a pattern among the data but rather simply memorizes it. In such situations, the model overfits the data. We used a range of epochs between 350- 1000, based on several trials, where in each case, a different epoch was chosen and the final RMSE was monitored. The final model used the most suitable epoch for the given set of features and other hyperparameters.
 
 Usually, training dataset is split into training and validation dataset to resolve the problem of overfitting if encountered. A validation dataset also allows for considerable improvements in model before the model is fit using the test data. A common practice is to split the training data in such a way that 80%-90% of the data is used to train the model and 10-20% to validate. However, our best performing neural network model did not use any validation data citing the limited number of datapoints available for the competition.
 
-Our neural networks achieved a RMSE values in the range of 2.92-6.6, which implies that, in most cases, our model overfit the training data. The best performing neural network model is described in detail in the Results section of the report. The details about the neural networks are summarised in Table 2.3.
+Our neural networks achieved a RMSE values in the range of 2.92-6.6, which implies that, in most cases, our model overfit the training data. The best performing neural network model is described in detail in the Results section of the report. The details about the neural networks are summarized in Table 2.3.
 
 **Table 2.3 Summary of 3 Neural Networks Used in the project (the fourth and the best performing is explained in detail in the Results Section)**
 
@@ -370,7 +370,7 @@ Variable selection and feature engineering are very important in data preprocess
 
 Based on previous exploratory data analysis, the raw dataset contains valuable land-use variables in series including impervious surfaces, population, major road length, residential road length, and total road length within different buffers. It also include elevation, distance to coast, latitude, longitude, linear combinations of satellite data and WRF-Chem output. The variables within their series are highly correlated, so a few representative ones should be selected out based on the second criteria mentioned before. Here we select one for each kind of land-use variables. It is interesting that high correlations have been found between some of these land-use variables, like road lengths. Thus, we only selected the road length having the highest relationship with the variable to be predicted. Latitude and longitude are binned and one-hot coded. Around 20% of the raw data were selected out for prediction validation.
 
-Random forest model in this project was created with scikit-learn RandomForestRegressor library. GridSearchCV was imported to conduct hyperparameter optimization. The model output generally had a MSE around 3.2 in the validation data. However, on the test data it did not show a good performance (MSE = 4.2). One possible reason is that random forest regression is weak on predicting values with magnitudes beyond the train dataset, meaning that it cannot confidently handle noise or outliers. It also prefers high dimensional, large-scale data, however, in this project the dataset is on a relatively low scale. 
+Random forest model in this project was created with scikit-learn RandomForestRegressor library. GridSearchCV was imported to conduct hyperparameter optimization. The model output generally had a MSE around 3.2 in the validation data (RMSE = 1.8). However, on the test data it did not show a good performance (RMSE = 4.2). One possible reason is that random forest regression is weak on predicting values with magnitudes beyond the train dataset, meaning that it cannot confidently handle noise or outliers. It also prefers high dimensional, large-scale data, however, in this project the dataset is on a relatively low scale. 
 
 In conclusion, random forest is possibly not a very appropriate algorithm to make prediction in regression problems from dataset in a low-scale and a low-dimension.
 

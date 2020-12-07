@@ -17,7 +17,7 @@ CNNs
 collinearity
 contigous
 convolutes
-convolutional
+Convolutional
 covariates
 datapoints
 dataset
@@ -41,7 +41,7 @@ homogenous
 Houly
 HPBL
 hyperparameter
-hyperparameters
+Hyperparameters
 incoportating
 interpretability
 Kaggle
@@ -52,7 +52,6 @@ LSTM
 LSTMs
 marcelbriguglio
 maximas
-memorises
 mistraining
 MLR
 MODIS
@@ -74,7 +73,7 @@ preprocess
 PSO
 raidius
 RandomForestRegressor
-ReLu
+ReLU
 resedential
 respirable
 RMSE
@@ -94,7 +93,6 @@ specfically
 Spectroradiometer
 Sudheer
 sudheersalana
-summarised
 surronded
 surronding
 SVM
