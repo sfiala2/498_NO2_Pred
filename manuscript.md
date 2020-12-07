@@ -8,7 +8,7 @@ author-meta:
 - Hope Hunter
 bibliography:
 - content/manual-references.json
-date-meta: '2020-12-06'
+date-meta: '2020-12-07'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -27,9 +27,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Predicting NO&lt;sub&gt;2&lt;/sub&gt; concentrations" />
 
-  <meta name="dc.date" content="2020-12-06" />
+  <meta name="dc.date" content="2020-12-07" />
 
-  <meta name="citation_publication_date" content="2020-12-06" />
+  <meta name="citation_publication_date" content="2020-12-07" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://sfiala2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/d03cbf94486f6f30b9d5d9266a0994491ec1b005/" />
+  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/2ef1ec4b2460c352996a12b7543788ac6309c24f/" />
 
-  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/d03cbf94486f6f30b9d5d9266a0994491ec1b005/" />
+  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/2ef1ec4b2460c352996a12b7543788ac6309c24f/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/d03cbf94486f6f30b9d5d9266a0994491ec1b005/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/2ef1ec4b2460c352996a12b7543788ac6309c24f/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,10 +103,10 @@ title: Predicting NO<sub>2</sub> concentrations
 
 <small><em>
 This manuscript
-([permalink](https://sfiala2.github.io/498_NO2_pred/v/d03cbf94486f6f30b9d5d9266a0994491ec1b005/))
+([permalink](https://sfiala2.github.io/498_NO2_pred/v/2ef1ec4b2460c352996a12b7543788ac6309c24f/))
 was automatically generated
-from [sfiala2/498_NO2_pred@d03cbf9](https://github.com/sfiala2/498_NO2_pred/tree/d03cbf94486f6f30b9d5d9266a0994491ec1b005)
-on December 6, 2020.
+from [sfiala2/498_NO2_pred@2ef1ec4](https://github.com/sfiala2/498_NO2_pred/tree/2ef1ec4b2460c352996a12b7543788ac6309c24f)
+on December 7, 2020.
 </em></small>
 
 ## Authors
