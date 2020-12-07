@@ -17,7 +17,7 @@ CNNs
 collinearity
 contigous
 convolutes
-convolutional
+Convolutional
 covariates
 datapoints
 dataset
@@ -39,7 +39,7 @@ homogenous
 Houly
 HPBL
 hyperparameter
-Hyperparameters
+hyperparameters
 incoportating
 interpretability
 Kaggle
@@ -69,7 +69,7 @@ preduced
 preprocess
 PSO
 RandomForestRegressor
-ReLu
+ReLU
 resedential
 respirable
 RMSE
@@ -82,7 +82,7 @@ scikit
 SDT
 sfiala
 Shenzen
-sigmoid
+Sigmoid
 Spatiotemporal
 Spearman’s
 Spectroradiometer
