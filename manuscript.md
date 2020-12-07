@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://sfiala2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/bcd89fe359c444b282911f021287730c0ede6d75/" />
+  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/2c880756fcde89a47ad7d37722a374355f02c7f7/" />
 
-  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/bcd89fe359c444b282911f021287730c0ede6d75/" />
+  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/2c880756fcde89a47ad7d37722a374355f02c7f7/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/bcd89fe359c444b282911f021287730c0ede6d75/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/2c880756fcde89a47ad7d37722a374355f02c7f7/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Predicting NO<sub>2</sub> concentrations
 
 <small><em>
 This manuscript
-([permalink](https://sfiala2.github.io/498_NO2_pred/v/bcd89fe359c444b282911f021287730c0ede6d75/))
+([permalink](https://sfiala2.github.io/498_NO2_pred/v/2c880756fcde89a47ad7d37722a374355f02c7f7/))
 was automatically generated
-from [sfiala2/498_NO2_pred@bcd89fe](https://github.com/sfiala2/498_NO2_pred/tree/bcd89fe359c444b282911f021287730c0ede6d75)
+from [sfiala2/498_NO2_pred@2c88075](https://github.com/sfiala2/498_NO2_pred/tree/2c880756fcde89a47ad7d37722a374355f02c7f7)
 on December 7, 2020.
 </em></small>
 
@@ -487,19 +487,19 @@ This means that the final model is robust and can be applicable across the Unite
 # 4. Discussion 
 
 ### 4.1 Models Presented
-Our team presented six different models for predicting NO<sub>2</sub> concentrations with varying degrees of complexity: one multiple linear regression, four neural networks, and one random forest model. The models were compared based on their test data predictions' root mean square errors. This found that, while most models preduced comparable results, a neural network model was the best predictor of NO<sub>2</sub> concentrations and was the most applicable model. Multiple linear regression models were tested, but despite having a relatively low root mean square error, the heteroscedacity of the data makes for a non-applicable model. A random forest model is also presented. The model was a good predictor on the validation data, but showed poor performance on testing data. The random forest model was found to not be appropriate for predicting NO<sub>2</sub> concentrations when using few data points. 
+Our team presented six different models for predicting NO<sub>2</sub> concentrations with varying degrees of complexity: one multiple linear regression, four neural networks, and one random forest model. The models were compared based on their test data predictions' root mean square errors. This found that, while most models produced comparable results, a neural network model was the best predictor of NO<sub>2</sub> concentrations and was the most applicable model. Multiple linear regression models were tested, but despite having a relatively low root mean square error, the heteroskedacity of the data makes for a non-applicable model. A random forest model is also presented. The model was a good predictor on the validation data, but showed poor performance on testing data. The random forest model was found to not be appropriate for predicting NO<sub>2</sub> concentrations when using few data points. 
 
 ### 4.2 Model Performance
 
 Every model tested resulted in a relatively high root mean square error when compared to the mean value of the data (11.83 ppb). This may be due to a combination of factors. The model parameters could be better fine-tuned; however, we attribute much of this error to the size of the dataset used for training the model. Analysis on the dataset shows that the outliers accounted for approximately 40% of the standard error, meaning that the absolute error may be a better metric to evaluate the model performance. 
 
-The full dataset contained less than 500 observations across the United States. These observations were not evenly distributed across the US, resulting in some states with no data and a handful of states with many data points. The data used also had very few observations of high NO<sub>2</sub> concentrations available for training the model. The best performing neural network model created using this data was a poor predictor of NO<sub>2</sub> concentrations in western states. 
+The full dataset (training and test data) contained less than 500 observations across the United States. These observations were not evenly distributed across the US, resulting in some states with no data and a handful of states with many data points. The data used also had very few observations of high NO<sub>2</sub> concentrations available for training the model. The best performing neural network model created using this data was a poor predictor of NO<sub>2</sub> concentrations in western states. 
 
 The best performing model showed no evidence of overfitting. The model performed slightly better on the testing data than it did on the validation data, supporting the conclusion that the model is robust. 
 
 ### 4.3 Limitations and Future Research 
 
-Still, further research is needed.  This may include incoportating more data sources to paint a more detailed picture of how NO<sub>2</sub> concentrations vary across the United States. The data used in this report was based on land use information. Other recent studies have found that incorporating meteorological data can improve the model predictions. Although these factors are present implicitly through the WRF+DOMINO data column, our model may benefit from data like temperature and humidity being explicit. Also, NO<sub>2</sub> comes from multiple sources. This dataset includes information about roads, but does not include information regarding distance from nearby power plants or industry. This may be causing the model to underpredict the NO<sub>2</sub> concentration at stations nearby to other sources of NO<sub>2</sub>. 
+Still, further research is needed.  This may include incorporating more data sources to paint a more detailed picture of how NO<sub>2</sub> concentrations vary across the United States. The data used in this report was based on land use information. Other recent studies have found that incorporating meteorological data can improve the model predictions. Although these factors are present implicitly through the WRF+DOMINO data column, our model may benefit from data like temperature and humidity being explicit. Also, NO<sub>2</sub> comes from multiple sources. This dataset includes information about roads, but does not include information regarding distance from nearby power plants or industries. This may be causing the model to underpredict the NO<sub>2</sub> concentration at locations nearby to other sources of NO<sub>2</sub>. 
 
 Because of the spatial variability and limited data, this model is only applicable to some regions within the United States. And, due to the limited amount of US data and the uneven distribution of this data across the country, it may have been better to focus on modeling air quality across different regions in the country instead of across the entire contigous United States.  
 
