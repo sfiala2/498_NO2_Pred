@@ -17,7 +17,7 @@ CNNs
 collinearity
 contigous
 convolutes
-Convolutional
+convolutional
 covariates
 datapoints
 dataset
@@ -41,7 +41,7 @@ homogenous
 Houly
 HPBL
 hyperparameter
-Hyperparameters
+hyperparameters
 incoportating
 interpretability
 Kaggle
@@ -73,7 +73,7 @@ preprocess
 PSO
 raidius
 RandomForestRegressor
-ReLU
+ReLu
 resedential
 respirable
 RMSE

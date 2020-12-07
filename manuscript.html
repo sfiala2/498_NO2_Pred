@@ -53,9 +53,9 @@
   <meta name="citation_fulltext_html_url" content="https://sfiala2.github.io/498_NO2_pred/" />
   <meta name="citation_pdf_url" content="https://sfiala2.github.io/498_NO2_pred/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://sfiala2.github.io/498_NO2_pred/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/9d375bc4482b4e13bbbebd52aa874e339b90b8e2/" />
-  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/9d375bc4482b4e13bbbebd52aa874e339b90b8e2/" />
-  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/9d375bc4482b4e13bbbebd52aa874e339b90b8e2/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/f3bf8c14cad53282490d831a3cfb26b1ef06564f/" />
+  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/f3bf8c14cad53282490d831a3cfb26b1ef06564f/" />
+  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/f3bf8c14cad53282490d831a3cfb26b1ef06564f/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -69,9 +69,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://sfiala2.github.io/498_NO2_pred/v/9d375bc4482b4e13bbbebd52aa874e339b90b8e2/">permalink</a>)
+(<a href="https://sfiala2.github.io/498_NO2_pred/v/f3bf8c14cad53282490d831a3cfb26b1ef06564f/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/sfiala2/498_NO2_pred/tree/9d375bc4482b4e13bbbebd52aa874e339b90b8e2">sfiala2/498_NO2_pred@9d375bc</a>
+from <a href="https://github.com/sfiala2/498_NO2_pred/tree/f3bf8c14cad53282490d831a3cfb26b1ef06564f">sfiala2/498_NO2_pred@f3bf8c1</a>
 on December 7, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -280,16 +280,45 @@ on December 7, 2020.
 <p>The multiple regression model used in this project first aggregates all 5 land use variables. Then, features with collinearity were removed. This was done by removing variables with a variance inflation factor over 5, and resulted in all road data being removed. The model was developed using ordinary least squares linear regression. Choosing the root mean square error as the loss function for the model, tests were run to select combinations of variables that resulted in the lowest root mean square error. The tests evaluated the effect of removing any combination of one, two, or 3 columns. These tests concluded that further removing columns only resulted in a higher root mean square error.</p>
 <h4 id="mlr-fit">MLR Fit</h4>
 <p>The final model equation is presented in Table 2.3 with each feature and its respective coefficient.</p>
-<p><strong>Table 2.3 Coefficients used in final MLR model</strong>
-|Variable | Value |
-|———–|——–|
-|Constant intercept | 2.9128368899112775 |
-|WRF+DOMINO | 0.69 |
-|Distance_to_coast_km | -0.0013 |
-|Elevation_truncated_km | 1.1e+01 |
-|radius | 0.00013 |
-|Impervious | 0.11 |
-|Population | 0.00011 |</p>
+<p><strong>Table 2.3 Coefficients used in final MLR model</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Constant intercept</td>
+<td>2.9128368899112775</td>
+</tr>
+<tr class="even">
+<td>WRF+DOMINO</td>
+<td>0.69</td>
+</tr>
+<tr class="odd">
+<td>Distance_to_coast_km</td>
+<td>-0.0013</td>
+</tr>
+<tr class="even">
+<td>Elevation_truncated_km</td>
+<td>1.1e+01</td>
+</tr>
+<tr class="odd">
+<td>radius</td>
+<td>0.00013</td>
+</tr>
+<tr class="even">
+<td>Impervious</td>
+<td>0.11</td>
+</tr>
+<tr class="odd">
+<td>Population</td>
+<td>0.00011</td>
+</tr>
+</tbody>
+</table>
 <p>The model fits the data well for lower NO<sub>2</sub> concentrations. However, the model predicts high concentrations very poorly. This is due to the distribution of the data used to build the model: There are very few observations of high NO<sub>2</sub> values. The model fit is plotted in Figure 2.4</p>
 <figure>
 <img src="images/mlr_fit.PNG" alt="" /><figcaption>Figure 2.4 Linear Model Fit</figcaption>

@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://sfiala2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/9d375bc4482b4e13bbbebd52aa874e339b90b8e2/" />
+  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/f3bf8c14cad53282490d831a3cfb26b1ef06564f/" />
 
-  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/9d375bc4482b4e13bbbebd52aa874e339b90b8e2/" />
+  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/f3bf8c14cad53282490d831a3cfb26b1ef06564f/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/9d375bc4482b4e13bbbebd52aa874e339b90b8e2/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/f3bf8c14cad53282490d831a3cfb26b1ef06564f/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Predicting NO<sub>2</sub> concentrations
 
 <small><em>
 This manuscript
-([permalink](https://sfiala2.github.io/498_NO2_pred/v/9d375bc4482b4e13bbbebd52aa874e339b90b8e2/))
+([permalink](https://sfiala2.github.io/498_NO2_pred/v/f3bf8c14cad53282490d831a3cfb26b1ef06564f/))
 was automatically generated
-from [sfiala2/498_NO2_pred@9d375bc](https://github.com/sfiala2/498_NO2_pred/tree/9d375bc4482b4e13bbbebd52aa874e339b90b8e2)
+from [sfiala2/498_NO2_pred@f3bf8c1](https://github.com/sfiala2/498_NO2_pred/tree/f3bf8c14cad53282490d831a3cfb26b1ef06564f)
 on December 7, 2020.
 </em></small>
 
@@ -279,6 +279,7 @@ The multiple regression model used in this project first aggregates all 5 land u
 The final model equation is presented in Table 2.3 with each feature and its respective coefficient.
 
 **Table 2.3 Coefficients used in final MLR model**
+
 |Variable   |  Value |
 |-----------|--------|
 |Constant intercept | 2.9128368899112775 |
