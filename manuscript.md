@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://sfiala2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/67364d9e6a1644eed9f9f4939c49322767826e59/" />
+  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/0e47c56be59a0535b21311aab6141ef072af583c/" />
 
-  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/67364d9e6a1644eed9f9f4939c49322767826e59/" />
+  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/0e47c56be59a0535b21311aab6141ef072af583c/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/67364d9e6a1644eed9f9f4939c49322767826e59/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/0e47c56be59a0535b21311aab6141ef072af583c/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Predicting NO<sub>2</sub> concentrations
 
 <small><em>
 This manuscript
-([permalink](https://sfiala2.github.io/498_NO2_pred/v/67364d9e6a1644eed9f9f4939c49322767826e59/))
+([permalink](https://sfiala2.github.io/498_NO2_pred/v/0e47c56be59a0535b21311aab6141ef072af583c/))
 was automatically generated
-from [sfiala2/498_NO2_pred@67364d9](https://github.com/sfiala2/498_NO2_pred/tree/67364d9e6a1644eed9f9f4939c49322767826e59)
+from [sfiala2/498_NO2_pred@0e47c56](https://github.com/sfiala2/498_NO2_pred/tree/0e47c56be59a0535b21311aab6141ef072af583c)
 on December 7, 2020.
 </em></small>
 
@@ -467,7 +467,7 @@ This is also an interesting because since the loss function of the model was mea
 
 Table 3.2 shows that the the majority of monitors predicted value is within 2 ppb of the actual value, with outliers being greater than 5.99 and less than -6.45.
 
-![Figure 3.2. Training Data Absolute Error Geographic Distribution](images/Absolute_map.png)
+![Figure 3.2. Training Data Absolute Error Geographic Distribution](images/Absolute_map_Final.png)
  
 Figure 3.2 shows that the absolute error is not spatially homogenous, with most of the outliers being in the West. 
 As root mean squared error is the major performance metric of our model the extreme outliers are of particular note becuase they are weighted heavily in this metric. 
@@ -475,7 +475,7 @@ As root mean squared error is the major performance metric of our model the extr
 All the previous analysis was done on the training data but to ensure our model is robust, the model needs to be run on other data to ensure it valdity as a model. 
  
 
-![Figure 3.3. Testing Data NO<sub>2</sub> Concentrations Map](images/NO2_test.png)
+![Figure 3.3. Testing Data NO<sub>2</sub> Concentrations Map](images/Predicted_NO2_Final.png)
 
 
 Figure 3.3 shows the predicted values of the known testing data. The model was run on 165 samples (139 of the testing data and 26 hidden values) and the root mean squared error was found to be 2.925, which is lower than the root mean squared error on the training data (3.05). 
