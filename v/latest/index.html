@@ -53,9 +53,9 @@
   <meta name="citation_fulltext_html_url" content="https://sfiala2.github.io/498_NO2_pred/" />
   <meta name="citation_pdf_url" content="https://sfiala2.github.io/498_NO2_pred/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://sfiala2.github.io/498_NO2_pred/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/47b0892d64e076e3137cd53120dba5b93e93beb1/" />
-  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/47b0892d64e076e3137cd53120dba5b93e93beb1/" />
-  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/47b0892d64e076e3137cd53120dba5b93e93beb1/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/2ea48ac9a5b12478981554c46866d8124d79370a/" />
+  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/2ea48ac9a5b12478981554c46866d8124d79370a/" />
+  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/2ea48ac9a5b12478981554c46866d8124d79370a/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -69,9 +69,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://sfiala2.github.io/498_NO2_pred/v/47b0892d64e076e3137cd53120dba5b93e93beb1/">permalink</a>)
+(<a href="https://sfiala2.github.io/498_NO2_pred/v/2ea48ac9a5b12478981554c46866d8124d79370a/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/sfiala2/498_NO2_pred/tree/47b0892d64e076e3137cd53120dba5b93e93beb1">sfiala2/498_NO2_pred@47b0892</a>
+from <a href="https://github.com/sfiala2/498_NO2_pred/tree/2ea48ac9a5b12478981554c46866d8124d79370a">sfiala2/498_NO2_pred@2ea48ac</a>
 on December 7, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -256,7 +256,7 @@ on December 7, 2020.
 <p>The RMSE and R<sup>2</sup> values vary significantly for each study. This can be attributed to the different geographic areas considered, varying spatial resolutions, amount of uncertainty in the data sources, prediction type and different parameters included in the model.</p>
 <p>Because the objective of this study is to predict a single variable (NO<sub>2</sub> concentrations), then the models used by PM<sub>2.5</sub> studies are the most relevant. Therefore, in our model analysis, we will use MLR, neural networks and RF.</p>
 <h2 id="exploratory-data-analysis">2.2 Exploratory Data Analysis</h2>
-<p>The data for this study comes from the National Spatiotemporal Exposure Surface for NO<sub>2</sub>: Monthly Scaling of a Satellite-Derived Land-Use Regression, 2000−2010, authored by Matthew J. Bechle, Dylan B. Millet, and Julian D. Marshall. The dataset has 255 observations of 134 variables: the IDs of the air quality monitors, the states in which they are located, the latitude and longitude of the monitors, the quantity of NO<sub>2</sub> observed in parts per billion, an approximation of DOMINO satellite data using the WRF-Chem model, the distance from a monitor to the coast in kilometers, the elevation of a monitor in kilometers, and several covariates about the land in the area regarding impervious surface, population, and major, residential, and total road length.</p>
+<p>The data for this study comes from the National Spatiotemporal Exposure Surface for NO<sub>2</sub>: Monthly Scaling of a Satellite-Derived Land-Use Regression, 2000−2010, authored by Matthew J. Bechle, Dylan B. Millet, and Julian D. Marshall <span class="citation" data-cites="Ian1ZRjy">[<a href="#ref-Ian1ZRjy" role="doc-biblioref">3</a>]</span>. The dataset has 255 observations of 134 variables: the IDs of the air quality monitors, the states in which they are located, the latitude and longitude of the monitors, the quantity of NO<sub>2</sub> observed in parts per billion, an approximation of DOMINO satellite data using the WRF-Chem model, the distance from a monitor to the coast in kilometers, the elevation of a monitor in kilometers, and several covariates about the land in the area regarding impervious surface, population, and major, residential, and total road length.</p>
 <p>The target variable in this predictive case is NO<sub>2</sub> concentration in the continental United States. The observations from the data have a mean NO<sub>2</sub> concentration of 11.831 ppb with a standard deviation of 6.290 ppb. The NO<sub>2</sub> concentration data has a range from 0.309 to 31.016 ppb. The five highest values are considered outliers. The distribution of NO<sub>2</sub> concentration values is unimodal with a slight right skew.</p>
 <p><strong>Figure 2.1</strong>
 <img src="images/Histogram_NO2.png" alt="Figure 2.1 Histogram of NO2 concentrations" /></p>
@@ -486,7 +486,7 @@ The squared error is also related to the root mean squared error, the measured u
 <p>The problem is that the loss function used was the mean squared error, meaning that only using this metric can may cause us to fail to observe other possible problems while training the data.
 Absolute error as a criterion for analysis fills these gaps in knowledge, such as bias in the training data or the geographic distribution of the error.</p>
 <figure>
-<img src="images/Absolute_dis.png" alt="" /><figcaption>Figure 3.1. Training Data Absolute Error Histogram</figcaption>
+<img src="images/Absolute_dis_Final.png" alt="" /><figcaption>Figure 3.1. Training Data Absolute Error Histogram</figcaption>
 </figure>
 <p>Figure 3.1 shows the distribution for the absolute error on the training data.
 The distribution is nearly gaussian, which is expected with a large sample size.
@@ -610,23 +610,23 @@ DOI: <a href="https://doi.org/10.3390/app9194069">10.3390/app9194069</a></p>
 <div id="ref-7jG4ORkP">
 <p>11. <strong>An Introduction to Convolutional Neural Networks</strong> <br />
 Keiron O’Shea, Ryan Nash<br />
-<em>arXiv:1511.08458 [cs]</em> (2015-12-02) <a href="http://arxiv.org/abs/1511.08458">http://arxiv.org/abs/1511.08458</a></p>
+(2015-11-26) <a href="https://arxiv.org/abs/1511.08458v2">https://arxiv.org/abs/1511.08458v2</a></p>
 </div>
 <div id="ref-oXBfd5SX">
 <p>12. <strong>A Critical Review of Recurrent Neural Networks for Sequence Learning</strong> <br />
 Zachary C. Lipton, John Berkowitz, Charles Elkan<br />
-<em>arXiv:1506.00019 [cs]</em> (2015-10-17) <a href="http://arxiv.org/abs/1506.00019">http://arxiv.org/abs/1506.00019</a></p>
+(2015-05-29) <a href="https://arxiv.org/abs/1506.00019v4">https://arxiv.org/abs/1506.00019v4</a></p>
 </div>
 <div id="ref-mxBOsI7j">
 <p>13. <strong>Fundamentals of Recurrent Neural Network (RNN) and Long Short-Term Memory (LSTM) Network</strong> <br />
 Alex Sherstinsky<br />
-<em>Physica D: Nonlinear Phenomena</em> (2020-03) <a href="http://arxiv.org/abs/1808.03314">http://arxiv.org/abs/1808.03314</a> <br />
+(2018-08-09) <a href="https://arxiv.org/abs/1808.03314v7">https://arxiv.org/abs/1808.03314v7</a> <br />
 DOI: <a href="https://doi.org/10.1016/j.physd.2019.132306">10.1016/j.physd.2019.132306</a></p>
 </div>
 <div id="ref-Ictu6Zb3">
 <p>14. <strong>Empirical Evaluation of Gated Recurrent Neural Networks on Sequence Modeling</strong> <br />
 Junyoung Chung, Caglar Gulcehre, KyungHyun Cho, Yoshua Bengio<br />
-<em>arXiv:1412.3555 [cs]</em> (2014-12-11) <a href="http://arxiv.org/abs/1412.3555">http://arxiv.org/abs/1412.3555</a></p>
+(2014-12-11) <a href="https://arxiv.org/abs/1412.3555v1">https://arxiv.org/abs/1412.3555v1</a></p>
 </div>
 <div id="ref-yCfM4S2y">
 <p>15. <a href="https://doi.org/10.1016/S0169-7439">https://doi.org/10.1016/S0169-7439</a></p>
