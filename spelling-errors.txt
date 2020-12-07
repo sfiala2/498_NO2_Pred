@@ -17,7 +17,7 @@ CNNs
 collinearity
 concentartion
 convolutes
-convolutional
+Convolutional
 covariates
 datapoints
 dataset
