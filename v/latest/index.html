@@ -53,9 +53,9 @@
   <meta name="citation_fulltext_html_url" content="https://sfiala2.github.io/498_NO2_pred/" />
   <meta name="citation_pdf_url" content="https://sfiala2.github.io/498_NO2_pred/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://sfiala2.github.io/498_NO2_pred/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/2ea48ac9a5b12478981554c46866d8124d79370a/" />
-  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/2ea48ac9a5b12478981554c46866d8124d79370a/" />
-  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/2ea48ac9a5b12478981554c46866d8124d79370a/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/646e5b2ed5fd380f0958049cc351d618f0f147c0/" />
+  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/646e5b2ed5fd380f0958049cc351d618f0f147c0/" />
+  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/646e5b2ed5fd380f0958049cc351d618f0f147c0/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -69,9 +69,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://sfiala2.github.io/498_NO2_pred/v/2ea48ac9a5b12478981554c46866d8124d79370a/">permalink</a>)
+(<a href="https://sfiala2.github.io/498_NO2_pred/v/646e5b2ed5fd380f0958049cc351d618f0f147c0/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/sfiala2/498_NO2_pred/tree/2ea48ac9a5b12478981554c46866d8124d79370a">sfiala2/498_NO2_pred@2ea48ac</a>
+from <a href="https://github.com/sfiala2/498_NO2_pred/tree/646e5b2ed5fd380f0958049cc351d618f0f147c0">sfiala2/498_NO2_pred@646e5b2</a>
 on December 7, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -256,7 +256,7 @@ on December 7, 2020.
 <p>The RMSE and R<sup>2</sup> values vary significantly for each study. This can be attributed to the different geographic areas considered, varying spatial resolutions, amount of uncertainty in the data sources, prediction type and different parameters included in the model.</p>
 <p>Because the objective of this study is to predict a single variable (NO<sub>2</sub> concentrations), then the models used by PM<sub>2.5</sub> studies are the most relevant. Therefore, in our model analysis, we will use MLR, neural networks and RF.</p>
 <h2 id="exploratory-data-analysis">2.2 Exploratory Data Analysis</h2>
-<p>The data for this study comes from the National Spatiotemporal Exposure Surface for NO<sub>2</sub>: Monthly Scaling of a Satellite-Derived Land-Use Regression, 2000−2010, authored by Matthew J. Bechle, Dylan B. Millet, and Julian D. Marshall <span class="citation" data-cites="Ian1ZRjy">[<a href="#ref-Ian1ZRjy" role="doc-biblioref">3</a>]</span>. The dataset has 255 observations of 134 variables: the IDs of the air quality monitors, the states in which they are located, the latitude and longitude of the monitors, the quantity of NO<sub>2</sub> observed in parts per billion, an approximation of DOMINO satellite data using the WRF-Chem model, the distance from a monitor to the coast in kilometers, the elevation of a monitor in kilometers, and several covariates about the land in the area regarding impervious surface, population, and major, residential, and total road length.</p>
+<p>The data for this study comes from the National Spatiotemporal Exposure Surface for NO<sub>2</sub>: Monthly Scaling of a Satellite-Derived Land-Use Regression, 2000−2010, authored by Matthew J. Bechle, Dylan B. Millet, and Julian D. Marshall. The dataset has 255 observations of 134 variables: the IDs of the air quality monitors, the states in which they are located, the latitude and longitude of the monitors, the quantity of NO<sub>2</sub> observed in parts per billion, an approximation of DOMINO satellite data using the WRF-Chem model, the distance from a monitor to the coast in kilometers, the elevation of a monitor in kilometers, and several covariates about the land in the area regarding impervious surface, population, and major, residential, and total road length.</p>
 <p>The target variable in this predictive case is NO<sub>2</sub> concentration in the continental United States. The observations from the data have a mean NO<sub>2</sub> concentration of 11.831 ppb with a standard deviation of 6.290 ppb. The NO<sub>2</sub> concentration data has a range from 0.309 to 31.016 ppb. The five highest values are considered outliers. The distribution of NO<sub>2</sub> concentration values is unimodal with a slight right skew.</p>
 <p><strong>Figure 2.1</strong>
 <img src="images/Histogram_NO2.png" alt="Figure 2.1 Histogram of NO2 concentrations" /></p>
@@ -504,7 +504,7 @@ This is interesting because since the loss function of the model was mean square
 </thead>
 <tbody>
 <tr class="odd">
-<td>mean</td>
+<td>Mean</td>
 <td>0.002</td>
 </tr>
 <tr class="even">
@@ -512,7 +512,7 @@ This is interesting because since the loss function of the model was mean square
 <td>3.056</td>
 </tr>
 <tr class="odd">
-<td>minimum</td>
+<td>Minimum</td>
 <td>-10.976</td>
 </tr>
 <tr class="even">
@@ -528,7 +528,7 @@ This is interesting because since the loss function of the model was mean square
 <td>1.514</td>
 </tr>
 <tr class="odd">
-<td>maximum</td>
+<td>Maximum</td>
 <td>11.994</td>
 </tr>
 </tbody>
@@ -539,12 +539,12 @@ This is interesting because since the loss function of the model was mean square
 </figure>
 <p>Figure 3.2 shows that the absolute error is not spatially homogenous, with most of the outliers being in the West.
 As root mean squared error is the major perfromance metric of our model the extreme outliers are of particular note becuase they are weighted heavily in this metric. A</p>
-<p>All the previous analysis was done on the training data but to ensure our model is robust, the model needs to be run on other data.
-The model was run on 165 samples and the root mean squared error was found to be 2.925, which is lower than the root mean squared error on the training data (3.05).
-This means that the final model is robust and can be applicable across the United States.</p>
+<p>All the previous analysis was done on the training data but to ensure our model is robust, the model needs to be run on other data.</p>
 <figure>
-<img src="images/NO2_test.png" alt="" /><figcaption>Figure 3.3. Testing Data NO<sub>2</sub> Concentrations</figcaption>
+<img src="images/NO2_test.png" alt="" /><figcaption>Figure 3.3. Testing Data NO<sub>2</sub> Concentrations Map</figcaption>
 </figure>
+<p>Figure 3.3 shows the predicted values of the known testing data. The model was run on 165 samples (139 of the testing data and 26 hidden values) and the root mean squared error was found to be 2.925, which is lower than the root mean squared error on the training data (3.05).
+This means that the final model is robust and can be applicable across the United States.</p>
 <h1 id="discussion">4. Discussion</h1>
 <h3 id="models-presented">4.1 Models Presented</h3>
 <p>Our team presented six different models for predicting NO<sub>2</sub> concentrations with varying degrees of complexity: one multiple linear regression, four neural networks, and one random forest model. The models were compared based on their test data predictions’ root mean square errors. This found that, while most models preduced comparable results, a neural network model was the best predictor of NO<sub>2</sub> concentrations and was the most applicable model. Multiple linear regression models were tested, but despite having a relatively low root mean square error, the heteroscedacity of the data makes for a non-applicable model. A random forest model is also presented. The model was a good predictor on the validation data, but showed poor performance on testing data, likely due to the continuous dependent variable. The random forest model was found to not be appropriate for predicting NO<sub>2</sub> concentrations.</p>
