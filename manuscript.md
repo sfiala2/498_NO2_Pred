@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://sfiala2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/2ef1ec4b2460c352996a12b7543788ac6309c24f/" />
+  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/dea987717b4c27d820db304450e75ee04d87fbc6/" />
 
-  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/2ef1ec4b2460c352996a12b7543788ac6309c24f/" />
+  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/dea987717b4c27d820db304450e75ee04d87fbc6/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/2ef1ec4b2460c352996a12b7543788ac6309c24f/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/dea987717b4c27d820db304450e75ee04d87fbc6/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Predicting NO<sub>2</sub> concentrations
 
 <small><em>
 This manuscript
-([permalink](https://sfiala2.github.io/498_NO2_pred/v/2ef1ec4b2460c352996a12b7543788ac6309c24f/))
+([permalink](https://sfiala2.github.io/498_NO2_pred/v/dea987717b4c27d820db304450e75ee04d87fbc6/))
 was automatically generated
-from [sfiala2/498_NO2_pred@2ef1ec4](https://github.com/sfiala2/498_NO2_pred/tree/2ef1ec4b2460c352996a12b7543788ac6309c24f)
+from [sfiala2/498_NO2_pred@dea9877](https://github.com/sfiala2/498_NO2_pred/tree/dea987717b4c27d820db304450e75ee04d87fbc6)
 on December 7, 2020.
 </em></small>
 

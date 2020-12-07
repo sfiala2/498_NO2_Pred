@@ -17,7 +17,7 @@ CNNs
 collinearity
 concentartion
 convolutes
-Convolutional
+convolutional
 covariates
 datapoints
 dataset
@@ -39,7 +39,7 @@ homogenous
 Houly
 HPBL
 hyperparameter
-hyperparameters
+Hyperparameters
 hyperparamters
 incoportating
 interpretability
