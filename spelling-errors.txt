@@ -72,7 +72,7 @@ preduced
 preprocess
 PSO
 RandomForestRegressor
-ReLU
+ReLu
 resedential
 respirable
 RMSE
@@ -85,7 +85,7 @@ scikit
 SDT
 sfiala
 Shenzen
-Sigmoid
+sigmoid
 Spatiotemporal
 Spearman’s
 Spectroradiometer

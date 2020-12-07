@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://sfiala2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/e58fbdcec0c22f264031a14d60471d7e2f47f94f/" />
+  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/8abaf9d52a091340100f1f92ec59edb1ae217d5a/" />
 
-  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/e58fbdcec0c22f264031a14d60471d7e2f47f94f/" />
+  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/8abaf9d52a091340100f1f92ec59edb1ae217d5a/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/e58fbdcec0c22f264031a14d60471d7e2f47f94f/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/8abaf9d52a091340100f1f92ec59edb1ae217d5a/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Predicting NO<sub>2</sub> concentrations
 
 <small><em>
 This manuscript
-([permalink](https://sfiala2.github.io/498_NO2_pred/v/e58fbdcec0c22f264031a14d60471d7e2f47f94f/))
+([permalink](https://sfiala2.github.io/498_NO2_pred/v/8abaf9d52a091340100f1f92ec59edb1ae217d5a/))
 was automatically generated
-from [sfiala2/498_NO2_pred@e58fbdc](https://github.com/sfiala2/498_NO2_pred/tree/e58fbdcec0c22f264031a14d60471d7e2f47f94f)
+from [sfiala2/498_NO2_pred@8abaf9d](https://github.com/sfiala2/498_NO2_pred/tree/8abaf9d52a091340100f1f92ec59edb1ae217d5a)
 on December 7, 2020.
 </em></small>
 
@@ -490,7 +490,7 @@ Our team presented six different models for predicting NO<sub>2</sub> concentrat
 
 Every model tested resulted in a relatively high root mean square error when compared to the mean value of the data (11.83 ppb). This may be due to a combination of factors. The model parameters could be better fine-tuned; however, we attribute much of this error to the size of the dataset used for training the model. Analysis on the dataset shows that the outliers accounted for approximately 40% of the standard error, meaning that the absolute error may be a better metric to evaluate the model performance. 
 
-The full dataset including both training and testing data contained less than 500 observations across the United States. These observations were not evenly distributed across the US, resulting in some states with no data and a handful of states with many data points. The data used also had very few observations of high NO<sub>2</sub> concentrations available for training the model. The best performing neural network model created using this data was a poor predictor of NO<sub>2</sub> concentrations in western states. 
+The full dataset (both training and testing data) contained less than 500 observations across the United States. These observations were not evenly distributed across the US, resulting in some states with no data and a handful of states with many data points. The data used also had very few observations of high NO<sub>2</sub> concentrations available for training the model. The best performing neural network model created using this data was a poor predictor of NO<sub>2</sub> concentrations in western states. 
 
 The best performing model showed no evidence of overfitting. The model performed slightly better on the testing data than it did on the validation data, supporting the conclusion that the model is robust. 
 
