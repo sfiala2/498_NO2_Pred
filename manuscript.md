@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://sfiala2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/2c880756fcde89a47ad7d37722a374355f02c7f7/" />
+  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/7071d045541b4b12882c2f7e5e182619d16c1819/" />
 
-  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/2c880756fcde89a47ad7d37722a374355f02c7f7/" />
+  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/7071d045541b4b12882c2f7e5e182619d16c1819/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/2c880756fcde89a47ad7d37722a374355f02c7f7/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/7071d045541b4b12882c2f7e5e182619d16c1819/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Predicting NO<sub>2</sub> concentrations
 
 <small><em>
 This manuscript
-([permalink](https://sfiala2.github.io/498_NO2_pred/v/2c880756fcde89a47ad7d37722a374355f02c7f7/))
+([permalink](https://sfiala2.github.io/498_NO2_pred/v/7071d045541b4b12882c2f7e5e182619d16c1819/))
 was automatically generated
-from [sfiala2/498_NO2_pred@2c88075](https://github.com/sfiala2/498_NO2_pred/tree/2c880756fcde89a47ad7d37722a374355f02c7f7)
+from [sfiala2/498_NO2_pred@7071d04](https://github.com/sfiala2/498_NO2_pred/tree/7071d045541b4b12882c2f7e5e182619d16c1819)
 on December 7, 2020.
 </em></small>
 
@@ -432,7 +432,7 @@ The number of units per hidden layer and number of hidden layers were choosen to
 Many choices made regarding were governed by two main motives; reducing the complexity of the model and ensuring the model captures the entire range of concentrations in the training data. 
 To avoid overfitting the model was designed with reduced complexity in the model, like the inputs, to allow monitors with similar inputs to have the output similar concentrations. 
 Unlike other models used there was no validation data used to confirm that the training process did not overfit the data, this was done intentionally for two reasons.
-The first reason is that the data set was relatively small for training a neural network and that extracting 10-20 percent for validation may cause mistraining of the neural network, this fact is alos compounded by the fact the Observed NO2 concentartion is heavily skewed. 
+The first reason is that the data set was relatively small for training a neural network and that extracting 10-20 percent for validation may cause mistraining of the neural network, this fact is also compounded by the fact the observed NO<sub>2</sub> concentration is heavily skewed. 
 The code block also shows that activations were used in the hidden layers of the model; this was done to allow the extreme outliers in the data be learned and trained from  properly in the model but not impact other nodes in each layer. 
 
 
@@ -453,7 +453,7 @@ The distribution is also centered on 0 and has a very small skew, meaning that t
 The major difference between the distribution and a Gaussian distribution is the kurtosis.
 
 The kurtosis was found to be greater than 3, meaning that the data is more concentrated near the mean with some extreme outliers.  
-This is also an interesting because since the loss function of the model was mean squared error, these outliers should be minimized, meaning that these outliers should  
+This is also an interesting because since the loss function of the model was mean squared error, these outliers should be minimized, but it is actually better to have weights that make these monitors be incorrectly predicted than to minimize their error. 
 
 **Table 3.2 5 Number Summary and mean of Absolute Error** 
 
@@ -472,8 +472,9 @@ Table 3.2 shows that the the majority of monitors predicted value is within 2 pp
 
 ![Figure 3.2. Training Data Absolute Error Geographic Distribution](images/Absolute_map_Final.png)
  
-Figure 3.2 shows that the absolute error is not spatially homogenous, with most of the outliers being in the West. 
+Figure 3.2 shows that the absolute error is not spatially homogenous, with most of the outliers being in the West. Further analysis shows out of the 255 training points, 12 of those were outliers.
 As root mean squared error is the major performance metric of our model the extreme outliers are of particular note becuase they are weighted heavily in this metric. 
+
 
 All the previous analysis was done on the training data but to ensure our model is robust, the model needs to be run on other data to ensure it valdity as a model. 
  
@@ -487,19 +488,19 @@ This means that the final model is robust and can be applicable across the Unite
 # 4. Discussion 
 
 ### 4.1 Models Presented
-Our team presented six different models for predicting NO<sub>2</sub> concentrations with varying degrees of complexity: one multiple linear regression, four neural networks, and one random forest model. The models were compared based on their test data predictions' root mean square errors. This found that, while most models produced comparable results, a neural network model was the best predictor of NO<sub>2</sub> concentrations and was the most applicable model. Multiple linear regression models were tested, but despite having a relatively low root mean square error, the heteroskedacity of the data makes for a non-applicable model. A random forest model is also presented. The model was a good predictor on the validation data, but showed poor performance on testing data. The random forest model was found to not be appropriate for predicting NO<sub>2</sub> concentrations when using few data points. 
+Our team presented six different models for predicting NO<sub>2</sub> concentrations with varying degrees of complexity: one multiple linear regression, four neural networks, and one random forest model. The models were compared based on their test data predictions' root mean square errors. This found that, while most models preduced comparable results, a neural network model was the best predictor of NO<sub>2</sub> concentrations and was the most applicable model. Multiple linear regression models were tested, but despite having a relatively low root mean square error, the heteroscedacity of the data makes for a non-applicable model. A random forest model is also presented. The model was a good predictor on the validation data, but showed poor performance on testing data. The random forest model was found to not be appropriate for predicting NO<sub>2</sub> concentrations when using few data points. 
 
 ### 4.2 Model Performance
 
 Every model tested resulted in a relatively high root mean square error when compared to the mean value of the data (11.83 ppb). This may be due to a combination of factors. The model parameters could be better fine-tuned; however, we attribute much of this error to the size of the dataset used for training the model. Analysis on the dataset shows that the outliers accounted for approximately 40% of the standard error, meaning that the absolute error may be a better metric to evaluate the model performance. 
 
-The full dataset (training and test data) contained less than 500 observations across the United States. These observations were not evenly distributed across the US, resulting in some states with no data and a handful of states with many data points. The data used also had very few observations of high NO<sub>2</sub> concentrations available for training the model. The best performing neural network model created using this data was a poor predictor of NO<sub>2</sub> concentrations in western states. 
+The full dataset contained less than 500 observations across the United States. These observations were not evenly distributed across the US, resulting in some states with no data and a handful of states with many data points. The data used also had very few observations of high NO<sub>2</sub> concentrations available for training the model. The best performing neural network model created using this data was a poor predictor of NO<sub>2</sub> concentrations in western states. 
 
 The best performing model showed no evidence of overfitting. The model performed slightly better on the testing data than it did on the validation data, supporting the conclusion that the model is robust. 
 
 ### 4.3 Limitations and Future Research 
 
-Still, further research is needed.  This may include incorporating more data sources to paint a more detailed picture of how NO<sub>2</sub> concentrations vary across the United States. The data used in this report was based on land use information. Other recent studies have found that incorporating meteorological data can improve the model predictions. Although these factors are present implicitly through the WRF+DOMINO data column, our model may benefit from data like temperature and humidity being explicit. Also, NO<sub>2</sub> comes from multiple sources. This dataset includes information about roads, but does not include information regarding distance from nearby power plants or industries. This may be causing the model to underpredict the NO<sub>2</sub> concentration at locations nearby to other sources of NO<sub>2</sub>. 
+Still, further research is needed.  This may include incoportating more data sources to paint a more detailed picture of how NO<sub>2</sub> concentrations vary across the United States. The data used in this report was based on land use information. Other recent studies have found that incorporating meteorological data can improve the model predictions. Although these factors are present implicitly through the WRF+DOMINO data column, our model may benefit from data like temperature and humidity being explicit. Also, NO<sub>2</sub> comes from multiple sources. This dataset includes information about roads, but does not include information regarding distance from nearby power plants or industry. This may be causing the model to underpredict the NO<sub>2</sub> concentration at stations nearby to other sources of NO<sub>2</sub>. 
 
 Because of the spatial variability and limited data, this model is only applicable to some regions within the United States. And, due to the limited amount of US data and the uneven distribution of this data across the country, it may have been better to focus on modeling air quality across different regions in the country instead of across the entire contigous United States.  
 

@@ -2,7 +2,6 @@ acorss
 activations
 aganist
 albedo
-alos
 AOD
 AQI
 atttributes
@@ -15,7 +14,6 @@ choosen
 Clarizio
 CNNs
 collinearity
-concentartion
 contigous
 convolutes
 Convolutional
@@ -36,14 +34,14 @@ GIS
 GridSearchCV
 GRU
 heteroscedacity
-heteroskedacity
 heteroskedastic
 hhunter
 homogenous
 Houly
 HPBL
 hyperparameter
-Hyperparameters
+hyperparameters
+incoportating
 interpretability
 Kaggle
 keras
@@ -70,6 +68,7 @@ overfits
 overfitting
 perceptron
 ppb
+preduced
 preprocess
 PSO
 RandomForestRegressor
