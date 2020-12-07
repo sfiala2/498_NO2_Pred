@@ -16,8 +16,9 @@ Clarizio
 CNNs
 collinearity
 concentartion
+contigous
 convolutes
-convolutional
+Convolutional
 covariates
 datapoints
 dataset
@@ -39,7 +40,7 @@ homogenous
 Houly
 HPBL
 hyperparameter
-Hyperparameters
+hyperparameters
 hyperparamters
 incoportating
 interpretability
@@ -58,6 +59,7 @@ MSE
 NAAQS
 NDVI
 NOx
+nueral
 oberseved
 opensource
 optimizers
@@ -79,12 +81,11 @@ RNN
 RNNs
 Salana
 SAPSO
-scatterplot
 scikit
 SDT
 sfiala
 Shenzen
-sigmoid
+Sigmoid
 Spatiotemporal
 Spearman’s
 Spectroradiometer
@@ -101,6 +102,7 @@ trainng
 treeboost
 tropospheric
 underfitting
+underpredict
 unimodal
 valdity
 WRF
