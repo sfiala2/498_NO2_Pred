@@ -17,7 +17,7 @@ CNNs
 collinearity
 concentartion
 convolutes
-convolutional
+Convolutional
 covariates
 datapoints
 dataset
@@ -58,7 +58,6 @@ MSE
 NAAQS
 NDVI
 NOx
-nueral
 oberseved
 opensource
 optimizers
@@ -80,6 +79,7 @@ RNN
 RNNs
 Salana
 SAPSO
+scatterplot
 scikit
 SDT
 sfiala
