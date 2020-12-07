@@ -16,13 +16,16 @@ Clarizio
 CNNs
 collinearity
 concentartion
+contigous
 convolutes
-convolutional
+Convolutional
 covariates
 datapoints
 dataset
 datasets
+decraese
 Devolpment
+dor
 DTB
 DTF
 EDA
@@ -33,7 +36,6 @@ GIS
 GridSearchCV
 GRU
 heteroscedacity
-heteroskedacity
 heteroskedastic
 hhunter
 homogenous
@@ -41,7 +43,6 @@ Houly
 HPBL
 hyperparameter
 hyperparameters
-hyperparamters
 incoportating
 interpretability
 Kaggle
@@ -51,6 +52,7 @@ Liu
 LSTM
 LSTMs
 marcelbriguglio
+maximas
 memorises
 mistraining
 MLR
@@ -72,7 +74,7 @@ preduced
 preprocess
 PSO
 RandomForestRegressor
-ReLu
+ReLU
 resedential
 respirable
 RMSE
@@ -88,6 +90,7 @@ Shenzen
 sigmoid
 Spatiotemporal
 Spearman’s
+specfically
 Spectroradiometer
 Sudheer
 sudheersalana
