@@ -22,9 +22,7 @@ covariates
 datapoints
 dataset
 datasets
-decraese
 Devolpment
-dor
 DTB
 DTF
 EDA
@@ -41,7 +39,7 @@ homogenous
 Houly
 HPBL
 hyperparameter
-hyperparameters
+Hyperparameters
 incoportating
 interpretability
 Kaggle
@@ -58,7 +56,6 @@ MODIS
 MSE
 NAAQS
 NDVI
-NOx
 nueral
 oberseved
 opensource
@@ -71,7 +68,6 @@ ppb
 preduced
 preprocess
 PSO
-raidius
 RandomForestRegressor
 ReLu
 resedential
@@ -86,10 +82,9 @@ scikit
 SDT
 sfiala
 Shenzen
-Sigmoid
+sigmoid
 Spatiotemporal
 Spearman’s
-specfically
 Spectroradiometer
 Sudheer
 sudheersalana
@@ -99,14 +94,12 @@ SVM
 Tanh
 tensorflow
 tessac
-traing
-trainng
+tis
 treeboost
 tropospheric
 underfitting
 underpredict
 unimodal
-valdity
 WRF
 XGBoost
 Xiaokai
