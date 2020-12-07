@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://sfiala2.github.io/498_NO2_pred/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/2ea48ac9a5b12478981554c46866d8124d79370a/" />
+  <link rel="alternate" type="text/html" href="https://sfiala2.github.io/498_NO2_pred/v/646e5b2ed5fd380f0958049cc351d618f0f147c0/" />
 
-  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/2ea48ac9a5b12478981554c46866d8124d79370a/" />
+  <meta name="manubot_html_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/646e5b2ed5fd380f0958049cc351d618f0f147c0/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/2ea48ac9a5b12478981554c46866d8124d79370a/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://sfiala2.github.io/498_NO2_pred/v/646e5b2ed5fd380f0958049cc351d618f0f147c0/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Predicting NO<sub>2</sub> concentrations
 
 <small><em>
 This manuscript
-([permalink](https://sfiala2.github.io/498_NO2_pred/v/2ea48ac9a5b12478981554c46866d8124d79370a/))
+([permalink](https://sfiala2.github.io/498_NO2_pred/v/646e5b2ed5fd380f0958049cc351d618f0f147c0/))
 was automatically generated
-from [sfiala2/498_NO2_pred@2ea48ac](https://github.com/sfiala2/498_NO2_pred/tree/2ea48ac9a5b12478981554c46866d8124d79370a)
+from [sfiala2/498_NO2_pred@646e5b2](https://github.com/sfiala2/498_NO2_pred/tree/646e5b2ed5fd380f0958049cc351d618f0f147c0)
 on December 7, 2020.
 </em></small>
 
@@ -233,7 +233,7 @@ Because the objective of this study is to predict a single variable (NO<sub>2</s
 
 ## 2.2 Exploratory Data Analysis
 
-The data for this study comes from the National Spatiotemporal Exposure Surface for NO<sub>2</sub>: Monthly Scaling of a Satellite-Derived Land-Use Regression, 2000−2010, authored by Matthew J. Bechle, Dylan B. Millet, and Julian D. Marshall [@https://doi.org/10.1021/acs.est.5b02882]. The dataset has 255 observations of 134 variables: the IDs of the air quality monitors, the states in which they are located, the latitude and longitude of the monitors, the quantity of NO<sub>2</sub> observed in parts per billion, an approximation of DOMINO satellite data using the WRF-Chem model, the distance from a monitor to the coast in kilometers, the elevation of a monitor in kilometers, and several covariates about the land in the area regarding impervious surface, population, and major, residential, and total road length. 
+The data for this study comes from the National Spatiotemporal Exposure Surface for NO<sub>2</sub>: Monthly Scaling of a Satellite-Derived Land-Use Regression, 2000−2010, authored by Matthew J. Bechle, Dylan B. Millet, and Julian D. Marshall. The dataset has 255 observations of 134 variables: the IDs of the air quality monitors, the states in which they are located, the latitude and longitude of the monitors, the quantity of NO<sub>2</sub> observed in parts per billion, an approximation of DOMINO satellite data using the WRF-Chem model, the distance from a monitor to the coast in kilometers, the elevation of a monitor in kilometers, and several covariates about the land in the area regarding impervious surface, population, and major, residential, and total road length. 
 
 The target variable in this predictive case is NO<sub>2</sub> concentration in the continental United States. The observations from the data have a mean NO<sub>2</sub> concentration of 11.831 ppb with a standard deviation of 6.290 ppb. The NO<sub>2</sub> concentration data has a range from 0.309 to 31.016 ppb. The five highest values are considered outliers. The distribution of NO<sub>2</sub> concentration values is unimodal with a slight right skew.
 
@@ -457,13 +457,13 @@ This is interesting because since the loss function of the model was mean square
 
 |Parameter| Value|
 |-----|------------------|
-| mean | 0.002|
+| Mean | 0.002|
 |Standard Deviation| 3.056 |
-| minimum | -10.976| 
+| Minimum | -10.976| 
 | 25%| -1.973|
 | 50% | -0.206|
 | 75% | 1.514 |
-| maximum | 11.994 |
+| Maximum | 11.994 |
 
 
 Table 3.2 shows that the the majority of monitors predicted value is within 2 ppb of the actual value, with outliers being greater than 5.99 and less than -6.45. 
@@ -474,11 +474,13 @@ Figure 3.2 shows that the absolute error is not spatially homogenous, with most 
 As root mean squared error is the major perfromance metric of our model the extreme outliers are of particular note becuase they are weighted heavily in this metric. A
 
 All the previous analysis was done on the training data but to ensure our model is robust, the model needs to be run on other data. 
-The model was run on 165 samples and the root mean squared error was found to be 2.925, which is lower than the root mean squared error on the training data (3.05). 
-This means that the final model is robust and can be applicable across the United States.  
+ 
 
-![Figure 3.3. Testing Data NO<sub>2</sub> Concentrations](images/NO2_test.png)
+![Figure 3.3. Testing Data NO<sub>2</sub> Concentrations Map](images/NO2_test.png)
 
+
+Figure 3.3 shows the predicted values of the known testing data. The model was run on 165 samples (139 of the testing data and 26 hidden values) and the root mean squared error was found to be 2.925, which is lower than the root mean squared error on the training data (3.05). 
+This means that the final model is robust and can be applicable across the United States. 
 
 # 4. Discussion 
 
