@@ -16,9 +16,8 @@ Clarizio
 CNNs
 collinearity
 concentartion
-contigous
 convolutes
-Convolutional
+convolutional
 covariates
 datapoints
 dataset
@@ -34,6 +33,7 @@ GIS
 GridSearchCV
 GRU
 heteroscedacity
+heteroskedacity
 heteroskedastic
 hhunter
 homogenous
@@ -85,7 +85,7 @@ scikit
 SDT
 sfiala
 Shenzen
-sigmoid
+Sigmoid
 Spatiotemporal
 Spearman’s
 Spectroradiometer

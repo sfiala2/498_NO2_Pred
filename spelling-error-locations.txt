@@ -273,7 +273,7 @@ content/02.Report_Body.md:309:ppb
 content/02.Report_Body.md:313:homogenous
 content/02.Report_Body.md:314:becuase
 content/02.Report_Body.md:316:valdity
-content/02.Report_Body.md:328:heteroscedacity
+content/02.Report_Body.md:328:heteroskedacity
 content/02.Report_Body.md:328:preduced
 content/02.Report_Body.md:332:dataset
 content/02.Report_Body.md:332:dataset
@@ -284,4 +284,3 @@ content/02.Report_Body.md:340:dataset
 content/02.Report_Body.md:340:incoportating
 content/02.Report_Body.md:340:underpredict
 content/02.Report_Body.md:340:WRF
-content/02.Report_Body.md:342:contigous
